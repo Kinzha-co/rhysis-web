@@ -1,15 +1,18 @@
 ---
 title: "Rhysis — Infraestructura Epistemológica"
+format: html
 ---
 
-```{=html}
 <!-- Language Switcher Header -->
 <div class="absolute top-6 right-8 z-50 text-sm md:text-base font-medium text-white tracking-wide">
-  <a href="/en/" class="text-slate-300 hover:text-white hover:underline transition-all">EN</a>
-  <span class="mx-2 text-slate-400">|</span>
-  <span class="font-bold border-b-2 border-teal-400 pb-0.5">ES</span>
+  <p>
+    <a href="../en/" class="text-slate-300 hover:text-white hover:underline transition-all">EN</a> 
+    <span class="mx-2 text-slate-400">|</span> 
+    <span class="font-bold border-b-2 border-teal-400 pb-0.5">ES</span>
+  </p>
 </div>
 
+```{=html}
 <!-- Hero -->
 <section class="hero-bg min-h-screen flex items-center relative overflow-hidden text-white">
   <div class="max-w-5xl mx-auto px-6 text-center">
@@ -45,7 +48,6 @@ title: "Rhysis — Infraestructura Epistemológica"
       <h2 class="text-5xl font-bold mb-4">La Inversión Ontológica de Rhysis</h2>
       <p class="text-2xl text-teal-200">ῥύσις — flujo + naturaleza</p>
     </div>
-
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="bg-black/30 backdrop-blur-md p-10 rounded-3xl">
         <h3 class="text-orange-300 text-xl font-semibold mb-6">Ontología de Sustancias</h3>
@@ -55,7 +57,6 @@ title: "Rhysis — Infraestructura Epistemológica"
           <li class="flex items-start"><span class="text-orange-400 mr-3">✗</span> La diferencia se interpreta como desviación</li>
         </ul>
       </div>
-
       <div class="bg-black/30 backdrop-blur-md p-10 rounded-3xl">
         <h3 class="text-teal-300 text-xl font-semibold mb-6">Ontología de Procesos (Rhysis)</h3>
         <ul class="space-y-4 text-slate-200">
