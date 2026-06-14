@@ -1,9 +1,4 @@
 ---
-
-### 2. `en/index.qmd` (Landing en Inglés)
-
-```markdown
----
 title: "Rhysis — Epistemological Infrastructure"
 format: html
 ---
