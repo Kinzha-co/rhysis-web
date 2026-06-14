@@ -1,4 +1,9 @@
 ---
+
+### 2. `rhysis-web/en/index.qmd`
+
+```markdown
+---
 title: "Rhysis — Epistemological Infrastructure"
 format: html
 ---

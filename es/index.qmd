@@ -62,7 +62,7 @@ format: html
         <ul class="space-y-4 text-slate-200">
           <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> El devenir constituye al ser</li>
           <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> La identidad devela la trayectoria</li>
-          <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> La diferencia expresa nuevas posibilidades</li>
+          <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> La diferencia expresses nuevas posibilidades</li>
         </ul>
       </div>
     </div>

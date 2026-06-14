@@ -1,6 +1,6 @@
 ---
 
-### 4. `syntropia/en/index.qmd` (Modelo de Syntropía en Inglés)
+### 4. `rhysis-web/syntropia/en/index.qmd`
 
 ```markdown
 ---
