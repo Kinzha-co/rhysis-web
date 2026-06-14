@@ -5,7 +5,7 @@ title: "Syntropía — Implementación de Rhysis"
 ```{=html}
 <!-- Language Switcher Header -->
 <div class="absolute top-6 right-6 z-50 text-sm text-white">
-  <a href="/syntropia/en/index.html" class="hover:underline" hreflang="en" lang="en">EN</a>
+  <a href="/syntropia/en/" class="hover:underline" hreflang="en" lang="en">EN</a>
   <span class="mx-2">|</span>
   <span class="font-semibold">ES</span>
 </div>
@@ -21,7 +21,7 @@ title: "Syntropía — Implementación de Rhysis"
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="#syntropia" class="bg-teal-500 hover:bg-teal-400 text-slate-900 font-semibold px-10 py-5 rounded-2xl text-lg transition-all">Explorar el marco</a>
-      <a href="../../es/index.html" class="border border-slate-300 hover:border-white px-10 py-5 rounded-2xl text-lg transition-all"><i class="fa-solid fa-arrow-left mr-2"></i>Volver al Inicio</a>
+      <a href="/es/" class="border border-slate-300 hover:border-white px-10 py-5 rounded-2xl text-lg transition-all"><i class="fa-solid fa-arrow-left mr-2"></i>Volver al Inicio</a>
     </div>
   </div>
 </section>
@@ -31,7 +31,7 @@ title: "Syntropía — Implementación de Rhysis"
   <div class="max-w-4xl mx-auto px-6">
     <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Por qué importan las trayectorias</h2>
     <div class="text-lg text-slate-600 leading-relaxed space-y-7">
-      <p>Syntropía es la primera implementación aplicada de Rhysis.</p>
+      <p>Syntropía is the first applied implementation of Rhysis.</p>
       <p>Es un marco dinámico de conocimiento diseñado para describir, comprender y acompañar trayectorias humanas a lo largo del tiempo.</p>
       <p>En lugar de reducir a una persona a un diagnóstico, una etiqueta o una identidad fija, Syntropía se centra en patrones de cambio en evolución.</p>
     </div>
@@ -111,4 +111,3 @@ title: "Syntropía — Implementación de Rhysis"
   <p class="mb-2">© 2026 Rhysis — Infraestructura epistemológica</p>
   <p class="text-sm">— Del ser al devenir —</p>
 </footer>
-```

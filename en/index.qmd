@@ -7,7 +7,7 @@ title: "Rhysis — Epistemological Infrastructure"
 <div class="absolute top-6 right-8 z-50 text-sm md:text-base font-medium text-white tracking-wide">
   <span class="font-bold border-b-2 border-teal-400 pb-0.5">EN</span>
   <span class="mx-2 text-slate-400">|</span>
-  <a href="/es/index.html" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
+  <a href="/es/" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
 </div>
 
 <!-- Hero -->
@@ -21,7 +21,7 @@ title: "Rhysis — Epistemological Infrastructure"
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="#rhysis" class="bg-teal-500 hover:bg-teal-400 text-slate-900 font-semibold px-10 py-5 rounded-2xl text-lg transition-all">Explore Rhysis</a>
-      <a href="../syntropia/en/index.html" class="border border-slate-300 hover:border-white px-10 py-5 rounded-2xl text-lg transition-all">Discover Syntropía</a>
+      <a href="/syntropia/en/" class="border border-slate-300 hover:border-white px-10 py-5 rounded-2xl text-lg transition-all">Discover Syntropía</a>
     </div>
   </div>
 </section>
@@ -75,7 +75,7 @@ title: "Rhysis — Epistemological Infrastructure"
     <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
       If this project is meaningful to you, your support helps advance the development of Syntropía and the infrastructure that sustains it.
     </p>
-    <a href="https://ko-fi.com/rhysis" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-5 rounded-2xl text-xl transition-all shadow-lg">Support the Project</a>
+    <a href="[https://ko-fi.com/rhysis](https://ko-fi.com/rhysis)" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-5 rounded-2xl text-xl transition-all shadow-lg">Support the Project</a>
     <p class="text-sm text-slate-500 mt-8">
       For additional information, please contact us at <a href="mailto:contacto@rhysis.org" class="underline hover:text-slate-700">contacto@rhysis.org</a> or <a href="mailto:syntropia@rhysis.org" class="underline hover:text-slate-700">syntropia@rhysis.org</a>
     </p>
@@ -87,4 +87,3 @@ title: "Rhysis — Epistemological Infrastructure"
   <p class="mb-2">© 2026 Rhysis — Epistemological Infrastructure</p>
   <p class="text-sm">— From Being to Becoming —</p>
 </footer>
-```
