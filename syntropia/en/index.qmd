@@ -1,0 +1,114 @@
+---
+title: "Syntropía — Rhysis Implementation"
+---
+
+```{=html}
+<!-- Language Switcher Header -->
+<div class="absolute top-6 right-8 z-50 text-sm md:text-base font-medium text-white tracking-wide">
+  <span class="font-bold border-b-2 border-teal-400 pb-0.5">EN</span>
+  <span class="mx-2 text-slate-400">|</span>
+  <a href="../es/index.html" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
+</div>
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center relative overflow-hidden text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
+      Syntropía
+    </h1>
+    <p class="text-2xl md:text-3xl text-slate-200 mb-10 max-w-3xl mx-auto">
+      A dynamic knowledge framework for modeling human trajectories
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#syntropia" class="bg-teal-500 hover:bg-teal-400 text-slate-900 font-semibold px-10 py-5 rounded-2xl text-lg transition-all">Explore Framework</a>
+      <a href="../../en/index.html" class="border border-slate-300 hover:border-white px-10 py-5 rounded-2xl text-lg transition-all"><i class="fa-solid fa-arrow-left mr-2"></i>Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM SECTION -->
+<section id="syntropia" class="py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Why Trajectories Matter</h2>
+    <div class="text-lg text-slate-600 leading-relaxed space-y-7">
+      <p>Syntropía is the first applied implementation of Rhysis.</p>
+      <p>It is a dynamic knowledge framework designed to describe, understand, and accompany human trajectories over time.</p>
+      <p>Instead of reducing a person to a diagnosis, label, or fixed identity, Syntropía focuses on evolving patterns of change.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CORE INVERSION -->
+<section class="py-24 flow-bg text-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-bold mb-4">From States to Trajectories</h2>
+      <p class="text-2xl text-teal-200">A structural shift in modeling human life</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="bg-black/30 backdrop-blur-md p-10 rounded-3xl">
+        <h3 class="text-orange-300 text-xl font-semibold mb-6">Static Perspective</h3>
+        <ul class="space-y-4 text-slate-200">
+          <li class="flex items-start"><span class="text-orange-400 mr-3">✗</span> Identity as fixed category</li>
+          <li class="flex items-start"><span class="text-orange-400 mr-3">✗</span> Diagnosis as definition</li>
+          <li class="flex items-start"><span class="text-orange-400 mr-3">✗</span> Time treated as background</li>
+        </ul>
+      </div>
+      <div class="bg-black/30 backdrop-blur-md p-10 rounded-3xl">
+        <h3 class="text-teal-300 text-xl font-semibold mb-6">Trajectory-Based Perspective</h3>
+        <ul class="space-y-4 text-slate-200">
+          <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> Identity emerges over time</li>
+          <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> Diagnosis as temporal snapshot</li>
+          <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> Time as structural dimension</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="py-24 bg-slate-100">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Applications</h2>
+    <div class="text-lg text-slate-600 leading-relaxed space-y-6">
+      <p>Syntropía provides a framework for longitudinal understanding of human processes.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Mental health care</li>
+          <li>Psychiatric practice</li>
+          <li>Clinical psychology</li>
+          <li>Addiction treatment systems</li>
+          <li>Longitudinal clinical assessment</li>
+          <li>Neurodevelopmental trajectories</li>
+          <li>Risk and prognosis modeling</li>
+        </ul>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Life-course research</li>
+          <li>Complex systems modeling</li>
+          <li>Computational psychiatry</li>
+          <li>Network-based brain modeling</li>
+          <li>Data-driven phenotyping</li>
+          <li>Clinical decision systems</li>
+          <li>Epistemology of clinical inference</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATUS -->
+<section class="py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6 text-slate-800">Current Status</h2>
+    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+      Syntropía is in active development. Its conceptual foundation is established, and current work focuses on formalization and implementation.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-16 bg-slate-900 text-slate-400 text-center">
+  <p class="mb-2">© 2026 Rhysis — Epistemological Infrastructure</p>
+  <p class="text-sm">— From Being to Becoming —</p>
+</footer>
+```

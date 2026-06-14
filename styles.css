@@ -1,0 +1,12 @@
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.hero-bg {
+  background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%);
+}
+.flow-bg {
+  background: linear-gradient(120deg, #0f766e 0%, #155e75 100%);
+}
+.section-transition {
+  transition: all 0.4s ease;
+}

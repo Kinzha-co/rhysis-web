@@ -1,0 +1,90 @@
+---
+title: "Rhysis — Epistemological Infrastructure"
+---
+
+```{=html}
+<!-- Language Switcher Header -->
+<div class="absolute top-6 right-8 z-50 text-sm md:text-base font-medium text-white tracking-wide">
+  <span class="font-bold border-b-2 border-teal-400 pb-0.5">EN</span>
+  <span class="mx-2 text-slate-400">|</span>
+  <a href="../es/index.html" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
+</div>
+
+<!-- Hero -->
+<section class="hero-bg min-h-screen flex items-center relative overflow-hidden text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
+      From Fixed Being<br>to <span class="text-teal-300">Living Flow</span>
+    </h1>
+    <p class="text-2xl md:text-3xl text-slate-200 mb-10 max-w-3xl mx-auto">
+      Rhysis is an epistemological infrastructure for understanding human <strong>trajectories in continuous becoming</strong>.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#rhysis" class="bg-teal-500 hover:bg-teal-400 text-slate-900 font-semibold px-10 py-5 rounded-2xl text-lg transition-all">Explore Rhysis</a>
+      <a href="../syntropia/en/index.html" class="border border-slate-300 hover:border-white px-10 py-5 rounded-2xl text-lg transition-all">Discover Syntropía</a>
+    </div>
+  </div>
+</section>
+
+<!-- Problema -->
+<section class="py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">People Are More Than a Label</h2>
+    <div class="max-w-none text-slate-600 text-lg leading-relaxed space-y-7">
+      <p>For a long time, we have described people as though a single word could define who they are.</p>
+      <p>Yet these ways of naming do more than describe a situation: they often transform a condition, a difficulty, or a pattern of behavior into a <strong>fixed identity</strong>.</p>
+      <p>This mode of thought—characteristic of substance ontology—has profoundly influenced clinical practice, education, and the way we come to understand ourselves.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Rhysis -->
+<section id="rhysis" class="py-24 flow-bg text-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-bold mb-4">The Ontological Inversion of Rhysis</h2>
+      <p class="text-2xl text-teal-200">ῥύσις — flow + nature</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="bg-black/30 backdrop-blur-md p-10 rounded-3xl">
+        <h3 class="text-orange-300 text-xl font-semibold mb-6">Substance Ontology</h3>
+        <ul class="space-y-4 text-slate-200">
+          <li class="flex items-start"><span class="text-orange-400 mr-3">✗</span> Being precedes change</li>
+          <li class="flex items-start"><span class="text-orange-400 mr-3">✗</span> Identity is a stable property</li>
+          <li class="flex items-start"><span class="text-orange-400 mr-3">✗</span> Difference is interpreted as deviation</li>
+        </ul>
+      </div>
+
+      <div class="bg-black/30 backdrop-blur-md p-10 rounded-3xl">
+        <h3 class="text-teal-300 text-xl font-semibold mb-6">Process Ontology (Rhysis)</h3>
+        <ul class="space-y-4 text-slate-200">
+          <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> Becoming constitutes being</li>
+          <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> Identity emerges from trajectory</li>
+          <li class="flex items-start"><span class="text-teal-400 mr-3">✓</span> Difference expresses new possibilities</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Support -->
+<section class="py-20 bg-slate-100">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6 text-slate-800">Support Rhysis</h2>
+    <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+      If this project is meaningful to you, your support helps advance the development of Syntropía and the infrastructure that sustains it.
+    </p>
+    <a href="https://ko-fi.com/rhysis" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-5 rounded-2xl text-xl transition-all shadow-lg">Support the Project</a>
+    <p class="text-sm text-slate-500 mt-8">
+      For additional information, please contact us at <a href="mailto:contacto@rhysis.org" class="underline hover:text-slate-700">contacto@rhysis.org</a> or <a href="mailto:syntropia@rhysis.org" class="underline hover:text-slate-700">syntropia@rhysis.org</a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-16 bg-slate-900 text-slate-400 text-center">
+  <p class="mb-2">© 2026 Rhysis — Epistemological Infrastructure</p>
+  <p class="text-sm">— From Being to Becoming —</p>
+</footer>
+```
