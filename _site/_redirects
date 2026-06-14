@@ -1,0 +1,8 @@
+# Redirección de la raíz al idioma por defecto (Español)
+/ /es/ 301
+
+# Asegurar que las rutas bilingües y subcarpetas devuelvan HTML limpio
+/es/* /es/:splat 200 Content-Type=text/html
+/en/* /en/:splat 200 Content-Type=text/html
+/syntropia/es/* /syntropia/es/:splat 200 Content-Type=text/html
+/syntropia/en/* /syntropia/en/:splat 200 Content-Type=text/html

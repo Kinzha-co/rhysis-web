@@ -2,7 +2,11 @@ project:
   type: website
   output-dir: _site
   resources:
-    - "_redirects"     # <--- Ahora sí, Quarto sabe que debe copiarlo a la carpeta de salida
+    - "_redirects"
+
+website:
+  title: "Rhysis"
+  navbar: false
 
 format:
   html:
@@ -13,3 +17,5 @@ format:
       - text: |
           <script src="https://cdn.tailwindcss.com"></script>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    toc: false
+    number-sections: false

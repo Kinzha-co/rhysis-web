@@ -4,7 +4,7 @@
 
 .hero-bg {
   background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), 
-              url('/assets/logo-comb.png') center/cover no-repeat fixed;
+              url('assets/logo-comb.png') center/cover no-repeat fixed;
   background-position: center;
 }
 
