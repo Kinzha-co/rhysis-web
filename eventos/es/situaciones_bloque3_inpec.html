@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catorce situaciones · Conversatorio PyP INPEC</title>
+<style>
+  :root {
+    --teal:      #0D9488;
+    --teal-dark: #0F766E;
+    --teal-bg:   #F0FDFA;
+    --ink:       #134E4A;
+    --ink-soft:  #374151;
+    --ink-light: #6B7280;
+    --hair:      #D1FAF5;
+    --bg:        #FFFFFF;
+    --num-size:  2.4rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--ink-soft);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ── */
+  .site-header {
+    border-bottom: 1px solid var(--hair);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg);
+  }
+  .site-logo {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--teal-dark);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+  }
+  .site-badge {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--teal);
+    border: 1px solid var(--teal);
+    border-radius: 99px;
+    padding: 3px 10px;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(160deg, #134E4A 0%, #0F766E 55%, #0D9488 100%);
+    color: white;
+    padding: 56px 24px 48px;
+    text-align: center;
+  }
+  .hero-eyebrow {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: #5EEAD4;
+  }
+  .hero-sub {
+    font-size: 1rem;
+    opacity: 0.82;
+    font-style: italic;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* ── Instruction strip ── */
+  .instruction {
+    background: var(--teal-bg);
+    border-bottom: 1px solid var(--hair);
+    padding: 16px 24px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.95rem;
+    color: var(--teal-dark);
+    font-weight: 500;
+  }
+
+  /* ── Situations grid ── */
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px 64px;
+  }
+
+  .situation {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 0 16px;
+    padding: 24px 0;
+    border-bottom: 1px solid #E5E7EB;
+    align-items: start;
+  }
+  .situation:last-child { border-bottom: none; }
+
+  .sit-num {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: var(--num-size);
+    font-weight: 800;
+    color: var(--teal);
+    line-height: 1;
+    padding-top: 2px;
+    opacity: 0.35;
+    text-align: right;
+    transition: opacity 0.2s;
+  }
+  .situation:hover .sit-num { opacity: 0.9; }
+
+  .sit-text {
+    font-size: 1.05rem;
+    line-height: 1.72;
+    color: var(--ink-soft);
+  }
+  .situation:hover .sit-text { color: var(--ink); }
+
+  /* ── Footer ── */
+  .page-footer {
+    background: #F9FAFB;
+    border-top: 1px solid #E5E7EB;
+    padding: 28px 24px;
+    text-align: center;
+  }
+  .page-footer p {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--ink-light);
+    line-height: 1.6;
+  }
+  .page-footer a {
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .page-footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 480px) {
+    .situation { grid-template-columns: 40px 1fr; gap: 0 12px; }
+    .sit-num { font-size: 1.8rem; }
+    .sit-text { font-size: 0.97rem; }
+    .hero { padding: 40px 20px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://rhysis.org/" class="site-logo">rhysis.org</a>
+  <span class="site-badge">Conversatorio INPEC · 2026</span>
+</header>
+
+<section class="hero">
+  <p class="hero-eyebrow">Bloque 3 · Más allá de la situación</p>
+  <h1>Catorce <em>situaciones</em></h1>
+  <p class="hero-sub">Conversatorio PyP · Sustancias Psicoactivas — INPEC</p>
+</section>
+
+<div class="instruction">
+  Elige una o más de las siguientes situaciones que te recuerden a alguien que conoces.
+</div>
+
+<main class="container">
+
+  <div class="situation">
+    <span class="sit-num">1</span>
+    <p class="sit-text">Lleva años igual, sin moverse, sin avanzar ni retroceder, 
+      como anclado en algo que pasó hace mucho y nunca terminó de procesar. 
+      Por fuera se ve tranquilo, pero se queja de dolores físicos que ningún examen explica y no duerme bien.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">2</span>
+    <p class="sit-text">Alterna periodos de relativa calma con otros en los que casi no duerme, 
+      deja de comer y todo se acelera sin un disparador evidente.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">3</span>
+    <p class="sit-text">Está reorganizando su vida después de una ruptura importante con su pareja
+      o con un familiar. El proceso es lento pero está en curso.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">4</span>
+    <p class="sit-text">Algo le hizo perder de repente las ganas de seguir adelante. 
+      Su estado de ánimo cambia de un momento a otro
+      y a veces parece perder el control de lo que piensa o siente.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">5</span>
+    <p class="sit-text">Algo está cambiando. Duerme mejor, vuelve a interesarse 
+      por cosas que había dejado de lado y parece estar más enérgico. 
+      Desde afuera los cambios parecen pequeños, pero llevan meses acumulándose.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">6</span>
+    <p class="sit-text">Está intoxicado o con síndrome de abstinencia. Se ve confundido, 
+      angustiado o con conductas extrañas que pueden parecer otra cosa, 
+      pero que se resolverán cuando el cuadro termine.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">7</span>
+    <p class="sit-text">Una pérdida reciente lo dejó desorientado 
+      sin ganas, distraído, y aún no logra ubicarse después del impacto.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">8</span>
+    <p class="sit-text">Acaba de recibir un diagnóstico importante relacionado con años de consumo, 
+      o acaba de iniciar un tratamiento con metadona o buprenorfina. 
+      Está aprendiendo a vivir de otra manera. 
+      Muchas decisiones cotidianas que antes parecían obvias ahora tienen que replantearse.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">9</span>
+    <p class="sit-text">Le cayeron de golpe varias cosas: 
+      una crisis familiar, un problema legal, una relación tensionante. 
+      Los cambios observados son recientes y no corresponden al manejo usual que le da a situaciones difíciles.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">10</span>
+    <p class="sit-text">Décadas de consumo terminaron en daño hepático, 
+      neurológico o en un deterioro físico que ya no es posible revertir. 
+      Toda su vida está organizada alrededor del cuidado de su salud física.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">11</span>
+    <p class="sit-text">El pensamiento, las emociones y la conducta se desorganizan
+      en cuestión de horas. Es un quiebre completo.
+      Puede estar asociado o no a consumo, pero implica urgencia clínica.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">12</span>
+    <p class="sit-text">Su forma de relacionarse con el consumo viene desde la infancia. 
+      Así ha tenido que vivir siempre.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">13</span>
+    <p class="sit-text">Tiene trabajo, mantiene sus relaciones y cumple con sus responsabilidades. 
+      Nadie sospecharía que consume porque ha logrado mantener esa parte de su vida completamente separada 
+      del resto.</p>
+  </div>
+
+  <div class="situation">
+    <span class="sit-num">14</span>
+    <p class="sit-text">Ha intentado dejar el consumo en varias ocasiones. 
+      Cada intento llega un poco más lejos, con recaídas que no repiten exactamente el mismo patrón.</p>
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  <p>
+    <a href="https://rhysis.org/">rhysis.org</a> · Syntropía ·
+    Conversatorio de Promoción y Prevención · INPEC Medellín, 26 de junio de 2026
+  </p>
+</footer>
+
+</body>
+</html>
