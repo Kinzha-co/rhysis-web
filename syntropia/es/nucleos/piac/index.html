@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIAC &mdash; Syntropía</title>
+  <meta name="description" content="Protocolo de Inferencia de
+Atractores Constitutivos.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%); }
+    .prose :where(code):not(:where([class~="not-prose"] *)) {
+      background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em;
+    }
+    .prose blockquote { border-left-color: #0f766e; font-style: normal; }
+    .prose table { font-size: 0.92em; }
+    .prose thead th { background: #f8fafc; }
+  </style>
+<script defer=""
+src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+</script>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+</head>
+
+<body class="m-0 p-0 bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4">
+    <a href="/es/">
+      <img src="/assets/Logo-rhysis.svg" alt="Rhysis"
+        class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity">
+    </a>
+    <div class="text-sm md:text-base font-medium text-white tracking-wide">
+      <span class="text-slate-400">EN pendiente</span>
+      <span class="mx-2 text-slate-400">|</span>
+      <span class="font-bold border-b-2 border-teal-400 pb-0.5">ES</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropía &mdash; Núcleo canónico</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
+        PIAC
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Protocolo
+de Inferencia de Atractores Constitutivos.</p>
+      <p class="text-slate-400 text-sm mt-6">Versión 0.4.16 &middot; 13
+de julio de 2026</p>
+    </div>
+  </section>
+
+  <!-- Contenido -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-slate lg:prose-lg max-w-none
+                       prose-headings:text-teal-800 prose-a:text-teal-700
+                       prose-strong:text-slate-900">
+<!-- * DOCUMENTO CANÓNICO — toda modificación requiere nueva versión y aprobación explícita -->
+<!-- * Regla de escritura: voz afirmativa. Sin negaciones estructurales salvo demarcación necesaria. -->
+<!-- * Sin ejemplos clínicos individualizados — los ejemplos van en Cap09 -->
+<h1 id="protocolo-de-inferencia-de-atractores-constitutivos">Protocolo
+de Inferencia de Atractores Constitutivos</h1>
+<h2 id="preámbulo-posición-documental">Preámbulo — Posición
+documental</h2>
+<p>Este documento establece la epistemología que gobierna la relación
+entre la historia clínica y la memoria constitutiva <span
+class="math inline">\xi_t</span> en Syntropía. Su argumento central: la
+historia clínica es un procedimiento de inferencia sobre la geometría de
+<span class="math inline">\Omega_t^{(p)}</span> —no un archivo
+biográfico ni una colección de covariables. Los atractores constitutivos
+son regiones del campo de individuación con alta densidad de
+probabilidad de ocupación, no tipos discretos: cuencas en el campo de
+individuación continuo que <span
+class="math inline">\Omega_t^{(p)}</span> define sobre el espacio de
+configuraciones accesibles para esta trayectoria.</p>
+<p>El documento opera en tres capas simultáneas. La <strong>capa
+ontológica</strong> establece qué son los atractores dentro de la
+arquitectura de Syntropía. La <strong>capa matemática</strong>
+especifica cómo se representa esa geometría, declara la tensión entre la
+representación discreta actual y la naturaleza continua del objeto, y
+remite a la formalización canónica en el Núcleo Matemático v0.4.12. La
+<strong>capa operacional</strong> establece cómo la historia clínica
+produce inferencia sobre esa geometría y cómo esa inferencia construye
+el prior bayesiano <span class="math inline">P(\xi_t)</span> que el
+desvelamiento requiere.</p>
+<p><strong>Compromisos epistemológicos que gobiernan este
+protocolo</strong> (Núcleo Epistemológico v0.3.8):</p>
+<p>La inferencia que el PIAC produce es abductiva dinámica —inferencia,
+acción y objeto de conocimiento emergen simultáneamente del proceso de
+desvelamiento (CE2). El conocimiento sobre <span
+class="math inline">\xi_t</span> producido desde la historia clínica es
+constitutivamente incompleto y revisable hacia atrás (CE3). La cantidad
+de inferencia que puede producirse en un encuentro está limitada por
+<span class="math inline">\kappa(t)</span> actual (CE10) y existe una
+ventana de revelación óptima no monotónica determinada por <span
+class="math inline">\varepsilon_t^{\text{ef}}</span>, <span
+class="math inline">\kappa(t)</span> y <span
+class="math inline">S_m</span> (CE12). El protocolo es no ergódico por
+construcción: la extrapolación directa desde estadísticas poblacionales
+hacia esta trayectoria singular es inadmisible —los parámetros del
+piloto son condición de posibilidad para la calibración singular, no su
+destino (CE16). El proceso de atracción constitutiva que el PIAC infiere
+es continuo; <span class="math inline">T_2</span> captura la huella de
+ese proceso desde observaciones discretas, no el proceso mismo —límite
+observacional constitutivo de toda ciencia práctica procesual (CE17). La
+comparabilidad entre atractores de distintas trayectorias opera sobre
+parámetros estructurales (profundidad, alcance, gradiente, tipo de
+cuenca) no sobre el contenido de las trayectorias —condición de
+posibilidad del conocimiento acumulativo compatible con la singularidad
+radical A10 (CE18). Las configuraciones sintrópicas son polimorfos
+dinámicos de la trayectoria —modos metaestables de estabilización, no
+tipos ontológicos— y dos trayectorias con la misma configuración
+observable pueden tener geometrías de campo radicalmente distintas
+—isómeros clínicos (§I.bis del Núcleo Epistemológico).</p>
+<hr />
+<h2
+id="parte-i-capa-ontológica-los-atractores-como-geometría-de-omega_tp">Parte
+I — Capa ontológica: los atractores como geometría de <span
+class="math inline">\Omega_t^{(p)}</span></h2>
+<h3 id="i.1.-el-problema-de-la-taxonomía-discreta">I.1. El problema de
+la taxonomía discreta</h3>
+<p>La primera versión de este documento (v0.1.0) construyó una lista de
+doce tipos de atractores distribuidos en los cuatro dominios de <span
+class="math inline">H_t</span>. Esa construcción reproduce el error que
+Syntropía diagnostica en los sistemas categoriales: colapsa lo continuo
+en lo discreto por conveniencia operativa y luego trata la
+discretización como si tuviera estatuto ontológico propio.</p>
+<p>El campo de individuación <span
+class="math inline">\Omega_t^{(p)}</span> es una función de estabilidad
+definida sobre el espacio de configuraciones accesibles para esta
+trayectoria en este momento —un campo de individuación continuo con
+cuencas, crestas, gradientes y barreras—, no un conjunto finito de tipos
+posibles de organización del campo. Dos trayectorias con el mismo “tipo”
+de atractor relacional son dos puntos distintos en ese espacio de
+configuraciones porque difieren en profundidad de cuenca, en
+acoplamiento con otros dominios a través de <span
+class="math inline">\Psi_t</span>, y en la historia de deformaciones
+plásticas que constituyeron esa cuenca. Una taxonomía discreta de
+atractores produce la misma pérdida de información que una taxonomía
+discreta de trayectorias.</p>
+<p>La reformulación correcta: los atractores constitutivos son
+propiedades de la geometría de <span
+class="math inline">\Omega_t^{(p)}</span> —no entidades de un conjunto
+finito. El PIAC es un protocolo para inferir esa geometría desde la
+evidencia histórica disponible.</p>
+<h3
+id="i.2.-los-atractores-como-cuencas-del-campo-de-individuación">I.2.
+Los atractores como cuencas del campo de individuación</h3>
+<p><span class="math inline">\Omega_t^{(p)}</span> es isomórfica a una
+función de Lyapunov sobre el espacio de configuraciones (Núcleo
+Matemático §II.5 y §III.7): los estados con <span
+class="math inline">\Omega_t^{(p)}</span> alto son atractores —la
+trayectoria tiende a estabilizarse en ellos y resiste abandonarlos. Los
+estados con <span class="math inline">\Omega_t^{(p)}</span> bajo son
+inestables para esta trayectoria: el campo los abandona rápidamente
+cuando es perturbado.</p>
+<p>Esa isomorfía tiene una consecuencia directa para el estatuto de los
+atractores: un atractor constitutivo es una región del espacio de
+configuraciones donde <span class="math inline">\Omega_t^{(p)}</span>
+forma una cuenca —donde el gradiente apunta hacia adentro y la
+profundidad es suficiente para resistir perturbaciones de magnitud menor
+a <span class="math inline">\varepsilon_t^{\text{ef}}</span>. Las
+propiedades clínicamente relevantes de un atractor son propiedades de
+esa cuenca:</p>
+<p><strong>Profundidad:</strong> la magnitud de <span
+class="math inline">\Omega_t^{(p)}</span> en el interior de la cuenca
+relativa a su entorno. Un atractor profundo requiere perturbaciones de
+magnitud mayor a <span
+class="math inline">\varepsilon_t^{\text{ef}}</span> para producir
+reorganización —el campo resiste y retorna. La profundidad es función de
+la historia de deformaciones plásticas acumuladas: <span
+class="math inline">D_p(t)</span> inscribe en <span
+class="math inline">\Omega_t^{(p)}</span> la geometría de las
+reorganizaciones previas.</p>
+<p><strong>Alcance:</strong> la extensión de la cuenca sobre el espacio
+de configuraciones. Un atractor de alcance local organiza primariamente
+un dominio de <span class="math inline">H_t</span>. Un atractor de
+alcance transdominio organiza el campo a través de <span
+class="math inline">\Psi_t</span>: una perturbación en el dominio
+primario produce desplazamiento hacia la cuenca en dominios adyacentes.
+El alcance es función del patrón de acoplamiento entre dominios inscrito
+en <span class="math inline">\Psi_t</span> por la historia relacional de
+la trayectoria.</p>
+<p><strong>Gradiente de acceso:</strong> la pendiente de la cuenca desde
+su perímetro hacia su centro. Un gradiente pronunciado produce captura
+rápida —el campo entra en la cuenca con perturbaciones pequeñas. Un
+gradiente suave produce captura gradual. El gradiente de acceso informa
+la velocidad de la respuesta del campo ante perturbaciones del entorno y
+determina la calibración de la magnitud de intervención.</p>
+<p><strong>Acoplamiento entre cuencas:</strong> la geometría del campo
+de individuación es una variedad con estructura topológica global, no un
+conjunto de cuencas aisladas. Dos cuencas pueden estar próximas
+—separadas por una barrera de baja energía, con transiciones frecuentes—
+o distantes, con barreras que requieren perturbaciones de alta magnitud
+para cruzar. El acoplamiento entre cuencas es la estructura que <span
+class="math inline">T_{\text{escala}}</span> captura al traducir desde
+la organización local <span class="math inline">\{H_t, \varepsilon_t,
+\Psi_t\}</span> hacia <span class="math inline">\Omega_t^{(p)}</span>
+global.</p>
+<h3
+id="i.3.-los-atractores-constitutivos-como-d_pt-inscrito-en-la-geometría">I.3.
+Los atractores constitutivos como <span
+class="math inline">D_p(t)</span> inscrito en la geometría</h3>
+<p>La distinción entre un atractor constitutivo y una tendencia
+situacional del campo es formal: un atractor constitutivo es una cuenca
+cuya profundidad excede el umbral de elasticidad del campo —una
+deformación plástica acumulada que ha modificado <span
+class="math inline">\Omega_t^{(p)}</span> de forma irreversible (D10).
+Una tendencia situacional es un desplazamiento elástico dentro del
+campo: el campo la produce bajo ciertas condiciones del entorno y
+retorna al estado basal cuando esas condiciones cesan.</p>
+<p><span class="math display">\text{Atractor constitutivo}
+\;\Leftrightarrow\; \Delta\Omega \to D_p(t) \quad (\delta \geq
+\varepsilon_t^{\text{ef}})</span></p>
+<p><span class="math display">\text{Tendencia situacional}
+\;\Leftrightarrow\; \Delta\Omega = 0 \quad (\delta &lt;
+\varepsilon_t^{\text{ef}}, \text{ retorno elástico})</span></p>
+<p>La segunda ecuación es técnicamente precisa para <span
+class="math inline">\Delta\Omega</span>: las tendencias situacionales no
+modifican la geometría de <span
+class="math inline">\Omega_t^{(p)}</span>. Pero las tendencias
+situacionales sostenidas sí producen un efecto acumulativo sobre <span
+class="math inline">\kappa(t)</span> —la fatiga del campo (D11):
+perturbaciones repetidas sub-umbral reducen la capacidad receptiva
+aunque no produzcan deformaciones plásticas. Un campo con historia larga
+de tendencias situacionales frecuentes puede tener <span
+class="math inline">\Omega_t^{(p)}</span> sin deformaciones plásticas
+mayores y <span class="math inline">\kappa(t)</span> significativamente
+reducido. La distinción atractor constitutivo / tendencia situacional
+opera sobre <span class="math inline">D_p(t)</span>; el efecto
+acumulativo sobre <span class="math inline">\kappa(t)</span> es
+independiente y se infiere desde la historia de acomodaciones.</p>
+<p>La historia clínica permite inferir cuáles cuencas de <span
+class="math inline">\Omega_t^{(p)}</span> tienen estatuto constitutivo
+—están inscritas en <span class="math inline">D_p(t)</span>— y cuáles
+son patrones situacionales sin deformación plástica asociada. Esa
+distinción determina la escala de intervención requerida: los atractores
+constitutivos requieren trabajo sobre <span
+class="math inline">D_p(t)</span>; las tendencias situacionales
+responden a intervenciones sobre las condiciones del entorno o sobre la
+restauración de <span class="math inline">\kappa(t)</span>.</p>
+<h3
+id="i.4.-el-origen-del-campo-de-individuación-y-la-heterogeneidad-de-los-atractores">I.4.
+El origen del campo de individuación y la heterogeneidad de los
+atractores</h3>
+<p><span class="math inline">\Omega_t^{(p)} = F(\sigma_t, D_p(t),
+\kappa(t))</span> —el campo de individuación en el momento presente es
+función de la condición inicial/geometría de base (<span
+class="math inline">\sigma_t</span>) y de la historia acumulada de
+deformaciones plásticas y capacidad receptiva (Auditoría Ontológica
+O19/O20). Las cuencas de <span class="math inline">\Omega_t^{(p)}</span>
+tienen dos orígenes ontológicamente distintos:</p>
+<p><strong>Cuencas de origen constitutivo biográfico:</strong>
+producidas por deformaciones plásticas acumuladas a lo largo de la
+historia vital de la trayectoria bajo condiciones del spatium. Son el
+objeto primario de este protocolo —el tipo de atractor que la historia
+clínica permite inferir directamente.</p>
+<p><strong>Cuencas de origen constitutivo biológico-genómico:</strong>
+inscritas en <span class="math inline">\sigma_t</span> (condición
+inicial del campo de individuación, anterior a cualquier deformación
+plástica biográfica, O19/O20) por la vía del operador <span
+class="math inline">T_{\text{ontológico}}</span> desde la
+diferenciación[t]. El perfil genómico modula los parámetros del spatium
+—<span class="math inline">\varepsilon_t</span>, <span
+class="math inline">\Psi_t</span>, <span
+class="math inline">D_p(t)</span>— y establece la geometría inicial del
+campo de individuación. Estas cuencas no tienen historia narrativa que
+las explique porque son anteriores a cualquier historia del sistema. Su
+inferencia desde la historia clínica es posible —la ausencia de historia
+explicativa en presencia del patrón es evidencia para este origen— pero
+requiere complementación con el perfil genómico-funcional (ver G9 del
+Núcleo Ontológico v2.3.9).</p>
+<p>La heterogeneidad de orígenes no cambia el procedimiento de
+inferencia de las Partes III y IV —las cuatro preguntas se aplican a
+ambos. Cambia la orientación de la intervención: las cuencas de origen
+biográfico admiten trabajo sobre <span
+class="math inline">D_p(t)</span>; las de origen biológico-genómico
+requieren lectura desde su propia lógica funcional y acompañamiento de
+la geometría del campo, no modificación de una historia que no
+existe.</p>
+<hr />
+<h2
+id="parte-ii-capa-matemática-representación-y-requerimientos-de-actualización">Parte
+II — Capa matemática: representación y requerimientos de
+actualización</h2>
+<h3
+id="ii.1.-la-tensión-entre-la-ontología-continua-y-la-representación-discreta">II.1.
+La tensión entre la ontología continua y la representación discreta</h3>
+<p>El campo de individuación es ontológicamente continuo: el devenir
+produce estabilizaciones en una variedad sin fronteras discretas entre
+tipos. La representación matemática actual de <span
+class="math inline">\Omega_t^{(p)}</span> es discreta:</p>
+<p><span class="math display">\Omega_t^{(p)}:
+\{\text{C-A},\ldots,\text{C-M}\} \to [0,1]</span></p>
+<p>Las 14 configuraciones del sistema canónico v1.2 (C-A a C-M, con C-C
+subdividida en C-C1 y C-C2) son discretizaciones operativas del espacio
+de estabilizaciones —instrumentos de comunicación clínica que permiten
+nombrar y compartir con la persona la lectura del campo, no tipos
+naturales (ver <code>Configuraciones_Canonicas_v1_3_9.qmd</code>). La
+función <span class="math inline">\Omega_t^{(p)}</span> sobre esos 14
+puntos es una proyección del campo de individuación continuo sobre un
+conjunto finito de referencias clínicas demostrables sin aparato
+estructural. La geometría de las cuencas —profundidad, alcance,
+gradiente de acceso, acoplamiento topológico— no es representable con
+precisión sobre 14 puntos discretos. Para representar el campo de
+individuación con esas propiedades se requiere una representación de
+<span class="math inline">\Omega_t^{(p)}</span> como función sobre un
+espacio continuo. Esa representación es el objeto de G2/G10 (Núcleo
+Ontológico v2.3.9) y es una condición del piloto, no de una fase
+posterior.</p>
+<h3 id="ii.2.-formalización-canónica-en-el-núcleo-matemático">II.2.
+Formalización canónica en el Núcleo Matemático</h3>
+<p>La extensión de <span class="math inline">\Omega_t^{(p)}</span> al
+continuo que G-PIAC requiere tiene la forma de una función de densidad
+sobre una variedad diferenciable <span
+class="math inline">\mathcal{W}</span>:</p>
+<p><span class="math display">\Omega_t^{(p)}: \mathcal{W} \to
+\mathbb{R}_{\geq 0}</span></p>
+<p>donde <span class="math inline">\mathcal{W}</span> parametriza el
+espacio de organizaciones posibles del campo, con estructura métrica
+local que refleja la similitud funcional entre organizaciones próximas.
+Las 14 configuraciones discretas son puntos de alta densidad en <span
+class="math inline">\mathcal{W}</span> —referencias clínicas en una
+variedad que las contiene como casos particulares, no como límites del
+espacio.</p>
+<p>Esa representación permite formalizar las cuatro propiedades
+geométricas de §I.2 con precisión: la profundidad como diferencia de
+<span class="math inline">\Omega_t^{(p)}</span> entre el interior y el
+perímetro de la cuenca; el alcance como la amplitud del campo de
+posibilidades <span class="math inline">\mathcal{F}_t^{(p)}</span> en
+torno a la cuenca; el gradiente de acceso como la norma del gradiente en
+el perímetro; el acoplamiento topológico como la estructura de barreras
+entre cuencas capturada por homología persistente.</p>
+<p><strong>Requerimiento resuelto:</strong> el Núcleo Matemático v0.4.13
+incorpora la extensión continua de <span
+class="math inline">\Omega_t^{(p)}</span> sobre <span
+class="math inline">\mathcal{W}</span> en §II.5bis y el campo de
+posibilidades <span class="math inline">\mathcal{F}_t^{(p)}</span> en
+§II.5ter. La formalización canónica reside en esos documentos.</p>
+<h3
+id="ii.3.-g2g10-en-el-contexto-del-piac-la-grieta-de-articulación-central">II.3.
+G2/G10 en el contexto del PIAC — La grieta de articulación central</h3>
+<p><strong>G2/G10 (Núcleo Ontológico v2.3.9). Representación continua de
+la geometría de <span class="math inline">\Omega_t^{(p)}</span> e
+inferencia de atractores constitutivos.</strong></p>
+<p>La grieta denominada G-PIAC en versiones anteriores de este documento
+corresponde canónicamente a G2 (calibración del tensor métrico <span
+class="math inline">g_t</span> sobre <span
+class="math inline">\mathcal{W}</span>) y G10 (condiciones de
+estabilización — qué valores de los parámetros del spatium producen cada
+configuración canónica) en la agenda de investigación del Núcleo
+Ontológico v2.3.9. La formulación que sigue es el desarrollo de G2/G10
+en el contexto específico del protocolo de inferencia histórica.</p>
+<p><em>Compromiso ontológico generador:</em> los atractores
+constitutivos son cuencas del campo de individuación continuo de <span
+class="math inline">\Omega_t^{(p)}</span>. La representación discreta
+sobre 14 referencias clínicas captura cuál cuenca tiene mayor
+estabilidad en este momento y permite comunicación clínica precisa; no
+captura la geometría de la cuenca —profundidad, alcance, gradiente,
+acoplamiento topológico— que determina la escala de intervención y la
+predicción de transición.</p>
+<p><em>Extensión del objeto de inferencia (sesión 2026-06-04):</em>
+G-PIAC no es solo la inferencia de la geometría de <span
+class="math inline">\Omega_t^{(p)}</span> sobre <span
+class="math inline">\mathcal{W}</span>. Su objeto completo es la
+inferencia del campo de posibilidades <span
+class="math inline">\mathcal{F}_t^{(p)} := \{w \in \mathcal{W} \mid
+\Omega_t^{(p)}(w) \geq \theta(\xi_t)\}</span>, que requiere estimar
+simultáneamente: (1) la distribución de densidad <span
+class="math inline">\Omega_t^{(p)}</span> sobre <span
+class="math inline">\mathcal{W}</span>, y (2) el umbral <span
+class="math inline">\theta(\xi_t)</span> como función de la memoria
+constitutiva. Los dos mecanismos de contracción de <span
+class="math inline">\mathcal{F}_t^{(p)}</span> son independientes y el
+piloto debe caracterizarlos por separado: redistribución de densidad por
+<span class="math inline">D_p(t)</span> y elevación del umbral por
+reducción de <span class="math inline">\kappa(t)</span>. La forma
+funcional de <span class="math inline">\theta(\xi_t) = \theta_0 \cdot
+g(D_p(t), \kappa(t))</span> es un sub-problema de G2 (calibración del
+tensor métrico) que el piloto debe comenzar a cerrar.</p>
+<p><em>Pregunta de investigación:</em> ¿puede <span
+class="math inline">\mathcal{F}_t^{(p)}</span> —la región accesible del
+campo, no solo la distribución completa <span
+class="math inline">\Omega_t^{(p)}</span>— inferirse con precisión
+suficiente desde datos longitudinales del piloto, y converge esa
+inferencia con la representación topológica que el aparato observacional
+produce desde la señal del sensor?</p>
+<p><em>Hipótesis de representación:</em> la homología persistente sobre
+el campo de individuación <span
+class="math inline">\Omega_t^{(p)}</span> —componente del aparato
+observacional del Cap09— produce la representación topológica de las
+cuencas desde la señal dinámica. La inferencia desde la historia clínica
+y la representación topológica desde el sensor son dos rutas
+independientes hacia la misma estructura latente. Su convergencia es la
+predicción contrastable central de G-PIAC, y es un resultado que el
+piloto debe producir —no una pregunta para después del piloto.</p>
+<p><em>Grietas con implicaciones directas sobre el PIAC:</em> G17 (campo
+intersticial clínico, D15-int del Ontológico v2.3.0) afecta la capa
+operacional: las propiedades de <span
+class="math inline">\Omega_t^{(\text{int})}</span> condicionan qué
+aspectos de <span class="math inline">\xi_t^{(p)}</span> son accesibles
+en este encuentro, con independencia de los parámetros individuales del
+campo. El Ontológico v2.3.0 formaliza tres regímenes de <span
+class="math inline">\Omega_t^{(\text{int})}</span> con implicaciones
+directas para lo que el PIAC puede producir en cada encuentro:</p>
+<ul>
+<li><em>Régimen productivo</em> — <span
+class="math inline">\kappa^{(\text{int})}(t)</span> alto, <span
+class="math inline">D_p^{(\text{int})}(t)</span> moderado: el PIAC puede
+producir inferencia de alta resolución sobre <span
+class="math inline">\xi_t^{(p)}</span>, incluyendo cuencas de mayor
+profundidad y origen constitutivo. Las cuatro preguntas de la Parte III
+operan con plena potencia.</li>
+<li><em>Régimen restringido</em> — <span
+class="math inline">\kappa^{(\text{int})}(t)</span> reducido por <span
+class="math inline">D_p^{(\text{int})}(t)</span> acumulado: el PIAC
+produce inferencia de menor resolución. Las cuencas más profundas pueden
+no ser accesibles en este encuentro aunque los parámetros individuales
+de la persona lo permitan. El protocolo debe operar con conciencia de
+ese límite — sin intentar forzar el desvelamiento de capas que el campo
+intersticial no permite en este momento.</li>
+<li><em>Régimen en ruptura</em> — <span
+class="math inline">\kappa^{(\text{int})}(t) &lt;
+\kappa^{(\text{int})}_{\text{umbral}}</span>: intervenir sobre <span
+class="math inline">D_p(t)</span> de la persona en este estado produce
+daño análogo al que P12 describe. Prioridad: restaurar <span
+class="math inline">\kappa^{(\text{int})}(t)</span> antes de cualquier
+trabajo sobre la memoria constitutiva. La intervención prioritaria en
+este régimen es la reparación activa del campo intersticial — no el
+desvelamiento.</li>
+</ul>
+<p><strong>A7 reformulado (Ontológico v2.3.0) — el campo del clínico es
+parte del protocolo:</strong> A7 v2.3.0 declara que el encuentro produce
+<span class="math inline">\Omega_t^{(\text{int})}</span> como
+organización emergente del acoplamiento entre los dos campos, y que el
+campo del clínico también se reorganiza en el encuentro. La consecuencia
+para el PIAC: el estado del campo del clínico en el momento del
+encuentro es una condición que modula lo que el protocolo puede
+producir, no solo un factor de ruido. Un clínico con <span
+class="math inline">\kappa(t)</span> reducido en ese momento produce un
+campo intersticial de menor capacidad receptiva, con independencia de
+las propiedades individuales de la persona. El protocolo del Clínico
+v0.3.2 (lectura del campo del clínico post-encuentro) es el complemento
+operacional de esta declaración.</p>
+<p>G18 (<span class="math inline">\rho(t)</span>, operador de
+resignificación) afecta la construcción del prior: si <span
+class="math inline">\rho(t)</span> es distinguible de <span
+class="math inline">\kappa(t)</span>, la construcción de <span
+class="math inline">P(D_p(t))</span> deberá distinguir magnitud de <span
+class="math inline">D_p(t)</span> de función de <span
+class="math inline">D_p(t)</span> en el campo. Ambas grietas permanecen
+abiertas pendientes de datos del piloto.</p>
+<p><strong>Grietas adicionales con implicaciones sobre el PIAC
+(v2.3.0):</strong></p>
+<p>G19 (régimen transicional, Ontológico v2.3.0) afecta al PIAC en la
+detección del periodo silencioso: durante la Fase 1 de §T1 (<span
+class="math inline">\chi_t</span> alto, <span
+class="math inline">\dot{H}_t \approx 0</span>), el protocolo puede
+producir la impresión errónea de que no hay proceso en curso. La lectura
+de la varianza del posterior como señal de <span
+class="math inline">\chi_t</span> — y no solo como incertidumbre — es la
+corrección que el PIAC debe hacer en ese periodo.</p>
+<p>G20 (métrica de similaridad procesual, urgente) implica que las
+comparaciones entre atractores de distintas trayectorias — que el PIAC
+realiza implícitamente cuando el clínico generaliza desde casos
+anteriores — no tienen todavía una base formal. CE18 + H-COMP declaran
+el principio y la hipótesis provisional; el PIAC opera sobre ese
+principio pero sin la métrica calibrada.</p>
+<p>G21 (naturaleza de la relación <span class="math inline">M</span> ↔︎
+<span class="math inline">\Omega_t^{(p)}</span>) afecta a la inferencia
+de cuencas cuando <span class="math inline">M</span> es bajo: si <span
+class="math inline">M</span> actúa como umbral de acceso (no como
+modificador del relieve), un <span class="math inline">M</span> bajo
+cambia el acceso operativo a esa geometría, no la geometría del campo.
+La Parte III debe interpretarse con esa distinción: la profundidad de la
+cuenca inferida es la profundidad real del campo; lo que <span
+class="math inline">M</span> bajo afecta es la capacidad del campo de
+moverse dentro de esa geometría, no la geometría misma.</p>
+<p><strong>§T1 — el PIAC en cada fase del proceso de
+transformación:</strong> la teoría de la transformación (§T1, Ontológico
+v2.3.0) tiene implicaciones directas para la lectura del prior que el
+PIAC produce. En Fase 1 (acumulación silenciosa): el prior debe reflejar
+que el campo está bajo tensión generativa aunque <span
+class="math inline">H_t</span> sea estable — la varianza del posterior
+sobre <span class="math inline">\xi_t</span> es la señal. En Fase 2
+(umbral y reorganización): el prior anterior a la reorganización es el
+menos confiable — el campo está en el punto de mayor cambio y la
+inferencia histórica puede no capturar la nueva cuenca emergente. En
+Fase 3 (régimen transicional): el PIAC produce inferencia de máxima
+incertidumbre — la distribución de <span
+class="math inline">\Omega_t^{(p)}</span> sobre múltiples
+configuraciones sin moda clara es la señal correcta, no un fallo del
+protocolo. En Fase 4 (instalación): el prior converge hacia la nueva
+cuenca y la varianza del posterior se reduce.</p>
+<p><em>Estado:</em> grieta activa (G2/G10 en la agenda del Núcleo
+Ontológico v2.3.9) que el piloto debe comenzar a cerrar. Las 14
+configuraciones del sistema canónico v1.2 son el lenguaje de
+comunicación del proceso; la geometría continua de <span
+class="math inline">\mathcal{F}_t^{(p)}</span> es el objeto de
+inferencia del modelo.</p>
+<hr />
+<h2
+id="parte-iii-capa-operacional-inferencia-desde-la-historia-clínica">Parte
+III — Capa operacional: inferencia desde la historia clínica</h2>
+<h3
+id="iii.1.-la-historia-clínica-como-procedimiento-de-muestreo-sobre-omega_tp">III.1.
+La historia clínica como procedimiento de muestreo sobre <span
+class="math inline">\Omega_t^{(p)}</span></h3>
+<p>La reformulación epistemológica central: la historia clínica es un
+procedimiento de muestreo sobre la geometría de <span
+class="math inline">\Omega_t^{(p)}</span>, no un archivo de eventos.
+Cada elemento de la anamnesis es una observación que actualiza la
+distribución de probabilidad sobre cuáles regiones de <span
+class="math inline">\mathcal{W}</span> forman cuencas activas para esta
+trayectoria en el presente.</p>
+<p><span class="math display">\text{Historia clínica} \;\rightarrow\;
+\text{inferencia de cuencas activas en } \Omega_t^{(p)} \;\rightarrow\;
+P(\xi_t)</span></p>
+<p>La pregunta clínica que organiza la historia es “¿qué estructura dejó
+lo ocurrido en la geometría del campo presente?”, no “¿qué ocurrió?” Esa
+reorientación produce una relación radicalmente distinta con el material
+biográfico: los eventos son relevantes en la medida en que permiten
+inferir si constituyeron cuencas activas en <span
+class="math inline">\Omega_t^{(p)}</span>, cuál es su profundidad
+estimada, y cuál es su alcance en el campo actual — no en sí mismos.</p>
+<p>La consecuencia de NC-10 se vuelve aquí técnicamente precisa: el
+campo organiza lo que presenta en la narrativa según sus propios
+atractores. Lo que está ausente en la narrativa es información de igual
+o mayor relevancia —porque la narrativa es una proyección selectiva del
+campo de individuación <span class="math inline">\Omega_t^{(p)}</span>,
+y las cuencas más profundas pueden ser precisamente las que la imagen de
+sí no presenta.</p>
+<p>La consecuencia de §I.bis del Núcleo Epistemológico es igualmente
+precisa: dos trayectorias con la misma configuración observable —el
+mismo punto en el espacio discreto de 14— pueden tener geometrías de
+campo radicalmente distintas. Son isómeros clínicos. El procedimiento de
+muestreo sobre <span class="math inline">\Omega_t^{(p)}</span> que el
+PIAC establece infiere la estructura constitutiva de esta trayectoria,
+no su pertenencia a una categoría. Esa distinción es ontológica, no
+metodológica: la inferencia opera sobre la geometría singular del campo,
+no sobre su distancia a un tipo.</p>
+<h3 id="iii.2.-las-cuatro-preguntas-de-inferencia">III.2. Las cuatro
+preguntas de inferencia</h3>
+<p>La inferencia sobre la geometría de <span
+class="math inline">\Omega_t^{(p)}</span> desde la historia clínica se
+organiza en torno a cuatro preguntas. Las cuatro preguntas no producen
+una clasificación discreta del atractor: producen una estimación de las
+propiedades de la cuenca —las mismas propiedades que la capa matemática
+de la Parte II formaliza.</p>
+<p><strong>Pregunta 1 — ¿En qué región del espacio de configuraciones
+opera la cuenca?</strong></p>
+<p>La cuenca tiene una localización en <span
+class="math inline">\mathcal{W}</span> que se aproxima desde los
+dominios de <span class="math inline">H_t</span> que la historia clínica
+muestra más consistentemente comprometidos. Los cinco dominios —<span
+class="math inline">V_t</span>, <span class="math inline">R_t</span>,
+<span class="math inline">P_t</span>, <span
+class="math inline">A_t</span>, <span class="math inline">B_t</span>—
+corresponden a cinco proyecciones marginales de <span
+class="math inline">\mathcal{W}</span>: <span
+class="math inline">\mathcal{W}_V</span>, <span
+class="math inline">\mathcal{W}_R</span>, <span
+class="math inline">\mathcal{W}_P</span>, <span
+class="math inline">\mathcal{W}_E</span>, <span
+class="math inline">\mathcal{W}_B</span>. Estas son proyecciones
+marginales, no una partición: <span
+class="math inline">\mathcal{W}</span> no se factoriza en cinco
+subespacios independientes —precisamente porque <span
+class="math inline">\Psi_t</span> como acoplamiento entre dominios
+existe porque la variedad tiene estructura conjunta. Una cuenca con
+densidad alta en <span class="math inline">\mathcal{W}_R</span> puede
+tener densidad simultánea en <span
+class="math inline">\mathcal{W}_E</span> a través del acoplamiento <span
+class="math inline">\psi_{ER}</span>; esa co-localización es una cuenca
+con geometría transdominio en <span
+class="math inline">\mathcal{W}</span>, no la suma de cuencas locales.
+La proyección sobre <span class="math inline">\mathcal{W}_B</span> es
+particularmente relevante para cuencas de origen constitutivo
+biológico-genómico —donde el dominio somático puede ser el eje primario
+de la cuenca— y para configuraciones donde la propagación <span
+class="math inline">B_t \to V_t</span> o <span class="math inline">B_t
+\to R_t</span> es el mecanismo clínico dominante.</p>
+<p>La respuesta a esta pregunta es una estimación de la localización en
+<span class="math inline">\mathcal{W}</span> y del alcance transdominio
+de la cuenca, no un tipo de atractor.</p>
+<p><strong>Pregunta 2 — ¿Cuál es la profundidad estimada de la
+cuenca?</strong></p>
+<p>La profundidad se infiere desde tres indicadores de la historia
+clínica:</p>
+<p>La <em>antigüedad del patrón</em>: si el patrón precede a la memoria
+declarativa —sin historia narrativa que lo explique— la cuenca tiene
+origen en <span class="math inline">\sigma_t</span> (condición inicial
+del campo, O19/O20) y su profundidad no puede inferirse desde eventos
+biográficos. Si tiene historia narrativa disponible, la antigüedad del
+período formativo informa la profundidad: cuencas constituidas durante
+períodos de <span class="math inline">\varepsilon_t^{\text{ef}}</span>
+reducido —infancia temprana, períodos de alta carga alostática— son más
+profundas que cuencas constituidas en períodos de mayor elasticidad.</p>
+<p>La <em>resistencia a perturbaciones previas</em>: si el patrón
+sobrevivió contextos que deberían haberlo modificado —intervenciones
+previas, cambios de vida significativos, relaciones que operaron en
+dirección contraria— la cuenca tiene profundidad mayor que su apariencia
+superficial sugiere. La historia de intentos de cambio fallidos es
+evidencia directa de profundidad.</p>
+<p>El <em>nivel estimado de <span
+class="math inline">\varepsilon_t^{\text{ef}}</span> en el período
+formativo</em>: el mismo evento produce deformaciones plásticas de mayor
+profundidad cuando el campo tenía <span
+class="math inline">\varepsilon_t^{\text{ef}}</span> reducido. La
+historia de condiciones del spatium en el período formativo —alta carga
+alostática, inestabilidad sostenida, contextos de alta demanda con
+recursos reducidos— informa sobre el <span
+class="math inline">\varepsilon_t^{\text{ef}}</span> que el campo tenía
+cuando la cuenca se constituyó.</p>
+<p><strong>Pregunta 3 — ¿Cuál es el alcance de la cuenca — local o
+transdominio?</strong></p>
+<p>El alcance se infiere desde la consistencia transdominio del patrón
+en la historia: si el patrón aparece exclusivamente en contextos del
+dominio primario, la cuenca es local. Si aparece con variaciones de
+expresión en múltiples dominios, la cuenca es transdominio y su
+geometría se extiende a través de <span
+class="math inline">\Psi_t</span>.</p>
+<p>La asimetría de <span class="math inline">\Psi_t</span> tiene firma
+en la historia clínica: si el patrón relacional activa consistentemente
+el dominio existencial pero no el volicional, el acoplamiento <span
+class="math inline">\psi_{ER}</span> es mayor que <span
+class="math inline">\psi_{VR}</span> para esta trayectoria. La historia
+de cómo los eventos de un dominio produjeron efectos en otros es
+evidencia directa sobre la estructura de <span
+class="math inline">\Psi_t</span> y sobre el alcance transdominio de la
+cuenca.</p>
+<p><strong>Pregunta 4 — ¿Cuál es el gradiente de acceso — qué magnitud
+de perturbación activa la cuenca?</strong></p>
+<p>El gradiente de acceso se infiere desde la historia de los umbrales
+de activación del patrón: ¿el campo entra en la cuenca ante
+perturbaciones menores o requiere perturbaciones de mayor magnitud? Un
+campo que entra en la cuenca relacional ante señales relacionales
+mínimas tiene gradiente pronunciado —captura rápida. Un campo que entra
+en ella solo ante perturbaciones relacionales mayores tiene gradiente
+suave.</p>
+<p>El gradiente de acceso informa la calibración de la magnitud de
+intervención: una intervención que supera el gradiente activa la cuenca
+—si el trabajo sobre <span class="math inline">D_p(t)</span> no está
+indicado en ese momento, esa activación produce plasticidad que
+restringe <span class="math inline">\mathcal{F}_t^{(p)}</span>. La
+historia de los contextos que activaron el patrón —su magnitud, su
+frecuencia, su especificidad— es la evidencia primaria para estimar el
+gradiente.</p>
+<h3 id="iii.3.-reglas-de-evidencia">III.3. Reglas de evidencia</h3>
+<p>Las cuatro preguntas operan sobre evidencia observacional con
+distintos pesos de actualización. La distinción entre tipos de evidencia
+es operativa para la construcción del prior.</p>
+<p><strong>Evidencia de activación directa:</strong> eventos o contextos
+de la historia que activaron el patrón de forma observable y
+consistente. Produce la actualización de mayor magnitud sobre la
+probabilidad de la cuenca y sobre su profundidad estimada. Es la
+evidencia más específica pero también la más susceptible de sesgo
+narrativo —el campo selecciona qué activa presenta.</p>
+<p><strong>Evidencia de resistencia al cambio:</strong> historia de
+intentos fallidos de modificación del patrón —intervenciones previas,
+relaciones que operaron en dirección contraria, contextos de alta
+demanda adaptativa. Produce actualizaciones directas sobre la
+profundidad de la cuenca, independientemente de la narrativa sobre el
+origen.</p>
+<p><strong>Evidencia de propagación:</strong> historia de cómo eventos
+en un dominio produjeron efectos en otros. Produce actualizaciones sobre
+el alcance transdominio y sobre la estructura de <span
+class="math inline">\Psi_t</span>.</p>
+<p><strong>Evidencia de umbral:</strong> historia de la magnitud de los
+contextos que activaron el patrón. Produce actualizaciones sobre el
+gradiente de acceso.</p>
+<p><strong>Ausencia de evidencia esperada:</strong> si la historia
+clínica no contiene evidencia consistente con una cuenca que la
+presentación actual sugiere, la ausencia actualiza en dos direcciones
+alternativas: origen constitutivo biológico-genómico anterior a la
+memoria declarativa —cuenca inscrita en <span
+class="math inline">\sigma_t</span> (condición inicial, anterior a
+cualquier deformación plástica biográfica, O19/O20 del Ontológico)— o
+atractor residual sin actividad actual. La discriminación entre las dos
+requiere la lectura del preview y la resonancia clínica, no solo la
+historia narrativa.</p>
+<h3 id="iii.4.-la-distinción-atractor-activo-atractor-residual">III.4.
+La distinción atractor activo / atractor residual</h3>
+<p>La distinción entre un atractor activo y un atractor residual no se
+agota en la presencia o ausencia del patrón en el preview. Una
+complicación adicional deriva del funcional de potencial generativo
+<span class="math inline">\Phi_t^{(p)}</span> (hipótesis estructural
+operativa, §II.5sexies del Matemático v0.4.12): un campo puede mostrar
+<span class="math inline">\nabla H_t \approx 0</span> —apariencia de
+residencia estable— por dos mecanismos clínicamente distintos. En el
+campo <strong>estable por equilibrio</strong> (<span
+class="math inline">\Phi_t^{(p)} \approx 0</span>), la cuenca es
+profunda y no hay tensión generativa: el atractor está activo y el campo
+no empuja hacia ninguna reorganización. En el campo <strong>estable por
+agotamiento</strong> (<span class="math inline">\Phi_t^{(p)} \gg
+0</span> con <span class="math inline">\kappa(t) &lt;
+\kappa_{\text{umbral}}</span>), hay alta tensión generativa sin
+capacidad de absorberla: el atractor puede ser residual —el campo
+querría moverse pero no puede. Las dos situaciones tienen implicaciones
+de intervención radicalmente distintas (regla 110 del log). La historia
+de intentos de cambio fallidos con patrón aparentemente estable es
+evidencia primaria para discriminar entre ambos mecanismos.</p>
+<p>No toda cuenca con historia biográfica es una cuenca activa en el
+presente. Un atractor es activo si sigue organizando el campo actual —si
+aparece en el preview, en las formas, en el tiempo gramatical, en los
+patrones conductuales observables en el encuentro— con independencia de
+si la persona lo reporta como problema. Un atractor residual tiene
+historia pero no organiza el campo presente: la cuenca existe pero el
+campo no la habita con frecuencia suficiente para constituir <span
+class="math inline">D_p(t)</span> activo.</p>
+<p>La distinción es clínicamente fundamental porque determina qué
+contribuye al prior <span class="math inline">P(\xi_t)</span>: solo los
+atractores activos contribuyen al prior como <span
+class="math inline">D_p(t)</span> vigente. Los atractores residuales
+tienen valor documental pero no son variables de la inferencia clínica
+activa. El indicador más sensible de la distinción es la coherencia
+entre la narrativa histórica y el preview en el encuentro clínico: un
+patrón que aparece en la historia pero no tiene expresión en el preview
+actual es un atractor residual con alta probabilidad.</p>
+<hr />
+<h2 id="parte-iv-construcción-del-prior-pxi_t">Parte IV — Construcción
+del prior <span class="math inline">P(\xi_t)</span></h2>
+<h3 id="iv.1.-estructura-del-prior-desde-la-geometría-inferida">IV.1.
+Estructura del prior desde la geometría inferida</h3>
+<p>El prior bayesiano <span class="math inline">P(\xi_t)</span> que el
+desvelamiento requiere (P6, D13) se construye desde los resultados de la
+inferencia de la Parte III. Su estructura:</p>
+<p><span class="math display">P(\xi_t) = P(D_p(t)) \cdot P(\kappa(t)
+\mid D_p(t))</span></p>
+<p>La inferencia de cuencas activas contribuye a <span
+class="math inline">P(D_p(t))</span>: cada cuenca identificada con su
+estimación de profundidad, alcance y gradiente produce una contribución
+a la distribución sobre <span class="math inline">D_p</span>. Las
+cuencas más profundas y de mayor alcance contribuyen con mayor peso. La
+historia de acomodaciones sub-umbral —perturbaciones repetidas que no
+produjeron deformaciones plásticas pero redujeron <span
+class="math inline">\kappa(t)</span> acumulativamente— contribuye a
+<span class="math inline">P(\kappa(t) \mid D_p(t))</span>.</p>
+<p>El prior en el primer encuentro tiene varianza máxima sobre <span
+class="math inline">\xi_t</span> completo —es el punto de mayor
+incertidumbre en todo el proceso. Eso es la condición de partida
+correcta, no una limitación. La historia clínica del primer encuentro
+produce simultáneamente dos tipos de información: la estimación de la
+posición en <span class="math inline">S_m</span> —cuánto <span
+class="math inline">\kappa(t)</span> está disponible y qué escala de
+<span class="math inline">D_p(t)</span> es probable, información de
+menor varianza y más inmediatamente operativa— y una primera inferencia
+sobre la geometría de las cuencas activas —localización en <span
+class="math inline">\mathcal{W}</span>, profundidad y alcance estimados,
+gradiente aproximado. Esta segunda información es de varianza alta en el
+primer encuentro pero no es vacía: establece las hipótesis geométricas
+que las evaluaciones sucesivas confirmarán, refutarán o refinarán.</p>
+<h3
+id="iv.2.-convergencia-de-evidencias-y-construcción-acumulativa">IV.2.
+Convergencia de evidencias y construcción acumulativa</h3>
+<p>La construcción del prior es acumulativa: el posterior de cada
+evaluación actúa como prior de la siguiente. La historia clínica del
+primer encuentro produce el prior inicial; las evaluaciones sucesivas
+—con datos del sensor, autoregistros y nuevas narrativas— refinan la
+estimación de la geometría de <span
+class="math inline">\Omega_t^{(p)}</span>.</p>
+<p>Dos principios organizan la construcción acumulativa:</p>
+<p><strong>Convergencia:</strong> cuando múltiples fuentes de evidencia
+independientes apuntan hacia la misma cuenca —narrativa histórica,
+preview en el encuentro, patrón del sensor, tiempo gramatical, formas
+conductuales— la probabilidad de esa cuenca en el prior aumenta con cada
+fuente adicional. La convergencia entre fuentes de distinto tipo es más
+informativa que la profundidad de una sola fuente.</p>
+<p><strong>Divergencia como información:</strong> cuando la evidencia de
+fuentes distintas apunta en direcciones opuestas —narrativa que no
+muestra cuenca donde el preview muestra activación, o viceversa— la
+divergencia misma es información sobre la estructura del campo: puede
+indicar enmascaramiento, disociación experiencial, o atractor de origen
+constitutivo biológico sin historia narrativa. La divergencia actualiza
+el prior en formas que la convergencia no captura.</p>
+<h3 id="iv.3.-relación-con-el-aparato-observacional">IV.3. Relación con
+el aparato observacional</h3>
+<p>La historia clínica construye el prior. El sensor y el autoregistro
+contribuyen al likelihood. Los dos tienen propiedades complementarias
+que la inferencia requiere simultáneamente:</p>
+<p>La historia clínica captura la dimensión diacrónica acumulada —la
+geometría que el campo constituyó a lo largo del tiempo— con el sesgo
+selectivo de la narrativa. El sensor captura la dimensión dinámica
+actual sin sesgo narrativo pero sin acceso a la historia constitutiva.
+La inferencia de cuencas activas articula las dos: la cuenca inferida
+desde la historia produce una predicción sobre el patrón que el sensor
+debería mostrar si esa cuenca está activa. La consistencia o divergencia
+entre predicción y patrón observado actualiza la probabilidad de la
+cuenca y refina la estimación de <span
+class="math inline">\xi_t</span>.</p>
+<p>La homología persistente del aparato observacional —el componente más
+cercano a <span class="math inline">\Omega_t^{(p)}</span>— produce la
+representación topológica de las cuencas desde la señal dinámica. La
+inferencia histórica del PIAC y la representación topológica desde el
+sensor son dos rutas independientes hacia la misma estructura latente.
+Su convergencia es la predicción contrastable central de G2/G10 y un
+resultado que el piloto debe producir.</p>
+<hr />
+<p><em>Versión 0.4.16 — 13 de julio de 2026.</em> <em>Documento canónico
+de fuente única. Toda modificación requiere nueva versión y aprobación
+explícita.</em> <em>Cotejar contra: Núcleo Ontológico v2.3.16, Núcleo
+Matemático v0.4.27, Núcleo Clínico v0.3.12, Núcleo Epistemológico
+v0.3.19.</em></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Volver -->
+  <section class="py-16 bg-slate-50 text-center">
+    <div class="max-w-2xl mx-auto px-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/syntropia/es/nucleos/"
+        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        ← Todos los núcleos
+      </a>
+      <a href="/syntropia/es/"
+        class="inline-block bg-white border border-slate-300 hover:border-teal-500 text-slate-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        Volver a Syntropía
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
+    <p class="mb-2">&copy; 2026 Syntropía &mdash; Modelo Clínico y Científico</p>
+  </footer>
+
+</body>
+
+</html>

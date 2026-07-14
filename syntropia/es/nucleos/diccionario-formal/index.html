@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diccionario Formal &mdash; Syntropía</title>
+  <meta name="description" content="Definiciones canónicas de los
+términos fundamentales del modelo.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%); }
+    .prose :where(code):not(:where([class~="not-prose"] *)) {
+      background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em;
+    }
+    .prose blockquote { border-left-color: #0f766e; font-style: normal; }
+    .prose table { font-size: 0.92em; }
+    .prose thead th { background: #f8fafc; }
+  </style>
+<script defer=""
+src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+</script>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+</head>
+
+<body class="m-0 p-0 bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4">
+    <a href="/es/">
+      <img src="/assets/Logo-rhysis.svg" alt="Rhysis"
+        class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity">
+    </a>
+    <div class="text-sm md:text-base font-medium text-white tracking-wide">
+      <span class="text-slate-400">EN pendiente</span>
+      <span class="mx-2 text-slate-400">|</span>
+      <span class="font-bold border-b-2 border-teal-400 pb-0.5">ES</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropía &mdash; Núcleo canónico</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
+        Diccionario Formal
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Definiciones
+canónicas de los términos fundamentales del modelo.</p>
+      <p class="text-slate-400 text-sm mt-6">Versión 0.4.18 &middot; 13
+de julio de 2026</p>
+    </div>
+  </section>
+
+  <!-- Contenido -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-slate lg:prose-lg max-w-none
+                       prose-headings:text-teal-800 prose-a:text-teal-700
+                       prose-strong:text-slate-900">
+<!-- Documento canónico de definiciones — para consulta y cotejo -->
+<!-- Precede a la integración en el Núcleo Ontológico y el Glosario -->
+<h1 id="diccionario-formal-de-syntropía-v0.4.16">Diccionario formal de
+Syntropía v0.4.16</h1>
+<h2 id="nota-preliminar-la-colisión-de-mathcald">Nota preliminar — la
+colisión de <span class="math inline">\mathcal{D}</span></h2>
+<p>El símbolo <span class="math inline">\mathcal{D}</span> ya está
+asignado en el Núcleo Ontológico al <strong>operador de
+desvelamiento</strong>:</p>
+<p><span class="math display">\mathcal{D}: \mathcal{O}(t) \to P(\xi_t
+\mid \mathcal{O}(t))</span></p>
+<p>Por tanto <strong>no puede usarse</strong> para simbolizar “Dominio”
+— habría colisión directa. Se propone el símbolo <span
+class="math inline">\mathscr{D}</span> (cursiva matemática, distinta de
+caligráfica) para el concepto genérico de Dominio cuando se necesite
+nombrarlo como tipo de entidad. Los cinco dominios específicos mantienen
+sus símbolos actuales: <span class="math inline">V_t, R_t, P_t, A_t,
+B_t</span>.</p>
+<hr />
+<h2 id="parte-i-los-objetos-fundamentales">Parte I — Los objetos
+fundamentales</h2>
+<h3 id="d1.-trayectoria-personal">D1. Trayectoria personal</h3>
+<p><strong>Definición ontológica.</strong> La trayectoria personal es el
+objeto primitivo del modelo. No es un atributo de la persona — es la
+persona misma en su dimensión procesual: un devenir singularizado, no
+repetible, que se despliega en el tiempo y produce organizaciones
+funcionales sucesivas.</p>
+<p><strong>Definición formal.</strong> Una trayectoria personal es una
+curva <span class="math inline">\gamma: \mathbb{R}_{\geq 0} \to
+\mathcal{W}</span> sobre la variedad de configuraciones, continua y
+diferenciable casi en todas partes, que satisface las condiciones de
+existencia CE2 y CE4:</p>
+<ul>
+<li><strong>CE2 (no-ergodicidad):</strong> la trayectoria no puede
+reproducir su historia exacta — el promedio temporal no equivale al
+promedio del conjunto. Dos trayectorias que pasan por el mismo estado
+observable en momentos distintos de su historia son ontológicamente
+distintas.</li>
+<li><strong>CE4 (dependencia de historia):</strong> el estado presente
+es función de toda la historia acumulada, no solo del estado
+inmediatamente anterior. La trayectoria tiene memoria constitutiva
+irreductible a cualquier ventana temporal finita.</li>
+</ul>
+<p>Y opera bajo dos condiciones epistemológicas que acotan su
+cognoscibilidad:</p>
+<ul>
+<li><strong>CE17 (inaccesibilidad constitutiva doble):</strong> el
+proceso de la trayectoria es continuo; el aparato de observación es
+discreto — <span class="math inline">T_2</span> captura la huella del
+proceso, no el proceso mismo. Límite constitutivo de toda ciencia
+práctica procesual, no defecto del modelo.</li>
+<li><strong>CE18 (base de comparabilidad):</strong> la comparabilidad
+entre trayectorias opera sobre el espacio de parámetros estructurales
+(tipo de cuenca, dirección de <span class="math inline">\Psi_t</span>,
+posición en <span class="math inline">S_m</span>, forma de <span
+class="math inline">f_t</span>), no sobre el contenido de las
+trayectorias. Compatible con A10 (singularidad radical).</li>
+</ul>
+<p><strong>Distinción crítica.</strong> La trayectoria no <em>tiene</em>
+una historia — <em>es</em> su historia. <span
+class="math inline">D_p(t)</span> no describe algo que le pasa a la
+trayectoria; describe la constitución actual de la trayectoria como
+resultado de su propia historia de deformaciones.</p>
+<p><strong>Símbolo:</strong> la trayectoria se denota implícitamente en
+los subíndices temporales. Cuando se necesita nombrar explícitamente el
+objeto: <span class="math inline">\gamma^{(p)}(t)</span> para la
+trayectoria de la persona <span class="math inline">p</span> en el
+momento <span class="math inline">t</span>.</p>
+<hr />
+<h3 id="d2.-configuración">D2. Configuración</h3>
+<p><strong>Definición ontológica.</strong> Una configuración es una
+organización funcionalmente coherente del campo de individuación — un
+modo de producción de presencia-en-el-mundo que el campo sostiene
+establemente. Es un atractor dinámico, no un estado pasajero: el campo
+tiende a permanecer en ella o a regresar a ella después de
+perturbaciones moderadas.</p>
+<p><strong>Definición formal.</strong> Una configuración canónica <span
+class="math inline">\mathfrak{C}_k</span> es un mínimo local de <span
+class="math inline">\Phi(\cdot, t)</span> en <span
+class="math inline">\mathcal{W}</span> con cuenca de atracción no
+vacía:</p>
+<p><span class="math display">\mathfrak{C}_k \equiv w_k^* = \arg\min_{w
+\in \mathcal{B}_k} \Phi(w,t)</span></p>
+<p>El sistema canónico v1.2 identifica 14 configuraciones candidatas
+(C-A a C-M, con C-C subdividida en C-C1 y C-C2) organizadas por
+organización dominante de la propagación en <span
+class="math inline">\Psi_t</span>, tipo de cuenca y — selectivamente—
+dominio de origen. La formalización completa está en
+<code>Configuraciones_Canonicas_v1_3_14.qmd</code>. Las 14
+configuraciones del sistema histórico (<span
+class="math inline">\mathfrak{C}_1, \ldots, \mathfrak{C}_{14}</span>,
+identificadas con <span class="math inline">H_t \in [0,1]^4</span>)
+tienen estatuto histórico — son registro del desarrollo conceptual del
+modelo y parte de su genealogía.</p>
+<p><strong>Distinción con estado.</strong> En la capa matemática,
+“estado” denomina la posición instantánea <span
+class="math inline">H_t</span>. En la capa ontológica, “configuración”
+denomina el atractor que organiza esa posición. Una trayectoria puede
+estar <em>en</em> la cuenca de <span
+class="math inline">\mathfrak{C}_k</span> sin haber alcanzado el mínimo
+<span class="math inline">w_k^*</span>.</p>
+<hr />
+<h3 id="d3.-cuenca">D3. Cuenca</h3>
+<p><strong>Definición ontológica.</strong> La cuenca de una
+configuración es la región del espacio de posibilidades desde la cual el
+campo, si no recibe perturbaciones clínicas, converge hacia esa
+configuración. Es el “campo gravitacional” de un atractor.</p>
+<p><strong>Definición formal.</strong> La cuenca de <span
+class="math inline">\mathfrak{C}_k</span> es:</p>
+<p><span class="math display">\mathcal{B}_k(t) = \{w \in \mathcal{W} :
+\lim_{\tau \to \infty}
+\gamma_{w,t}(\tau) = w_k^*\}</span></p>
+<p>donde <span class="math inline">\gamma_{w,t}</span> es la trayectoria
+del gradiente descendente de <span
+class="math inline">\Phi(\cdot,t)</span> iniciada en <span
+class="math inline">w</span>.</p>
+<p><strong>Profundidad.</strong> La profundidad <span
+class="math inline">\delta_k(t)</span> es la diferencia entre el valor
+mínimo de <span class="math inline">\Phi</span> en el borde <span
+class="math inline">\partial\mathcal{B}_k</span> y el valor en el fondo
+<span class="math inline">\Phi(w_k^*, t)</span>. <span
+class="math inline">D_p(t)</span> acumulado en la dirección de <span
+class="math inline">\mathfrak{C}_k</span> contribuye directamente a
+<span class="math inline">\delta_k(t)</span>.</p>
+<p><strong>Consecuencia clínica.</strong> La cuenca determina la
+indicación de intervención antes que el perfil <span
+class="math inline">H_t</span>: dos trayectorias en la misma posición
+observable pueden requerir intervenciones opuestas si pertenecen a
+cuencas distintas.</p>
+<p><strong>Nota de desambiguación — “cuenca” vs. “tipo de cuenca”
+(E.21).</strong> Este término tiene dos sentidos en el corpus que no
+deben confundirse. <strong>Cuenca</strong> (D3, aquí) es el objeto
+continuo definido arriba: una región de <span
+class="math inline">\mathcal{W}</span> con extensión, profundidad y
+gradiente calculables a partir de <span
+class="math inline">\Phi(\cdot,t)</span>. <strong>Tipo de
+cuenca</strong> (D4*, Núcleo Ontológico, Eje 2 del <em>spatium</em>) es
+una etiqueta clasificatoria discreta de cinco valores —transitoria,
+reconfiguración, residencia, disposicional temprana, falla de
+reconfiguración— que describe el <em>régimen</em> de instalación de una
+configuración, no su geometría. La relación formal entre ambos —si “tipo
+de cuenca” puede derivarse como función de propiedades continuas de la
+cuenca (D3)— está explícitamente pendiente de formalización (G15, Núcleo
+Ontológico). Tratar “tipo de cuenca” como si heredara las propiedades
+métricas de D3 sin que esa función exista todavía es el error que
+produjo la contaminación de §III.12bis del Núcleo Matemático (jun 2026)
+— ver nota equivalente en D4* del Núcleo Ontológico.</p>
+<hr />
+<h3 id="d4.-dominio-mathscrd">D4. Dominio — <span
+class="math inline">\mathscr{D}</span></h3>
+<p><strong>Definición ontológica.</strong> Un dominio es una dimensión
+trascendental de la producción funcional de la trayectoria — una
+dirección en la que el campo de individuación despliega
+presencia-en-el-mundo, irreductible a las demás. “Trascendental” en
+sentido formal: cada dominio está presente en toda trayectoria personal,
+solo variable en su nivel de coherencia.</p>
+<p><strong>Definición formal.</strong> Un dominio <span
+class="math inline">\mathscr{D}_i</span> es una coordenada de <span
+class="math inline">H_t \in [0,1]^5</span> que describe la coherencia
+funcional de la trayectoria en esa dirección. Los cinco dominios
+son:</p>
+<p><span class="math display">H_t = (V_t, R_t, P_t, A_t, B_t)</span></p>
+<p>donde <span class="math inline">\mathscr{D}_V = V_t</span>
+(volición), <span class="math inline">\mathscr{D}_R = R_t</span>
+(relacionalidad), <span class="math inline">\mathscr{D}_P = P_t</span>
+(proyección temporal), <span class="math inline">\mathscr{D}_A =
+A_t</span> (anclaje existencial) y <span
+class="math inline">\mathscr{D}_B = B_t</span> (dominio somático). La
+formalización clínica de <span class="math inline">B_t</span> está en el
+Núcleo Clínico §2.5 y su descripción en lenguaje corriente en el Núcleo
+Matemático §0 (elemento 0.6).</p>
+<p><strong>Independencia constitutiva.</strong> Los dominios son
+ontológicamente independientes: el nivel de coherencia en <span
+class="math inline">\mathscr{D}_V</span> no determina ni es determinado
+por el nivel en <span class="math inline">\mathscr{D}_R</span>. Esa
+independencia no es estadística — es ontológica. Un escalar que
+promediara los dominios haría invisible la diferencia clínica entre dos
+trayectorias con <span class="math inline">\|H_t\|</span> idéntico y
+perfiles radicalmente distintos.</p>
+<p><strong>Distinción con modulador.</strong> Los dominios describen
+<em>qué produce</em> la trayectoria. Los moduladores describen <em>bajo
+qué condiciones</em> puede sostener o modificar esa producción. Son
+planos ontológicos distintos — el dominio es un observable del campo; el
+modulador es una condición del operador de evolución.</p>
+<p><strong>Nota sobre el símbolo.</strong> <span
+class="math inline">\mathscr{D}</span> (cursiva matemática) denomina el
+concepto genérico de dominio como tipo de entidad. No debe confundirse
+con <span class="math inline">\mathcal{D}</span> (caligráfica), que es
+el operador de desvelamiento.</p>
+<hr />
+<h3 id="d5.-propagación-psi_t">D5. Propagación — <span
+class="math inline">\Psi_t</span></h3>
+<p><strong>Definición ontológica.</strong> La propagación es la
+transferencia de efectos entre dominios del campo de individuación: una
+perturbación en un dominio produce cambio en otro dominio, con
+intensidad, dirección y retardo propios. Es la propiedad que hace que el
+campo no sea la suma de sus dominios.</p>
+<p><strong>Definición formal.</strong> <span class="math inline">\Psi_t
+\in \mathbb{R}^{5 \times 5}</span> es la representación operativa de la
+métrica riemanniana <span class="math inline">g_t</span> proyectada
+sobre los cinco dominios —incluyendo el dominio somático <span
+class="math inline">B_t</span>. En la formulación canónica, <span
+class="math inline">\psi_{ij} \in \{-1, 0, +1\}</span>; en la
+aproximación de primera fase, <span class="math inline">\psi_{ij} \geq
+0</span>. El coeficiente <span class="math inline">\psi_{ij}(t)</span>
+es la intensidad de propagación del dominio <span
+class="math inline">j</span> hacia el dominio <span
+class="math inline">i</span> en el momento <span
+class="math inline">t</span>.</p>
+<p><strong>Propiedades constitutivas:</strong></p>
+<p><em>Asimetría:</em> <span class="math inline">\psi_{ij}(t) \neq
+\psi_{ji}(t)</span> en general. La propagación de relacional hacia
+existencial no tiene la misma intensidad que la de existencial hacia
+relacional. La asimetría es información clínica — no un defecto de
+representación.</p>
+<p><em>Dependencia de historia:</em> <span
+class="math inline">\Psi_t</span> evoluciona con <span
+class="math inline">\xi_t</span>. Trayectorias con alta <span
+class="math inline">D_p(t)</span> tienden a tener propagaciones más
+rígidas — los patrones de acoplamiento se vuelven más resistentes al
+cambio.</p>
+<p><em>Propagación positiva vs. negativa:</em> <span
+class="math inline">\psi_{ij} &gt; 0</span> indica que un ascenso en el
+dominio <span class="math inline">j</span> produce ascenso en el dominio
+<span class="math inline">i</span>. Valores cerca de 0 indican
+desacoplamiento. La propagación negativa (<span
+class="math inline">\psi_{ij} &lt; 0</span>) ocurre cuando un ascenso en
+<span class="math inline">j</span> produce descenso en <span
+class="math inline">i</span> — clínicamente, cuando la recuperación en
+un dominio ocurre a expensas de otro.</p>
+<p><strong>Grieta G3.</strong> La forma funcional de la dependencia de
+<span class="math inline">\Psi_t</span> con respecto a <span
+class="math inline">\xi_t</span> no está especificada, y los pesos <span
+class="math inline">w_s</span>, <span class="math inline">w_a</span> que
+ponderan las contribuciones de las fuentes de observación requieren
+estimación empírica. Requiere datos longitudinales del piloto.</p>
+<hr />
+<h3 id="d6.-perturbación">D6. Perturbación</h3>
+<p><strong>Definición ontológica.</strong> Una perturbación es una
+acción sobre el campo de individuación que desplaza la trayectoria desde
+su posición actual en <span class="math inline">\mathcal{W}</span>.
+Puede ser clínica (intervención deliberada), vital (evento no
+planificado) o somática (cambio en el estado biológico).</p>
+<p><strong>Definición formal.</strong> Una perturbación de magnitud
+<span class="math inline">\varepsilon</span> en la dirección <span
+class="math inline">\hat{u} \in T_w \mathcal{W}</span> desplaza la
+trayectoria de <span class="math inline">w</span> a <span
+class="math inline">w + \varepsilon \hat{u}</span>.</p>
+<p><strong>Tipos según resultado:</strong></p>
+<p><em>Perturbación elástica:</em> el campo regresa al mínimo previo. No
+produce cambio en <span class="math inline">\Phi(\cdot, t)</span> — la
+cuenca se conserva. <span class="math inline">\varepsilon &lt;
+\varepsilon_t^{(i)}</span>.</p>
+<p><em>Perturbación plástica expansiva:</em> el campo se reorganiza
+hacia una configuración que amplía <span
+class="math inline">\mathcal{F}_t^{(p)}</span>. Modifica <span
+class="math inline">\Phi(\cdot, t)</span> en la dirección de menor
+profundidad. Requiere <span class="math inline">\kappa(t)</span>
+suficiente y <span class="math inline">\varepsilon</span> mayor que la
+barrera <span class="math inline">B_{ij}</span> relevante.</p>
+<p><em>Perturbación plástica restrictiva:</em> el campo se reorganiza
+pero hacia una configuración que restringe <span
+class="math inline">\mathcal{F}_t^{(p)}</span> o hacia una cuenca no
+planificada. Ocurre cuando <span class="math inline">\kappa(t) &lt;
+\kappa_{\min}</span> (P12).</p>
+<p><strong>Consecuencia directa de P12.</strong> La indicación de una
+perturbación clínica depende de <span
+class="math inline">\kappa(t)</span>, no solo de la magnitud de la
+perturbación. Una perturbación clínicamente adecuada en un campo con
+<span class="math inline">\kappa(t)</span> bajo produce perturbación
+plástica restrictiva.</p>
+<hr />
+<h3 id="d7.-plasticidad-receptividad-y-energía-clínica">D7. Plasticidad,
+receptividad y energía clínica</h3>
+<p>El modelo distingue tres propiedades del campo que en el lenguaje
+clínico coloquial se confunden bajo el término “plasticidad”. Son
+propiedades de naturaleza distinta — no de grado.</p>
+<p><strong>D7a. Receptividad — <span
+class="math inline">\kappa(t)</span>.</strong> Si el campo puede
+<em>absorber</em> una perturbación sin desorganizarse. Ver D10 para la
+definición formal completa.</p>
+<p><strong>D7b. Plasticidad.</strong> Si el campo puede
+<em>reorganizarse</em> hacia una configuración distinta de la actual,
+dada una perturbación absorbida. Es la condición de posibilidad de la
+reorganización — no se reduce a <span
+class="math inline">\kappa(t)</span>.</p>
+<p><strong>Definición ontológica.</strong> La plasticidad es la
+capacidad del campo de individuación de reorganizarse hacia
+configuraciones distintas de la actual bajo perturbación. No es un rasgo
+fijo — es una propiedad del estado actual del campo, variable en el
+tiempo.</p>
+<p><strong>Distinción clínica entre receptividad y plasticidad.</strong>
+Puede haber alta receptividad con baja plasticidad: el campo absorbe la
+perturbación sin desorganizarse, pero el funcional <span
+class="math inline">\Phi</span> no tiene configuraciones accesibles de
+mayor coherencia en <span
+class="math inline">\mathcal{F}_t^{(p)}</span>. Y puede haber baja
+receptividad con alta plasticidad potencial: el campo tiene
+configuraciones de mayor coherencia accesibles pero no puede absorber la
+perturbación que permitiría alcanzarlas. El error clínico más frecuente
+es confundir las dos — aplicar la intervención cuando hay plasticidad
+potencial pero <span class="math inline">\kappa(t)</span> no está
+disponible.</p>
+<p><strong>D7c. Energía clínica — <span
+class="math inline">E_c(t)</span>.</strong> La capacidad de la
+trayectoria para abandonar su configuración actual y acceder a
+configuraciones de mayor coherencia funcional (Núcleo Matemático
+§III.9):</p>
+<p><span class="math display">E_c(t) = \Phi(w_{\max}, t) - \Phi(w_t^*,
+t)</span></p>
+<p>donde <span class="math inline">w_t^* = \arg\min_{w \in
+\mathcal{F}_t^{(p)}} \Phi(w,t)</span> es la posición actual y <span
+class="math inline">w_{\max}</span> es el punto de mayor <span
+class="math inline">\Phi</span> en el borde de <span
+class="math inline">\mathcal{F}_t^{(p)}</span>.</p>
+<p><span class="math inline">E_c(t) = 0</span> indica campo de
+posibilidades colapsado — sin potencial de reorganización accesible,
+independientemente de <span class="math inline">\kappa(t)</span>. <span
+class="math inline">E_c(t)</span> alto indica campo con barreras
+superables hacia configuraciones de mayor coherencia.</p>
+<p><strong>La distinción tripartita como mapa clínico:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Propiedad</th>
+<th>Pregunta clínica</th>
+<th>Símbolo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Receptividad</td>
+<td>¿Puede el campo absorber sin desorganizarse?</td>
+<td><span class="math inline">\kappa(t)</span></td>
+</tr>
+<tr class="even">
+<td>Plasticidad</td>
+<td>¿Puede el campo reorganizarse si absorbe?</td>
+<td>(emergente)</td>
+</tr>
+<tr class="odd">
+<td>Energía clínica</td>
+<td>¿Hay configuraciones de mayor coherencia accesibles?</td>
+<td><span class="math inline">E_c(t)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Un campo puede tener <span class="math inline">\kappa(t)</span> alto,
+plasticidad alta y <span class="math inline">E_c(t) = 0</span>: puede
+absorber y reorganizarse, pero no hay ninguna configuración de mayor
+coherencia en <span class="math inline">\mathcal{F}_t^{(p)}</span>. Ese
+campo no mejorará con intervención dirigida a la reorganización —
+requiere trabajo previo sobre la geometría de <span
+class="math inline">\Omega_t^{(p)}</span> (sobre <span
+class="math inline">D_p(t)</span>) para que <span
+class="math inline">E_c(t) &gt; 0</span>.</p>
+<hr />
+<h3 id="d8.-rigidez">D8. Rigidez</h3>
+<p><strong>Definición ontológica.</strong> La rigidez es la resistencia
+del campo de individuación a abandonar su configuración actual —
+independientemente de si esa configuración es de alta o baja coherencia.
+Es la propiedad simétrica de la plasticidad: un campo rígido en una
+configuración de reconfiguración activa (e.g., C-C1 o C-C2) y un campo
+rígido en una configuración de residencia crónica (e.g., C-A o C-B) son
+igualmente rígidos; la diferencia está en la configuración que retienen
+y en las consecuencias clínicas de esa rigidez.</p>
+<p><strong>Definición formal.</strong> La rigidez en la dirección del
+dominio <span class="math inline">i</span> es <span
+class="math inline">\varepsilon_t^{(i)}</span>: la magnitud mínima de
+perturbación en esa dirección requerida para producir reorganización
+permanente. Rigidez global: <span class="math inline">\|\varepsilon_t\|
+= \|\varepsilon_t\|_2</span>.</p>
+<p><strong>Distinción con profundidad de cuenca.</strong> La profundidad
+<span class="math inline">\delta_k(t)</span> describe cuánta energía
+total se necesita para salir de la cuenca. La rigidez <span
+class="math inline">\varepsilon_t^{(i)}</span> describe cuánta
+perturbación por dominio produce desplazamiento permanente desde el
+mínimo actual. Son propiedades complementarias: un campo puede tener
+cuenca profunda (difícil de salir) pero baja rigidez en un dominio
+específico (ese dominio responde fácilmente a perturbaciones).</p>
+<hr />
+<h3 id="d9.-desorganización">D9. Desorganización</h3>
+<p><strong>Definición ontológica.</strong> La desorganización es la
+pérdida de coherencia funcional global sin transición hacia una nueva
+configuración estable: la trayectoria abandona su mínimo actual sin
+converger a otro. Corresponde clínicamente a un estado de crisis aguda
+sin nueva organización emergente.</p>
+<p><strong>Definición formal.</strong> Una trayectoria está en
+desorganización en <span class="math inline">t</span> si:</p>
+<p><span class="math display">\Phi(w_t, t) &gt; \min_k \Phi(w_k^*, t) +
+\delta_{\min}</span></p>
+<p>y simultáneamente no hay convergencia hacia ningún mínimo: <span
+class="math inline">w_t \notin \bigcup_k \mathcal{B}_k(t)</span>.</p>
+<p><strong>Distinción con transición.</strong> En una transición, la
+trayectoria sale de una cuenca y converge hacia otra. En la
+desorganización, la trayectoria sale de su cuenca pero no tiene acceso a
+ninguna cuenca alternativa — o la magnitud de la perturbación es tan
+alta que el campo no tiene tiempo de converger.</p>
+<hr />
+<h3 id="d10.-capacidad-receptiva-kappat">D10. Capacidad receptiva —
+<span class="math inline">\kappa(t)</span></h3>
+<p><strong>Definición ontológica.</strong> La capacidad receptiva es la
+disposición actual del campo de individuación para absorber
+perturbaciones sin desorganizarse. No es la disposición para cambiar
+(plasticidad) — es la disposición para que el campo se deje afectar sin
+colapsar.</p>
+<p><strong>Definición formal.</strong> <span
+class="math inline">\kappa(t) \in [0,1]</span> es la curvatura inversa
+de <span class="math inline">\Phi</span> en el mínimo actual:</p>
+<p><span class="math display">\kappa(t) = \left.\left(\frac{\partial^2
+\Phi}{\partial w^2}\right)^{-1}
+\right|_{w = w_t^*}</span></p>
+<p><span class="math inline">\kappa(t)</span> alto: el cuenco del mínimo
+actual es plano — el campo puede absorber perturbaciones sin desplazarse
+significativamente. <span class="math inline">\kappa(t)</span> bajo: el
+cuenco es estrecho — pequeñas perturbaciones producen desplazamiento o
+desorganización.</p>
+<p><strong>Correlato fisiológico.</strong> <span
+class="math inline">\kappa(t)</span> correlaciona directamente con la
+variabilidad de la frecuencia cardíaca (HRV-RMSSD) y con DFA α1. Esta
+correlación es la base del uso de <span
+class="math inline">T_\text{temporal}</span> como estimador de <span
+class="math inline">\kappa(t)</span> en contexto ambulatorio, y de <span
+class="math inline">T_\text{hospitalario}</span> como estimador
+alternativo en contexto hospitalario —a partir de la frecuencia
+adaptativa de las observaciones clínicas estructuradas— cuando el sensor
+no está disponible. Ambos operadores producen estimaciones de <span
+class="math inline">\kappa(t)</span> comparables; su divergencia es
+información diagnóstica sobre el campo.</p>
+<hr />
+<h3 id="d11.-historia-acumulada-d_pt">D11. Historia acumulada — <span
+class="math inline">D_p(t)</span></h3>
+<p><strong>Definición ontológica.</strong> La historia acumulada es la
+inscripción en el campo de individuación de las deformaciones plásticas
+producidas por perturbaciones pasadas. No es la memoria declarativa de
+los eventos — es la geometría actual del campo de individuación como
+resultado de todo lo que lo deformó.</p>
+<p><strong>Definición formal.</strong> <span class="math inline">D_p(t)
+\in [0,1]</span> es la variación total acumulada de <span
+class="math inline">\Phi</span> a lo largo de la historia:</p>
+<p><span class="math display">D_p(t) = \int_{t_0}^t
+\left|\frac{d\Phi(w_s^*, s)}{ds}\right| ds</span></p>
+<p><strong>Irreversibilidad constitutiva.</strong> <span
+class="math inline">D_p(t)</span> es monótonamente no decreciente en el
+tiempo: la historia acumulada no se reduce espontáneamente. Solo puede
+modificarse mediante perturbaciones plásticas expansivas de alta
+magnitud sostenidas en el tiempo — y solo si <span
+class="math inline">\kappa(t)</span> es suficiente para que esas
+perturbaciones amplíen <span
+class="math inline">\mathcal{F}_t^{(p)}</span>.</p>
+<p><strong>Independencia de <span
+class="math inline">\kappa(t)</span>.</strong> <span
+class="math inline">D_p(t)</span> y <span
+class="math inline">\kappa(t)</span> son matemáticamente independientes
+(Núcleo Matemático §II bis). Esta independencia es la base de P12 y de
+las cuatro regiones de <span class="math inline">S_m</span>.</p>
+<hr />
+<h3 id="d12.-transición">D12. Transición</h3>
+<p><strong>Definición ontológica.</strong> Una transición es el paso de
+la trayectoria desde la cuenca de una configuración hacia la cuenca de
+otra. No es instantánea — es un proceso que puede durar semanas o meses
+y que atraviesa la barrera <span class="math inline">B_{ij}</span> entre
+las dos cuencas.</p>
+<p><strong>Definición formal.</strong> Una transición de <span
+class="math inline">\mathfrak{C}_i</span> a <span
+class="math inline">\mathfrak{C}_j</span> ocurre cuando la trayectoria
+sale de <span class="math inline">\mathcal{B}_i(t)</span> y converge
+hacia <span class="math inline">\mathcal{B}_j(t)</span>. El camino
+mínimo de la transición es la geodésica clínica de <span
+class="math inline">w_i^*</span> a <span
+class="math inline">w_j^*</span>.</p>
+<p><strong>Tipos de transición:</strong></p>
+<p><em>Transición sintropizante:</em> hacia una configuración de mayor
+<span class="math inline">\|H_t\|</span>.</p>
+<p><em>Transición distropizante:</em> hacia una configuración de menor
+<span class="math inline">\|H_t\|</span>.</p>
+<p><em>Transición horizontal:</em> entre configuraciones de <span
+class="math inline">\|H_t\|</span> similar pero con perfiles de dominio
+o de dirección de propagación distintos. Ejemplo: de C-C1 (psic_Bt ·
+reconfiguración · origen <span class="math inline">R_t</span>) a C-C2
+(psic_Bt · reconfiguración · origen <span
+class="math inline">A_t</span>) cuando el proceso de reconfiguración
+cambia de dominio de origen sin cambiar el nivel de coherencia global; o
+de C-A (psic_Bt · residencia) a C-B (bidireccional · residencia) cuando
+un componente somático cíclico se añade a una configuración psicológica
+crónica.</p>
+<p><strong>Histéresis.</strong> <span class="math inline">B_{ij}(t) \neq
+B_{ji}(t)</span> implica que una transición de <span
+class="math inline">i</span> a <span class="math inline">j</span> no
+requiere la misma energía que la transición de vuelta. La histéresis es
+la representación formal de la experiencia clínica de que “recaer es más
+fácil que mejorar” — y también de que “algunos avances son
+irreversibles”.</p>
+<hr />
+<h3 id="d13.-observabilidad-upsilon_us">D13. Observabilidad — <span
+class="math inline">\Upsilon_{US}</span></h3>
+<p><strong>Definición ontológica.</strong> La observabilidad describe la
+disponibilidad de la trayectoria para ser conocida desde el interior —
+la capacidad de la persona de acceder a su propio campo funcional y
+reportarlo con validez.</p>
+<p><strong>Relación con <span
+class="math inline">\Upsilon_{US}</span>.</strong> <span
+class="math inline">\Upsilon_{US}</span> (estabilidad bajo estrés) es el
+correlato operativo más directo de la observabilidad: cuando <span
+class="math inline">\Upsilon_{US} &lt; \Upsilon_{US_{\min}}</span>, el
+campo está demasiado perturbado para que el autoregistro refleje
+fielmente su estado. La observabilidad es gradiente, no binaria: a
+medida que <span class="math inline">\Upsilon_{US}</span> baja, la
+validez del autoregistro se reduce progresivamente.</p>
+<p><strong>Consecuencia para el desvelamiento.</strong> La condición de
+existencia CE7 —el desvelamiento modifica el campo que describe—
+establece que el encuentro clínico es una intervención ontológica (A7).
+La observabilidad es la condición de posibilidad de ese proceso: sin
+mínimo de estabilidad (<span class="math inline">\Upsilon_{US}</span>
+suficiente), el desvelamiento no puede operar en el campo intensivo —
+solo en el campo extensivo observable. CE7 implica que el diseño del
+piloto de validación incluye condiciones de evaluación sin intervención
+para estimar el efecto propio del desvelamiento (P11).</p>
+<p><strong>Grieta G4.</strong> La relación exacta entre <span
+class="math inline">\Upsilon_{US}</span> y la validez del autoregistro
+no está cuantificada — <span
+class="math inline">\Upsilon_{US_{\min}}</span> es un umbral clínico
+actualmente establecido por criterio del evaluador. Su
+operacionalización formal requiere datos del piloto (G4: determinación
+de <span class="math inline">\kappa_{\min}</span>, <span
+class="math inline">\varepsilon_{\min}</span>, <span
+class="math inline">\Upsilon_{US_{\min}}</span>, <span
+class="math inline">\theta</span>).</p>
+<hr />
+<h3 id="d14.-resonancia-clínica">D14. Resonancia clínica</h3>
+<p><strong>Definición ontológica.</strong> La resonancia clínica es la
+información que el campo de individuación de la persona produce en el
+campo de individuación del clínico durante el encuentro. No es intuición
+subjetiva — es un canal de información sobre el campo intensivo que
+precede a la elaboración narrativa y que el clínico puede aprender a
+leer con entrenamiento.</p>
+<p><strong>Estatuto epistemológico.</strong> La resonancia clínica es un
+observable pre-narrativo del campo intensivo — pertenece al mismo nivel
+que la señal del sensor, no al nivel del autoregistro. Como el sensor,
+captura información anterior a la elaboración consciente. Como el
+sensor, puede divergir del autoregistro cuando <span
+class="math inline">\Upsilon_{US}</span> es bajo.</p>
+<p><strong>Componentes operacionales.</strong> Tres dimensiones que el
+clínico entrena para discriminar:</p>
+<p><em>Campo somático del clínico:</em> sensaciones somáticas en el
+encuentro — tensión, peso, ligereza, contracción. Es información sobre
+el campo de la persona, no estados del clínico.</p>
+<p><em>Campo emocional del clínico:</em> resonancia afectiva en el
+encuentro — tristeza, urgencia, apatía, vitalidad. Mismo estatuto que el
+campo somático.</p>
+<p><em>Campo imaginal del clínico:</em> imágenes, metáforas, escenas que
+emergen espontáneamente durante el encuentro. Son la representación
+simbólica del campo de la persona en el campo del clínico.</p>
+<p><strong>Confiabilidad y sesgos.</strong> La resonancia clínica tiene
+sesgos propios: contratransferencia (el campo de la persona activa
+patrones del propio campo del clínico), proyección (el clínico lee su
+propio campo como si fuera el de la persona), y agotamiento (la
+resonancia se embota con fatiga). El entrenamiento en resonancia clínica
+incluye entrenamiento en el reconocimiento de estos sesgos.</p>
+<p><strong>Integración en <span
+class="math inline">\mathcal{O}(t)</span>.</strong> La resonancia
+clínica se registra en el campo de observaciones como texto libre — no
+como escalar. Su integración en la verosimilitud del motor no está
+formalizada en la versión actual del modelo. Es objeto de G12
+(Resonancia clínica como canal observacional en <span
+class="math inline">\mathcal{O}(t)</span>, Núcleo Ontológico
+v2.2.4).</p>
+<hr />
+<h3 id="d15.-evidencia-clínica-mathcalet">D15. Evidencia clínica — <span
+class="math inline">\mathcal{E}(t)</span></h3>
+<p><strong>Definición ontológica.</strong> La evidencia clínica es el
+conjunto de observaciones estructuradas que el clínico produce durante
+el encuentro y que alimentan a <span
+class="math inline">T_\text{histórico}</span>. Es distinta de la
+observación cruda — es observación filtrada por el sistema conceptual
+del modelo.</p>
+<p><strong>Definición formal.</strong> <span
+class="math inline">\mathcal{E}(t) = \{e_1, \ldots, e_n\}</span> donde
+cada <span class="math inline">e_i</span> es una instancia de <span
+class="math inline">\text{EvidenciaHistorica}(\text{tipo},
+\text{intensidad}, \text{confiabilidad},
+t_{\text{formativo}})</span>.</p>
+<p><strong>Jerarquía de tipos.</strong> Los cinco tipos de evidencia
+están ordenados por su implicación sobre la geometría del campo:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo</th>
+<th>Qué implica sobre el campo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span
+class="math inline">\mathcal{E}_{\text{activación}}</span></td>
+<td>El atractor se ha activado — el mínimo existe</td>
+</tr>
+<tr class="even">
+<td><span
+class="math inline">\mathcal{E}_{\text{resistencia}}</span></td>
+<td>El atractor es profundo — la cuenca resiste perturbaciones</td>
+</tr>
+<tr class="odd">
+<td><span
+class="math inline">\mathcal{E}_{\text{propagación}}</span></td>
+<td>La métrica <span class="math inline">g_t</span> tiene estructura —
+<span class="math inline">\Psi_t</span> no es nula</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\mathcal{E}_{\text{umbral}}</span></td>
+<td>El borde de la cuenca ha variado — <span
+class="math inline">\delta_k(t)</span> es dinámico</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\mathcal{E}_{\text{ausencia}}</span></td>
+<td>Hay estructura pre-narrativa — la cuenca precede a la memoria</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Distinción con <span
+class="math inline">\mathcal{O}(t)</span>.</strong> <span
+class="math inline">\mathcal{O}(t)</span> es el conjunto completo de
+observaciones del encuentro: <span class="math inline">H_t</span>, <span
+class="math inline">M</span>, <span
+class="math inline">\mathcal{E}(t)</span>, señal del sensor y resonancia
+clínica. <span class="math inline">\mathcal{E}(t)</span> es solo el
+subconjunto que alimenta a <span
+class="math inline">T_\text{histórico}</span> — la evidencia sobre la
+historia acumulada.</p>
+<hr />
+<h3 id="d15-int.-campo-intersticial-omega_ttextint">D15-int. Campo
+intersticial — <span
+class="math inline">\Omega_t^{(\text{int})}</span></h3>
+<p><strong>Definición ontológica.</strong> El campo intersticial es la
+función de estabilidad que describe la organización del encuentro entre
+dos campos de individuación. No es la suma de los dos campos — es la
+organización propia que su encuentro histórico produce. Objeto formal
+canónico desde el Ontológico v2.2.4 (D15-int).</p>
+<p><strong>Definición formal.</strong> <span
+class="math inline">\Omega_t^{(\text{int})}: \mathcal{W} \to
+\mathbb{R}_{\geq 0}</span> con historia constitutiva propia:</p>
+<p><span class="math display">\xi_t^{(\text{int})} =
+\{D_p^{(\text{int})}(t),\; \kappa^{(\text{int})}(t),\;
+\sigma^{(\text{int})}\}</span></p>
+<ul>
+<li><span class="math inline">D_p^{(\text{int})}(t)</span>: lo que la
+relación ha deformado de forma irreversible (rupturas no elaboradas,
+daño sin reparación, patrones relacionales cristalizados).</li>
+<li><span class="math inline">\kappa^{(\text{int})}(t)</span>: capacidad
+receptiva actual del campo intersticial.</li>
+<li><span class="math inline">\sigma^{(\text{int})}</span>: huella
+constitutiva de los primeros encuentros — pre-simbólica.</li>
+</ul>
+<p><strong>Asimetría constitutiva.</strong> El campo intersticial no es
+simétrico: el clínico tiene competencias para el desvelamiento que la
+persona no tiene; la persona tiene acceso a su <span
+class="math inline">\xi_t^{(p)}</span> que el clínico no tiene.</p>
+<p><strong>Tipos de predicado.</strong> <em>Clínico</em> (entre clínico
+y persona) / <em>familiar</em> (entre miembros del sistema familiar) /
+<em>vincular</em> (entre la trayectoria y una figura de vínculo
+significativa). Cada tipo tiene propiedades estructurales distintas.</p>
+<p><strong>Consecuencia clínica.</strong> Las propiedades de <span
+class="math inline">\Omega_t^{(\text{int})}</span> condicionan qué
+aspectos de <span class="math inline">\xi_t^{(p)}</span> son accesibles
+en este encuentro. Un campo intersticial con <span
+class="math inline">\kappa^{(\text{int})}(t)</span> reducido produce
+acceso reducido a <span class="math inline">\xi_t^{(p)}</span> aunque
+los parámetros individuales permitan el desvelamiento. La formalización
+cuantitativa de <span class="math inline">\xi_t^{(\text{int})}</span> es
+objeto de G17.</p>
+<p><strong>Dinámica propia — tres regímenes.</strong> <span
+class="math inline">\Omega_t^{(\text{int})}</span> evoluciona a lo largo
+de la relación. Los eventos que acumulan <span
+class="math inline">D_p^{(\text{int})}(t)</span>: rupturas no
+elaboradas, transgresiones del marco, patrones relacionales
+cristalizados. Los eventos que restauran <span
+class="math inline">\kappa^{(\text{int})}(t)</span>: reparación activa,
+continuidad del marco, co-regulación exitosa acumulada. Tres regímenes:
+(a) <em>productivo</em> — <span
+class="math inline">\kappa^{(\text{int})}(t)</span> alto: el
+desvelamiento puede alcanzar cuencas profundas; (b) <em>restringido</em>
+— <span class="math inline">\kappa^{(\text{int})}(t)</span> reducido:
+solo se accede a la superficie de <span
+class="math inline">\xi_t^{(p)}</span>; (c) <em>en ruptura</em> — <span
+class="math inline">\kappa^{(\text{int})}(t) &lt;
+\kappa^{(\text{int})}_{\text{umbral}}</span>: intervenir sobre <span
+class="math inline">D_p(t)</span> en este estado produce daño análogo al
+que P12 describe — prioridad es restaurar el campo intersticial antes de
+cualquier trabajo sobre la memoria constitutiva.</p>
+<p><strong>Spatium intersticial.</strong> <span
+class="math inline">\Omega_t^{(\text{int})}</span> tiene spatium propio
+<span class="math inline">(\varepsilon_t^{(\text{int})},
+\Psi_t^{(\text{int})})</span>. <span
+class="math inline">\varepsilon_t^{(\text{int})}</span> es la
+elasticidad funcional relacional — mayor en fases tempranas de la
+relación, menor con historia de ruptura acumulada. <span
+class="math inline">\Psi_t^{(\text{int})}</span> tiene propagación
+asimétrica constitutiva: la dirección dominante es <span
+class="math inline">D_p^{(\text{int})} \to \kappa^{(\text{int})}</span>
+— las rupturas drenan la capacidad receptiva; la dirección inversa
+requiere reparación deliberada. Esta asimetría distingue al campo
+intersticial del campo individual (donde <span
+class="math inline">\Psi_t</span> puede ser bidireccional) y formaliza
+por qué las relaciones dañadas no se restauran por el paso del
+tiempo.</p>
+<p><strong>Estatuto:</strong> definición formal canónica. Fuente:
+D15-int, Ontológico v2.3.1.</p>
+<hr />
+<h2 id="parte-ii-los-moduladores-formalizados">Parte II — Los
+moduladores formalizados</h2>
+<h3 id="d16.-modulador-m">D16. Modulador — <span
+class="math inline">M</span></h3>
+<p><strong>Definición ontológica.</strong> Un modulador es una condición
+del operador de evolución de la trayectoria — una propiedad que
+determina qué transiciones entre configuraciones son posibles, con qué
+facilidad, y con qué costo. Los moduladores describen <em>cómo se
+mueve</em> la trayectoria sobre el espacio de configuraciones, no
+<em>qué produce</em> (eso son los dominios).</p>
+<p><strong>Distinción ontológica con los dominios.</strong> Los dominios
+son coordenadas del campo de individuación en <span
+class="math inline">\mathcal{W}</span>. Los moduladores son propiedades
+del operador de evolución — en términos de la terna, son propiedades de
+la dinámica sobre <span class="math inline">(\mathcal{W}, g_t,
+\mathcal{A})</span>, no del espacio de configuraciones mismo. Esta es la
+razón de que <span class="math inline">M</span> permanezca independiente
+de la terna (formalización completa en el Núcleo Matemático).</p>
+<p><strong>Definición formal.</strong> <span class="math display">M =
+(\Beta_F^{(r)}, \Beta_F^{(i)}, \Pi_R, \Tau_F, \Upsilon_{US}) \in
+[0,1]^5</span></p>
+<p>Cada modulador es un escalar en <span
+class="math inline">[0,1]</span> que describe el nivel de la condición
+correspondiente en el momento <span class="math inline">t</span>.</p>
+<p><strong>Los cinco moduladores:</strong></p>
+<p><span class="math inline">\Beta_F^{(r)}</span> — <strong>Flexibilidad
+de respuesta.</strong> Repertorio conductual observable ante condiciones
+distintas — el componente <em>externo</em> de la flexibilidad
+conductual. Describe la variedad del operador de evolución: un campo con
+<span class="math inline">\Beta_F^{(r)}</span> alto puede acceder a
+configuraciones a través de múltiples caminos; uno con <span
+class="math inline">\Beta_F^{(r)}</span> bajo solo puede evolucionar por
+caminos estereotipados.</p>
+<p><span class="math inline">\Beta_F^{(i)}</span> — <strong>Flexibilidad
+introspectiva.</strong> Capacidad de observar los propios patrones desde
+cierta distancia y usarlos como palanca —la <em>imagen de aquel</em> del
+vocabulario clínico (NC-11). Es el componente <em>interno y
+metacognitivo</em> de la flexibilidad conductual. Un campo con <span
+class="math inline">\Beta_F^{(i)}</span> alto puede detectar la
+activación de sus propios patrones en tiempo real; uno con <span
+class="math inline">\Beta_F^{(i)}</span> bajo los experimenta como
+invisibles o como los únicos posibles.</p>
+<p><strong>Independencia de <span
+class="math inline">\Beta_F^{(r)}</span> y <span
+class="math inline">\Beta_F^{(i)}</span>:</strong> Las dos dimensiones
+son ortogonales. Un campo puede tener repertorio conductual amplio
+(<span class="math inline">\Beta_F^{(r)}</span> alto) y baja capacidad
+metacognitiva (<span class="math inline">\Beta_F^{(i)}</span> bajo) —
+patrón observable en el TPOC: rituales variados y precisos,
+completamente egosintónicos. O la disociación inversa: alta conciencia
+de los propios patrones (<span class="math inline">\Beta_F^{(i)}</span>
+alto) sin capacidad de variar la respuesta (<span
+class="math inline">\Beta_F^{(r)}</span> bajo). Formalización aprobada
+por Diego (sesión 5, jun 2026).</p>
+<p><span class="math inline">\Pi_R</span> — <strong>Prueba de
+realidad.</strong> Capacidad de calibrar las interpretaciones del
+entorno con puntos de referencia compartidos. Describe la precisión del
+operador de observación: un campo con <span
+class="math inline">\Pi_R</span> bajo produce observaciones <span
+class="math inline">\mathcal{O}(t)</span> menos confiables — la
+evidencia clínica pierde validez.</p>
+<p><span class="math inline">\Tau_F</span> — <strong>Continuidad de
+trayectoria.</strong> Capacidad de mantener coherencia narrativa y
+direccional a lo largo del tiempo. Describe la memoria del operador de
+evolución: un campo con <span class="math inline">\Tau_F</span> bajo
+produce trayectorias fragmentadas que no acumulan el efecto de las
+perturbaciones clínicas.</p>
+<p><span class="math inline">\Upsilon_{US}</span> — <strong>Estabilidad
+bajo estrés.</strong> Capacidad de mantener la organización que amplía
+<span class="math inline">\mathcal{F}_t^{(p)}</span> ante perturbaciones
+de alta intensidad. Es el modulador con mayor impacto en la indicación
+de intervención: por debajo de <span
+class="math inline">\Upsilon_{US_{\min}}</span>, el protocolo de
+desvelamiento no puede operar en el campo intensivo.</p>
+<hr />
+<h3 id="d-ideal.-referente-de-coherencia-funcional-h_t-m">D-ideal.
+Referente de coherencia funcional — <span
+class="math inline">H_t^*</span>, <span
+class="math inline">M^*</span></h3>
+<p><strong>Definición formal.</strong> <span class="math display">H_t^*
+= (1.0,\,1.0,\,1.0,\,1.0,\,1.0) \qquad M^* =
+(1.0,\,1.0,\,1.0,\,1.0,\,1.0)</span></p>
+<p><strong>Estatuto:</strong> límites superiores declarados de las
+escalas de D4 (<span class="math inline">H_t</span>) y D16 (<span
+class="math inline">M</span>). No es una norma empírica. No describe a
+ninguna persona real ni un estado permanente de ninguna trayectoria. Es
+el eje de orientación del perfil de coherencia funcional — la dirección
+de movimiento posible, no el destino de ningún tratamiento.</p>
+<p><strong>Lo que nombra <span
+class="math inline">H_t^*</span>:</strong> la organización en la que los
+cinco dominios alcanzan simultáneamente su nivel de coherencia funcional
+máxima declarado por las escalas del corpus — volición con vector propio
+sostenido, vínculos con afección recíproca plena, proyección temporal
+con continuidad y afecto, anclaje existencial con presencia plena con
+peso propio, dominio somático como recurso activo.</p>
+<p><strong>Lo que nombra <span class="math inline">M^*</span>:</strong>
+la organización en la que los cinco moduladores alcanzan simultáneamente
+su nivel máximo — repertorio de respuesta amplio y disponible bajo
+activación, imagen de aquel plenamente disponible, calibración
+epistémica alta, continuidad narrativa y experiencial plena, presencia
+sostenida ante perturbación de alta carga.</p>
+<p><strong>Función clínica:</strong> <span
+class="math inline">H_t^*</span> y <span class="math inline">M^*</span>
+permiten medir la <em>brecha de coherencia funcional</em> de la
+trayectoria sin necesidad de norma poblacional. Para cada parámetro
+<span class="math inline">x_i</span>, la brecha es <span
+class="math inline">1 - x_i</span>. El radar de coherencia funcional
+representa esta brecha visualmente: el área entre el perfil actual y el
+borde externo del radar (que corresponde a <span
+class="math inline">H_t^*</span>, <span class="math inline">M^*</span>).
+La lectura clínica relevante es la <em>forma</em> de la brecha, no el
+valor absoluto: qué parámetros muestran mayor distancia y cuáles son los
+más accesibles dado <span class="math inline">\xi_t</span>.</p>
+<p><strong>Relación con <span
+class="math inline">\sigma_t</span>:</strong> Los ejes de <span
+class="math inline">B_t</span> y <span class="math inline">A_t</span> en
+el radar de coherencia funcional llevan una sombra diferencial que
+indica la presencia de <span class="math inline">\sigma_t</span> — la
+huella morfológica de la experiencia temprana anterior al lenguaje.
+Cuando <span class="math inline">\sigma_t</span> es alto, la brecha en
+<span class="math inline">B_t</span> y <span
+class="math inline">A_t</span> tiene un costo de reorganización mayor
+que la misma brecha en otros dominios, independientemente de <span
+class="math inline">\kappa(t)</span>. La sombra no añade eje al radar:
+es una anotación visual de la lectura de la brecha, no una dimensión
+nueva. (Ver D20, nota sobre <span
+class="math inline">\sigma_t</span>.)</p>
+<p><strong>Aprobado por Diego (sesión 5, jun 2026).</strong></p>
+<hr />
+<h2
+id="parte-iii-términos-con-definición-parcial-en-documentos-actuales">Parte
+III — Términos con definición parcial en documentos actuales</h2>
+<p>Los siguientes términos tienen definición conceptual en el Núcleo
+Ontológico pero aún no tienen formalización matemática completa. Se
+registran aquí para trazabilidad.</p>
+<p><strong>D17. Horizonte temporal.</strong> La extensión hacia el
+futuro accesible para la trayectoria — la amplitud del campo de
+posibilidades en la dimensión temporal. Correlato de <span
+class="math inline">P_t</span> pero no idéntico: el horizonte puede
+estar presente incluso con <span class="math inline">P_t</span> bajo si
+la trayectoria tiene acceso a proyección a corto plazo. Formalización
+pendiente.</p>
+<p><strong>D18. Anclaje existencial.</strong> El suelo de sentido desde
+el que la trayectoria organiza su experiencia. El dominio <span
+class="math inline">A_t</span> es su representación extensiva. La
+formalización de la relación entre el suelo de sentido y la organización
+del campo intensivo — incluyendo si <span class="math inline">A_t</span>
+produce asimetría sistemática en <span class="math inline">\Psi_t</span>
+mayor que otros dominios — es objeto de G13 (Formalización del anclaje
+existencial en el campo intensivo, Núcleo Ontológico v2.2.4).</p>
+<p><strong>D19. Régimen dinámico.</strong> <em>Término prohibido en el
+vocabulario técnico del modelo.</em> Sustituir siempre por “organización
+dinámica”, “configuración” o “estado dinámico” según el contexto. La
+prohibición es histórica: “régimen” importa una connotación de
+discontinuidad abrupta que no es coherente con la ontología procesual de
+Syntropía.</p>
+<p><strong>D-H1a. Funcional de potencial generativo — <span
+class="math inline">\Phi_t^{(p)}</span>.</strong> <em>Estatuto:
+hipótesis estructural operativa — pendiente de calibración empírica
+(regla 103 del log).</em> Complemento de <span
+class="math inline">\Omega_t^{(p)}</span>: donde <span
+class="math inline">\Omega_t^{(p)}</span> describe dónde está el campo
+(accesibilidad/estabilidad), <span
+class="math inline">\Phi_t^{(p)}</span> describe hacia dónde empuja
+(tensión generativa). Formalmente: gradiente funcional de <span
+class="math inline">\mathcal{A}[\Omega, t]</span> en la dirección de
+expansión del soporte de <span
+class="math inline">\Omega_t^{(p)}</span>. Tres regímenes: <span
+class="math inline">\Phi_t^{(p)} \approx 0</span> (residencia profunda —
+campo estable por equilibrio); <span class="math inline">\Phi_t^{(p)}
+&gt; 0</span> (reconfiguración activa); <span
+class="math inline">\Phi_t^{(p)} \gg 0</span> con <span
+class="math inline">\kappa(t) &lt; \kappa_{\text{umbral}}</span> (crisis
+— campo estable por agotamiento). Esta distinción no es capturable desde
+<span class="math inline">\Omega_t^{(p)}</span> solo. Su derivación
+formal requiere PEA1 resuelta; su calibración empírica requiere datos
+del piloto. Fuente: §II.5sexies, Matemático v0.4.13.</p>
+<p><strong>D-H1b. Ritmo del proceso — <span
+class="math inline">\chi_t</span>.</strong> <em>Estatuto: objeto formal
+con estimadores aproximados disponibles; no calibrado.</em> Estado de
+preparación del campo para producir una reorganización — la tensión
+acumulada en <span class="math inline">\Omega_t^{(p)}</span> antes de
+que esa reorganización sea observable en <span
+class="math inline">H_t</span>. Distinto de <span
+class="math inline">\dot{H}_t = \nabla H_t / \Delta t</span> (tasa de
+cambio del observable): los dos son disociables (regla 104). <span
+class="math inline">\dot{H}_t \approx 0</span> con <span
+class="math inline">\chi_t</span> alto es el periodo silencioso previo a
+reorganización mayor; <span class="math inline">\dot{H}_t</span> alto
+con <span class="math inline">\chi_t</span> bajo es movimiento reactivo
+sin reorganización subyacente. Nunca presentar <span
+class="math inline">\dot{H}_t</span> como equivalente de <span
+class="math inline">\chi_t</span>. Fuente: §VIII.5, Matemático
+v0.4.13.</p>
+<p><strong>D-H1c. Operador de resignificación — <span
+class="math inline">\rho(t)</span>.</strong> <em>Estatuto: objeto
+hipotético pendiente de G18 (regla 105 del log).</em> Factor que modula
+la contribución funcional de <span class="math inline">D_p(t)</span> al
+campo sin alterar su magnitud: <span class="math inline">\Omega_t^{(p)}
+= F(\sigma_t,\; \rho(t) \cdot D_p(t),\; \kappa(t))</span>. Captura la
+resignificación de la historia — lo que organizaba el campo desde el
+miedo puede reorganizarse hacia memoria integrada sin que <span
+class="math inline">D_p(t)</span> se reduzca. Condición de desbloqueo:
+datos del piloto con medidas pre/post de intervenciones narrativas
+vs. somáticas con <span class="math inline">D_p(t)</span> constante. No
+incorporar a ecuaciones formales del modelo bayesiano hasta que G18
+produzca evidencia de distinguibilidad de <span
+class="math inline">\kappa(t)</span>. Fuente: D10 nota, Ontológico
+v2.3.3.</p>
+<p><strong>Desarrollo operacional prepiloto (v0.4.10):</strong> la
+distinción funcional con <span class="math inline">\kappa(t)</span>
+restaurado: la restauración de <span
+class="math inline">\kappa(t)</span> produce mejora <em>general</em> (el
+campo es más responsivo en todos los contextos); <span
+class="math inline">\rho(t)</span> activo produce mejora
+<em>específica</em> (las cuencas latentes asociadas a la historia
+trabajada ya no se activan ante perturbaciones de su tipo, mientras
+otras cuencas latentes pueden seguir activas). Señales de <span
+class="math inline">\rho(t)</span> activo: el campo describe los mismos
+eventos de su historia de forma cualitativamente distinta sin que los
+hechos hayan cambiado; cuencas latentes que antes se activaban ante
+perturbaciones tipo X ya no se activan con la misma frecuencia; imagen
+de sí con nueva coherencia narrativa. Intervenciones de <span
+class="math inline">\rho(t)</span>: psicoterapia psicodinámica, EMDR,
+narrativa, trabajo episódico (escala meses–años). Intervenciones de
+<span class="math inline">\kappa(t)</span>: farmacoterapia, sueño, carga
+alostática (escala semanas–meses). Documentación en FRCS-1 Campo 3:
+“<span class="math inline">\rho(t)</span>: [activo / no activo /
+indeterminado]”. Ver Núcleo Clínico v0.3.5.</p>
+<p><strong>D20. Dominio somático — <span
+class="math inline">B_t</span>.</strong> Quinto dominio constitutivo de
+<span class="math inline">H_t</span>. Canónico desde la versión 1.5.0
+del Núcleo Ontológico. <span class="math inline">H_t = (V_t, R_t, P_t,
+A_t, B_t) \in [0,1]^5</span>. Las cuatro subdimensiones son: <span
+class="math inline">B_t^{(s)}</span> regulación del sueño, <span
+class="math inline">B_t^{(m)}</span> regulación metabólica y
+neurobiológica, <span class="math inline">B_t^{(a)}</span> activación
+autonómica basal, <span class="math inline">B_t^{(i)}</span> integridad
+somática.</p>
+<p><strong>Nota sobre <span class="math inline">\xi_t</span> y <span
+class="math inline">\sigma_t</span>.</strong> La memoria constitutiva
+<span class="math inline">\xi_t = \{D_p(t), \kappa(t), \sigma_t\}</span>
+tiene tres componentes desde el Núcleo Ontológico v2.3.0. La estructura
+disposicional pre-simbólica <span class="math inline">\sigma_t</span>
+—la huella morfológica de la experiencia temprana anterior al lenguaje—
+tiene relación especial con <span class="math inline">B_t^{(s)}</span>
+(regulación del sueño) y <span class="math inline">B_t^{(m)}</span>
+(regulación metabólica y neurobiológica), ya que esas subdimensiones
+capturan la expresión somática de <span
+class="math inline">\sigma_t</span> que precede a la elaboración
+narrativa. Las intervenciones con acceso a <span
+class="math inline">\sigma_t</span> son primariamente las centradas en
+el cuerpo (<span class="math inline">B_t</span>), en la relación
+temprana y en el entorno sensorial.</p>
+<p><strong>Nota sobre las configuraciones canónicas.</strong> Las
+configuraciones canónicas deben derivarse desde el espacio <span
+class="math inline">H_t \in [0,1]^5</span> — el sistema canónico v1.2
+tiene 14 configuraciones candidatas organizadas por organización
+dominante de la propagación en <span class="math inline">\Psi_t</span> ×
+cuenca × dominio de origen (selectivo). Ver
+<code>Configuraciones_Canonicas_v1_3_14.qmd</code>. La pregunta de si el
+número de configuraciones canónicas es definitivo es objeto de G10.</p>
+<hr />
+<h3 id="hipótesis-formales-h-nov-a-h-orden">Hipótesis formales — H-NOV a
+H-ORDEN</h3>
+<p><em>Añadidas en v0.4.7 post revisión arquitectónica profunda del Core
+1.0. Las hipótesis formales son compromisos estructurales provisionales
+sobre relaciones del modelo que no pueden verificarse en el estado
+actual del corpus. Estatuto: hipótesis estructural operativa (más que
+analogías heurísticas, menos que compromisos ontológicos fuertes). Cada
+una tiene una condición de desbloqueo declarada.</em></p>
+<p><strong>H-NOV. Hipótesis de la novedad.</strong> <em>Estatuto:
+hipótesis latente — condicional a PEA1 resuelta y calibración de <span
+class="math inline">\Phi_t^{(p)}</span> (RC-6.2). No activa en el piloto
+actual. Horizonte: H4.</em> La expansión del soporte <span
+class="math inline">\mathcal{F}_t^{(p)}</span> hacia regiones
+previamente inaccesibles de <span class="math inline">\mathcal{W}</span>
+requiere simultáneamente: (a) <span class="math inline">\Phi_t^{(p)}
+&gt; 0</span> sostenido; (b) <span class="math inline">\kappa(t) \geq
+\kappa_{\text{umbral}}(D_p)</span>; (c) perturbación alineada con el
+gradiente de <span class="math inline">\Phi_t^{(p)}</span>. Una
+perturbación ortogonal o contraria produce nivel 1 (desplazamiento de
+moda) o nivel 3 (contracción). Fuente: A5 nivel 2, Ontológico
+v2.3.0.</p>
+<p><strong>H-COMP. Hipótesis de comparabilidad procesual — premetrica
+procesual dirigida.</strong> <em>Estatuto: hipótesis estructural
+operativa urgente; declarada como premetrica dirigida (no métrica
+simétrica) desde Epistemológico v0.3.10. Condición de desbloqueo: G2
+(calibración de <span class="math inline">g_t</span>). Horizonte:
+H2–H3.</em> La distancia procesual entre dos trayectorias <span
+class="math inline">p</span> y <span class="math inline">q</span> en el
+momento <span class="math inline">t</span>: <span
+class="math inline">d_{\text{proc}}(p,q,t) = \alpha \|\xi_t^{(p)} -
+\xi_t^{(q)}\|_{g_t} + \beta\, d_{\text{config}}(\Omega_t^{(p)},
+\Omega_t^{(q)}) + \gamma\, d_{S_m}(p,q,t)</span>. Operacionaliza CE18.
+Bloquea la validación poblacional del piloto sin métrica calibrada.
+Fuente: CE18, Epistemológico v0.3.9; §II bis.2, Matemático v0.4.13.</p>
+<p><strong>H-TRANS. Hipótesis del régimen transicional.</strong>
+<em>Estatuto: hipótesis estructural operativa. Condición de desbloqueo:
+G19. Horizonte: H2–H3.</em> El periodo entre cuencas se caracteriza por:
+alta varianza de <span class="math inline">\Omega_t^{(p)}</span> sobre
+múltiples configuraciones; <span class="math inline">\chi_t</span> en
+descenso desde el pico pre-transicional; <span
+class="math inline">\kappa(t)</span> en mínimo; sensibilidad aumentada a
+perturbaciones (<span
+class="math inline">\varepsilon_t^{\text{ef}}</span> transitoriamente
+reducido). Asimétrico por histéresis: el cruce <span
+class="math inline">\mathfrak{C}_i \to \mathfrak{C}_j</span> tiene
+dinámica distinta al cruce inverso. P12 aplica con máxima urgencia
+durante este régimen. Fuente: HST, D15-int extendido, Ontológico
+v2.3.0.</p>
+<p><strong>H-POT. Hipótesis de las potencialidades.</strong>
+<em>Estatuto: hipótesis estructural operativa. Condición de desbloqueo:
+<span class="math inline">\Phi_t^{(p)}</span> calibrado empíricamente.
+Horizonte: H3–H4.</em> La dirección de expansión más probable de <span
+class="math inline">\mathcal{F}_t^{(p)}</span> está determinada por el
+gradiente de <span class="math inline">\Phi_t^{(p)}</span> sobre <span
+class="math inline">\partial\mathcal{F}_t^{(p)}</span>. Las regiones más
+probablemente accesibles son aquellas para las cuales <span
+class="math inline">d_{g_t}(\mathfrak{C}_j, \partial\mathcal{F}_t^{(p)})
+&lt; \delta_{\Phi}(t)</span>, donde <span
+class="math inline">\delta_{\Phi}</span> depende de <span
+class="math inline">\Phi_t^{(p)}</span> y <span
+class="math inline">\kappa(t)</span>. Fuente: §II.5sexies, Matemático
+v0.4.13.</p>
+<p><strong>H-TEMPO. Hipótesis del tiempo interno de la
+trayectoria.</strong> <em>Estatuto: hipótesis latente — condicional a
+PEA1 resuelta y calibración de <span
+class="math inline">\Phi_t^{(p)}</span> (RC-6.2). No activa en el piloto
+actual. Horizonte: H3.</em> El tiempo interno <span
+class="math inline">\tau_t \approx \Phi_t^{(p)} / \kappa(t)</span> — un
+campo con alta tensión generativa y alta capacidad receptiva procesa
+perturbaciones más rápido que uno con baja tensión y baja capacidad. Si
+se verifica empíricamente (G24), <span class="math inline">\tau_t</span>
+es un predictor independiente de la velocidad de reorganización con
+capacidad adicional sobre <span class="math inline">\chi_t</span> y
+<span class="math inline">\dot{H}_t</span>. Fuente: §VIII.5, Matemático
+v0.4.17.</p>
+<p><strong>H-TRANS-ESC. Hipótesis de la propagación transescalar sin
+reducción.</strong> <em>Estatuto: hipótesis programática. Horizonte:
+H4.</em> La propagación entre escalas satisface la condición de
+no-reducción si y solo si los operadores de traducción (<span
+class="math inline">T_{\text{ontológico}}</span>, <span
+class="math inline">T_{\text{escala}}</span>, <span
+class="math inline">T_{\text{histórico}}</span>) no tienen inverso
+exacto — la información se pierde de forma controlada y declarada en
+cada dirección. Las dos ausencias principales: operador campo→molecular
+(<span class="math inline">T_{\text{ontológico}}^{-1}</span>) y
+propagación campo individual→campo supraindividual. Fuente:
+§II.5quinquies, §IV, Matemático v0.4.13.</p>
+<p><strong>H-ORDEN. Hipótesis de los campos de orden superior.</strong>
+<em>Estatuto: hipótesis programática. Horizonte: H4.</em> Familias,
+organizaciones y culturas tienen arquitectura análoga a <span
+class="math inline">\Omega_t^{(\text{int})}</span> con predicados
+propios — familiar, organizacional, cultural — y condicionan <span
+class="math inline">\Omega_t^{(p)}</span> individual a través de <span
+class="math inline">\Psi_t</span> y <span
+class="math inline">\sigma_t</span>. Los campos de orden superior tienen
+historia constitutiva propia <span
+class="math inline">\xi_t^{(\text{ord})}</span> con los mismos tres
+componentes en escala diferente. Fuente: D15-int extendido, Ontológico
+v2.3.1.</p>
+<p><strong>H-TRANS-F. Hipótesis de la forma funcional de la
+transición.</strong> <em>Estatuto: hipótesis estructural operativa;
+derivada de la geometría riemanniana de <span
+class="math inline">\mathcal{W}</span>; falsable con datos del piloto.
+Condición de desbloqueo: G2 + datos de frecuencias de transición del
+piloto. Horizonte: H2.</em> <span class="math inline">P(\mathfrak{C}_j
+\mid \mathfrak{C}_i, t) \propto \exp(-d_{g_t}(\mathfrak{C}_i,
+\mathfrak{C}_j) / \kappa(t) \cdot \|\Delta u_t\|) \cdot
+\mathbf{1}[\kappa(t) \geq \kappa_{\text{umbral}}(D_p)]</span>. Convierte
+las tres propiedades cualitativas de la HST en predicción cuantitativa
+falsable. Fuente: G10 extendido, Ontológico v2.3.1; §VIII.7, Matemático
+v0.4.14.</p>
+<p><strong>CE19. Límite de <span class="math inline">\xi_t</span> como
+representación de la historia constitutiva.</strong> <em>Estatuto:
+compromiso epistemológico canónico desde Epistemológico v0.3.10.</em>
+<span class="math inline">\xi_t</span> es la huella del proceso
+acumulado, no el proceso mismo. Dos trayectorias con <span
+class="math inline">\xi_t^{(p)} \approx \xi_t^{(q)}</span> pueden haber
+llegado por caminos distintos y responder diferente a perturbaciones
+idénticas. Severidad máxima durante Fases 1, 3 y 4 temprana de §T1 — en
+esos periodos la lectura clínica directa tiene peso mayor que el motor
+bayesiano. Fuente: CE19, Epistemológico v0.3.10; §VI.2 y §VIII.5,
+Matemático v0.4.14.</p>
+<hr />
+<h2
+id="parte-iv-vocabulario-relacional-retirado-estatuto-histórico">Parte
+IV — Vocabulario relacional (retirado — estatuto histórico)</h2>
+<p>El vocabulario relacional —14 términos técnicos de raíz griega en dos
+generaciones: Eudaimonía, Euexía, Alotropía, Anexía, Epitropía,
+Entelopía y Proexía (sistema original); Eutropía, Disintropía,
+Neotropía, Catexía, Apexía, Anastropía y Heterotropía (D21–D27,
+formalizados el 10 de junio de 2026 junto con los nombres de las 14
+configuraciones canónicas)— fue retirado del corpus por instrucción
+explícita de Diego F. Pereira-Perdomo (jun 2026). Cumplió su función
+heurística durante la construcción del modelo —explorar dimensiones de
+descripción del campo (coherencia global, movimiento en el tiempo,
+entorno normativo) independientes del sistema canónico de
+configuraciones— pero ningún término de ninguna de las dos generaciones
+es activo. Las 14 configuraciones del sistema canónico v1.2 y sus
+nombres en español (D28) son el único sistema de nomenclatura
+vigente.</p>
+<hr />
+<h3 id="d28.-tabla-de-referencia-rápida-nombres-y-frases-canónicas">D28.
+Tabla de referencia rápida — nombres y frases canónicas</h3>
+<p>Los 14 nombres en español de las configuraciones canónicas (sistema
+v1.2) y sus frases canónicas — formulaciones clínicas aprobadas para
+comunicar la lógica interna de cada configuración al paciente.
+Formalización completa en
+<code>Configuraciones_Canonicas_v1_3_14.qmd</code>.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Nombre</th>
+<th style="text-align: left;">Frase canónica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C-A</td>
+<td style="text-align: left;">Anclaje</td>
+<td style="text-align: left;">La persona deviene un patrón instalado en
+la dimensión psicológica que durante décadas ha repercutido en el
+dominio somático</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-B</td>
+<td style="text-align: left;">Bucle</td>
+<td style="text-align: left;">Lo somático y lo psicológico se modulan
+mutuamente en un ciclo que se perpetúa sin punto de origen claro</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-C1</td>
+<td style="text-align: left;">Vínculo</td>
+<td style="text-align: left;">La persona atraviesa un proceso de
+reorganización activa cuyo origen es vincular</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-C2</td>
+<td style="text-align: left;">Existencial</td>
+<td style="text-align: left;">La persona atraviesa un proceso de
+reorganización existencial — la prueba de realidad requiere evaluación
+en cada encuentro</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-D</td>
+<td style="text-align: left;">Crisálida</td>
+<td style="text-align: left;">Lo somático y lo psicológico se
+reorganizan simultáneamente en un proceso bidireccional activo</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-E</td>
+<td style="text-align: left;">Sacudida</td>
+<td style="text-align: left;">Lo somático está perturbando el
+funcionamiento psicológico sin que haya estabilización todavía</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-F</td>
+<td style="text-align: left;">Suspensión</td>
+<td style="text-align: left;">La perturbación psicológica está activa y
+la trayectoria todavía no se ha estabilizado</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-G</td>
+<td style="text-align: left;">Transformación</td>
+<td style="text-align: left;">El dominio somático está produciendo
+reorganización sostenida en los demás dominios</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-H</td>
+<td style="text-align: left;">Vorágine</td>
+<td style="text-align: left;">Lo somático y lo psicológico se perturban
+mutuamente en un ciclo reciente — la ventana de intervención está
+abierta</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-I</td>
+<td style="text-align: left;">Encarnación</td>
+<td style="text-align: left;">El dominio somático organiza la
+trayectoria desde hace décadas y los demás dominios se han estabilizado
+en torno a él</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-J</td>
+<td style="text-align: left;">Colapso</td>
+<td style="text-align: left;">Todos los dominios colapsaron
+simultáneamente — la integración y la prueba de realidad no están
+disponibles</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-K</td>
+<td style="text-align: left;">Idiosincrática</td>
+<td style="text-align: left;">La trayectoria se organizó de manera
+divergente durante o antes de la infancia temprana — esa organización es
+la base constitutiva desde la que opera</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-L</td>
+<td style="text-align: left;">Encapsulamiento</td>
+<td style="text-align: left;">Lo observable en el encuentro muestra
+coherencia interna con procesos que probablemente existen pero no llegan
+a emerger</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-M</td>
+<td style="text-align: left;">Deriva</td>
+<td style="text-align: left;">La trayectoria deviene sin llegar a
+estabilizarse</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Versión 0.4.18 — 13 de julio de 2026.</em> <em>Autor: Diego F.
+Pereira-Perdomo.</em> <em>Cotejar contra: Núcleo Ontológico v2.3.16,
+Núcleo Matemático v0.4.27, Configuraciones Canónicas v1.3.15.</em>
+<em>Este documento es de referencia canónica — toda modificación
+requiere nueva versión semántica.</em></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Volver -->
+  <section class="py-16 bg-slate-50 text-center">
+    <div class="max-w-2xl mx-auto px-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/syntropia/es/nucleos/"
+        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        ← Todos los núcleos
+      </a>
+      <a href="/syntropia/es/"
+        class="inline-block bg-white border border-slate-300 hover:border-teal-500 text-slate-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        Volver a Syntropía
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
+    <p class="mb-2">&copy; 2026 Syntropía &mdash; Modelo Clínico y Científico</p>
+  </footer>
+
+</body>
+
+</html>
