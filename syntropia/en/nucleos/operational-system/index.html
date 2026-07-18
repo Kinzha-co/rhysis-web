@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operational System &mdash; Syntropia</title>
+  <meta name="description" content="Reproducible clinical procedures translating the canonical Cores' conceptual architecture for the validation pilot.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%); }
+    .prose :where(code):not(:where([class~="not-prose"] *)) {
+      background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em;
+    }
+    .prose blockquote { border-left-color: #0f766e; font-style: normal; }
+    .prose table { font-size: 0.92em; }
+    .prose thead th { background: #f8fafc; }
+  </style>
+<script defer
+src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+</script>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+</head>
+
+<body class="m-0 p-0 bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4">
+    <a href="/en/">
+      <img src="/assets/Logo-rhysis.svg" alt="Rhysis"
+        class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity">
+    </a>
+    <div class="text-sm md:text-base font-medium text-white tracking-wide">
+      <span class="font-bold border-b-2 border-teal-400 pb-0.5">EN</span>
+      <span class="mx-2 text-slate-400">|</span>
+      <a href="/syntropia/es/nucleos/sistema-operacional/" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropia &mdash; Canonical-Operational Document</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
+        Operational System
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Reproducible clinical procedures translating the canonical Cores' conceptual architecture for the validation pilot.</p>
+      <p class="text-slate-400 text-sm mt-6">Version 0.2.5 &middot; July 13, 2026</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-slate lg:prose-lg max-w-none
+                       prose-headings:text-teal-800 prose-a:text-teal-700
+                       prose-strong:text-slate-900">
+<h1 id="operational-system-v0.2.5">Operational System — v0.2.5</h1>
+<h2 id="usage-note">Usage Note</h2>
+<p>This document translates Core 1.2’s conceptual architecture, and that of the four canonical Cores, into reproducible clinical procedures for the validation pilot. It is not a manual of theory. It is a manual of practice. A clinician who reads this document without having studied the Core and the Cores first does not have the context to apply it correctly. This document is the last link in the chain, not the first.</p>
+<p><strong>Canonical reference:</strong> every claim in this document is grounded in Core 1.2. If a term or procedure is unclear, Core 1.2 and the source Cores are the authority, not this document.</p>
+<hr />
+<h1 id="part-i-full-clinical-flow">Part I — Full Clinical Flow</h1>
+<h2 id="text-diagram-from-first-contact-to-longitudinal-follow-up">Text Diagram: From First Contact to Longitudinal Follow-Up</h2>
+<pre><code>FIRST CONTACT
+│
+├─ 1. Position assessment in S_m
+│    ├─ Estimate κ(t): can the field receive clinical work right now?
+│    ├─ Estimate D_p(t): approximate accumulated history
+│    └─ Decision: R1 / R2 / R3 / R4 → sets the initial sequence
+│
+├─ 2. CAIP — Constitutive Attractor Inference Protocol
+│    ├─ Step 1: The clinician as instrument (initial resonance)
+│    ├─ Step 2: The five domains (H_t = V_t, R_t, P_t, A_t, B_t)
+│    ├─ Step 3: The modulators (M = β_F, Π_R, Τ_F, Υ_US)
+│    ├─ Step 4: Reading ξ_t (D_p, κ(t), σ_t)
+│    └─ Step 5: Building the initial Bayesian prior
+│
+├─ 3. Initial estimate of Ω_t^(p)
+│    ├─ Posterior P(ξ_t | O(t)) from the PyMC engine
+│    ├─ Probabilistic classification against canonical system v1.2
+│    └─ Joint reading: distribution + T_2 (direction and variance)
+│
+├─ 4. §T1 phase detection
+│    ├─ Phase 1 (silent): variance↑ with H_t stable → do not perturb
+│    ├─ Phase 2 (threshold): ΔH_t &gt; ε_t^ef → check κ(t) before acting
+│    ├─ Phase 3 (transitional): high variance, no mode → minimize perturbation, P12 maximum urgency
+│    └─ Phase 4 (consolidation): variance↓ → sustain consolidation conditions
+│
+├─ 5. SCRF-1 — Encounter record
+│    ├─ Field 1: Distribution of Ω_t^(p) (three configurations + masses)
+│    ├─ Field 2: T_2 direction and variance
+│    ├─ Field 3: Difference from the canonical pattern (C7)
+│    ├─ Field 4: Position in S_m (R1/R2/R3/R4)
+│    └─ Field 5: Estimated §T1 phase
+│
+├─ 6. Intervention
+│    ├─ Oriented by target parameter (intervention modes table, Clinical Core §&quot;Intervention Modes&quot;)
+│    ├─ P12 active: if κ(t) &lt; κ_threshold → restoration before any other intervention
+│    ├─ §T3: processual language in communication with the person
+│    └─ Post-encounter protocol (three observations: body, image, pending)
+│
+├─ 7. Reassessment (next encounter)
+│    ├─ CAIP updated: new observations
+│    ├─ PyMC engine: posterior update
+│    ├─ New SCRF-1
+│    └─ Longitudinal comparison: T_2 across prior SCRF-1 records
+│
+└─ 8. Longitudinal follow-up
+     ├─ Consolidation assessment (Phase 4): stable vs. superficial
+     ├─ Relapse signals: activation of latent basins
+     ├─ Documentation of ρ(t) if resignification is active
+     └─ Closure or continuation per S_m and T_2 criteria</code></pre>
+<p><strong>Minimum recommended frequency for the pilot:</strong></p>
+<ul>
+<li>Clinical encounter: every two weeks during active reconfiguration phases (Phases 2, 3); monthly during residency (Phase 1) and stable consolidation (Phase 4).</li>
+<li>High-frequency sensor (<span class="math inline">T_{\text{temporal}}</span>): weekly during Phases 1–3; can drop to biweekly once Phase 4 is stable.</li>
+<li>PyMC engine: posterior update after every clinical encounter.</li>
+</ul>
+<hr />
+<h1 id="part-ii-scrf-1-user-manual">Part II — SCRF-1 User Manual</h1>
+<h2 id="syntropic-clinical-report-format-scrf-1">Syntropic Clinical Report Format — SCRF-1</h2>
+<p>SCRF-1 operationalizes C6 from the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>. It is the minimum record needed for comparability across evaluations and across clinicians.</p>
+<hr />
+<h3 id="field-1-distribution-of-omega_tp">Field 1 — Distribution of <span class="math inline">\Omega_t^{(p)}</span></h3>
+<p><strong>What the clinician observes:</strong> the three configurations from canonical system v1.2 carrying the most posterior mass in this evaluation, read from the PyMC engine’s output.</p>
+<p><strong>How to record it:</strong> “<span class="math inline">\mathfrak{C}_k</span> (mass <span class="math inline">\approx p_k</span>), <span class="math inline">\mathfrak{C}_j</span> (mass <span class="math inline">\approx p_j</span>), <span class="math inline">\mathfrak{C}_i</span> (mass <span class="math inline">\approx p_i</span>)”</p>
+<p><strong>Quality criterion:</strong> the masses should sum to <span class="math inline">\leq 1.0</span> and <span class="math inline">\geq 0.5</span> across the three reported configurations. If the mass is more spread out (none above <span class="math inline">0.3</span>), report every configuration with mass <span class="math inline">&gt; 0.15</span> and flag “widely dispersed distribution: Phase 3 likely.”</p>
+<p><strong>Common error:</strong> reporting only the modal configuration (“the patient is in C-D”) with no distribution. This violates C6 and makes the record useless for longitudinal comparability.</p>
+<p><strong>Correct example:</strong> “C-D (0.52), C-B (0.21), C-C1 (0.14)”</p>
+<p><strong>Incorrect example:</strong> “The patient is in Chrysalis.”</p>
+<p><strong>Reading signals:</strong></p>
+<ul>
+<li>Mass <span class="math inline">&gt; 0.7</span> in one configuration: high stability in that basin.</li>
+<li>Mass spread with none above <span class="math inline">0.4</span> across three or more configurations: likely Phase 3 (transitional regime).</li>
+<li>A different mode from the prior SCRF-1, with variance decreasing: likely Phase 4 (consolidation).</li>
+</ul>
+<hr />
+<h3 id="field-2-t_2-direction-and-variance">Field 2 — <span class="math inline">T_2</span> Direction and Variance</h3>
+<p><strong>What the clinician observes:</strong> the direction the field has moved since the last evaluation, and the posterior’s variance.</p>
+<p><strong>How to record it:</strong> “<span class="math inline">T_2</span>: [toward <span class="math inline">\mathfrak{C}_k</span> / stable / toward restriction / indeterminate], variance [high / medium / low]”</p>
+<p><strong>Quality criterion:</strong> direction is determined by comparing this encounter’s posterior mode against the last one’s. Variance is qualitative in this version; if the engine produces a quantitative variance, record it as a number.</p>
+<p><strong>Common error:</strong> recording “<span class="math inline">T_2</span>: positive” without specifying direction. “Positive” is not part of the formal vocabulary; “toward <span class="math inline">\mathfrak{C}_k</span>” or “toward support expansion” are.</p>
+<p><strong>Correct example:</strong> “<span class="math inline">T_2</span>: toward C-G from C-D, variance medium and decreasing”</p>
+<p><strong>Incorrect example:</strong> “<span class="math inline">T_2</span>: improving”</p>
+<p><strong>Reading signals:</strong></p>
+<ul>
+<li>High variance + indeterminate direction: Phase 3, CE19 applies at maximum severity.</li>
+<li>Decreasing variance + stable direction: Phase 4, sustain conditions.</li>
+<li>Increasing variance + <span class="math inline">\|H_t\|</span> stable: Phase 1, <span class="math inline">\chi_t</span> possibly high, do not intervene on <span class="math inline">D_p(t)</span>.</li>
+</ul>
+<hr />
+<h3 id="field-3-difference-from-the-canonical-pattern-c7">Field 3 — Difference From the Canonical Pattern (C7)</h3>
+<p><strong>What the clinician observes:</strong> how this person’s field differs from the canonical pattern of whichever configuration activated the clinician’s schema.</p>
+<p><strong>How to record it:</strong> free text, at least one sentence. If no schema was activated, write “no schema activation in this encounter.”</p>
+<p><strong>Quality criterion:</strong> the difference has to be specific: name a parameter (<span class="math inline">\Psi_t</span>, <span class="math inline">\varepsilon_t</span>, <span class="math inline">D_p(t)</span>, <span class="math inline">\kappa(t)</span>, <span class="math inline">\sigma_t</span>) that departs from the canonical pattern, not a general impression.</p>
+<p><strong>Common error:</strong> skipping this field, or writing “similar to the pattern” without saying how.</p>
+<p><strong>Correct example:</strong> “Activates C-B (Loop) but without the characteristic low-<span class="math inline">R_t</span> component: <span class="math inline">\Psi_t</span>’s bidirectionality runs mainly through <span class="math inline">V_t</span>-<span class="math inline">P_t</span>, not <span class="math inline">R_t</span>-<span class="math inline">V_t</span>. The relational field is better preserved than the canonical pattern.”</p>
+<p><strong>Incorrect example:</strong> “Typical Loop presentation.”</p>
+<hr />
+<h3 id="field-4-position-in-s_m">Field 4 — Position in <span class="math inline">S_m</span></h3>
+<p><strong>What the clinician observes:</strong> a qualitative estimate of <span class="math inline">D_p(t)</span> (accumulated history) and <span class="math inline">\kappa(t)</span> (current receptive capacity).</p>
+<p><strong>How to record it:</strong> “[R1 / R2 / R3 / R4]”</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Region</th>
+<th><span class="math inline">D_p(t)</span></th>
+<th><span class="math inline">\kappa(t)</span></th>
+<th>Intervention Implication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R1</td>
+<td>Low</td>
+<td>High</td>
+<td>Work on <span class="math inline">\xi_t</span> content is viable</td>
+</tr>
+<tr class="even">
+<td>R2</td>
+<td>High</td>
+<td>Low</td>
+<td>Restore <span class="math inline">\kappa(t)</span> before any other intervention: P12 urgent</td>
+</tr>
+<tr class="odd">
+<td>R3</td>
+<td>Low/moderate</td>
+<td>Sufficient</td>
+<td>Work on <span class="math inline">D_p(t)</span> is viable</td>
+</tr>
+<tr class="even">
+<td>R4</td>
+<td>High</td>
+<td>Minimal</td>
+<td>Urgent: restore <span class="math inline">\kappa(t)</span> and <span class="math inline">\Pi_R</span>: P12 maximum urgency</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Common error:</strong> assuming R1 because the person “seems fine.” Position in <span class="math inline">S_m</span> is inferred from accumulated history (<span class="math inline">D_p</span>) and the field’s responsiveness in this encounter (<span class="math inline">\kappa</span>), not from observable functioning level.</p>
+<hr />
+<h3 id="field-5-estimated-t1-phase">Field 5 — Estimated §T1 Phase</h3>
+<p><strong>What the clinician observes:</strong> a synthesis of the fields above, used to estimate which phase of the transformation process the field is in.</p>
+<p><strong>How to record it:</strong> “[Phase 1 / Phase 2 / Phase 3 / Phase 4 / Indeterminate]”</p>
+<p><strong>Quality criterion:</strong> the estimated phase should be consistent with Fields 1, 2, and 4. If there’s an inconsistency, record “Indeterminate” and note the tension.</p>
+<p><strong>Intervention implications by phase:</strong></p>
+<ul>
+<li>Phase 1: do not raise demand; protect <span class="math inline">\kappa(t)</span>; log signs of <span class="math inline">\chi_t</span>.</li>
+<li>Phase 2: check <span class="math inline">\kappa(t) \geq \kappa_{\text{umbral}}</span> before acting on <span class="math inline">D_p(t)</span>.</li>
+<li>Phase 3: minimize perturbation; P12 maximum urgency; CE19 severe.</li>
+<li>Phase 4: sustain regularity; do not introduce high-magnitude perturbation; assess stable vs. superficial.</li>
+</ul>
+<hr />
+<h1 id="part-iii-consolidation-manual-t1-phase-4">Part III — Consolidation Manual (§T1 Phase 4)</h1>
+<h2 id="how-to-recognize-consolidation">How to Recognize Consolidation</h2>
+<p>Phase 4 begins when posterior variance starts dropping from its Phase 3 peak, and the new attractor’s modal configuration starts gaining mass steadily. Minimum entry criteria for Phase 4:</p>
+<ul>
+<li>Posterior variance declining across at least two consecutive evaluations.</li>
+<li>One configuration crossing mass <span class="math inline">&gt; 0.5</span> for the first time since the transition began.</li>
+<li><span class="math inline">\kappa(t)</span> recovering (the field responds to ordinary-magnitude perturbation without disorganizing).</li>
+</ul>
+<p><strong>Do not confuse this with:</strong> <span class="math inline">T_2</span> stable in the configuration that existed <em>before</em> reorganization (that’s residency, not consolidation). Phase 4 always follows a documented Phase 3.</p>
+<h2 id="how-to-recognize-stable-consolidation">How to Recognize Stable Consolidation</h2>
+<p>Signs that consolidation is stable (the new attractor has enough depth):</p>
+<ul>
+<li>Posterior variance stays low across 6–8 consecutive evaluations with the new modal configuration.</li>
+<li>Ordinary life perturbations (medium-magnitude events) produce reorganization <em>within</em> the new basin, not activation of latent basins.</li>
+<li><span class="math inline">B_t^{(a)}</span> declining from its Phase 2/3 peak: the somatic tension signal is resolving.</li>
+<li>The field connects current events to the new configuration’s logic, not to earlier configurations’ logic (assessable from the self-image in <a href="/syntropia/en/nucleos/piac/">CAIP</a>).</li>
+<li><span class="math inline">T_2</span> in <span class="math inline">S_m</span>: <span class="math inline">\kappa(t)</span> in sustained recovery.</li>
+</ul>
+<h2 id="how-to-recognize-superficial-consolidation">How to Recognize Superficial Consolidation</h2>
+<p>Signs that consolidation is superficial (<span class="math inline">D_p^{(\text{new})}(t)</span> not yet enough to compete with latent basins):</p>
+<ul>
+<li>Posterior variance low on average but with episodic spikes that activate latent basins under medium-magnitude perturbation.</li>
+<li><span class="math inline">T_2</span> micro-fluctuating back toward earlier configurations after perturbations.</li>
+<li><span class="math inline">\kappa(t)</span> sitting close to threshold under perturbation: the field has no margin.</li>
+<li>The field describes new patterns in the new configuration’s language but responds to perturbation with the emotional-behavioral logic of the latent basins (for instance: narrates from C-G but reacts emotionally with C-A’s pattern).</li>
+<li>Latent basins activate under perturbations that connect specifically to those basins’ history: “the same old themes producing the same old effect.”</li>
+</ul>
+<h2 id="how-to-recognize-false-improvement">How to Recognize False Improvement</h2>
+<p>False improvement is the limiting case of superficial consolidation, where the field looks consolidated but <span class="math inline">\kappa(t)</span> is holding it in the new basin without <span class="math inline">D_p^{(\text{new})}(t)</span> having grown enough:</p>
+<ul>
+<li>The field “is fine” when conditions are favorable but disorganizes quickly under ordinary stress.</li>
+<li>No latent-basin activation, but no growth in <span class="math inline">D_p^{(\text{new})}(t)</span> either: the field is visiting the new basin, not living in it.</li>
+<li>The distinguishing signal: in genuine consolidation, stable or superficial, the field has history in the new basin. In false improvement, the field sits in the new basin because perturbations happen to be absent, not because history has accumulated there.</li>
+<li>Verification protocol: deliberately introduce a sub-threshold perturbation tied to the latent basins’ history (a controlled narrative evocation in the encounter). If the field responds with latent-basin activation, it’s false improvement. If it responds with the new basin’s logic, it’s genuine consolidation.</li>
+</ul>
+<h2 id="interventions-that-support-consolidation">Interventions That Support Consolidation</h2>
+<ol type="1">
+<li><p><strong>Regularity of the frame:</strong> encounters at a predictable frequency, with continuity of clinician. This supplies repeated sub-threshold perturbations that build <span class="math inline">D_p^{(\text{new})}(t)</span> without destabilizing the field.</p></li>
+<li><p><strong>Protecting <span class="math inline">\kappa(t)</span>:</strong> during Phase 4, P12 still applies, now in maintenance mode rather than urgent mode. Interventions that restore <span class="math inline">\kappa(t)</span> (sleep regulation, reducing allostatic load) remain part of the work.</p></li>
+<li><p><strong>Active <span class="math inline">\rho(t)</span> work:</strong> interventions that change the function <span class="math inline">D_p(t)</span> serves in the competing latent basins reduce the odds that ordinary perturbation will activate them. See Part IV.</p></li>
+<li><p><strong>Work on self-image:</strong> helping the field build a narrative of itself from the new configuration, not from the old ones. <a href="/syntropia/en/nucleos/piac/">CAIP</a>’s language and §T3 are the tools for this.</p></li>
+<li><p><strong>Identifying and processing the competing latent basins:</strong> working explicitly on the “themes that always come back,” naming them as latent basins with history, not as failures of the process.</p></li>
+</ol>
+<h2 id="interventions-that-weaken-consolidation">Interventions That Weaken Consolidation</h2>
+<ol type="1">
+<li><p><strong>Introducing high-magnitude perturbation on <span class="math inline">D_p(t)</span></strong> while <span class="math inline">D_p^{(\text{new})}(t)</span> is still low. Deep trauma work (accessing <span class="math inline">\sigma_t</span>) during early Phase 4 can destabilize the new basin before it has built enough history.</p></li>
+<li><p><strong>Cutting back encounter frequency too early</strong>, before posterior variance has stayed low and stable for at least 6 evaluations.</p></li>
+<li><p><strong>Treating consolidation as a destination:</strong> telling the person “you’ve arrived” or “this is who you are now” violates §T3, and can land on the field in early Phase 4 with the same force as a high-magnitude perturbation.</p></li>
+<li><p><strong>Failing to document active latent basins:</strong> if the clinician doesn’t identify which latent basins are competing with the new one, there’s no way to design <span class="math inline">\rho(t)</span> interventions.</p></li>
+</ol>
+<h2 id="longitudinal-tracking-indicators-during-phase-4">Longitudinal Tracking Indicators During Phase 4</h2>
+<p>In every SCRF-1 during Phase 4, record:</p>
+<ul>
+<li>Field 1: is the modal configuration gaining mass relative to the last evaluation?</li>
+<li>Field 2: is posterior variance still decreasing?</li>
+<li>Field 5: was there latent-basin activation in the last 15 days? Describe the perturbation and the field’s response.</li>
+<li>Additional note (Phase 4 only): “Latent basins active in this period: [list]. Stable / superficial consolidation signal: [specify].”</li>
+</ul>
+<hr />
+<h1 id="part-iv-rhot-operational-manual">Part IV — <span class="math inline">\rho(t)</span> Operational Manual</h1>
+<h2 id="when-to-suspect-active-resignification">When to Suspect Active Resignification</h2>
+<p>Suspect resignification (active <span class="math inline">\rho(t)</span>) when:</p>
+<ul>
+<li>The person describes the <em>exact same historical events</em> in a qualitatively different way, because the function those facts serve in their field has changed, not because the facts themselves have.</li>
+<li>Latent basins that used to activate under type-X perturbation stop activating at the same frequency or intensity, even though perturbation magnitude hasn’t changed.</li>
+<li>The field holds its new modal configuration under perturbations that connect to latent-basin history: a signal that <span class="math inline">\rho(t) \cdot D_p(t)</span> has dropped in those basins.</li>
+<li><a href="/syntropia/en/nucleos/piac/">CAIP</a> produces a self-image with new narrative coherence about prior history: the field explains its past through the new basin’s logic, not the latent basins’.</li>
+</ul>
+<h2 id="when-to-suspect-restoration-of-kappat">When to Suspect Restoration of <span class="math inline">\kappa(t)</span></h2>
+<p>Suspect restoration of <span class="math inline">\kappa(t)</span> when:</p>
+<ul>
+<li>The field handles medium-magnitude perturbation more easily without disorganizing.</li>
+<li>Posterior variance is lower and the field is more stable in general, regardless of which themes are being worked on.</li>
+<li>Somatic indicators improve: sleep more stable, autonomic regulation better, <span class="math inline">B_t^{(a)}</span> declining.</li>
+<li>The field can “receive” work on <span class="math inline">D_p(t)</span> or <span class="math inline">\sigma_t</span> without disorganizing: a signal that <span class="math inline">\kappa(t) \geq \kappa_{\text{umbral}}</span>.</li>
+</ul>
+<h2 id="when-do-they-happen-together">When Do They Happen Together?</h2>
+<p>Restored <span class="math inline">\kappa(t)</span> and active <span class="math inline">\rho(t)</span> are independent conditions, and they can coexist. The signal of their co-occurrence:</p>
+<ul>
+<li>The field is more stable overall (high <span class="math inline">\kappa(t)</span>) AND specific latent basins no longer activate under their characteristic perturbations (active <span class="math inline">\rho(t)</span>).</li>
+<li>Stable (not superficial) Phase 4 consolidation needs both: <span class="math inline">\kappa(t)</span> for the capacity to hold the new basin, and <span class="math inline">\rho(t)</span> to reduce competition from the latent basins.</li>
+</ul>
+<h2 id="kappat-vs.-rhot-comparison-table"><span class="math inline">\kappa(t)</span> vs. <span class="math inline">\rho(t)</span> Comparison Table</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th><span class="math inline">\kappa(t)</span> Restoration</th>
+<th><span class="math inline">\rho(t)</span> Resignification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>What changes</td>
+<td>Current receptive capacity</td>
+<td>The function <span class="math inline">D_p(t)</span> serves in the field</td>
+</tr>
+<tr class="even">
+<td>Timescale</td>
+<td>Weeks to months</td>
+<td>Months to years</td>
+</tr>
+<tr class="odd">
+<td>Main interventions</td>
+<td>Pharmacotherapy, sleep regulation, allostatic load, <span class="math inline">\Upsilon_{US}</span></td>
+<td>Psychodynamic psychotherapy, EMDR, narrative work, episodic work</td>
+</tr>
+<tr class="even">
+<td>Observable in <span class="math inline">T_2</span></td>
+<td>General variance↓; field more responsive</td>
+<td>Latent basins less activated under specific perturbations</td>
+</tr>
+<tr class="odd">
+<td>Observable in self-image</td>
+<td>The field can take in more</td>
+<td>The field describes its history differently</td>
+</tr>
+<tr class="even">
+<td>Reversibility</td>
+<td><span class="math inline">\kappa(t)</span> can drop again if allostatic load rises</td>
+<td><span class="math inline">\rho(t)</span> is more stable, doesn’t reverse easily</td>
+</tr>
+<tr class="odd">
+<td>Position in <span class="math inline">S_m</span></td>
+<td>R2 → R1 or R4 → R3</td>
+<td>Doesn’t change position, but changes how fast latent basins activate</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-to-document-it-in-scrf-1">How to Document It in SCRF-1</h2>
+<p>Add to Field 3 (difference from the canonical pattern), when applicable:</p>
+<p>“<em><span class="math inline">\rho(t)</span> note:</em> [active / not active / indeterminate]. If active: which latent basins were worked on and what signal was observed. If indeterminate: hypothesis pending longitudinal confirmation.”</p>
+<p>Confirming active <span class="math inline">\rho(t)</span> takes at least two consecutive evaluations in which the specific latent basins don’t activate under their characteristic perturbations.</p>
+<hr />
+<h1 id="part-v-clinician-training-protocol">Part V — Clinician Training Protocol</h1>
+<h2 id="what-a-clinician-must-learn-before-the-pilot">What a Clinician Must Learn Before the Pilot</h2>
+<p><strong>Module 1: Foundations (required, untimed):</strong></p>
+<ul>
+<li>Core 1.2 in full, with emphasis on I.1–I.12 (ontological layer) and IV.1–IV.3 (clinical layer).</li>
+<li>The ten axioms A1–A10 and their clinical consequences.</li>
+<li>P12: the intervention sequence and its formal basis.</li>
+<li>Canonical system v1.2: the 14 configurations, their organizing axes, and how they differ from each other.</li>
+<li>CE19: the Bayesian engine’s limits and the sources of unmediated access.</li>
+</ul>
+<p><strong>Module 2: <a href="/syntropia/en/nucleos/piac/">CAIP</a> (required, tested):</strong></p>
+<ul>
+<li>Reading the field: the five domains and the four modulators.</li>
+<li>Building the Bayesian prior from clinical history.</li>
+<li>The resonance-versus-projection distinction (CE7, C4).</li>
+<li>The post-encounter protocol: the three observations and the longitudinal validation criterion.</li>
+</ul>
+<p><strong>Module 3: The PyMC Engine and SCRF-1 (required, tested):</strong></p>
+<ul>
+<li>Using the PyMC engine v0.1.1: loading data, updating the posterior, reading the output.</li>
+<li>SCRF-1: filling in all five fields accurately. See Part II of this document.</li>
+<li>Common SCRF-1 errors: see the incorrect examples under each field.</li>
+</ul>
+<p><strong>Module 4: Processual Clinical Practice (required, tested):</strong></p>
+<ul>
+<li>§T1: detecting the four phases through observational indicators (table §VIII.5, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a>).</li>
+<li>The consolidation manual (Part III of this document).</li>
+<li>The <span class="math inline">\rho(t)</span> manual (Part IV of this document).</li>
+<li>§T3 in practice: the six principles of processual clinical language (<a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>).</li>
+</ul>
+<h2 id="unacceptable-errors-produce-unusable-data">Unacceptable Errors (Produce Unusable Data)</h2>
+<ol type="1">
+<li>Reporting the modal configuration with no distribution in SCRF-1 Field 1.</li>
+<li>Intervening on <span class="math inline">D_p(t)</span> or <span class="math inline">\sigma_t</span> while the field is in R2 or R4, without first restoring <span class="math inline">\kappa(t)</span>: a P12 violation.</li>
+<li>Communicating the configuration to the person as an identity (“you are a Drift”) instead of as a processual description: a §T3 and C6 violation.</li>
+<li>Updating the PyMC engine with data from an incomplete SCRF-1.</li>
+<li>Failing to document the estimated §T1 phase in Field 5.</li>
+</ol>
+<h2 id="expected-errors-need-calibration-not-disqualifying">Expected Errors (Need Calibration, Not Disqualifying)</h2>
+<ol type="1">
+<li>Initial uncertainty about what counts as “ordinary perturbation” versus “high-magnitude perturbation”: calibrated through supervision.</li>
+<li>Confusing low <span class="math inline">\kappa(t)</span> with high <span class="math inline">D_p(t)</span> as distinct reasons not to intervene on constitutive memory: calibrated through practice.</li>
+<li>A tendency to use configuration names in teleological language: correctable through SCRF-1 review.</li>
+<li>Difficulty distinguishing Phase 1 (silent) from an absence of process: the key indicator is increasing posterior variance with <span class="math inline">H_t</span> stable.</li>
+</ol>
+<h2 id="inter-rater-calibration-exercises">Inter-Rater Calibration Exercises</h2>
+<p><strong>Exercise 1: SCRF-1 calibration.</strong> Give two clinicians the same transcript of a clinical encounter, without the engine’s output. Compare their SCRF-1s field by field. Minimum acceptable agreement: modal configuration within ±1 adjacent configuration; identical <span class="math inline">T_2</span> direction; identical or adjacent-region position in <span class="math inline">S_m</span>.</p>
+<p><strong>Exercise 2: §T1 phase calibration.</strong> Give clinicians a series of five consecutive SCRF-1s from a case, with the engine’s output included. Each clinician classifies every evaluation by §T1 phase. Minimum agreement: 4 of 5 evaluations in the same phase or adjacent phases.</p>
+<p><strong>Exercise 3: <span class="math inline">\rho(t)</span> versus <span class="math inline">\kappa(t)</span> calibration.</strong> Present two clinical vignettes, one showing mainly signs of restored <span class="math inline">\kappa(t)</span>, the other mainly signs of active <span class="math inline">\rho(t)</span>. Clinicians identify which is which and explain the observables. Expected agreement: <span class="math inline">&gt; 80\%</span> on the primary classification.</p>
+<p><strong>Certification threshold:</strong> complete all three exercises with satisfactory agreement, plus supervised work on three full pilot cases (first contact through Phase 4 or closure) with feedback from a trained supervisor.</p>
+<hr />
+<h1 id="part-vi-pilot-data-capture-plan">Part VI — Pilot Data Capture Plan</h1>
+<h2 id="what-data-will-be-collected">What Data Will Be Collected</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data</th>
+<th>Instrument</th>
+<th>Frequency</th>
+<th>Gap It Informs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Full SCRF-1</td>
+<td>Clinician</td>
+<td>Per encounter</td>
+<td>G5, G6, G10, G11, G12</td>
+</tr>
+<tr class="even">
+<td>Full syntropic profile (<span class="math inline">H_t</span>, <span class="math inline">M</span>, <span class="math inline">\varepsilon_t</span>, <span class="math inline">\Psi_t</span>)</td>
+<td><a href="/syntropia/en/nucleos/piac/">CAIP</a></td>
+<td>Per encounter</td>
+<td>G1, G2, G3a, G3b, G8</td>
+</tr>
+<tr class="odd">
+<td>Posterior <span class="math inline">P(\xi_t \mid \mathcal{O}(t))</span></td>
+<td>PyMC engine</td>
+<td>Per encounter</td>
+<td>G2, G7, G11</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">T_{\text{temporal}}</span>: sensor signal</td>
+<td>Weekly sensor</td>
+<td>Weekly</td>
+<td>G8, G11, G19, G24</td>
+</tr>
+<tr class="odd">
+<td>Latent basin activation</td>
+<td>SCRF-1 Field 5 + Phase 4 note</td>
+<td>Per encounter</td>
+<td>G10, G18</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\rho(t)</span> vs. <span class="math inline">\kappa(t)</span> signals</td>
+<td>SCRF-1 Field 3 (<span class="math inline">\rho(t)</span> note)</td>
+<td>Per encounter</td>
+<td>G18</td>
+</tr>
+<tr class="odd">
+<td>Estimated §T1 phase</td>
+<td>SCRF-1 Field 5</td>
+<td>Per encounter</td>
+<td>G19</td>
+</tr>
+<tr class="even">
+<td>Post-encounter clinician field</td>
+<td>Post-encounter protocol</td>
+<td>Per encounter</td>
+<td>G25</td>
+</tr>
+<tr class="odd">
+<td>Clinical outcome at 6 months</td>
+<td>Agreed outcome measure</td>
+<td>Month 6</td>
+<td>G6, G14, G20</td>
+</tr>
+<tr class="even">
+<td>Omics data (subsample)</td>
+<td>Epigenetic lab</td>
+<td>Baseline + 6 months</td>
+<td>G9, G23</td>
+</tr>
+<tr class="odd">
+<td><strong>G26: Simplified model</strong></td>
+<td><strong>Standard longitudinal Bayesian regression on <span class="math inline">H_t</span> (no Syntropia architecture)</strong></td>
+<td><strong>End of year one</strong></td>
+<td><strong>G26: mandatory analysis</strong></td>
+</tr>
+<tr class="even">
+<td><strong>G10: Latent cluster analysis</strong></td>
+<td><strong>k-modes + silhouette analysis on full <span class="math inline">H_t + M + \xi_t</span> profiles</strong></td>
+<td><strong>Year one (minimum signal at <span class="math inline">N \geq 100</span>)</strong></td>
+<td><strong>G10: critical priority</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-questions-the-pilot-can-answer">What Questions the Pilot Can Answer</h2>
+<ul>
+<li>G5: does the adaptive protocol reduce posterior variance faster than a fixed sequence?</li>
+<li>G6: does <span class="math inline">T_2</span> predict clinical outcome at 6 months better than <span class="math inline">\|H_t\|</span>?</li>
+<li>G10: first data for latent cluster analysis (needs at least <span class="math inline">N \geq 100</span> for signal).</li>
+<li>G11: does the observational apparatus produce early warning signals of transition?</li>
+<li>G12: does clinical resonance produce representations that are testably distinct from projection?</li>
+<li>G18: is <span class="math inline">\rho(t)</span> empirically distinguishable from <span class="math inline">\kappa(t)</span>?</li>
+<li>G19: first data on the transitional regime’s properties.</li>
+<li>G25: does the clinician’s field covary with the person’s reorganization?</li>
+<li><strong>G26 (mandatory analysis):</strong> does the full Syntropia model outperform a standard Bayesian longitudinal model with no ontological architecture? Answering this is a necessary condition for justifying the program’s complexity against more parsimonious alternatives.</li>
+</ul>
+<h2 id="what-questions-will-remain-open-after-the-pilot">What Questions Will Remain Open After the Pilot</h2>
+<p>G2 (the metric tensor <span class="math inline">g_t</span>) needs <span class="math inline">N \geq 150</span> with dense series for calibration. G20 (the <span class="math inline">d_{\text{proc}}</span> premetric) depends on G2. G21 (the nature of <span class="math inline">M</span>↔︎<span class="math inline">\Omega_t^{(p)}</span>) needs a specific design with controlled interventions on <span class="math inline">M</span>. G24 (internal time <span class="math inline">\tau_t</span>) needs PEA1 resolved first. G9 and G23 need an epigenomic subsample (estimated <span class="math inline">N \geq 80</span>).</p>
+<hr />
+<h1 id="part-vii-architectural-freeze-rules">Part VII — Architectural Freeze Rules</h1>
+<h2 id="what-can-be-modified-during-the-pilots-first-year">What Can Be Modified During the Pilot’s First Year</h2>
+<ul>
+<li>Operational procedures (this document): can be updated with minor versions without touching the canonical Cores.</li>
+<li>The PyMC engine: implementation updates that don’t change the model’s semantics.</li>
+<li>SCRF-1: formatting adjustments if practice reveals inconsistencies, subject to the methodological supervisor’s approval.</li>
+<li>Changelogs and dependency lists in the canonical Cores, for reference corrections.</li>
+</ul>
+<h2 id="what-cannot-be-modified-during-the-pilots-first-year">What Cannot Be Modified During the Pilot’s First Year</h2>
+<ul>
+<li>A1–A10 (the <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>’s axioms).</li>
+<li>CE1–CE19 (epistemological commitments).</li>
+<li>Conditions 1–6 (mathematical admissibility conditions).</li>
+<li>P12 (the intervention sequence and its basis).</li>
+<li>Canonical system v1.2’s 14 configurations.</li>
+<li>SCRF-1’s five structural fields.</li>
+</ul>
+<h2 id="what-evidence-would-justify-revising-an-auxiliary-hypothesis">What Evidence Would Justify Revising an Auxiliary Hypothesis?</h2>
+<p>A hypothesis (H-NOV, H-COMP, H-TRANS, H-TRANS-F, H-POT, H-TEMPO) needs revision when:</p>
+<ul>
+<li>Pilot data systematically refute its specific prediction across at least <span class="math inline">N = 30</span> appropriately designed trajectories.</li>
+<li>The refutation replicates across at least two independent clinicians.</li>
+<li>The proposed alternative is more consistent with axioms A1–A10 than the original hypothesis.</li>
+</ul>
+<p><strong>Procedure:</strong> document the refutation in the SCRF-1 and in a methodological case report. Present it to the methodological supervisor. Review it at a pilot team meeting. Any change requires explicit approval and a new version of the affected Core.</p>
+<h2 id="what-evidence-would-justify-revising-an-axiom">What Evidence Would Justify Revising an Axiom?</h2>
+<p>Revising an axiom takes a much higher bar:</p>
+<ul>
+<li>A prediction derived directly from the axiom, not just from auxiliary hypotheses, is systematically refuted.</li>
+<li>The refutation cannot be explained away by instrument deficiency, implementation error, or a limitation in the mathematical approximation.</li>
+<li>No revisable auxiliary hypothesis can absorb the refutation without touching the axiom itself.</li>
+<li>The proposed alternative preserves every other commitment in the model and produces more accurate predictions.</li>
+</ul>
+<p><strong>Procedure:</strong> requires a dedicated research team session, full documentation, and review by the author. An axiom does not get revised “during” the pilot. The tension gets documented and reviewed once the pilot closes.</p>
+<h2 id="what-evidence-is-insufficient-to-justify-any-revision">What Evidence Is Insufficient to Justify Any Revision?</h2>
+<ul>
+<li>A single case that doesn’t follow the predicted pattern. Rhysic ontology predicts that every trajectory is singular (A10): one atypical case doesn’t refute the model.</li>
+<li>Data contradicting a formal hypothesis (H-*) with no replication.</li>
+<li>Clinical impressions with no documented SCRF-1.</li>
+<li>Discrepancies between the model and alternative diagnostic frameworks (DSM, RDoC): these are different frameworks asking different questions (CE6, VI.3 in the Core).</li>
+</ul>
+<hr />
+<h1 id="part-viii-final-pilot-readiness-checklist">Part VIII — Final Pilot Readiness Checklist</h1>
+<h2 id="conceptual-infrastructure">Conceptual Infrastructure</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" />Core 1.2 finalized and accessible.</label></li>
+<li><label><input type="checkbox" checked="" />The four canonical Cores at current versions (v2.3.5 / v0.3.15 / v0.4.19 / v0.3.7).</label></li>
+<li><label><input type="checkbox" checked="" />Canonical system v1.2 with 14 configurations.</label></li>
+<li><label><input type="checkbox" checked="" />§T1 complete, with Phase 4 and consolidation theory.</label></li>
+<li><label><input type="checkbox" checked="" /><span class="math inline">\rho(t)</span> operationalized, with a differential table and clinical observables.</label></li>
+<li><label><input type="checkbox" checked="" />CE19 explicitly connected to the post-encounter protocol.</label></li>
+<li><label><input type="checkbox" checked="" />§T3’s ontological grounding in the <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>’s C6.</label></li>
+<li><label><input type="checkbox" />Horizon H2 of the evolutionary program (the transition function’s empirical form, <span class="math inline">\kappa_{\text{umbral}}(D_p)</span>, <span class="math inline">\rho(t)/\kappa(t)</span> distinguishability, basin installation speed): pending, needs pilot data (Rule 109, the roadmap of gaps, Core 1.2 Part V). Cannot be marked closed before the pilot produces that data.</label></li>
+</ul>
+<h2 id="operational-infrastructure">Operational Infrastructure</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" /><a href="/syntropia/en/nucleos/piac/">CAIP</a>, with four steps documented in the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>.</label></li>
+<li><label><input type="checkbox" checked="" />SCRF-1, with five fields and a user manual (Part II of this document).</label></li>
+<li><label><input type="checkbox" checked="" />The canonical PyMC engine v0.1.1.</label></li>
+<li><label><input type="checkbox" checked="" />The canonical <code>t_historico_v0_2_0.py</code>.</label></li>
+<li><label><input type="checkbox" checked="" />Post-encounter protocol with a longitudinal validation criterion.</label></li>
+<li><label><input type="checkbox" checked="" />Phase 4 consolidation manual (Part III of this document).</label></li>
+<li><label><input type="checkbox" checked="" /><span class="math inline">\rho(t)</span> operational manual (Part IV of this document).</label></li>
+<li><label><input type="checkbox" checked="" />Clinician training protocol (Part V of this document).</label></li>
+</ul>
+<h2 id="data-infrastructure">Data Infrastructure</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" />Data capture plan mapped to the corresponding gaps (Part VI).</label></li>
+<li><label><input type="checkbox" checked="" />Architectural freeze rules (Part VII).</label></li>
+<li><label><input type="checkbox" />High-frequency sensor (<span class="math inline">T_{\text{temporal}}</span>): pending technical implementation.</label></li>
+<li><label><input type="checkbox" />Pilot database: pending database design.</label></li>
+<li><label><input type="checkbox" />Epigenomic subsample: pending lab protocol and consent.</label></li>
+<li><label><input type="checkbox" />Inter-institutional agreement for multicenter cases: pending.</label></li>
+</ul>
+<h2 id="training-infrastructure">Training Infrastructure</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Lead trainer certified: requires Diego F. Pereira-Perdomo to certify the first trainer.</label></li>
+<li><label><input type="checkbox" />Inter-rater calibration materials (Exercises 1–3): drafted in Part V, need real transcripts to run.</label></li>
+<li><label><input type="checkbox" />First clinician cohort: recruitment pending.</label></li>
+</ul>
+<hr />
+<p><em>Syntropia Operational System v0.2.5 — July 13, 2026.</em> <em>Author: Diego F. Pereira-Perdomo MD, MSci.</em> <em>This document is operational, not canonical. Any discrepancy with the canonical Cores is resolved in favor of the Cores.</em> <em>Cross-check against: Core 1.2.10, <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> v0.3.12, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.16, <a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a> v0.3.19, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.27.</em></p>
+
+      </article>
+    </div>
+  </section>
+
+  <!-- Back -->
+  <section class="py-16 bg-slate-50 text-center">
+    <div class="max-w-2xl mx-auto px-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/syntropia/en/nucleos/"
+        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        &larr; All Core Documents
+      </a>
+      <a href="/syntropia/en/"
+        class="inline-block bg-white border border-slate-300 hover:border-teal-500 text-slate-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        Back to Syntropia
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
+    <p class="mb-2">&copy; 2026 Syntropia &mdash; Clinical and Scientific Model</p>
+  </footer>
+
+</body>
+
+</html>

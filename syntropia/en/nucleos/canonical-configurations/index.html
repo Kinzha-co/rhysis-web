@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canonical Configurations &mdash; Syntropia</title>
+  <meta name="description" content="Canonical System v1.2: the 14 syntropic configurations.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%); }
+    .prose :where(code):not(:where([class~="not-prose"] *)) {
+      background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em;
+    }
+    .prose blockquote { border-left-color: #0f766e; font-style: normal; }
+    .prose table { font-size: 0.92em; }
+    .prose thead th { background: #f8fafc; }
+    .wide-table-wrap { overflow-x: auto; }
+    @media (min-width: 1100px) {
+      .wide-table-wrap {
+        width: 1100px;
+        max-width: 1100px;
+        margin-left: calc(50% - 550px);
+        margin-right: calc(50% - 550px);
+      }
+    }
+    .wide-table-wrap table { font-size: 0.88em; white-space: nowrap; }
+  </style>
+<script defer
+src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+</script>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+</head>
+
+<body class="m-0 p-0 bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4">
+    <a href="/en/">
+      <img src="/assets/Logo-rhysis.svg" alt="Rhysis"
+        class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity">
+    </a>
+    <div class="text-sm md:text-base font-medium text-white tracking-wide">
+      <span class="font-bold border-b-2 border-teal-400 pb-0.5">EN</span>
+      <span class="mx-2 text-slate-400">|</span>
+      <a href="/syntropia/es/nucleos/configuraciones-canonicas/" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropia &mdash; Canonical Document</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
+        Canonical Configurations
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Canonical System v1.2: the 14 syntropic configurations.</p>
+      <p class="text-slate-400 text-sm mt-6">Version 1.3.16 &middot; July 13, 2026</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-slate lg:prose-lg max-w-none
+                       prose-headings:text-teal-800 prose-a:text-teal-700
+                       prose-strong:text-slate-900">
+                       prose-headings:text-teal-800 prose-a:text-teal-700
+                       prose-strong:text-slate-900">
+<!-- * CANONICAL DOCUMENT: any modification requires a new version and explicit approval -->
+<!-- * Rule: configurations are organizations with their own internal logic, not classifications. -->
+<!-- * Nomenclature: canonical system v1.2 with 14 definitive English names (confirmed against Foundational Article Table 1) -->
+<h1
+id="syntropic-configurations-canonical-system-v1.2">Syntropic
+Configurations: Canonical System v1.2</h1>
+<h2 id="architecture-note">Architecture Note</h2>
+<p>This document establishes the canonical system of syntropic
+configurations derived from <span class="math inline">H_t \in
+[0,1]^5</span>, with <span class="math inline">B_t</span> as the fifth
+constitutive domain.</p>
+<p><strong>Organizing axes.</strong> Canonical system v1.2
+organizes configurations by:</p>
+<ul>
+<li><p><strong>Axis 1: dominant propagation pattern in <span
+class="math inline">\Psi_t</span></strong>: the pattern by which
+perturbation moves between domains. Five values: psych.→<span
+class="math inline">B_t</span> (propagation from psychological domains
+toward <span class="math inline">B_t</span>), <span
+class="math inline">B_t</span>→psych. (propagation from <span
+class="math inline">B_t</span> toward psychological domains),
+bidirectional, global collapse, segmented. Formal definition in D4* of
+the <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.5. The earlier names <em>psi_dir</em>,
+<em>psic_Bt</em>, and <em>Bt_out</em> were removed from the technical
+vocabulary (session June 12, 2026, rules 4 and 37).</p></li>
+<li><p><strong>Axis 2: basin type</strong>: the way the field has
+stabilized over its history. Five values: transient, reconfiguration,
+residency, early dispositional, failed reconfiguration. Formal
+definition in D4* of the <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.5.</p></li>
+<li><p><strong>Axis 3: domain of origin</strong> (applied
+selectively): the functional domain the perturbation originates from.
+It operates as a configuration discriminator only when empirical
+comparison shows it produces distinct valleys in <span
+class="math inline">\mathcal{W}</span>. Currently confirmed for
+dominant propagation pattern in <span
+class="math inline">\Psi_t</span> with origin in <span
+class="math inline">B_t</span> × basin=reconfiguration, which gives
+rise to C-C1 (origin <span class="math inline">R_t</span>) and C-C2
+(origin <span class="math inline">A_t</span>). For C-A and C-F, Axis 3
+remains pending pilot comparison: see the extension of G10.</p></li>
+</ul>
+<p><span class="math inline">\|H_t\|</span> and <span
+class="math inline">\nabla H_t</span> are <strong>derived
+properties</strong> of each configuration: they describe what the field
+produces within it, but do not define it.</p>
+<p><strong>Reference for intervention.</strong> Each
+configuration's orienting intervention profile should be read alongside
+C5 (Intervention Modes by Target Parameter, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.5 and
+<a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> v0.3.0), which establishes the relationship between the
+model's formal parameters and types of intervention, with their
+timescale. C5 postdates this document: fully integrating it into the
+individual profiles is Pending Item 7.</p>
+<p><strong>Empirical basis.</strong> Each configuration's
+properties were derived from analysis of 105 cases in the Barnhill 2023
+corpus (<em>DSM-5-TR Clinical Cases</em>), mapped onto the syntropic
+profile <span class="math inline">H_t \in [0,1]^5</span>, and from
+systematic comparison against the 7 emergent organizations from
+k-modes clustering on that corpus. The corpus carries known selection
+biases: it overrepresents acute, high-complexity presentations and
+underrepresents subthreshold disorders, mild adaptive conditions, and
+cultural variants.</p>
+<p><strong>Note on statistical uncertainty (CC10):</strong> the
+percentages appearing in each individual profile (distributions of
+<span class="math inline">\Pi_R</span>, modal speed, empirical domain
+of origin) are estimates over low, highly variable N: N per
+configuration ranges from 9 to 22 cases in most profiles, and is N=2 for
+C-L and N=1 for C-M. The variance on these estimates is high; they
+should be read as orienting indications of the most frequent pattern in
+the available corpus, not as calibrated probabilities. Their value is a
+starting point for the pilot's data to refine, not a statistical
+prediction. The absence of confidence intervals in the profile tables
+reflects this limitation, not a methodological omission.</p>
+<hr />
+<h2 id="quick-reference-table">Quick Reference Table</h2>
+<div class="wide-table-wrap not-prose">
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Dominant <span class="math inline">\Psi_t</span></th>
+<th style="text-align: left;">Basin</th>
+<th style="text-align: left;">Origin Domain</th>
+<th style="text-align: left;">Modal <span class="math inline">\Pi_R</span></th>
+<th style="text-align: left;">Modal Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>C-A</strong></td>
+<td style="text-align: left;">Anchoring</td>
+<td style="text-align: left;">psych.→<span
+class="math inline">B_t</span></td>
+<td style="text-align: left;">residency</td>
+<td style="text-align: left;"><span class="math inline">A_t</span></td>
+<td style="text-align: left;">preserved / biased</td>
+<td style="text-align: left;">decades</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>C-B</strong></td>
+<td style="text-align: left;">Loop</td>
+<td style="text-align: left;">bidirectional</td>
+<td style="text-align: left;">residency</td>
+<td style="text-align: left;"><span class="math inline">B_t</span></td>
+<td style="text-align: left;">preserved / biased</td>
+<td style="text-align: left;">decades / years</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>C-C1</strong></td>
+<td style="text-align: left;">Bond</td>
+<td style="text-align: left;">psych.→<span
+class="math inline">B_t</span></td>
+<td style="text-align: left;">reconfiguration</td>
+<td style="text-align: left;"><span class="math inline">R_t</span></td>
+<td style="text-align: left;">preserved</td>
+<td style="text-align: left;">years</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>C-C2</strong></td>
+<td style="text-align: left;">Existential</td>
+<td style="text-align: left;">psych.→<span
+class="math inline">B_t</span></td>
+<td style="text-align: left;">reconfiguration</td>
+<td style="text-align: left;"><span class="math inline">A_t</span></td>
+<td style="text-align: left;">variable</td>
+<td style="text-align: left;">months</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>C-D</strong></td>
+<td style="text-align: left;">Chrysalis</td>
+<td style="text-align: left;">bidirectional</td>
+<td style="text-align: left;">reconfiguration</td>
+<td style="text-align: left;"><span class="math inline">B_t</span></td>
+<td style="text-align: left;">preserved</td>
+<td style="text-align: left;">years</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>C-E</strong></td>
+<td style="text-align: left;">Jolt</td>
+<td style="text-align: left;"><span class="math inline">B_t</span>→psych.</td>
+<td style="text-align: left;">transient</td>
+<td style="text-align: left;"><span class="math inline">B_t</span></td>
+<td style="text-align: left;">preserved</td>
+<td style="text-align: left;">weeks / days</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>C-F</strong></td>
+<td style="text-align: left;">Suspension</td>
+<td style="text-align: left;">psych.→<span
+class="math inline">B_t</span></td>
+<td style="text-align: left;">transient</td>
+<td style="text-align: left;"><span class="math inline">A_t</span></td>
+<td style="text-align: left;">preserved</td>
+<td style="text-align: left;">months</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>C-G</strong></td>
+<td style="text-align: left;">Transformation</td>
+<td style="text-align: left;"><span class="math inline">B_t</span>→psych.</td>
+<td style="text-align: left;">reconfiguration</td>
+<td style="text-align: left;"><span class="math inline">B_t</span></td>
+<td style="text-align: left;">preserved / compromised</td>
+<td style="text-align: left;">heterogeneous</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>C-H</strong></td>
+<td style="text-align: left;">Vortex</td>
+<td style="text-align: left;">bidirectional</td>
+<td style="text-align: left;">transient</td>
+<td style="text-align: left;">variable</td>
+<td style="text-align: left;">variable</td>
+<td style="text-align: left;">weeks / months</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>C-I</strong></td>
+<td style="text-align: left;">Embodiment</td>
+<td style="text-align: left;"><span class="math inline">B_t</span>→psych.</td>
+<td style="text-align: left;">residency</td>
+<td style="text-align: left;"><span class="math inline">B_t</span></td>
+<td style="text-align: left;">preserved</td>
+<td style="text-align: left;">decades</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>C-J</strong></td>
+<td style="text-align: left;">Collapse</td>
+<td style="text-align: left;">global collapse</td>
+<td style="text-align: left;">transient&dagger;</td>
+<td style="text-align: left;"><span class="math inline">B_t</span></td>
+<td style="text-align: left;">compromised / bypass</td>
+<td style="text-align: left;">hours / days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>C-K</strong></td>
+<td style="text-align: left;">Idiosyncratic</td>
+<td style="text-align: left;">psych.→<span
+class="math inline">B_t</span> / <span class="math inline">B_t</span>→psych.</td>
+<td style="text-align: left;">early dispositional</td>
+<td style="text-align: left;"><span class="math inline">R_t</span></td>
+<td style="text-align: left;">still developing / variable</td>
+<td style="text-align: left;">decades / years</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>C-L</strong></td>
+<td style="text-align: left;">Encapsulation</td>
+<td style="text-align: left;">segmented</td>
+<td style="text-align: left;">residency / reconfiguration</td>
+<td style="text-align: left;"><span class="math inline">A_t</span></td>
+<td style="text-align: left;">preserved</td>
+<td style="text-align: left;">decades</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>C-M</strong></td>
+<td style="text-align: left;">Drift</td>
+<td style="text-align: left;">psych.→<span
+class="math inline">B_t</span></td>
+<td style="text-align: left;">failed reconfiguration</td>
+<td style="text-align: left;"><span class="math inline">R_t</span>†</td>
+<td style="text-align: left;">biased</td>
+<td style="text-align: left;">months</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&dagger;Theoretical and clinical justification: low N in the corpus;
+see individual profile.</p>
+<hr />
+<h2
+id="comparison-with-the-7-emergent-clustering-organizations">Comparison
+with the 7 Emergent Clustering Organizations</h2>
+<p>Systematic comparison between the 14 canonical configurations and the
+7 emergent organizations from k-modes clustering (k=7, 105 cases)
+produced the following results:</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 29%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Organization</th>
+<th style="text-align: center;">N</th>
+<th style="text-align: left;">Configuration</th>
+<th style="text-align: left;">Correspondence Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">O1: Global Acute Collapse</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;">C-J</td>
+<td style="text-align: left;">Direct</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O2: Active Relational Reorganization</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: left;">C-C1</td>
+<td style="text-align: left;">Direct: motivated splitting C-C</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O3: Acute Somatic Perturbation</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: left;">C-E</td>
+<td style="text-align: left;">Direct</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O4: Somatic-Psychological
+Reorganization</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: left;">C-D</td>
+<td style="text-align: left;">Direct</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O5: Chronic Somatic Residency</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;">C-I</td>
+<td style="text-align: left;">Direct</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">O6: Chronic Existential Residency</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: left;">C-A</td>
+<td style="text-align: left;">Direct</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O7: Active Existential
+Reorganization</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">C-C2</td>
+<td style="text-align: left;">Direct: motivated splitting C-C</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Configurations with no clustering correspondence:</strong>
+C-B, C-F, C-G, C-H, C-K, C-L, C-M. The reasons differ: C-B, C-G, and
+C-H have low N in the corpus and likely get absorbed into adjacent
+clusters; C-K operates in <span class="math inline">\sigma_t</span>, a
+dimension the clustering variables do not capture; C-L and C-M have N=2
+and N=1 respectively: invisible to k-modes. Absence from the clustering
+does not invalidate their status as canonical configurations.</p>
+<p><strong>Open question: extension of G10.</strong> Whether domain of
+origin discriminates configurations within C-A (psych.→<span
+class="math inline">B_t</span> × residency) and C-F (psych.→<span
+class="math inline">B_t</span> × transient) remains pending empirical
+comparison in the pilot. The testable prediction is that <span
+class="math inline">\Psi_t</span> and <span
+class="math inline">\varepsilon_t</span> prior to reorganization
+predict whether domain of origin carries weight in the identity of the
+destination configuration.</p>
+<hr />
+<h2 id="individual-profiles">Individual Profiles</h2>
+<h3 id="c-a-anchoring-psychologicalbt-chronic-residency">C-A: Anchoring ·
+Psychological→Bt · Chronic Residency</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: psych.→<span
+class="math inline">B_t</span>: the perturbation originates in the
+psychological domains (<span class="math inline">A_t</span>, <span
+class="math inline">R_t</span>) and propagates toward <span
+class="math inline">B_t</span>. Basin: residency: the field is
+stabilized in its current configuration; the attractor is deep and
+long-standing.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: variable by domain: the
+profile is not symmetric. The psychological domains (predominantly
+<span class="math inline">A_t</span>, secondarily <span
+class="math inline">R_t</span>) show the primary compromise; <span
+class="math inline">B_t</span> is affected as a propagated effect. The
+global norm can be moderate even when the domain profile is markedly
+asymmetric.</li>
+<li><span class="math inline">\nabla H_t</span>: sustained <span
+class="math inline">\approx 0</span>: the field is not moving; the
+attractor is stable.</li>
+<li><span class="math inline">\varepsilon_t</span>: low, especially in
+the origin domains (<span
+class="math inline">\varepsilon_A</span>, <span
+class="math inline">\varepsilon_R</span>): accumulated history has
+rigidified the existential-anchoring and bonding domains.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">A_t</span> in 78% of cases, <span
+class="math inline">R_t</span> in 22%.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+(50%) / biased (33%) / encapsulated (17%). Reality testing can be
+biased in the direction of the basin's content (distrust, rumination,
+grandiosity) without being globally compromised.</p>
+<p><strong>Speed:</strong> decades (72%) / years (28%). This is the
+slowest-installing pattern in the corpus.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> high, the
+history of plastic deformation is extensive. <span
+class="math inline">\kappa(t)</span>: reduced by accumulated history.
+Modal position in <span class="math inline">S_m</span>: R2 (high
+<span class="math inline">D_p(t)</span>, low-to-moderate <span
+class="math inline">\kappa(t)</span>).</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: low-to-moderate: the response
+repertoire is narrowed by the basin. <span
+class="math inline">\Pi_R</span>: variable depending on the basin's
+content. <span class="math inline">\Tau_F</span>: moderate: narrative
+continuity exists but is organized around the basin. <span
+class="math inline">\Upsilon_{US}</span>: moderate: the basin itself
+provides a form of stability.</p>
+<p><strong>Representative Clinical Correlates:</strong> personality
+disorders (paranoid, schizoid, narcissistic, avoidant, histrionic,
+dependent, obsessive-compulsive), dysthymia, PTSD chronic over decades,
+BDD with no insight, hoarding, delusional disorder of residency, SUD
+with an existential basin.</p>
+<p><strong>Internal Logic.</strong> The field has organized its
+coherence around a psychological axis that chronically propagates
+toward <span class="math inline">B_t</span>. The somatic disturbance is
+real but secondary: intervening only on <span
+class="math inline">B_t</span> without changing the psychological basin
+produces transient relief. The residency basin means the field is not
+undergoing spontaneous change: it requires calibrated clinical
+perturbation.</p>
+<p><strong>Typical Clinical Error.</strong> Treating somatic symptoms
+without addressing the originating psychological basin. Attempting
+high-intensity reorganization in a field with <span
+class="math inline">\kappa(t)</span> reduced by decades of accumulated
+<span class="math inline">D_p(t)</span>.</p>
+<p><strong>Orienting Intervention.</strong> P12 applies in its most
+demanding form: assess <span class="math inline">\kappa(t)</span>
+before any work on content. Restoring <span
+class="math inline">\kappa(t)</span> structurally precedes Unveiling
+<span class="math inline">D_p(t)</span>.</p>
+<hr />
+<h3 id="c-b-loop-bidirectional-chronic-residency">C-B: Loop ·
+Bidirectional · Chronic Residency</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: bidirectional: <span
+class="math inline">B_t</span> and the psychological domains perturb
+each other in a cycle. Basin: residency: the cycle is established and
+self-sustaining.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: low to moderate: the
+cycle consumes resources from every domain. <span
+class="math inline">B_t</span> and at least one psychological domain
+are simultaneously compromised.</li>
+<li><span class="math inline">\nabla H_t</span>: sustained <span
+class="math inline">\approx 0</span>: the stability belongs to the
+cycle, not to a field at rest.</li>
+<li><span class="math inline">\varepsilon_t</span>: low in the cycle's
+domains: chronic bidirectionality rigidifies <span
+class="math inline">\Psi_t</span>'s channels.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">B_t</span> in 64% of cases: the cycle frequently
+starts from the body, even though it perpetuates itself in both
+directions. <span class="math inline">A_t</span> in 29%, <span
+class="math inline">R_t</span> in 7%.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+(50%) / biased (29%) / encapsulated (14%) / globally compromised (7%).
+Reality testing can be biased in the cycle's direction (for instance,
+toward safety in mania, toward control in eating disorders).</p>
+<p><strong>Speed:</strong> decades (57%) / years (43%). A chronic,
+slow-installing pattern.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> high, the
+cycle accumulates plastic deformation in both directions. <span
+class="math inline">\kappa(t)</span>: reduced. Modal position in <span
+class="math inline">S_m</span>: R2.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: moderate: there can be flexibility
+within the cycle, but not to exit it. <span
+class="math inline">\Pi_R</span>: variable. <span
+class="math inline">\Tau_F</span>: moderate: narrative continuity
+exists but is organized around the cycle. <span
+class="math inline">\Upsilon_{US}</span>: moderate: the cycle itself is
+the form stability takes.</p>
+<p><strong>Representative Clinical Correlates:</strong> chronic eating
+disorders (bulimia nervosa, binge eating disorder), OCD with a motor
+component (trichotillomania, excoriation), long-standing rapid-cycling
+bipolar disorder, chronic somatic disorders with a pain-depression
+cycle, established severe alcohol use disorder, BPD with a
+relational-somatic cycle.</p>
+<p><strong>Internal Logic.</strong> The bidirectional cycle is the
+field's organization, not an additive dysfunction. Interrupting the
+cycle at only one pole (only <span class="math inline">B_t</span> or
+only the psychological domain) produces transient change: the cycle
+reconstitutes itself from the pole that was not addressed. The relevant
+intervention interrupts the cycle at its most accessible point, given
+current <span class="math inline">\kappa(t)</span>.</p>
+<p><strong>Typical Clinical Error.</strong> Intervening only on the
+somatic pole (symptoms, medication) without addressing the
+psychological pole, or vice versa. Failing to recognize that the cycle
+is the field's organization, not an added symptom.</p>
+<p><strong>Orienting Intervention.</strong> Identify the cycle's most
+accessible entry point given current <span
+class="math inline">\kappa(t)</span> and <span
+class="math inline">M</span>. Simultaneous multimodal intervention on
+both poles is more likely to interrupt the cycle than sequential
+intervention.</p>
+<hr />
+<h3
+id="c-c1-bond-psychologicalbt-reconfiguration-relational-origin">C-C1:
+Bond · Psychological→Bt · Reconfiguration · Relational Origin</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: psych.→<span
+class="math inline">B_t</span>: the perturbation originates in the
+bonding domain (<span class="math inline">R_t</span>) and propagates
+toward <span class="math inline">B_t</span>. Basin: reconfiguration: the
+field is in an active process of change. Domain of origin: <span
+class="math inline">R_t</span>: the perturbation that starts or
+sustains reconfiguration is relational: a relational rupture, sustained
+invalidation, loss of an attachment figure, or reframing of relational
+history. This is the property that distinguishes C-C1 from C-C2, and
+the one k-modes clustering identified as a sufficient discriminator for
+two distinct valleys in <span class="math inline">\mathcal{W}</span>.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: variable across
+evaluations: the reconfiguration process produces variation. The <span
+class="math inline">R_t</span> domain shows the most marked movement;
+<span class="math inline">B_t</span> is secondarily affected through
+propagation.</li>
+<li><span class="math inline">\nabla H_t</span>: variable, trending
+positive: the field is moving toward greater coherence, though with
+oscillations typical of the process.</li>
+<li><span class="math inline">\varepsilon_t</span>: moderate-to-high in
+<span class="math inline">R_t</span> and adjacent domains: the field is
+receptive in the relational dimension.</li>
+</ul>
+<p><strong>Domain of Origin:</strong> <span
+class="math inline">R_t</span>: a defining property of C-C1.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+in nearly all cases. This is the most discriminating property relative
+to C-C2: intact reality testing is the condition of possibility for
+Unveiling work from the relational domain. The field can be relationally
+compromised without losing the capacity to update its representations.</p>
+<p><strong>Speed:</strong> predominantly years. Relational
+reconfiguration is slower than existential reconfiguration: accumulated
+relational history takes longer to reorganize.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> variable,
+frequently moderate-to-high in the relational domain. <span
+class="math inline">\kappa(t)</span>: sufficient: active reconfiguration
+implies the field has receptive capacity. Modal position in <span
+class="math inline">S_m</span>: R3 or an R2→R3 transition.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: moderate-to-high: there is active
+exploration of new ways of relating. <span
+class="math inline">\Pi_R</span>: preserved: the condition of
+possibility for the work. <span class="math inline">\Tau_F</span>:
+low-to-moderate: relational narrative continuity is still being built.
+<span class="math inline">\Upsilon_{US}</span>: moderate.</p>
+<p><strong>Representative Clinical Correlates:</strong> social anxiety
+disorder in treatment, PTSD with relational reactivation being actively
+processed, generalized anxiety disorder with a relational component,
+eating disorders in recovery with active relational work, complicated
+grief reframing a lost bond.</p>
+<p>Representative corpus cases: Logan (5.1, social anxiety + panic),
+Nadine (5.3, social anxiety + PTSD + agoraphobia), Peggy Isaac (5.5,
+generalized anxiety disorder).</p>
+<p><strong>Internal Logic.</strong> The field is undergoing
+reconfiguration from the relational domain: the perturbation that
+started the process was relational, and reconfiguration is processed
+mainly through the relational dimension. Preserved <span
+class="math inline">\Pi_R</span> is the condition that makes the work
+possible: the field can be relationally compromised without losing
+contact with shared reality. The clinical task is to protect the pace
+of the relational process and build <span
+class="math inline">\Tau_F</span> so relational gains integrate into
+narrative continuity.</p>
+<p><strong>Typical Clinical Error.</strong> Accelerating reconfiguration
+beyond the field's relational pace. Treating secondary somatic symptoms
+as though they were the primary object of intervention. Failing to
+recognize that preserved <span class="math inline">\Pi_R</span> is the
+central resource, and assuming fragility the field does not have.</p>
+<p><strong>Orienting Intervention.</strong> The relational field is the
+entry point and the primary instrument. Work on relational <span
+class="math inline">\Tau_F</span> to integrate gains. Intervention on
+<span class="math inline">B_t</span> is complementary and secondary to
+the relational work.</p>
+<hr />
+<h3
+id="c-c2-existential-psychologicalbt-reconfiguration-existential-origin">C-C2:
+Existential · Psychological→Bt · Reconfiguration · Existential
+Origin</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: psych.→<span
+class="math inline">B_t</span>: the perturbation originates in the
+existential-anchoring domain (<span class="math inline">A_t</span>) and
+propagates toward <span class="math inline">B_t</span>. Basin:
+reconfiguration: the field is in an active process of change. Domain of
+origin: <span class="math inline">A_t</span>: the perturbation that
+starts or sustains reconfiguration is existential: a crisis of meaning,
+loss of anchoring, reframing of identity, rupture of the ground the
+trajectory operates from. This is the property that distinguishes C-C2
+from C-C1.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: variable across
+evaluations, and frequently low during the acute phase of existential
+reconfiguration. The <span class="math inline">A_t</span> domain shows
+the primary compromise; <span class="math inline">B_t</span> is
+secondarily affected.</li>
+<li><span class="math inline">\nabla H_t</span>: variable: it can
+decline during the phase of existential disorganization and rise during
+the phase of reorganization. Direction is more unstable than in
+C-C1.</li>
+<li><span class="math inline">\varepsilon_t</span>: variable by domain:
+<span class="math inline">A_t</span> can be either very open (receptive
+to reconfiguring meaning) or severely compromised (when existential
+anchoring has been lost).</li>
+</ul>
+<p><strong>Domain of Origin:</strong> <span
+class="math inline">A_t</span>: a defining property of C-C2.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> variable:
+preserved, encapsulated, or globally compromised depending on the
+nature of the existential perturbation. This variability is the most
+discriminating property relative to C-C1, and it determines the entry
+strategy. When <span class="math inline">\Pi_R</span> is compromised
+(psychosis under reconfiguration, mania with an underlying existential
+process), intervention must restore <span
+class="math inline">\Pi_R</span> before working on existential
+content.</p>
+<p><strong>Speed:</strong> predominantly months, faster than C-C1,
+reflecting that existential reconfigurations can resolve faster when
+there is enough scaffolding, but can also deteriorate quickly when there
+is not.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> variable.
+<span class="math inline">\kappa(t)</span>: variable: depends critically
+on the level of <span class="math inline">\Pi_R</span> and the depth of
+the existential crisis. Modal position in <span
+class="math inline">S_m</span>: R3 in cases with preserved <span
+class="math inline">\Pi_R</span>; R2 or R4 when <span
+class="math inline">\Pi_R</span> is compromised.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: variable: high in trajectories with
+preserved <span class="math inline">\Pi_R</span>, very low when <span
+class="math inline">\Pi_R</span> is compromised. <span
+class="math inline">\Pi_R</span>: variable: the most critical modulator
+for determining intervention. <span class="math inline">\Tau_F</span>:
+low: existential narrative continuity is more disrupted than in C-C1.
+<span class="math inline">\Upsilon_{US}</span>: variable.</p>
+<p><strong>Representative Clinical Correlates:</strong> a first episode
+of schizophrenia in active treatment (Gregory Baker, 2.2), manic bipolar
+I disorder with psychosis under reconfiguration (Mark Hill, 3.1),
+depressive bipolar II disorder with suicidal ideation being processed
+(Olivia Jacobs, 3.3), peripartum major depressive disorder (Yvonne
+Perez, 4.2), psychotic major depressive disorder (Barbara Reiss, 4.4),
+melancholic major depressive disorder (Crystal Smith, 4.5), culturally
+rooted somatic depression (Ka Fang, 4.12), severe opioid use disorder
+undergoing existential reconfiguration (Raymond Xavier, 16.5).</p>
+<p><strong>Internal Logic.</strong> The field is undergoing
+reconfiguration from the existential domain: loss of anchoring in
+meaning is the process's engine. The variability of <span
+class="math inline">\Pi_R</span> is the most clinically relevant
+property: it determines whether existential Unveiling work is possible
+directly, or whether it first requires restoring the capacity to update
+representations. Unlike C-C1, in C-C2 the clinician cannot assume the
+field has access to shared reality: it must be assessed at every
+encounter.</p>
+<p><strong>Typical Clinical Error.</strong> Assuming every existential
+reconfiguration has preserved <span class="math inline">\Pi_R</span>,
+and starting Unveiling work on existential content when <span
+class="math inline">\Pi_R</span> is compromised. This produces
+disorganization instead of reconfiguration. The other error: treating
+foreground symptoms (psychosis, mania, severe depression) without
+recognizing the underlying existential reconfiguration process.</p>
+<p><strong>Orienting Intervention.</strong> The mandatory first
+assessment: the state of <span class="math inline">\Pi_R</span>. If
+<span class="math inline">\Pi_R</span> is preserved: direct work on
+existential content with relational scaffolding. If <span
+class="math inline">\Pi_R</span> is compromised: restoring <span
+class="math inline">\Pi_R</span> as the first intervention, before any
+Unveiling work. C-C2's faster speed relative to C-C1 means the windows
+for intervention are narrower, for deterioration as well as for
+consolidation.</p>
+<hr />
+<h3 id="c-d-chrysalis-bidirectional-active-reconfiguration">C-D:
+Chrysalis · Bidirectional · Active Reconfiguration</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: bidirectional: an active cycle
+between <span class="math inline">B_t</span> and the psychological
+domains. Basin: reconfiguration: the cycle is changing; there is an
+active process of reorganization.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: low to moderate, with
+variation across evaluations: the changing cycle produces
+fluctuation.</li>
+<li><span class="math inline">\nabla H_t</span>: variable: trending
+positive in most cases, but with oscillations typical of the process of
+exiting the cycle.</li>
+<li><span class="math inline">\varepsilon_t</span>: moderate-to-high in
+the cycle's domains: the reconfiguration process has opened up the
+field.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">B_t</span> in 80% of cases: the cycle has a
+predominantly somatic origin even under reconfiguration.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+(70%) / biased (30%). A high proportion of preserved <span
+class="math inline">\Pi_R</span>: a significant difference from C-B
+(residency).</p>
+<p><strong>Speed:</strong> years (70%) / months (30%). Exiting the
+bidirectional cycle is a slow process.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong>
+moderate-to-high, the cycle has left a trace. <span
+class="math inline">\kappa(t)</span>: sufficient for the reconfiguration
+process, higher than in C-B. Modal position in <span
+class="math inline">S_m</span>: R3 or an R2→R3 transition.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: moderate-to-high: there is active
+exploration of alternatives to the cycle. <span
+class="math inline">\Pi_R</span>: predominantly preserved. <span
+class="math inline">\Tau_F</span>: moderate: still being built. <span
+class="math inline">\Upsilon_{US}</span>: moderate.</p>
+<p><strong>Representative Clinical Correlates:</strong> alcohol use
+disorder in active recovery, gambling disorder in treatment,
+cyclothymia under reorganization, panic disorder in the process of
+deconditioning, mild neurocognitive disorder under early
+intervention.</p>
+<p><strong>Internal Logic.</strong> The bidirectional cycle is opening
+up: the field has enough <span class="math inline">\kappa(t)</span> to
+sustain the process. The difference from C-B (residency) is that in
+C-D the field is actively searching for a new organization. Preserved
+<span class="math inline">\Pi_R</span> is the condition of possibility
+for Unveiling work.</p>
+<p><strong>Typical Clinical Error.</strong> Failing to recognize that
+the cycle's somatic origin persists even under reconfiguration:
+intervening only on the psychological pole without sustaining work on
+<span class="math inline">B_t</span>.</p>
+<p><strong>Orienting Intervention.</strong> Sustain the cycle's
+reconfiguration process at both poles simultaneously. Build <span
+class="math inline">\Tau_F</span> so that episodes of coherence without
+the cycle integrate into accumulable narrative.</p>
+<hr />
+<h3 id="c-e-jolt-btout-transient">C-E: Jolt · Bt→Out ·
+Transient</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: <span
+class="math inline">B_t</span>→psych.: the perturbation originates in
+<span class="math inline">B_t</span> and propagates toward the
+psychological domains. Basin: transient: the field has not established
+a new basin; the perturbation is acute or subacute.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: variable: depends on
+the somatic perturbation's magnitude and propagation speed. The
+psychological domains can drop quickly if the somatic perturbation is
+severe.</li>
+<li><span class="math inline">\nabla H_t</span>: active: declining
+during the perturbation, rising during recovery. Direction is the
+critical clinical indicator.</li>
+<li><span class="math inline">\varepsilon_t</span>: moderate-to-high in
+the psychological domains: the psychological field can recover once
+the somatic perturbation ends.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">B_t</span> in 78% of cases: a pure pattern of
+somatic origin.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+(78%); the field knows what is happening to it, the difficulty is
+somatic, not representational. Exception: substance-induced psychosis,
+where <span class="math inline">\Pi_R</span> can be compromised.</p>
+<p><strong>Speed:</strong> weeks (56%) / days (33%). The fastest speed
+in the whole system (except C-J). Timescale is part of C-E's
+identity.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> low to
+moderate, the field has no extensive accumulated history in this basin.
+<span class="math inline">\kappa(t)</span>: moderate-to-high: the field
+has receptive capacity to recover once the perturbation ends. Modal
+position in <span class="math inline">S_m</span>: R3 during
+recovery.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: moderate: the repertoire is not
+damaged, only disturbed. <span class="math inline">\Pi_R</span>:
+preserved in most cases. <span class="math inline">\Tau_F</span>:
+moderate: continuity holds except in severe forms. <span
+class="math inline">\Upsilon_{US}</span>: moderate: variable depending
+on the perturbation's magnitude.</p>
+<p><strong>Representative Clinical Correlates:</strong> acute
+cannabis/THC-induced psychosis, premenstrual dysphoric disorder,
+steroid-induced anxiety, (neurological) depersonalization, pharmacologic
+sexual dysfunction, adjustment disorder with acute somatic stress,
+enuresis as a Bt field symptom.</p>
+<p><strong>Internal Logic.</strong> The psychological field is being
+disturbed from <span class="math inline">B_t</span> but has not
+established a new basin: it is genuinely transient. Recovery is
+possible once the somatic perturbation ends or is treated. The priority
+intervention targets <span class="math inline">B_t</span>, not the
+psychological domains, which are the effect.</p>
+<p><strong>Typical Clinical Error.</strong> Treating psychological
+symptoms as though they were the origin: starting intensive
+psychotherapy when the perturbation is acute and somatic. Failing to
+identify the underlying somatic cause.</p>
+<p><strong>Orienting Intervention.</strong> Identify and treat the
+originating somatic perturbation. The psychological domains do not
+require direct intervention in most cases: they recover once the
+somatic perturbation ends.</p>
+<hr />
+<h3 id="c-f-suspension-psychologicalbt-transient">C-F: Suspension ·
+Psychological→Bt · Transient</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: psych.→<span
+class="math inline">B_t</span>: the perturbation originates in the
+psychological domains and propagates toward <span
+class="math inline">B_t</span>. Basin: transient: the field has not
+established a new basin; there is mobility.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: moderate, with
+variation: the field is disturbed but has resources. The psychological
+domains (<span class="math inline">A_t</span>, <span
+class="math inline">R_t</span>) show the primary compromise; <span
+class="math inline">B_t</span> is secondarily affected (sleep, appetite,
+activation).</li>
+<li><span class="math inline">\nabla H_t</span>: active: can decline
+during the acute phase, rise during resolution.</li>
+<li><span class="math inline">\varepsilon_t</span>: moderate-to-high:
+the field has receptive capacity for resolution.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">A_t</span> in 63% of cases, <span
+class="math inline">R_t</span> in 37%. The existential-anchoring and
+relational-bonds domains are the primary foci.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+(75%), a high proportion, which facilitates Unveiling work. Reality
+testing is relatively intact.</p>
+<p><strong>Speed:</strong> months (50%) / weeks (25%). The most common
+pattern is resolution within months when there is enough
+scaffolding.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> low to
+moderate. <span class="math inline">\kappa(t)</span>:
+moderate-to-high. Modal position in <span
+class="math inline">S_m</span>: R3.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: moderate-to-high. <span
+class="math inline">\Pi_R</span>: preserved in most cases. <span
+class="math inline">\Tau_F</span>: moderate: narrative continuity can
+be partially disturbed by the life event. <span
+class="math inline">\Upsilon_{US}</span>: moderate.</p>
+<p><strong>Representative Clinical Correlates:</strong> adjustment
+disorder, uncomplicated grief, situational subthreshold depression, a
+brief psychotic episode (resolving), mild situational substance use
+disorder, a life crisis with somatic repercussions.</p>
+<p><strong>Internal Logic.</strong> The field is disturbed by a life
+event or process affecting the psychological domains, propagating
+secondarily toward <span class="math inline">B_t</span> (grief
+producing changes in sleep, appetite, physical activity: the example
+Diego described). The basin is transient because the field has the
+capacity to reorganize without high-intensity intervention. Relational
+scaffolding and time are the first instruments.</p>
+<p><strong>Typical Clinical Error.</strong> Medicalizing a normal
+response to suffering. Intervening with high intensity in a field that
+can reorganize with sufficient scaffolding alone. Or, the reverse: not
+intervening when the transient state is becoming chronic, moving toward
+residency.</p>
+<p><strong>Orienting Intervention.</strong> Relational scaffolding as
+the first intervention. Monitor the direction of <span
+class="math inline">\nabla H_t</span> to detect chronification toward
+C-A (residency). Work on the primary psychological domains is
+appropriate; <span class="math inline">B_t</span> recovers
+secondarily.</p>
+<hr />
+<h3 id="c-g-transformation-btout-active-reconfiguration">C-G:
+Transformation · Bt→Out · Active Reconfiguration</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: <span
+class="math inline">B_t</span>→psych.: the perturbation originates in
+<span class="math inline">B_t</span> and propagates toward the
+psychological domains. Basin: reconfiguration: the somatic field is
+in an active process of change.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: variable, heterogeneous
+across cases: the somatic reconfiguration process produces unpredictable
+variation in the psychological domains.</li>
+<li><span class="math inline">\nabla H_t</span>: heterogeneous: can be
+rising (somatic recovery), declining (somatic illness progression), or
+variable. Direction depends on the somatic process's nature.</li>
+<li><span class="math inline">\varepsilon_t</span>: variable by domain:
+the psychological domains can have preserved <span
+class="math inline">\varepsilon</span> while <span
+class="math inline">B_t</span> is undergoing change.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">B_t</span> in 100% of cases: a pure pattern of
+somatic origin under change.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+(50%) / globally compromised (25%) / encapsulated (25%). More
+heterogeneous than C-E: somatic reconfiguration can compromise <span
+class="math inline">\Pi_R</span> when the somatic process affects the
+neurobiological substrate.</p>
+<p><strong>Speed:</strong> years (38%) / months (25%) / heterogeneous.
+The most variable speed in the system: it reflects the diversity of
+somatic processes under reconfiguration.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong>
+moderate-to-high, the somatic process leaves a trace. <span
+class="math inline">\kappa(t)</span>: variable depending on the
+process's phase. Modal position in <span class="math inline">S_m</span>:
+R3 during phases of improvement; R2 during phases of progression.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: moderate: can be limited by the
+somatic process. <span class="math inline">\Pi_R</span>: variable: the
+most critical modulator for determining intervention. <span
+class="math inline">\Tau_F</span>: moderate. <span
+class="math inline">\Upsilon_{US}</span>: moderate, variable depending
+on the somatic phase.</p>
+<p><strong>Representative Clinical Correlates:</strong> HIV+
+methamphetamine-induced bipolar disorder in recovery, postpartum
+psychosis (post-delivery reconfiguration), Parkinson's-related
+depression in treatment, avoidant/restrictive food intake disorder
+(ARFID) in recovery, Huntington's-related neurocognitive disorder
+(progression), post-TBI neurocognitive disorder (recovery), cocaine
+withdrawal-induced depression.</p>
+<p><strong>Internal Logic.</strong> The somatic process is active: it
+is a process unfolding over time, not a perturbation that ends (C-E).
+The somatic process's direction determines the psychological field's
+direction. Intervention on the psychological domains is relevant but
+secondary to managing the somatic process.</p>
+<p><strong>Typical Clinical Error.</strong> Failing to update the
+reading of the field when the somatic process changes phase.
+Intervening on the psychological domains as though they were
+autonomous, when they depend on the somatic process.</p>
+<p><strong>Orienting Intervention.</strong> Frequent monitoring: C-G's
+heterogeneous speed requires more frequent assessment than
+stable-basin configurations. Psychological intervention is calibrated
+to the somatic process's phase and the level of <span
+class="math inline">\Pi_R</span>.</p>
+<hr />
+<h3 id="c-h-vortex-bidirectional-transient">C-H: Vortex ·
+Bidirectional · Transient</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: bidirectional: a cycle between <span
+class="math inline">B_t</span> and the psychological domains. Basin:
+transient: the cycle is not yet established; it can still break.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: moderate, with
+variation: the transient cycle has not yet produced the level of <span
+class="math inline">D_p(t)</span> that C-B will produce if it becomes
+chronic.</li>
+<li><span class="math inline">\nabla H_t</span>: oscillating: the
+cycle produces variation across evaluations with no sustained
+direction.</li>
+<li><span class="math inline">\varepsilon_t</span>: moderate: the field
+has more response capacity than in C-B (residency).</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> heterogeneous, <span
+class="math inline">B_t</span>, <span class="math inline">A_t</span>,
+<span class="math inline">R_t</span>, and multi-domain cases. Origin is
+less clear-cut than in other configurations, which is itself a property
+of C-H.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> variable
+(preserved 40%, encapsulated 20%, still developing 20%, biased 20%).
+The heterogeneity of <span class="math inline">\Pi_R</span> in C-H
+reflects the diversity of processes producing this pattern.</p>
+<p><strong>Speed:</strong> weeks (40%) / months (40%). Faster than
+C-B: the cycle is not yet chronic.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> low to
+moderate. <span class="math inline">\kappa(t)</span>:
+moderate-to-high: the intervention window before chronification is the
+main clinical resource. Modal position in <span
+class="math inline">S_m</span>: R3.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: moderate. <span
+class="math inline">\Pi_R</span>: variable. <span
+class="math inline">\Tau_F</span>: moderate. <span
+class="math inline">\Upsilon_{US}</span>: moderate.</p>
+<p><strong>Representative Clinical Correlates:</strong> early-phase
+panic disorder, social anxiety disorder with a somatic component, acute
+insomnia with anxiety, disruptive mood dysregulation disorder
+(pediatric), a normative reaction with a somatic cycle.</p>
+<p><strong>Internal Logic.</strong> The bidirectional cycle is recent
+and not yet consolidated. This is the most valuable intervention window
+among the bidirectional configurations: the field can reorganize toward
+a cycle-free pattern before residency sets in. Early detection of C-H
+is the single most important preventive tool for avoiding progression
+to C-B.</p>
+<p><strong>Typical Clinical Error.</strong> Not acting on the cycle
+while it is still transient. Waiting for the pattern to consolidate
+before intervening: by then it will have become chronic, moving toward
+C-B.</p>
+<p><strong>Orienting Intervention.</strong> Act on the cycle at its
+most accessible point given current <span class="math inline">M</span>.
+The weeks-to-months speed is the window: the field can organize itself
+differently if the intervention is precise during this phase.</p>
+<hr />
+<h3 id="c-i-embodiment-btout-chronic-residency">C-I: Embodiment ·
+Bt→Out · Chronic Residency</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: <span
+class="math inline">B_t</span>→psych.: the perturbation originates in
+<span class="math inline">B_t</span> and propagates toward the
+psychological domains. Basin: residency: the somatic pattern is
+chronic, and the psychological field is organized around it.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: low to moderate:
+chronic somatic dysfunction has stably compromised the psychological
+domains. <span class="math inline">B_t</span> is the most compromised
+domain; the psychological domains show established secondary
+compromise.</li>
+<li><span class="math inline">\nabla H_t</span>: sustained <span
+class="math inline">\approx 0</span>: the field is not moving; the
+chronic condition is the attractor.</li>
+<li><span class="math inline">\varepsilon_t</span>: low in <span
+class="math inline">B_t</span>: the chronic history of the somatic
+process has rigidified the somatic domain.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">B_t</span> in 100% of cases: a pure pattern of
+chronic somatic origin.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+(60%) / still developing (40%). The 40% still-developing figure is the
+highest proportion in the corpus: it reflects that severe chronic
+neurocognitive and sleep disorders compromise elaborative capacity.</p>
+<p><strong>Speed:</strong> decades (80%) / years (20%). The slowest
+installation pattern among the <span
+class="math inline">B_t</span>→psych. configurations.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> high,
+decades of somatic process leave a deep trace. <span
+class="math inline">\kappa(t)</span>: reduced by chronicity. Modal
+position in <span class="math inline">S_m</span>: R2.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: low-to-moderate: the response
+repertoire is limited by the chronic somatic process. <span
+class="math inline">\Pi_R</span>: preserved or still developing. <span
+class="math inline">\Tau_F</span>: moderate: narrative continuity
+exists but is organized around the somatic condition. <span
+class="math inline">\Upsilon_{US}</span>: low-to-moderate.</p>
+<p><strong>Representative Clinical Correlates:</strong> established
+sleep apnea-hypopnea syndrome (decades), chronic idiopathic
+hypersomnia, major neurocognitive disorder (Alzheimer's, Lewy body) in
+the residency phase, severe alcohol use disorder with established
+chronic withdrawal.</p>
+<p><strong>Internal Logic.</strong> The chronic somatic process has
+reorganized the psychological field around it: the psychological field
+is not autonomous from <span class="math inline">B_t</span> in C-I.
+Intervening on the psychological domains without treating the somatic
+process produces minimal change. In neurocognitive disorders, the
+somatic process's direction (progressive vs. stable) determines the
+field's direction.</p>
+<p><strong>Typical Clinical Error.</strong> Intervening on psychological
+symptoms without recognizing they are a secondary effect of the chronic
+somatic process. In neurocognitive disorders, setting goals for
+psychological reorganization that are incompatible with the somatic
+process's progression.</p>
+<p><strong>Orienting Intervention.</strong> Managing the somatic process
+is the primary intervention. The psychological domains respond
+secondarily; and in progressive neurocognitive disorders, the clinical
+goal shifts toward preserving quality of life within the accessible
+field.</p>
+<hr />
+<h3 id="c-j-collapse-global-collapse-transient">C-J: Collapse · Global
+Collapse · Transient</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: global collapse: every <span
+class="math inline">\Psi_t</span> channel is disturbed simultaneously;
+there is a collapse of integration, not a preferential direction.
+Basin: transient in most cases (though it can install as residency in
+chronic forms: see Lucas Sandahl, dissociative identity disorder).</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: very low: global
+collapse compromises every domain simultaneously. <span
+class="math inline">H_t</span> is a norm close to zero across every
+domain, not a vector with an asymmetric profile.</li>
+<li><span class="math inline">\nabla H_t</span>: <span
+class="math inline">&lt; 0</span> during collapse, variable during
+recovery.</li>
+<li><span class="math inline">\varepsilon_t</span>: very low across
+every domain: collapse eliminates the field's receptive capacity.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">B_t</span> in 67%, <span
+class="math inline">R_t</span> in 17%, <span
+class="math inline">A_t</span> in 17%. Collapse frequently has an acute
+somatic origin, or arises through a bypass of <span
+class="math inline">\Pi_R</span>.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> globally
+compromised (67%) / bypass (33%). This is the only configuration where
+compromised or bypassed <span class="math inline">\Pi_R</span> is the
+norm, not the exception. This is C-J's most discriminating
+property.</p>
+<p><strong>Speed:</strong> hours (50%) / days (33%). The fastest
+configuration in the system: an hours-long timescale is definitional
+for C-J.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong>
+variable, can be low (acute collapse with no history) or high (collapse
+on top of a field with extensive history). <span
+class="math inline">\kappa(t)</span>: minimal during collapse: P12 in
+its most urgent form. Position in <span class="math inline">S_m</span>:
+R4 (maximum urgency).</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: very low: collapse eliminates the
+response repertoire. <span class="math inline">\Pi_R</span>:
+compromised or bypassed: the most critical variable for C-J. <span
+class="math inline">\Tau_F</span>: very low: narrative continuity does
+not operate during collapse. <span
+class="math inline">\Upsilon_{US}</span>: minimal.</p>
+<p><strong>Representative Clinical Correlates:</strong> postoperative
+delirium (hours), anticholinergic delirium (days), steroid-induced
+catatonia (days), acute postpartum psychosis (hours), impulsive
+suicidal collapse (hours: bypass), an acute panic attack (hours),
+dissociative identity disorder in an acute episode (residency with
+episodes of collapse).</p>
+<p><strong>Internal Logic.</strong> C-J is qualitatively distinct from
+every other configuration because there is no direction of propagation:
+there is a collapse of integration. Intervention cannot operate on the
+field's content because compromised or bypassed <span
+class="math inline">\Pi_R</span> blocks processing. The priority
+intervention is restoring the field's integration before any work on
+content.</p>
+<p><strong>Note on C-J With a Residency Basin.</strong> Lucas Sandahl
+(dissociative identity disorder, bypass, residency, years) represents a
+C-J subtype where episodic collapse has become established as a
+residency pattern. This may justify a C-J(r) subtype in later
+versions.</p>
+<p><strong>Typical Clinical Error.</strong> Attempting psychotherapeutic
+or Unveiling work during collapse. Underestimating clinical urgency.
+Not prioritizing restoration of the field's integration.</p>
+<p><strong>Orienting Intervention.</strong> Priority: restore the
+field's integration. This structurally precedes any other work,
+including diagnosing the cause. In collapse through bypass, intervening
+on <span class="math inline">B_t^{(a)}</span> (baseline autonomic
+activation) is the most urgent. In collapse through globally
+compromised <span class="math inline">\Pi_R</span>, basic containment
+and orientation of the field precede diagnosis.</p>
+<hr />
+<h3 id="c-k-idiosyncratic-early-dispositional-basin">C-K: Idiosyncratic
+· Early Dispositional Basin</h3>
+<p><strong>Definition by Axes.</strong> Basin: early dispositional: the
+field organized itself during early development, before symbolic
+resources existed to elaborate it. This is the deepest basin in the
+system: installed in <span class="math inline">\sigma_t</span> (the
+pre-symbolic dispositional structure, a component of <span
+class="math inline">\xi_t</span> formalized in D8 of the Ontological
+Core v2.3.5). <span class="math inline">\Psi_t</span>: variable:
+psych.→<span class="math inline">B_t</span> in 67% of cases, <span
+class="math inline">B_t</span>→psych. in 33%.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: variable: the field
+can have high coherence within its own logic (as in autism without
+intellectual disability, or ASPD) or low coherence across multiple
+domains (as in autism with intellectual disability, or severe
+developmental relational trauma).</li>
+<li><span class="math inline">\nabla H_t</span>: sustained <span
+class="math inline">\approx 0</span>: the dispositional basin's depth
+produces extreme stability. The field does not move toward different
+configurations without sustained, very-high-magnitude perturbation.</li>
+<li><span class="math inline">\varepsilon_t</span>: very low: early
+dispositional history has produced the deepest rigidification in the
+system.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">R_t</span> in 67%, <span
+class="math inline">B_t</span> in 33%. Early relational bonding
+(attachment) is the most frequent domain of origin: consistent with
+the basin's dispositional nature.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> still
+developing (33%) / preserved (33%) / encapsulated (17%) / globally
+compromised (17%). The still-developing proportion is the highest in
+the corpus: it reflects that some early dispositional basins compromise
+the development of <span class="math inline">\Pi_R</span> (as in autism
+with intellectual disability, or severe developmental relational
+trauma).</p>
+<p><strong>Speed:</strong> decades (67%) / years (33%). The slowest
+speed in the system: the dispositional basin is the most resistant to
+change.</p>
+<p><strong><span class="math inline">\sigma_t</span>:</strong> highly
+relevant; C-K is the configuration where <span
+class="math inline">\sigma_t</span> carries the greatest weight in
+<span class="math inline">\xi_t</span>. Narrative interventions have
+limited access; interventions centered on <span
+class="math inline">B_t</span>, the early relationship, and the sensory
+environment have the greatest access to <span
+class="math inline">\sigma_t</span>.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> maximal,
+the basin is the oldest history there is. <span
+class="math inline">\kappa(t)</span>: structurally minimal: by the
+field's constitution, not from fatigue. The distinction between
+reduced <span class="math inline">\kappa(t)</span> from accumulated
+history and constitutively low <span class="math inline">\kappa(t)</span>
+is clinically critical: in C-K, low <span
+class="math inline">\kappa(t)</span> is not restorable the way it is
+in other configurations.</p>
+<p><strong>Position in <span class="math inline">S_m</span>:</strong>
+R2, but with the characteristic that <span
+class="math inline">C_{\text{umbral}}(D_p)</span> is very low, which
+limits the magnitude of any intervention.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: low-to-moderate: the repertoire is
+strongly conditioned by the dispositional field. <span
+class="math inline">\Pi_R</span>: variable: from still developing to
+preserved. <span class="math inline">\Tau_F</span>: low: conventional
+narrative continuity has limited access to the dispositional field.
+<span class="math inline">\Upsilon_{US}</span>: low.</p>
+<p><strong>Representative Clinical Correlates:</strong> autism with
+intellectual disability and an underlying genetic syndrome,
+childhood-onset schizophrenia, severe developmental relational trauma,
+conduct disorder with callous-unemotional traits, antisocial
+personality disorder (installed in early development with conduct
+disorder as a precursor), pedophilia with antisocial personality
+disorder (an extreme case).</p>
+<p><strong>Internal Logic.</strong> C-K is the system's most radical
+case of isomerism: the field has a constitutive geometry installed
+before language. Two trajectories in C-K with a similar <span
+class="math inline">H_t</span> can have radically different
+configurations, because the dispositional basin has specific content:
+autism with intellectual disability and antisocial personality disorder
+are polymorphs of the same dispositional basin in terms of depth and
+pre-symbolism, but with completely different organizations.</p>
+<p>Genomic prediction has particular value in C-K: variants that
+modulate the sensitive periods of attachment and early relational
+development are the most direct correlates of the dispositional
+basin.</p>
+<p><strong>Typical Clinical Error.</strong> Applying interventions
+designed for residency or reconfiguration basins to a dispositional
+basin: expectations for change are incompatible with the field's
+nature. Confusing the dispositional basin's stability with voluntary
+resistance to change.</p>
+<p><strong>Orienting Intervention.</strong> The interventions with the
+greatest access to <span class="math inline">\sigma_t</span>: centered
+on the body (<span class="math inline">B_t</span>), long-standing
+relational work, the sensory environment. Narrative interventions have
+differential access: they can modify <span
+class="math inline">D_p(t)</span> without direct access to <span
+class="math inline">\sigma_t</span>. The clinical goal is to widen the
+field of possibilities <span class="math inline">\mathcal{F}_t^{(p)}</span>
+within the dispositional geometry, not to reorganize the basin.</p>
+<hr />
+<h3 id="c-l-encapsulation-segmented-residencyreconfiguration">C-L:
+Encapsulation · Segmented · Residency/Reconfiguration</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: segmented: some <span
+class="math inline">\Psi_t</span> channels are selectively blocked.
+The encapsulated content exists in the field but does not propagate
+toward ordinary consciousness. Basin: variable (residency or
+reconfiguration depending on the case).</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: apparently normal in
+the non-segmented domains: the field looks preserved on standard
+assessment. The observable profile does not reflect the field's real
+compromise.</li>
+<li><span class="math inline">\nabla H_t</span>: sustained <span
+class="math inline">\approx 0</span> in the non-segmented domains: the
+field looks stable from the outside. The real movement happens in the
+encapsulated material.</li>
+<li><span class="math inline">\varepsilon_t</span>: preserved in the
+accessible domains; the blocked segment has no <span
+class="math inline">\varepsilon</span> assessable from outside.</li>
+</ul>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">A_t</span> in 100% of the corpus cases: existential
+anchoring is the domain most frequently involved in segmentation. N=2:
+an orienting data point, not conclusive.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> preserved
+in every corpus case. This is C-L's most discriminating property: the
+field knows it exists, but there is content that does not propagate
+toward ordinary consciousness. This is not a compromise of <span
+class="math inline">\Pi_R</span>: it is a segmentation of
+propagation.</p>
+<p><strong>Speed:</strong> decades in every case; the segmentation
+pattern is long-standing.</p>
+<p><strong>Note on N=2.</strong> The Barnhill corpus severely
+underrepresents dissociative disorders and sexual dysfunctions of
+psychological origin. C-L's justification as a canonical configuration
+is theoretical and clinical, not statistical, in this corpus.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong> high, the
+long-standing segmented pattern has left a deep trace. <span
+class="math inline">\kappa(t)</span>: low in the blocked segment: not
+available for direct Unveiling.</p>
+<p><strong>Modal Transition-Conditions Profile:</strong> <span
+class="math inline">\Beta_F</span>: moderate in the accessible domains;
+irrelevant in the segment. <span class="math inline">\Pi_R</span>:
+preserved: the condition of possibility for clinical work. <span
+class="math inline">\Tau_F</span>: moderate in the accessible domains.
+<span class="math inline">\Upsilon_{US}</span>: moderate.</p>
+<p><strong>Representative Clinical Correlates:</strong> dissociative
+amnesia with PTSD (Judith Vaughan), existentially rooted female sexual
+dysfunction (Elizabeth Olsen). On clinical and theoretical grounds:
+dissociative identity disorder, psychogenic amnesia, conversion
+disorders with a dissociative mechanism.</p>
+<p><strong>Internal Logic.</strong> Segmentation is the mechanism by
+which the field preserves coherence in the accessible domains at the
+cost of blocking propagation from the disturbing material. It is an
+organization that widened <span
+class="math inline">\mathcal{F}_t^{(p)}</span> in the accessible
+domains and allowed functionality to be maintained, not a failure of
+the field. The relevant intervention is creating the conditions of
+<span class="math inline">\kappa(t)</span> and relational safety under
+which the field can gradually integrate the blocked material, not
+forcing access to the segment.</p>
+<p><strong>Typical Clinical Error.</strong> Attempting direct access to
+the blocked material without establishing sufficient <span
+class="math inline">\kappa(t)</span> conditions: this produces either
+reblocking or destabilization. Underestimating segmentation's function
+as an organization that widened <span
+class="math inline">\mathcal{F}_t^{(p)}</span>.</p>
+<p><strong>Orienting Intervention.</strong> Build <span
+class="math inline">\kappa(t)</span> and relational safety before any
+Unveiling work on the blocked material. The field, not the clinician,
+sets the pace of access to the segment.</p>
+<hr />
+<h3 id="c-m-drift-psychologicalbt-failed-reconfiguration">C-M: Drift ·
+Psychological→Bt · Failed Reconfiguration</h3>
+<p><strong>Definition by Axes.</strong> Dominant <span
+class="math inline">\Psi_t</span>: psych.→<span
+class="math inline">B_t</span>: the perturbation originates in the
+psychological domains and propagates toward <span
+class="math inline">B_t</span>. Basin: failed reconfiguration: the
+field tries to leave the basin without succeeding; there is movement
+with no consolidation.</p>
+<p><strong>Derived Properties.</strong></p>
+<ul>
+<li><span class="math inline">\|H_t\|</span>: oscillating: the field
+produces episodes of coherence that fail to consolidate. The profile
+shows variability with no sustained direction.</li>
+<li><span class="math inline">\nabla H_t</span>: oscillating with no
+sustained direction: this is the formal property distinguishing C-M
+from every other configuration. <span class="math inline">\nabla H_t</span>
+is oscillating without consolidation: neither sustained positive (C-C),
+sustained negative (historical cathexis), nor zero (residency).</li>
+<li><span class="math inline">\varepsilon_t</span>: apparently
+sufficient to start reorganizations, but insufficient to consolidate
+them: the field reaches the reorganization threshold but cannot sustain
+it.</li>
+</ul>
+<p><strong>N=1 in the corpus.</strong> Isaac Ulysse (major depressive
+disorder with prolonged grief) is the only case with this pattern in
+Barnhill 2023. C-M's justification as a canonical configuration is
+theoretical and clinical, not statistical, in this corpus.</p>
+<p><strong>Justification for C-M as a canonical configuration.</strong>
+Prolonged grief as failed reconfiguration is a clinically recognized
+pattern that DSM-5-TR barely formalizes as "prolonged grief disorder."
+In the real population, analogous reconfiguration failures are common:
+addictions where the recovery process repeatedly fails to establish a
+new, stable basin, long-standing therapeutic processes producing
+movement with no consolidation, life transitions that fail to
+reorganize the field. The Barnhill corpus is not the universe: it
+severely underrepresents these patterns.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> biased in
+the corpus's only case. The hypothesis is that the bias in <span
+class="math inline">\Pi_R</span> is part of the failure mechanism: the
+field interprets reality in a way that confirms the impossibility of
+reconfiguration (grief that cannot complete because it would mean
+"betraying" the lost object, addiction that fails because recovery is
+"impossible").</p>
+<p><strong>Empirical Domain of Origin:</strong> <span
+class="math inline">R_t</span>: reconfiguration failure has a relational
+origin in the corpus's only case.</p>
+<p><strong>Speed:</strong> months in the only case. The hypothesis is
+that C-M's speed is variable: it can be months or years depending on
+the magnitude of the material blocking reconfiguration.</p>
+<p><strong><span class="math inline">D_p(t)</span>:</strong>
+moderate-to-high, failed reconfiguration attempts accumulate <span
+class="math inline">D_p(t)</span>. <span
+class="math inline">\kappa(t)</span>: variable: sufficient to start
+reorganizations but insufficient to consolidate them. The hypothesis is
+that <span class="math inline">\kappa(t)</span> restores between
+attempts but gets consumed with each failed attempt.</p>
+<p><strong>Gap G-Duelo1.</strong> C-M is the configuration that
+formalizes gap G-Duelo1 from the mapping's findings log. Fully
+formalizing C-M requires pilot data: in particular, specifying the
+<span class="math inline">\xi_t</span> conditions that produce failed
+reconfiguration versus successful reconfiguration.</p>
+<p><strong>Subform identified in the mapping (June 21, 2026):</strong>
+prolonged grief disorder presents a specific version of C-M with a
+mechanism distinguishable from the generic oscillatory cycle: there is
+a prior residency attractor (the relationship with the deceased person)
+that keeps
+organizing the field after its source disappeared. It is the active
+persistence of an attractor that cannot update itself because its
+external object no longer exists, not a consolidation failure from
+κ(t) exhaustion. In the model's terms: the field tries to reorganize
+toward configurations that would require an Ω_t^(p) compatible with
+that person's presence, which is no longer accessible. This subform may
+be distinguishable from the generic C-M oscillatory cycle by its Ψ_t
+profile (persistent propagation toward an absent relational object) and
+by the temporal horizon of reorganization attempts (correlated with
+significant dates in the lost relationship). Pending full formalization
+in Pending Item 3 of this same section.</p>
+<p><strong>Modal Transition-Conditions Profile (hypothetical: N=1):</strong>
+<span class="math inline">\Beta_F</span>: moderate: the field can
+attempt reorganizations but not consolidate them. <span
+class="math inline">\Pi_R</span>: biased: in the direction that
+confirms change is impossible. <span class="math inline">\Tau_F</span>:
+low: gains do not integrate into continuous narrative. <span
+class="math inline">\Upsilon_{US}</span>: moderate.</p>
+<p><strong>Hypothetical Clinical Correlates:</strong> prolonged grief
+disorder, addictions with repeated failed recovery attempts,
+long-standing therapeutic processes with no consolidation, blocked life
+transitions (forced emigration with unprocessed cultural grief,
+post-traumatic cases with failed elaboration).</p>
+<p><strong>Internal Logic.</strong> The field is not in residency: there
+is movement. It is not in successful reconfiguration: gains do not
+consolidate. The failure is in the new basin's consolidation mechanism:
+the field reaches the reorganization threshold, but something pulls the
+mass back to the previous basin before the new organization can
+establish itself. Identifying that mechanism is the central clinical
+object in C-M.</p>
+<p><strong>Typical Clinical Error.</strong> Treating C-M as C-C1 or
+C-C2 (successful reconfiguration) and increasing intervention intensity
+when gains fail to consolidate: this can produce plasticity that
+restricts <span class="math inline">\mathcal{F}_t^{(p)}</span>. Or
+treating it as voluntary resistance to change.</p>
+<p><strong>Orienting Intervention.</strong> Identify the specific
+consolidation-failure mechanism for this trajectory. The biased <span
+class="math inline">\Pi_R</span> that confirms change is impossible is
+the first entry point. Building <span class="math inline">\Tau_F</span>
+so episodes of coherence become recognizable and accumulable is the
+central work.</p>
+<hr />
+<h2 id="relational-vocabulary-retired-historical-status">Relational
+Vocabulary (Retired: Historical Status)</h2>
+<p>The relational vocabulary (7 technical terms of Greek root: Eutropy,
+Dysintropy, Neotropy, Cathexy, Apexy, Anastropy, Heterotropy, formalized
+on June 10, 2026, alongside the names of the 14 canonical
+configurations) was retired from the corpus by Diego F.
+Pereira-Perdomo's explicit instruction. It served its heuristic function
+during the model's construction and merges, in status, with the 7
+already-historical Greek terms (Eudaimonia, Euexia, Allotropy, Anexia,
+Epitropy, Entelopy, Proexia: see the <a href="/syntropia/en/nucleos/formal-dictionary/">Formal Dictionary</a>). No Greek term,
+from either generation, is active. The only nomenclature system
+currently in force is canonical system v1.2's 14 names and their
+canonical phrases, below.</p>
+<h2 id="canonical-phrases-by-configuration">Canonical Phrases by
+Configuration</h2>
+<p>Canonical phrases are approved clinical formulations for
+communicating each configuration's internal logic to the patient. They
+are the bridge between technical formalization and the language of the
+clinical encounter.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Canonical Phrase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C-A</td>
+<td style="text-align: left;">Anchoring</td>
+<td style="text-align: left;">The person becomes a pattern installed in
+the psychological dimension that has, for decades, carried through into
+the somatic domain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-B</td>
+<td style="text-align: left;">Loop</td>
+<td style="text-align: left;">The somatic and the psychological modulate
+each other in a cycle that perpetuates itself with no clear point of
+origin</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-C1</td>
+<td style="text-align: left;">Bond</td>
+<td style="text-align: left;">The person is going through a process of
+active reorganization whose origin is relational</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-C2</td>
+<td style="text-align: left;">Existential</td>
+<td style="text-align: left;">The person is going through a process of
+existential reorganization: reality testing requires assessment at
+every encounter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-D</td>
+<td style="text-align: left;">Chrysalis</td>
+<td style="text-align: left;">The somatic and the psychological are
+reorganizing simultaneously, in an active bidirectional process</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-E</td>
+<td style="text-align: left;">Jolt</td>
+<td style="text-align: left;">The somatic is disrupting psychological
+functioning, with no stabilization yet</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-F</td>
+<td style="text-align: left;">Suspension</td>
+<td style="text-align: left;">Psychological disruption is active, and
+the trajectory has not yet stabilized</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-G</td>
+<td style="text-align: left;">Transformation</td>
+<td style="text-align: left;">The somatic domain is producing sustained
+reorganization across the other domains</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-H</td>
+<td style="text-align: left;">Vortex</td>
+<td style="text-align: left;">The somatic and the psychological disrupt
+each other in a recent cycle: the window for intervention is open</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-I</td>
+<td style="text-align: left;">Embodiment</td>
+<td style="text-align: left;">The somatic domain has organized the
+trajectory for decades, and the other domains have stabilized around
+it</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-J</td>
+<td style="text-align: left;">Collapse</td>
+<td style="text-align: left;">All domains collapsed simultaneously:
+integration and reality testing are unavailable</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-K</td>
+<td style="text-align: left;">Idiosyncratic</td>
+<td style="text-align: left;">The trajectory organized divergently
+during or before early childhood: that organization is the constitutive
+base it operates from</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-L</td>
+<td style="text-align: left;">Encapsulation</td>
+<td style="text-align: left;">What's observable in the encounter shows
+internal coherence with processes that likely exist but do not
+surface</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-M</td>
+<td style="text-align: left;">Drift</td>
+<td style="text-align: left;">The trajectory becomes without ever
+stabilizing</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cross-cutting-system-properties">Cross-Cutting System
+Properties</h2>
+<h3 id="relationships-between-configurations">Relationships Between
+Configurations</h3>
+<p>The individuation field <span
+class="math inline">\Omega_t^{(p)}</span> distributes mass across
+multiple configurations simultaneously: configurations are not mutually
+exclusive states. The configurations that most frequently coexist:</p>
+<p><strong>Structural Transition Hypothesis (HST).</strong> The
+<a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>'s research agenda v2.3.5 (extension of G10, horizon
+H1) proposes the falsifiable hypothesis that transitions between
+configurations satisfy three qualitative properties: <em>hysteresis</em>
+(the threshold for entering <span
+class="math inline">\mathfrak{C}_j</span> from <span
+class="math inline">\mathfrak{C}_i</span> differs from the threshold
+for leaving it); <em>neighborhood</em> (short-range transitions in
+canonical space are more probable than long-range ones); and <em><span
+class="math inline">S_m</span> condition</em> (when <span
+class="math inline">\kappa(t) &lt; \kappa_{\text{umbral}}</span>,
+transitions that restrict <span
+class="math inline">\mathcal{F}_t^{(p)}</span> are more probable). The
+HST is what the pilot can refute, not what it confirms. Its
+quantitative formalization as a transition function is the object of
+H2. The transition-routes table (Pending Item 2) should be derived once
+pilot data allow testing the three properties.</p>
+<ul>
+<li><strong>C-A and C-B</strong>: chronic psychological entrenchment
+and the chronic cycle share the residency basin; movement between them
+is frequent when the cyclical somatic component is added or lost.</li>
+<li><strong>C-C1, C-C2, and C-D</strong>: psychological reconfiguration
+(relational and existential) and bidirectional-cycle reconfiguration
+share the active process of change; they can coexist in trajectories
+with mixed components.</li>
+<li><strong>C-E and C-F</strong>: acute somatic perturbation and
+situational psychological perturbation share the transient basin; grief
+with somatic repercussions is the paradigmatic example of both active
+simultaneously.</li>
+<li><strong>C-J and any other</strong>: global collapse can overlay any
+base configuration when the perturbation exceeds every threshold.</li>
+</ul>
+<h3 id="h_t-y-nabla-h_t-como-propiedades-derivadas"><span
+class="math inline">\|H_t\|</span> and <span class="math inline">\nabla
+H_t</span> as Derived Properties</h3>
+<p>Each configuration has modal ranges of <span
+class="math inline">\|H_t\|</span> and <span class="math inline">\nabla
+H_t</span>:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Modal <span class="math inline">\|H_t\|</span></th>
+<th style="text-align: left;">Modal <span class="math inline">\nabla
+H_t</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C-A</td>
+<td style="text-align: left;">moderate: variable by domain</td>
+<td style="text-align: left;"><span class="math inline">\approx 0</span>
+sustained</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-B</td>
+<td style="text-align: left;">low-to-moderate</td>
+<td style="text-align: left;"><span class="math inline">\approx 0</span>
+sustained (stabilized cycle)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-C1</td>
+<td style="text-align: left;">variable: relational domains show the
+most marked movement</td>
+<td style="text-align: left;">variable, trending positive</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-C2</td>
+<td style="text-align: left;">variable: frequently low during the acute
+phase</td>
+<td style="text-align: left;">variable: more unstable than C-C1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-D</td>
+<td style="text-align: left;">low-to-moderate, variable</td>
+<td style="text-align: left;">variable, trending positive</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-E</td>
+<td style="text-align: left;">variable: rapid drop, recovery possible</td>
+<td style="text-align: left;">active (+ or -)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-F</td>
+<td style="text-align: left;">moderate</td>
+<td style="text-align: left;">active (+ or -)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-G</td>
+<td style="text-align: left;">highly variable</td>
+<td style="text-align: left;">highly variable: depends on the somatic
+process</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-H</td>
+<td style="text-align: left;">moderate, oscillating</td>
+<td style="text-align: left;">oscillating</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-I</td>
+<td style="text-align: left;">low-to-moderate</td>
+<td style="text-align: left;"><span class="math inline">\approx 0</span>
+sustained</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-J</td>
+<td style="text-align: left;">very low: all domains</td>
+<td style="text-align: left;"><span class="math inline">&lt; 0</span> during
+collapse</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-K</td>
+<td style="text-align: left;">variable (high within its own
+field)</td>
+<td style="text-align: left;"><span class="math inline">\approx 0</span>
+: deep basin</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-L</td>
+<td style="text-align: left;">apparently moderate-to-high</td>
+<td style="text-align: left;"><span class="math inline">\approx 0</span>
+in accessible domains</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-M</td>
+<td style="text-align: left;">oscillating with no direction</td>
+<td style="text-align: left;">oscillating with no consolidation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pendientes-formales">Pendientes formales</h2>
+<ol type="1">
+<li><p><strong><span
+class="math inline">\Omega_t^{(p)}</span> profiles</strong> by
+configuration: require pilot data to specify the distribution of mass
+across adjacent configurations.</p></li>
+<li><p><strong>Transition-routes table</strong>: the historical system
+had a table of frequent routes (Chapter 6, §6.4.2) derived from the 14
+configurations. This table needs to be re-derived from canonical system
+v1.2. <strong>Closed at the level of per-pair determination (June 21,
+2026):</strong> <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.21, §III.12bis, gives explicit
+status to all 182 possible directed pairs among the 14 configurations,
+through an auditable rule system (not 182 loose judgment calls): 64
+declared verbatim in "Global Topology," 41 extended by analogy (32
+textual, 9 structural), 77 with no reasonable textual or analogical
+basis, explicitly declared as such. <strong>What remains open, and does
+require the pilot:</strong> no <span
+class="math inline">\mu_{\text{alto}}</span> has a fixed numerical
+magnitude; the 77 baseless pairs stay at <span
+class="math inline">\mu=1</span> by default, for lack of grounding, not
+by decision: most involve C-M (whose own profile states "full
+formalization requires pilot data"), entry into C-K, or C-L (N=2 in its
+own profile). Full table with per-cell provenance:
+<code>tabla_mu_ij_completa.csv</code>.</p></li>
+<li><p><strong>Formalizing C-M</strong>: G-Duelo1. Requires a dedicated
+session with the <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> §II.7bis (<span
+class="math inline">D_p(t)</span> as a function over <span
+class="math inline">\mathcal{W}</span>: differential erosion) and pilot
+data on the <span class="math inline">\xi_t</span> conditions that
+produce consolidation failure versus successful reconfiguration. (ApB
+absorbed into <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.0.)</p></li>
+<li><p><strong>C-J(r) subtype</strong>: C-J with a residency basin
+(Lucas Sandahl, dissociative identity disorder). <strong>Closed (June
+21, 2026):</strong> not introduced as a separate configuration. Applying
+the same policy already established for C-A/C-F ("while the pilot has
+not produced that evidence, they remain unified: introducing the split
+before having empirical evidence that distinguishes them would produce
+unsupported configurations, which the model avoids," <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>,
+"Global Topology"): a single case (N=1) is the exact same situation
+already decided against resolving by subdivision. C-J(r) stays
+documented as a note within C-J's profile (already there, see line
+956), not as a separate candidate configuration. This reopens if the
+pilot produces more cases of the same pattern.</p></li>
+<li><p>Integration with the 7 emergent organizations: completed in
+v1.1. The systematic comparison produced 5 direct correspondences and
+motivated splitting C-C into C-C1 and C-C2. The residual open questions
+are declared as an extension of G10.</p></li>
+<li><p><strong>Mathematical closure</strong>: assess whether there are
+combinations of dominant propagation organization × basin with
+theoretical justification but N=0 in the corpus that should be declared
+speculative candidate configurations. <strong>Assessed (June 21,
+2026):</strong> systematically reviewed the 9 crossings of the regular
+grid (all populated) and the crossings of each special value of Axis 1
+(segmented, global collapse) and Axis 2 (early dispositional, failed
+reconfiguration) against the rest of the space. One real, non-forced
+candidate: <strong>segmented × transient</strong>: C-L (N=2 in the
+corpus) is documented as a "decades" pattern exclusively; an
+acute/transient segmentation (e.g. transient dissociative amnesia
+after acute trauma, distinct from C-L's chronic pattern) is
+theoretically plausible and consistent with the segmentation logic
+already described, and C-L's own profile states that "the Barnhill
+corpus severely underrepresents dissociative disorders": N=0 is more
+likely a sampling artifact than a real absence. <strong>Not introduced
+as a new configuration</strong> (that would be exactly the error the
+C-A/C-F policy already avoids); it is recorded here as a named
+speculative candidate, pending confirmation or rejection by the pilot
+(or a future clinical case). No other reviewed crossing had sufficient
+theoretical justification to be named.</p></li>
+</ol>
+<hr />
+<h2 id="relationship-to-the-historical-system">Relationship to the
+Historical System</h2>
+<p>The 14 configurations of the historical system (v0.3.0) remain as a
+record of the model's conceptual development. Some names and internal
+logics carry over into system v1.1: the correspondence is not exact,
+but there is partial alignment:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">System v1.2</th>
+<th style="text-align: left;">Approximate Correspondence in the
+Historical System</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C-A (psych.→<span
+class="math inline">B_t</span> · residency)</td>
+<td style="text-align: left;">C8 Chronic Dysintropy, C9 Entelopy,
+personality disorders in general</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-B (bidirectional · residency)</td>
+<td style="text-align: left;">C6 Allotropy (cycle), C5 Anexia
+(chronic oscillation)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-C1 (psych.→<span
+class="math inline">B_t</span> · reconfiguration · origin <span
+class="math inline">R_t</span>)</td>
+<td style="text-align: left;">C2 Neotropy with relational work</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-C2 (psych.→<span
+class="math inline">B_t</span> · reconfiguration · origin <span
+class="math inline">A_t</span>)</td>
+<td style="text-align: left;">C2 Neotropy, C3 Cathexy under
+reconfiguration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-D (bidirectional · reconfiguration)</td>
+<td style="text-align: left;">C2 Neotropy with a somatic component</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-E (<span class="math inline">B_t</span>
+→psych. · transient)</td>
+<td style="text-align: left;">no direct equivalent: the somatic
+dimension was invisible</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-F (psych.→<span
+class="math inline">B_t</span> · transient)</td>
+<td style="text-align: left;">C1 Epitropy, C2 Neotropy (initial
+phase)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-G (<span class="math inline">B_t</span>
+→psych. · reconfiguration)</td>
+<td style="text-align: left;">no direct equivalent</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-H (bidirectional · transient)</td>
+<td style="text-align: left;">C5 Anexia (acute form)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-I (<span class="math inline">B_t</span>
+→psych. · residency)</td>
+<td style="text-align: left;">no direct equivalent</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-J (global collapse)</td>
+<td style="text-align: left;">C8 Acute Dysintropy (extreme form)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-K (early dispositional)</td>
+<td style="text-align: left;">no direct equivalent: basin was not an
+axis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-L (segmented)</td>
+<td style="text-align: left;">no direct equivalent</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-M (failed reconfiguration)</td>
+<td style="text-align: left;">no direct equivalent</td>
+</tr>
+</tbody>
+</table>
+<p>The configurations with no direct equivalent (C-E, C-G, C-I, C-K,
+C-L, C-M) are the specific contribution of incorporating <span
+class="math inline">B_t</span> as the fifth constitutive domain and of
+the 105-case mapping analysis. C-C1 and C-C2 are the contribution of
+systematic comparison with the 7 emergent organizations from k-modes
+clustering.</p>
+<hr />
+<p><em>Version 1.3.15 &mdash; June 22, 2026.</em> <em>Author: Diego F.
+Pereira-Perdomo MD, MSci.</em> <em>Approved by Diego F.
+Pereira-Perdomo.</em> <em>Empirical basis: profile matrix, 105 Barnhill
+2023 cases (matriz_perfiles_sintr_v0_1_0.tsv).</em> <em>Comparison: 7
+emergent organizations from k-modes clustering.</em> <em>Cross-check
+against: <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.16, <a href="/syntropia/en/nucleos/formal-dictionary/">Formal Dictionary</a> v0.4.18.</em>
+<em>Any modification requires a new semantic version and explicit
+approval.</em></p>
+
+      </article>
+    </div>
+  </section>
+
+  <!-- Back -->
+  <section class="py-16 bg-slate-50 text-center">
+    <div class="max-w-2xl mx-auto px-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/syntropia/en/nucleos/"
+        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        &larr; All Core Documents
+      </a>
+      <a href="/syntropia/en/"
+        class="inline-block bg-white border border-slate-300 hover:border-teal-500 text-slate-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        Back to Syntropia
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
+    <p class="mb-2">&copy; 2026 Syntropia &mdash; Clinical and Scientific Model</p>
+  </footer>
+
+</body>
+
+</html>

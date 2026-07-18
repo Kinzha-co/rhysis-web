@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Core &mdash; Syntropia</title>
+  <meta name="description" content="The complete clinical protocol: Unveiling, the syntropic profile's five domains, and processual clinical language.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%); }
+    .prose :where(code):not(:where([class~="not-prose"] *)) {
+      background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em;
+    }
+    .prose blockquote { border-left-color: #0f766e; font-style: normal; }
+    .prose table { font-size: 0.92em; }
+    .prose thead th { background: #f8fafc; }
+  </style>
+<script defer
+src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+</script>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+</head>
+
+<body class="m-0 p-0 bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4">
+    <a href="/en/">
+      <img src="/assets/Logo-rhysis.svg" alt="Rhysis"
+        class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity">
+    </a>
+    <div class="text-sm md:text-base font-medium text-white tracking-wide">
+      <span class="font-bold border-b-2 border-teal-400 pb-0.5">EN</span>
+      <span class="mx-2 text-slate-400">|</span>
+      <a href="/syntropia/es/nucleos/nucleo-clinico/" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropia &mdash; Canonical Document</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
+        Clinical Core
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">The complete clinical protocol: Unveiling, the syntropic profile's five domains, and processual clinical language.</p>
+      <p class="text-slate-400 text-sm mt-6">Version 0.3.13 &middot; July 13, 2026</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-slate lg:prose-lg max-w-none
+                       prose-headings:text-teal-800 prose-a:text-teal-700
+                       prose-strong:text-slate-900">
+<h1 id="clinical-core-of-syntropia"><a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> of Syntropia</h1>
+<h2 id="where-this-document-stands">Where This Document Stands</h2>
+<p>The <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> specifies how the Syntropia model operates in the actual clinical encounter. It is not a protocol for administering instruments. It is not a guide for interpreting questionnaires. It describes what a clinician trained in Syntropia does from the moment the person walks into the room, before the formal protocol has begun, before any instrument has been applied.</p>
+<p>Syntropia’s instrument is a guide for Unveiling, not a questionnaire to administer: a document that organizes what the clinician already does and lets them record what emerges over the course of the interview with enough precision to compute the syntropic profile. Instruments that already exist in the literature get used as grammars of observation, not as direct-administration protocols: the clinician knows what those instruments measure and reads those constructs in the person’s spontaneous narrative, without administering the instrument itself.</p>
+<p>The clinician who can apply the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> is a physician or clinical psychologist. A psychiatrist is the most complete profile, carrying both the medical training to read the biological substrate and the clinical training for working with the field. Clinical psychologists and neuropsychologists can reach a complete reading working in interdisciplinary teams with physicians. The categorical framework (mainly the DSM) is necessary as a precondition, not a substitute for the model: it is a grammar of observation with declared limits, and the map of conditions where the biological substrate is determinant.</p>
+<hr />
+<h2 id="canonical-terminology-rules">Canonical Terminology Rules</h2>
+<p><strong>NC-1:</strong> The <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> does not use evaluative terms (positive/negative, good/bad, adaptive/maladaptive) to describe conditions, configurations, or trajectories. It uses directions of variation in the field’s power, always referred to this specific trajectory’s individuation field at this specific moment.</p>
+<p><strong>NC-2:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, <span class="math inline">A_t</span> is read through the distinction between a sense of being and a life project. The two dimensions are independent, and their combination determines <span class="math inline">A_t</span>’s profile.</p>
+<p><strong>NC-3:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, “suffering” always needs its plane specified: Franklian suffering (the existential condition the trajectory must find a response to) and syntropic suffering (restriction of the field of possibilities <span class="math inline">\mathcal{F}_t^{(p)}</span>, A8, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>). The two planes are independent and should never be conflated.</p>
+<p><strong>NC-4:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, <span class="math inline">P_t</span> is read from the temporal structure of experience, not from the capacity to plan. A contracting horizon is information about <span class="math inline">\xi_t</span> before it is a symptom.</p>
+<p><strong>NC-5:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, <span class="math inline">P_t</span> is read from the field’s capacity to inhabit the present fully: with the available history as a resource and the available horizon as a signal, without either one capturing the field.</p>
+<p><strong>NC-6:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, reading <span class="math inline">M</span> comes before assessing <span class="math inline">H_t</span>. The first clinical data point of the encounter is <span class="math inline">\Upsilon_{US}</span>. Reading <span class="math inline">\xi_t</span> comes before assessing <span class="math inline">H_t</span>.</p>
+<p><strong>NC-7:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, no configuration is treated as an entity with its own existence. Configurations are conventional designations for contingent stabilizations.</p>
+<p><strong>NC-8:</strong> The preview (what the field produces before elaboration) precedes the self-image. What the field presents as self-image is the elaboration of the preview. What the clinician reads in involuntary channels, in forms, in resonance, is access to the preview before the self-image has processed it. The Observing Image, when available, is the field’s capacity to observe its own self-image without being fully captured by it.</p>
+<p><strong>NC-9:</strong> Clinical acceptance rests on recognizing that the current configuration arose from conditions, has no existence of its own, and other conditions can produce other stabilizations.</p>
+<p><strong>NC-10:</strong> At the first encounter, the clinician assumes the field produces selective narrative, because the field organizes what it presents according to its own attractors, not necessarily by deliberate intent. What is absent from the narrative is clinical information of equal or greater relevance than what is present.</p>
+<p><strong>NC-11:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, field functions that other traditions name “self,” “unconscious,” or “consciousness” are named, from Syntropia, as preview, self-image, and Observing Image. All three are modes of production of the same field, not separate entities. None has its own existence.</p>
+<p><strong>NC-12:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, “sense” always carries a predicate specifying which of its meanings is operating: sense of being (the realization of being present, a condition of the field), sense of direction (<span class="math inline">\nabla H_t</span> or <span class="math inline">V_t</span>’s vector), or sense of coherence (the field’s internal articulation). Never “sense” without a predicate.</p>
+<p><strong>NC-13:</strong> In the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>, “interstitial field” designates the field that emerges in the encounter between two trajectories: it belongs to the interstice the encounter produces, not to either trajectory. It always carries a predicate specifying the type of interaction: <strong>clinical interstitial field</strong> (clinical encounter), <strong>familial interstitial field</strong> (sustained cohabitation), <strong>bonding interstitial field</strong> (any significant attachment). It is distinct from each trajectory’s own individuation field (<span class="math inline">\Omega_t^{(p)}</span>) and from <span class="math inline">\Psi_t</span>, the propagation pattern within an individuation field. The clinician is part of the clinical interstitial field, not of the person’s individuation field.</p>
+<hr />
+<h2 id="the-three-canonical-terms-for-the-field">The Three Canonical Terms for the Field</h2>
+<p><strong>Preview</strong>: what the field produces before elaboration. Precedes the self-image. Readable in involuntary channels, in forms, in whatever priming activates, in the clinician’s resonance. It precedes the self-image the way a body’s temperature precedes the description that body gives of itself.</p>
+<p><strong>Self-image</strong>: what the field produces once elaborated, to present itself to itself and to others. The narrative, the self-representation. Readable in verbal language and in the history the person builds about their own trajectory. It is not identical to the field: it is the elaboration the field produces on its own preview.</p>
+<p><strong>Observing Image</strong>: the field’s capacity to observe its own self-image from some distance. As though it were someone else. The function that makes insight, introspection, and the field’s active participation in Unveiling possible. Not every field has an Observing Image available to the same degree. The clinician assesses its availability before deciding whether direct questioning or confrontation is appropriate: without an available Observing Image, questioning produces closure instead of opening.</p>
+<hr />
+<h2 id="step-1-the-clinician-as-instrument">Step 1 — The Clinician as Instrument</h2>
+<h3 id="the-four-simultaneous-levels">1.1. The Four Simultaneous Levels</h3>
+<p>From the moment the person enters the clinical space, the clinician operates simultaneously at four levels of reading the field. Holding all four at once without losing quality of attention at any of them is a competency that develops over time, in supervised clinical practice. It cannot be transmitted propositionally.</p>
+<p><strong>Level 1: the observable signal.</strong> What any trained observer would see. Bodily presentation: posture, movement, coordination, gait. Facial expression at rest and in variation. Prosody: speed, rhythm, intonation, pauses, hesitations. Dress and grooming: state of upkeep, internal coherence, fit with context. Adornment: tattoos, piercings, jewelry, visible somatic marks. These are extensive-plane data: observable, describable, transmissible.</p>
+<p><strong>Level 2: the interpretable signal.</strong> Requires training. Microexpressions: full facial expressions of very brief duration that occur when the emotional field leaks through voluntary control; these are preview, before the self-image processes them. Cross-channel dissociations: when verbal content, prosody, and facial expression fail to match. The temporal sequence of expression: authentic emotion precedes or coincides with the word; emotion elaborated by the self-image follows it.</p>
+<p><strong>Level 3: forms.</strong> The patterns of conduct and interaction the person has built over their educational and life history, and that they bring to the encounter without necessarily being aware of them. They are the sediment of what life taught them about how to be with another, how to respond to asymmetry, how to handle authority, how to occupy space in a helping relationship. They are the most stable behavioral expression of formatively rooted <span class="math inline">D_p(t)</span>: the earliest, and the most resistant.</p>
+<p><strong>Level 4: the clinician’s resonance.</strong> What the person produces in the clinician before the clinician can put it into words. It is the instrument for measuring the trajectory’s intensive field. It is the only route of access to the field’s power of affection when that power is not available at the observable level, not subjective data contaminating the assessment. Resonance comes in degrees; it is not simply present or absent.</p>
+<h3 id="absence-of-resonance-as-a-specific-signal">1.2. Absence of Resonance as a Specific Signal</h3>
+<p>The absence of resonance (when the field produces nothing in the clinician) is a clinical signal with greater precision than many observable ones. It occurs when the form is present but the field that normally generates it is not operating behind it.</p>
+<p>Crying that produces no resonance: the self-image produces the form of crying, but the preview has no affective field behind it. The clinician feels nothing, because nothing is arriving, not out of indifference.</p>
+<p><strong>Criterion for distinguishing genuine resonance from clinician projection (auditability, C14):</strong> resonance as an instrument shares with CE7’s tacit knowledge (<a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a>) the risk of masking observer projection. The operative distinguishing criterion follows the same pattern as §4.4: three repetitions of the same resonance pattern to the same type of prime, within the same encounter, count as a signal of the field, not an idiosyncratic response from the clinician. Resonance that does not repeat under equivalent primes, or that is not consistent across evaluators observing the same interaction, carries reduced weight in inference about <span class="math inline">\xi_t</span>, and should be treated with the same status as CE7’s unverified tacit knowledge: reduced <span class="math inline">w_a</span> weight in <span class="math inline">P(\xi_t \mid \mathcal{O}(t))</span>. Resonance that is consistent across primes is the instrument; resonance that does not replicate is the observer’s hypothesis.</p>
+<h3 id="forms-and-communities-of-practice">1.3. Forms and Communities of Practice</h3>
+<p>Forms are not universal, and they are not simply cultural in the national sense. They are the product of the field’s history of exposure to specific communities of practice, and those communities carry more formative power than culture of origin. A clinician and a farmer from the same country can share national origin while carrying forms produced by radically different communities of practice.</p>
+<p>What the clinician reads in forms is which communities of practice this field has belonged to, and what those communities left inscribed in it, not “where this person is from.”</p>
+<p>The method specifies four questions:</p>
+<p>Which communities of practice has this field belonged to, in what sequence, and which left the deepest traces?</p>
+<p>Are there visible layers: forms belonging to different communities of practice coexisting in the same field?</p>
+<p>Which layer is most recent, and which is earliest? Are the earliest forms still active beneath the more recent ones?</p>
+<p>Are there visible discontinuities between layers: moments when the form of one community of practice surfaces through the form of another?</p>
+<p>Discontinuity between layers is the most informative clinical signal: it reveals that the field carries inscriptions of different depths, and that beneath the visible layer another one is operating that history never erased.</p>
+<p><strong>The <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> is a document to be read and adapted to context, not read and applied. Building a map of the specific clinical context’s communities of practice is part of the protocol, not optional.</strong></p>
+<h3 id="facs-as-an-observational-vocabulary">1.4. FACS as an Observational Vocabulary</h3>
+<p>The Facial Action Coding System operates in Step 1 as a vocabulary of observation, not a decoding system. The clinician uses that vocabulary to describe precisely what the face produces, and that description is one of the data points integrated with the rest of the context.</p>
+<p>No action unit has meaning outside that context. The same muscular configuration can signal radically different states depending on the field producing it, the moment it emerges, the content that accompanies it, the prime that preceded it, and what it produces in the clinician’s resonance.</p>
+<hr />
+<h2 id="step-2-the-five-domains">Step 2 — The Five Domains</h2>
+<p>The domains are not assessed sequentially. They are read in parallel, throughout the encounter, from all four levels of Step 1 at once. Syntropia does not look for causes of the patterns it observes, except when the biological substrate is the determining factor, a condition the clinician recognizes from their medical and psychiatric training.</p>
+<h3 id="v_t-volition">2.1. <span class="math inline">V_t</span> — Volition</h3>
+<h4 id="the-four-quadrant-map">The Four-Quadrant Map</h4>
+<p><span class="math inline">V_t</span> has two dimensions that combine differently in each clinical profile:</p>
+<p><strong>Desire:</strong> a primitive function of the field, produced by subcortical systems that operate ahead of the prefrontal cortex. It exists before there is any idea to organize it. It precedes elaboration: it is preview in its volitional dimension.</p>
+<p><strong>Idea:</strong> the function that evaluates whether desire gets expressed, inhibited, or channeled into a sustained direction. The prefrontal cortex does not decide what to desire: it evaluates what to do with what the field already produces. When prefrontal development is compromised (by biological substrate, by very low <span class="math inline">\kappa(t)</span>, by organic condition), that evaluative function cannot operate effectively.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Idea present</strong></th>
+<th><strong>Idea absent</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Desire present</strong></td>
+<td><span class="math inline">V_t</span> potentially full: depends on regulating the vector and translating it into action</td>
+<td>Impulsivity / craving / objectless agitation: desire pushes with no evaluative function to organize it</td>
+</tr>
+<tr class="even">
+<td><strong>Desire absent</strong></td>
+<td>The idea persists as an evaluative function but with no desire to mobilize: profound depression</td>
+<td>Volitional collapse: neither desire nor idea</td>
+</tr>
+</tbody>
+</table>
+<h4 id="the-three-dimensions-of-v_t">The Three Dimensions of <span class="math inline">V_t</span></h4>
+<p><strong>Volitional energy:</strong> how much desire the field produces.</p>
+<p><strong>Vector regulation:</strong> whether desire can organize into a sustained direction across time and perturbation.</p>
+<p><strong>Translation into action:</strong> whether desire can become sustained, organized action.</p>
+<h4 id="clinical-profiles-by-condition">Clinical Profiles by Condition</h4>
+<p><strong>ADHD:</strong> high volitional energy, compromised vector regulation: the prefrontal evaluative function cannot modulate the vector over time with consistency. Hyperfocus is the condition where the field moves with all its energy in one direction, excluding everything else: fluid, effortless. Clinically distinguishable from OCD compulsion, where the vector is imposed from the circuit under pressure, with internal resistance and no lasting reduction in tension.</p>
+<p><strong>Autism:</strong> variable energy, high regulation within its own frame, translation compromised by mismatch with the normative environment.</p>
+<p><strong>OCD:</strong> the vector is captured by the circuit in a way the field experiences as alien to its self-image (ego-dystonic, in categorical terms). The person recognizes the pattern as excessive and fights it, suffering precisely from that fight. An Observing Image is available with respect to the compulsions. The clinician can use that internal resistance as a resource.</p>
+<p><strong>OCPD (Obsessive-Compulsive Personality Disorder):</strong> patterns of rigidity, precision, and control are experienced by the field as correct, as part of its own self-image (ego-syntonic, in categorical terms). The field imposes them on its environment with no internal distress. No Observing Image is available with respect to those patterns, because they are invisible as patterns to the field itself. The distinction from OCD is clinically critical: direct questioning that OCD can receive as support produces closure or confrontation in OCPD, because there is no suffering over the pattern that could function as leverage. Confusing the two (especially common among psychologists without psychiatric training) produces interventions running in the wrong direction for what each field needs.</p>
+<p><strong>Schizophrenia, negative symptom spectrum:</strong> covers every quadrant depending on phase and degree of deterioration. In mild-to-moderate forms, there can be dissociation between desire and translation into action: the field has motivation that cannot organize into sustained movement. In severe forms, the field produces no readable signal of desire: the clinician cannot ask whether there is wanting, because the field does not generate the signals that would make the question answerable. That is opacity in the field with respect to that dimension, not a claim that desire is absent. In the acute positive phase, desire can be intense but disorganized. The spectrum has no fixed location on the <span class="math inline">V_t</span> map.</p>
+<p><strong>Mania:</strong> very high energy, very low regulation, immediate but short-lived translation.</p>
+<p><strong>Profound depression:</strong> desire collapses before the idea does. The evaluative function persists but there is no desire to mobilize.</p>
+<h4 id="manipulation-as-a-signal-of-v_t">Manipulation as a Signal of <span class="math inline">V_t</span></h4>
+<p>Manipulation is an organization of the field that runs across multiple domains at once; it is not the signal of any single component in isolation:</p>
+<p>From <span class="math inline">V_t</span>: manipulation requires desire organized toward a goal, with sustained, calibrated translation into action.</p>
+<p>From <span class="math inline">R_t</span>: it uses the other’s affection as an instrument: the field deliberately affects in order to produce a specific effect.</p>
+<p>From <span class="math inline">P_t</span>: it requires temporal projection: anticipating the other’s response and sustaining the strategy over time.</p>
+<p>From <span class="math inline">A_t</span>: the frame from which manipulation operates (what it considers legitimate to obtain this way) tells you about the field’s sense of being and life project.</p>
+<p>Manipulation does not imply intact contact with reality: a field can manipulate with sophistication and have severely compromised <span class="math inline">\Pi_R</span>.</p>
+<h4 id="clinically-reading-v_t">Clinically Reading <span class="math inline">V_t</span></h4>
+<p>The clinician reads four things at once in spontaneous narrative:</p>
+<p>Is there autonomous movement toward something, or is everything described reactive?</p>
+<p>Does that movement have continuity, or does it come and go with no explanation the person can offer?</p>
+<p>Can the person articulate what for, the sense of direction of that movement from their own specific individuation field?</p>
+<p>Does recounting that movement cost something in the encounter: visible fatigue, effort to sustain coherence?</p>
+<p>The clinician’s resonance is the primary instrument for the first question: is there desire? Before the person says anything, resonance registers whether there is an affective field behind their presence.</p>
+<h3 id="r_t-relational-bonds-from-affection-as-movement">2.2. <span class="math inline">R_t</span> — Relational Bonds, From Affection as Movement</h3>
+<h4 id="the-ontological-foundation">The Ontological Foundation</h4>
+<p><span class="math inline">R_t</span> is the field’s capacity to be moved by the other and to move the other, not the quality of one’s bonds or the capacity to connect: affection as movement in the Deleuzian sense. To affect is to move. The encounter with the other produces variation in the field’s power: the field moves, in some direction, with some magnitude. Or it does not move.</p>
+<h4 id="relational-attractors">Relational Attractors</h4>
+<p>Some relationships function as attractors: they produce movement toward them, the field is pulled, it seeks the encounter. Some relationships produce nothing: the field stays indifferent. And among attractors there is a fundamental distinction:</p>
+<p><strong>Mobilizing attractors:</strong> the encounter with that person expands the field: leaves it with more capacity to act, relate, project itself, draw a sense of being. Not necessarily because it is pleasant. An honest, confrontational bond can be a mobilizing attractor.</p>
+<p><strong>Stalling attractors:</strong> the field is pulled toward that bond, but the encounter produces contraction or capture. The field returns, goes back, cannot help going, but comes back each time with less capacity than before.</p>
+<h4 id="the-three-categories-of-withdrawal">The Three Categories of Withdrawal</h4>
+<p>Relational withdrawal is not automatically a deficit or a form of regulation. The clinician distinguishes three categories without looking for either one’s cause: cause is not the object of the assessment.</p>
+<p><strong>Withdrawal from a lack of available attractors:</strong> the field has nothing pulling it in the relational field currently available. This describes the environment, not the field.</p>
+<p><strong>Learned withdrawal:</strong> the field learned that letting itself be moved produces contraction. Relational <span class="math inline">D_p(t)</span> accumulated from a history of stalling attractors. The field generalizes protection from specific experiences to affection in general. Narrative history may be available, though fragmented.</p>
+<p><strong>Congenital withdrawal:</strong> the field has a form of openness to affection that is constitutively specific from its origin, prior to any history of stalling attractors. It has no narrative history explaining it, because it precedes declarative memory. The person describes the withdrawal as something that simply is, without pointing to when it began or what produced it.</p>
+<p>In congenital withdrawal, exploring which attractors mobilize the field requires greater care and patience, because the attractors that move this field can be very specific, and different from what the normative frame would recognize as bonding, not because there is a hidden cause to uncover.</p>
+<p>Intervention orientation varies radically by category:</p>
+<p>Where attractors are absent: explore the available relational field.</p>
+<p>In learned withdrawal: create conditions for the field to distinguish again between mobilizing and stalling attractors.</p>
+<p>In congenital withdrawal: careful exploration of what moves this specific field, from its own individuation frame.</p>
+<h4 id="the-five-temporal-dimensions-of-r_t">The Five Temporal Dimensions of <span class="math inline">R_t</span></h4>
+<p><strong>Openness:</strong> can the field be moved by the other right now?</p>
+<p><strong>Direction of the power variation:</strong> do this trajectory’s relational encounters expand or contract the field, with no evaluative terms?</p>
+<p><strong>Accumulated imprint:</strong> what has the history of affections inscribed in the relational field’s geometry? This is accumulated relational <span class="math inline">D_p(t)</span>.</p>
+<p><strong>Processing capacity:</strong> can the field process affection between encounters without collapsing? This is available relational <span class="math inline">\kappa(t)</span>. In high-sensitivity profiles, withdrawal can be regulation that widens <span class="math inline">\mathcal{F}_t^{(p)}</span> against the load of affection, not a deficit of <span class="math inline">R_t</span>.</p>
+<p><strong>Openness to otherness:</strong> can the field receive the other as genuinely other (irreducible, capable of surprise), or does it need the other to be predictable? This is read in spontaneous narrative about specific people: if there is a pattern of judgment from one’s own frame with no question ever arising about the other’s own sense of things, openness to otherness is compromised. It requires no special technique. It surfaces in any story the person tells about someone else.</p>
+<h4 id="what-low-r_t-is-not">What Low <span class="math inline">R_t</span> Is Not</h4>
+<p>The apparent absence of conventional emotional signals (what the normative frame may call alexithymia) is not necessarily compromised <span class="math inline">R_t</span>. It can be a form of <span class="math inline">R_t</span> organized from a community of practice with its own signals of affection, readable within that community. A clinician who reads that as deficit is confusing difference with absence. The correct signal is the presence or absence of affective preview, not the form that expression of that preview takes. ### 2.3. <span class="math inline">A_t</span> — Existential Anchoring</p>
+<h4 id="the-fundamental-distinction-sense-of-being-and-life-project">The Fundamental Distinction: Sense of Being and Life Project</h4>
+<p><span class="math inline">A_t</span> has two completely independent dimensions, read from different instruments:</p>
+<p><strong>Sense of being:</strong> a condition of the field: you either have it or you don’t. It requires no project. It requires no external condition. It requires no thought. It is the realization of being present: immediate, prior to any elaboration. This conversation has a sense of being right now, because there is realization in the act itself, not because it leads somewhere. Descartes’s <em>cogito ergo sum</em> is exactly the inversion of this: having a sense of being does not require thinking, does not require articulating, does not require projecting oneself forward. The healthiest thing is often simply being present.</p>
+<p><strong>Life project:</strong> the field’s projective orientation toward something that does not yet exist. It requires a temporal horizon. It requires immediate or mediate planning. It can exist with or without a sense of being.</p>
+<p>All four combinations are clinically real, and none outranks the others:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Sense of being present</strong></th>
+<th><strong>Sense of being absent</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Life project present</strong></td>
+<td>The field is present and moving toward something</td>
+<td>The field moves but with no weight in its presence: achievement produces no realization</td>
+</tr>
+<tr class="even">
+<td><strong>Life project absent</strong></td>
+<td>The field is present with no need to go anywhere</td>
+<td>The field is not present and going nowhere: a clinical emergency in <span class="math inline">A_t</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="clinically-reading-sense-of-being">Clinically Reading Sense of Being</h4>
+<p>Sense of being is read in resonance: in the clinician’s experience of being with someone who is genuinely here, carrying their own weight, prior to any narrative. It requires no question. A clinician who asks “what meaning does your life have?” is activating the life-project frame, asking for an elaboration of the self-image.</p>
+<p>Losing one’s sense of being includes losing the very vantage point from which that loss could be registered. That is why it is readable only in the preview and in resonance, never reportable through self-report.</p>
+<h4 id="clinically-reading-life-project">Clinically Reading Life Project</h4>
+<p>Life project is read in the self-image and in narrative about the future: what the field articulates about where it is headed, what it wants, what it is building.</p>
+<h4 id="spiritual-tradition-and-a_t">Spiritual Tradition and <span class="math inline">A_t</span></h4>
+<p>Spiritual and religious beliefs modify <span class="math inline">A_t</span>’s structure, specifically the relationship among sense of being, life project, and temporal horizon. A field with beliefs extending the horizon beyond death has a different <span class="math inline">A_t</span> and <span class="math inline">P_t</span> structure than a field without those beliefs. The model does not evaluate any structure normatively. It reads whichever structure this field has.</p>
+<h4 id="a_t-as-an-organizer-of-the-other-domains"><span class="math inline">A_t</span> as an Organizer of the Other Domains</h4>
+<p>Without a sense of being, <span class="math inline">V_t</span> can have energy but no directional weight. Without a sense of being, <span class="math inline">R_t</span> can have openness but no gravity in the bond. Without a sense of being, <span class="math inline">P_t</span> can project itself but with no anchor to sustain the projection.</p>
+<h3 id="p_t-temporal-projection">2.4. <span class="math inline">P_t</span> — Temporal Projection</h3>
+<h4 id="the-ontological-foundation-1">The Ontological Foundation</h4>
+<p><span class="math inline">P_t</span> is the temporal structure from which the trajectory organizes its experience, not the capacity to plan. The horizon does not push from behind: it signals from a distance, the way signaling factors work in embryonic development, where the pattern organizes itself from a distal signal that orients growth from ahead, not from accumulation from behind.</p>
+<h4 id="thought-capture-vs.-temporal-distortion">Thought Capture vs. Temporal Distortion</h4>
+<p>These are phenomena on different planes, and the clinician should never confuse them:</p>
+<p><strong>Temporal distortion</strong> is an alteration in the perception of time’s passage: time speeds up, stops, fragments. It is a phenomenon of the intensive field.</p>
+<p><strong>Thought capture</strong> (what De Mello describes) is the self-image inhabiting a construction of the past or the future that forecloses realizing the moving present. Time as a structure is not distorted: the field’s attention is captured by an image. The field lives inside an image it constructs of the past or future, not here and now, taking no pleasure in it.</p>
+<h4 id="the-relationship-with-the-past">The Relationship With the Past</h4>
+<p>How the past gets interpreted depends on the person’s current spiritual, emotional, and affective moment. The same history can function as a resource or as a weight depending on the field’s current state. How a person inhabits their history right now is information about <span class="math inline">\Omega_t^{(p)}</span> now, not about the past itself.</p>
+<h4 id="the-p_t-map">The <span class="math inline">P_t</span> Map</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Continuity present</strong></th>
+<th><strong>Continuity absent</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Horizon present</strong></td>
+<td><span class="math inline">P_t</span> potentially full</td>
+<td>There is a horizon, but the field does not recognize itself as who will arrive there</td>
+</tr>
+<tr class="even">
+<td><strong>Horizon absent</strong></td>
+<td>An expanded present as the only inhabitable territory: a residency configuration with no horizon (close to C-A or C-L in system v1.2)</td>
+<td>Temporal collapse: moments are discontinuous</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tau_f-narrative-continuity-and-experiential-continuity"><span class="math inline">\Tau_F</span> — Narrative Continuity and Experiential Continuity</h4>
+<p><span class="math inline">\Tau_F</span> has two dimensions that ideo-affective dissociation makes visible:</p>
+<p><strong>Narrative continuity:</strong> the field can build and sustain the thread of its story: connecting who it was with who it is, with articulable coherence.</p>
+<p><strong>Experiential continuity:</strong> the field inhabits itself through that history: there is an affective field sustaining the account. The history is lived as one’s own.</p>
+<p>Ideo-affective dissociation produces high narrative continuity with compromised experiential continuity: the person narrates their history with coherence, but the affect that should accompany it is not present. The clinician hears a well-told story that does not land: the preview does not confirm what the self-image articulates. That decoupling is <span class="math inline">\Tau_F</span> with narrative continuity present and experiential continuity compromised.</p>
+<h3 id="b_t-somatic-domain">2.5. <span class="math inline">B_t</span> — Somatic Domain</h3>
+<h4 id="the-ontological-foundation-2">The Ontological Foundation</h4>
+<p><span class="math inline">B_t</span> is <span class="math inline">H_t</span>’s fifth constitutive domain: somatic organization as a constitutive dimension of the process, not a transition condition and not just sensor signal. The argument is ontological: consciousness emerges from the somatic process, not on top of it or independent of it.</p>
+<p>Two clinical examples illustrate this unambiguously: a person who falls into configurational disorganization from quetiapine, or who stabilizes their configuration through normalizing their sleep cycle with lithium, is undergoing a reorganization whose origin is somatic. That origin is the trajectory itself in its somatic dimension, not an external condition modulating the trajectory. Ignoring <span class="math inline">B_t</span> produces interventions running in the wrong direction from what the trajectory needs.</p>
+<h4 id="the-four-subdimensions-of-b_t">The Four Subdimensions of <span class="math inline">B_t</span></h4>
+<p><strong><span class="math inline">B_t^{(s)}</span>: sleep regulation.</strong> The sleep-wake cycle as a fundamental organizer of presence. It is not how many hours someone sleeps: it is whether sleep produces functional restoration, whether the circadian rhythm is integrated, whether sleep and wakefulness are functionally differentiated. The sensor estimates <span class="math inline">B_t^{(s)}</span> from circadian accelerometry and nighttime HRV.</p>
+<p><strong><span class="math inline">B_t^{(m)}</span>: metabolic and neurobiological regulation.</strong> The state of the systems that sustain the somatic production of presence: HPA axis regulation, metabolic state, effects of psychoactive substances (including psychiatric medication), and withdrawal syndromes. This is the subdimension most frequently determinant in psychiatric profiles. <strong>Molecular cross-reference note (C8):</strong> HPA axis regulation has verified molecular correlates with the model’s parameters: <em>FKBP5</em> methylation (intron 7) under sustained stress correlates with accumulated <span class="math inline">D_p(t)</span>, leading to reduced <span class="math inline">\varepsilon_t^{\text{ef}}</span>; acceleration of the Horvath epigenetic clock correlates with <span class="math inline">\kappa(t) \downarrow</span> independent of <span class="math inline">D_p(t)</span>; <em>NR3C1</em> promoter methylation correlates with greater <span class="math inline">\psi_{ER}</span> coupling under stress. See <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> §IV.4 for the complete table of verified molecular markers and their mapping to the model’s parameters.</p>
+<p><strong><span class="math inline">B_t^{(a)}</span>: baseline autonomic activation.</strong> The autonomic nervous system’s tone at rest: the level of chronic activation the trajectory operates from, not its response to acute stress (that is <span class="math inline">\Upsilon_{US}</span>). Sustained somatic hypervigilance reduces the field’s availability for functional production across every domain. The sensor estimates <span class="math inline">B_t^{(a)}</span> from resting HRV-RMSSD and DFA <span class="math inline">\alpha_1</span>.</p>
+<p><strong><span class="math inline">B_t^{(i)}</span>: somatic integrity.</strong> The presence or absence of somatic disruptions that occupy the field’s resources: chronic pain, persistent fatigue, uncompensated acute or chronic illness. This is not a medical assessment of the condition: it is an estimate of how much that condition restricts functional production.</p>
+<h4 id="the-b_t-clinical-scale">The <span class="math inline">B_t</span> Clinical Scale</h4>
+<p><strong>Opening questions:</strong> &gt; “How have you been feeling physically this week?” &gt; “How have you been sleeping?”</p>
+<p><strong>Exploratory questions:</strong> &gt; “Does sleep restore you, or do you wake up just as tired?” &gt; “Is anything physical taking up a lot of your bandwidth: pain, tension, fatigue?” &gt; “Have you started any new medication, or changed one?” &gt; “Have you used any substances this week?” &gt; “Do you feel physically available for what you need to do?”</p>
+<p><strong>Scale anchors:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Clinical description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.0–0.2</td>
+<td>The body as the dominant obstacle. Pain, acute withdrawal, severe sleep deprivation, serious adverse effects. The somatic field consumes most of the field’s resources</td>
+</tr>
+<tr class="even">
+<td>0.2–0.4</td>
+<td>Somatic partially available. Significant fatigue, non-restorative sleep, high autonomic activation. The somatic actively restricts production in the other domains</td>
+</tr>
+<tr class="odd">
+<td>0.4–0.6</td>
+<td>Body functionally present but with limitations. Irregular sleep, moderate somatic tension, some manageable physical symptom</td>
+</tr>
+<tr class="even">
+<td>0.6–0.8</td>
+<td>Body integrated into the field’s production. Restorative sleep, regulated autonomic activation, no symptoms consuming significant resources</td>
+</tr>
+<tr class="odd">
+<td>0.8–1.0</td>
+<td>Body as an active resource. Deep, restorative sleep, integrated circadian rhythm, somatic vitality available for the field’s production</td>
+</tr>
+</tbody>
+</table>
+<h4 id="the-clinically-most-relevant-propagations">The Clinically Most Relevant Propagations</h4>
+<p><strong><span class="math inline">B_t \to V_t</span>:</strong> chronic fatigue and sleep deprivation reduce volitional capacity before any other domain. This is the most direct, most frequent propagation: a clinician who does not assess <span class="math inline">B_t</span> attributes to <span class="math inline">V_t</span> what actually has a somatic origin.</p>
+<p><strong><span class="math inline">B_t \to P_t</span>:</strong> severe sleep deprivation collapses the temporal horizon. Projection compresses to the immediate present, before any existential reason.</p>
+<p><strong><span class="math inline">B_t \to A_t</span>:</strong> severe chronic pain can empty out a sense of being, because the somatic field consumes all the resources available for producing presence, not for psychological reasons.</p>
+<p><strong><span class="math inline">B_t \to R_t</span>:</strong> fatigue and chronic pain produce relational withdrawal, out of resource economy, not for relational reasons. A clinician who reads that as low <span class="math inline">R_t</span> produces interventions in the wrong direction.</p>
+<p><strong><span class="math inline">V_t \to B_t</span>:</strong> sustained volition without recovery produces deterioration of <span class="math inline">B_t</span>. Overwork, prolonged hyperfocus, and chronic hyperactivity are all pathways into somatic deterioration from the volitional domain.</p>
+<p><strong><span class="math inline">A_t \to B_t</span>:</strong> deep existential emptying can produce somatic dysregulation (insomnia, metabolic disruption, chronic tension) as a somatic expression of a lost sense of being.</p>
+<h4 id="the-b_t-ema-question">The <span class="math inline">B_t</span> EMA Question</h4>
+<blockquote>
+<p>“How physically available do you feel right now?”</p>
+</blockquote>
+<table>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>Physically, I’m very limited in what I can do</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Anything physical takes a lot of effort</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Physically present, but with limitations</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Physically fairly available</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Physically, I feel like a resource</td>
+</tr>
+</tbody>
+</table>
+<p>The question captures all four subdimensions in integrated form. The clinician disaggregates them in Module B of the Unveiling protocol (<a href="/syntropia/en/nucleos/piac/">CAIP</a> v0.4.13, §III). The sensor provides an estimate of <span class="math inline">\hat{B}_t</span> that is especially valuable when <span class="math inline">\Upsilon_{US}</span> is low: exactly the moment when direct clinical assessment is least reliable.</p>
+<hr />
+<h2 id="step-3-transition-conditions">Step 3 — Transition Conditions</h2>
+<h3 id="the-status-of-m-in-the-clinical-core">3.1. The Status of <span class="math inline">M</span> in the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a></h3>
+<p>Transition conditions are the first filter for reading the encounter, not the fourth component to assess. The correct sequence: read <span class="math inline">M</span> first, adjust the encounter’s demands, then assess the domains.</p>
+<h3 id="hierarchy-of-clinical-urgency">3.2. Hierarchy of Clinical Urgency</h3>
+<p><strong><span class="math inline">\Upsilon_{US}</span>: stability under stress.</strong> Determines what can be done in this encounter. It is read in the first few minutes, by observing how the field responds to the perturbation of the encounter itself. High <span class="math inline">\Upsilon_{US}</span>: the field can inhabit the perturbation without being captured by it. Low <span class="math inline">\Upsilon_{US}</span>: the field needs the encounter to confirm what it already knows. When <span class="math inline">\Upsilon_{US}</span> is below the minimum threshold, a full Unveiling of <span class="math inline">\xi_t</span> is contraindicated.</p>
+<p><strong><span class="math inline">\Pi_R</span>: reality testing.</strong> Determines how reliable the data this encounter will produce are. Distortion in <span class="math inline">\Pi_R</span> gives the clinician the experience of reading the field from two different coordinate systems. Manipulation does not imply intact <span class="math inline">\Pi_R</span>: a field can manipulate with sophistication while <span class="math inline">\Pi_R</span> is compromised.</p>
+<p><strong><span class="math inline">\Tau_F</span>: trajectory continuity.</strong> Tells you about the quality of history available to the Unveiling. It has the two dimensions described in §2.4: narrative continuity and experiential continuity.</p>
+<p><strong><span class="math inline">\Beta_F</span>: behavioral flexibility.</strong> Measures two dimensions:</p>
+<p>Flexibility of the behavioral repertoire: the field’s capacity to produce different responses under different conditions.</p>
+<p>The capacity for insight and introspection: the Observing Image available to observe one’s own premises (NC-11). <strong>Formal relationship note (C5):</strong> “Observing Image” is the <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a>’s clinical term for what <span class="math inline">\Beta_F</span> formally represents in its insight dimension: the field’s metacognitive capacity to operate on its own premises. The Observing Image is the <em>way of reading</em> <span class="math inline">\Beta_F</span> in this second dimension, not a formally independent subfacet of <span class="math inline">\Beta_F</span> (the precise formalization of that relationship, whether <span class="math inline">\Beta_F</span> is a scalar or should be split into <span class="math inline">\Beta_F^{(r)}</span>, repertoire, and <span class="math inline">\Beta_F^{(i)}</span>, insight, is pending work in the Formal Dictionary). A field with high <span class="math inline">\Beta_F</span> in repertoire but low in Observing Image can change behaviors from within the same frame it always uses, with no reorganization of the individuation field. This second dimension is the most direct indicator of how easily or with what difficulty this field can transition into an actively reconfiguring configuration (C-C1 or C-C2 in canonical system v1.2).</p>
+<p>A clinician working with a field that has low <span class="math inline">\Beta_F</span> in the Observing Image cannot directly question the field’s premises: that produces closure. The prior work is creating conditions for the Observing Image to develop.</p>
+<h3 id="guilt-and-shame-as-field-signals">3.3. Guilt and Shame as Field Signals</h3>
+<p>Guilt and shame are not assessed in absolute terms: they are assessed in terms of alignment with the moral frame of the field’s community of practice.</p>
+<p>Someone who steals to eat and someone who steals out of envy operate from different moral frames, but both have a moral frame. Someone who feels guilt over the harm caused to another, and someone who feels guilt over having gotten caught, have moral frames with different content, but both have a moral frame.</p>
+<p>The relevant clinical signal is whether the guilt and shame expressed align with the moral frame that forms and preview reveal, not whether the person feels guilt or shame in some absolute sense. Misalignment between the two levels (guilt the self-image presents that the preview does not confirm, or an absence of guilt that the preview does produce) is more informative than either level’s magnitude on its own.</p>
+<hr />
+<h2 id="step-4-reading-xi_t-clinically">Step 4 — Reading <span class="math inline">\xi_t</span> Clinically</h2>
+<h3 id="the-object-of-step-4">4.1. The Object of Step 4</h3>
+<p><span class="math inline">\xi_t = \{D_p(t), \kappa(t), \sigma_t\}</span> is not directly observable. What Step 4 reads is what the field organizes from its accumulated history without mediation from the self-image: the preview in its deepest dimension, the patterns the field produces from its history before the self-image has processed them as narrative. The formal inference protocol that systematizes this reading is <a href="/syntropia/en/nucleos/piac/">CAIP</a> (Constitutive Attractor Inference Protocol, v0.4.6), whose Part III specifies the four inference questions and the evidence rules.</p>
+<p>Each of the three components has its own clinical reading in Step 4:</p>
+<p><strong><span class="math inline">D_p(t)</span></strong> (the permanent traces) is read in forms and in coherence across channels (§4.2). A field with high <span class="math inline">D_p(t)</span> talks about the past as though it were still happening, because the attractor of the past is still active. The cracks where the preview surfaces without mediation are inversely proportional to the <span class="math inline">\kappa(t)</span> available to sustain the forms.</p>
+<p><strong><span class="math inline">\kappa(t)</span></strong> (current receptive capacity) is read in how quickly the clinical relationship establishes itself, in the quality of verbal difficulty under load, and in what the clinician senses they can and cannot do in this encounter. A field in R2 (the region of high <span class="math inline">D_p</span> / low <span class="math inline">\kappa</span> in clinical space <span class="math inline">S_m = D_p(t) \times \kappa(t)</span>, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> §VI.4) produces the experience that things need to go slowly: that signal is low <span class="math inline">\kappa(t)</span>.</p>
+<p><strong><span class="math inline">\sigma_t</span></strong> (pre-symbolic dispositional structure) is read in the field’s earliest, most irreducible layers. Three specific signals:</p>
+<ul>
+<li><p><em>Congenital withdrawal</em> (§2.2): the field has a form of openness to affection that is constitutively specific from before language, with no narrative history explaining it. The clinician cannot ask when it started, because there is no start: it is the field’s baseline geometry. Exploring what mobilizes this field requires greater care precisely because <span class="math inline">\sigma_t</span> organizes what can and cannot move, prior to any elaboration.</p></li>
+<li><p>The earliest forms persisting beneath more recent ones: when the clinician detects discontinuities between layers of communities of practice (an earlier community’s form surfacing beneath a more recent one’s), they are reading <span class="math inline">\sigma_t</span> inscribed before later communities of practice could overwrite it.</p></li>
+<li><p>Response to somatic and sensory priming: <span class="math inline">\sigma_t</span> is more accessible from the somatic, from posture, rhythm, eye contact, physical space, than from verbal content. Priming that activates the somatic (more than priming that activates narrative) reaches <span class="math inline">\sigma_t</span>.</p></li>
+</ul>
+<p>Syntropia does not look for causes of these patterns, except when the biological substrate is the determining factor. What matters at the first encounter is the field’s structure right now: which attractors are active, how much receptive capacity is available, which layers of <span class="math inline">\sigma_t</span> are readable in somatic priming.</p>
+<h3 id="the-four-sources-for-reading-xi_t">4.2. The Four Sources for Reading <span class="math inline">\xi_t</span></h3>
+<h4 id="forms">Forms</h4>
+<p>The patterns of conduct and interaction rooted in the communities of practice of the person’s life history. They are the most stable behavioral expression of formatively rooted <span class="math inline">D_p(t)</span>: the most resistant, because they are the earliest. A field can carry years of severe adversity and still preserve forms that early formative history inscribed, like a field wearing the outward appearance of one community of practice and the forms of an earlier one, where the forms reveal what the outward appearance does not show.</p>
+<p>Forms carry a maintenance cost. A field with low <span class="math inline">\kappa(t)</span> cannot sustain them fluidly: cracks appear where the preview surfaces without mediation from the self-image.</p>
+<h4 id="appearance-signals">Appearance Signals</h4>
+<p>Clothing, adornment, tattoos, somatic marks, state of upkeep. These require careful reading: they describe the distance between outward presentation and internal forms, not the trajectory’s identity. Appearance can be a period’s adornment: a choice of the moment. Forms are accumulated history: inscription. The distance between the two is information about the field’s trajectory.</p>
+<h4 id="verbal-and-preverbal-language">Verbal and Preverbal Language</h4>
+<p><strong>The narrative’s rhythm:</strong> pauses are organized by the field’s topography: where there is resistance, the rhythm changes.</p>
+<p><strong>Words that don’t arrive:</strong> a field with low <span class="math inline">\kappa(t)</span> produces specific verbal difficulty: the field has the content but lacks the resources to translate it into expression.</p>
+<p><strong>Coherence across channels:</strong> a history of severe adversity narrated with flat prosody tells you about high <span class="math inline">D_p(t)</span> that has produced decoupling between self-image and preview: the field learned to narrate without inhabiting. Minor adversity narrated with high affective intensity tells you about low <span class="math inline">\kappa(t)</span>.</p>
+<p><strong>Grammatical tense:</strong> a field with high <span class="math inline">D_p(t)</span> in the temporal domain talks about the past as though it were still happening, because the attractor of the past is still active in the field’s present.</p>
+<h4 id="the-clinical-relationship-as-a-sample-of-the-field">The Clinical Relationship as a Sample of the Field</h4>
+<p>How quickly the relationship establishes itself, the type of implicit demand the person installs, tolerance for the encounter’s ambiguity, and (the most direct signal of position in <span class="math inline">S_m</span>) what the clinician senses they can and cannot do in this encounter: a field in R3 (low <span class="math inline">D_p</span> / high <span class="math inline">\kappa</span>, greater availability for work on <span class="math inline">\xi_t</span>) produces the experience that there is room to move; a field in R2 produces the experience that things need to go slowly.</p>
+<h3 id="the-three-questions-of-step-4">4.3. The Three Questions of Step 4</h3>
+<p><strong>What is present?</strong> Active attractors, forms, involuntary signals, patterns that repeat.</p>
+<p><strong>What is absent?</strong> What should be present and is not: alignment between guilt/shame and the field’s moral frame, coherence between appearance and forms, affect that does not accompany content, a sense of being that the preview does not confirm.</p>
+<p><strong>What is being actively hidden?</strong> What the field expends effort not to reveal. Manipulation (a multi-domain signal described in §2.1). Concealment tells you about <span class="math inline">\varepsilon_R</span> and the level of <span class="math inline">\kappa(t)</span> available for exposure.</p>
+<h3 id="the-integrated-system-priming-facs-and-eye-access">4.4. The Integrated System: Priming, FACS, and Eye Access</h3>
+<p>All three are layers of reading the same integrated process, not parallel techniques:</p>
+<p><strong>Priming</strong> activates schemas in the field. It includes the design of the office, the objects present, how the space is arranged, silence, the clinician’s posture, language, the questions asked and the ones not asked. All of that activates schemas before any formal question has been posed. <strong>Note for app development:</strong> the app can and should incorporate priming elements into its interface design: how it presents questions, their order, the visual objects, the response space are all instruments of priming.</p>
+<p><strong>FACS</strong> supplies the observational vocabulary for describing precisely what the face produces in response to priming. Action units have no meaning outside the context of the prime that preceded them, the prosody accompanying them, and the resonance they produce in the clinician. Priming makes the AUs readable: without a prime, the clinician observes the field’s resting state, which is less informative.</p>
+<p><strong>Eye access</strong> patterns are read as idiosyncratic signals: changes in this person relative to themselves, not comparisons against a population. The individual baseline is calibrated through priming: three repetitions of the same pattern to the same type of stimulus count as a signal of the field. Once is an event. Twice can be coincidence. Three times is a pattern.</p>
+<p>The complete cycle: prime → the field’s integrated response (AUs + eye access + body + prosody + resonance) → a hypothesis about <span class="math inline">\Omega_t^{(p)}</span>’s topography → a new prime calibrated from that hypothesis → a new response.</p>
+<h3 id="the-inference-mechanism-clinical-abduction">4.5. The Inference Mechanism: Clinical Abduction</h3>
+<p>The clinician does not apply a protocol: they infer. The anomaly is the starting point: something that does not fit: a form that contradicts appearance, hesitation before a specific content, dissociation between channels, an absence of affect where it should be.</p>
+<p>The abductive hypothesis produces the next question, not the diagnosis. The clinician introduces a calibrated prime and observes whether the field responds consistently with the hypothesis. Three consistent repetitions count as a pattern. The cycle continues until the hypothesis gains sufficient specificity or gets revised.</p>
+<p>The surprise factor is determinant in fields that have learned to control their signals: from multiple prior treatments, from high skill at cold reading, from deliberate training. No field can sustain that level of control under every condition at once. Microexpressions (pure preview, before the self-image can intervene) are the hardest to control, because they operate on timescales too fast for voluntary control. A completely unexpected prime interrupts control for an instant: in that instant, the preview surfaces.</p>
+<p>That is why the interview (non-standardized, able to change direction without warning) is the instrument no questionnaire can replace.</p>
+<h3 id="the-forer-effect-as-a-falsifiability-criterion">4.6. The Forer Effect as a Falsifiability Criterion</h3>
+<p>Any hypothesis about <span class="math inline">\xi_t</span> that the person accepts without resistance deserves suspicion. Sufficiently general inferences get accepted because they apply to any field. The control: every hypothesis must produce at least one specific prediction that could fail to hold. Without that prediction, it is a generalization dressed up as specificity, not a hypothesis about this field.</p>
+<p>This clinical criterion is RM1’s (groundedness, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>) operative expression at the level of the encounter: RM1 requires that every ontological commitment of the model generate testable predictions; the Forer Effect is the minimum test that a clinical inference about <span class="math inline">\xi_t</span> has that character. The distinction the <a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a>’s CE5 draws between clinical dispensability and refutation also applies here: a hypothesis about <span class="math inline">\xi_t</span> that the field accepts but that does not discriminate against alternatives is clinically dispensable (CE5, Plane 2), not refuted, but still insufficient to orient intervention.</p>
+<h3 id="what-step-4-does-not-do">4.7. What Step 4 Does Not Do</h3>
+<h2 id="step-4-does-not-look-for-causes-of-the-patterns-it-observes.-the-field-produces-what-it-produces-from-its-accumulated-history-that-history-can-be-readable-in-the-preview-without-it-being-necessary-or-possible-to-reconstruct-its-etiology.-no-generalization-about-causes-emerges-from-step-4-whether-any-generalization-emerges-from-syntropia-at-all-is-something-only-time-and-the-accumulation-of-longitudinal-data-will-tell.">Step 4 does not look for causes of the patterns it observes. The field produces what it produces from its accumulated history: that history can be readable in the preview without it being necessary, or possible, to reconstruct its etiology. No generalization about causes emerges from Step 4; whether any generalization emerges from Syntropia at all is something only time and the accumulation of longitudinal data will tell.</h2>
+<h2 id="synthesis-the-sequence-of-the-full-encounter">Synthesis: The Sequence of the Full Encounter</h2>
+<p>The four steps are simultaneous levels of reading, not a temporal sequence. The order of clinical urgency that organizes them:</p>
+<p><strong>First moment:</strong> Step 1 (the four simultaneous levels) plus partial Step 4 (forms, appearance signals, first signals of <span class="math inline">\xi_t</span>). The clinician produces an estimate of position in <span class="math inline">S_m</span> before the formal protocol has even begun.</p>
+<p><strong>Throughout the encounter:</strong> Step 3 (<span class="math inline">\Upsilon_{US}</span> determines what can be done). Step 2 (domains read in parallel from spontaneous narrative). Full Step 4 (abduction, priming, testing hypotheses about <span class="math inline">\xi_t</span>).</p>
+<p>The result is a provisional syntropic profile: the best available estimate of <span class="math inline">H_t</span>, <span class="math inline">M</span>, position in <span class="math inline">S_m</span>, and <span class="math inline">\Omega_t^{(p)}</span>’s topography that the first session can produce. That is the starting point for the longitudinal process.</p>
+<h2 id="intervention-modes-by-target-parameter">Intervention Modes by Target Parameter</h2>
+<p>Clinical intervention in Syntropia operates on conditions of the field, not directly on the process. Different types of intervention have different primary target parameters. This table maps the known mechanisms of action within the model’s formalism; it is neither exhaustive nor prescriptive.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Target parameter</th>
+<th>Intervention type</th>
+<th>Mechanism</th>
+<th>Timescale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\kappa(t)</span>: restoration</strong></td>
+<td>Psychiatric pharmacotherapy; reducing allostatic load; sleep regulation (<span class="math inline">B_t^{(s)}</span>); nutritional and metabolic intervention (<span class="math inline">B_t^{(m)}</span>)</td>
+<td>Directly reduces the demand on receptive capacity; restores the neurobiological substrate</td>
+<td>Weeks</td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\varepsilon_t</span> by domain</strong></td>
+<td>Existentially oriented psychotherapy (<span class="math inline">A_t</span>); sustained relational work (<span class="math inline">R_t</span>); behavioral volitional intervention (<span class="math inline">V_t</span>); somatic psychotherapy (<span class="math inline">B_t</span>)</td>
+<td>Increases the field’s functional elasticity in a specific domain through controlled exposure and elaboration</td>
+<td>Months / years</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\Psi_t</span>: propagation</strong></td>
+<td>Body-oriented therapy; EMDR; somatic mindfulness; autonomic regulation techniques</td>
+<td>Modifies propagation channels between domains, especially between <span class="math inline">B_t</span> and the psychological domains</td>
+<td>Weeks / months</td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">D_p(t)</span>: resignification</strong></td>
+<td>Psychodynamic psychotherapy; narrative therapy; EMDR; grief work</td>
+<td>Does not reduce <span class="math inline">D_p(t)</span>: modifies <span class="math inline">\rho(t)</span>, the trace’s function in the field. Resignification produces change in <span class="math inline">\Omega_t^{(p)}</span> with <span class="math inline">D_p(t)</span> constant</td>
+<td>Months / years</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\sigma_t</span>: limited access</strong></td>
+<td>Sensorimotor psychotherapy; a long-standing therapeutic relationship; deep somatic work; accompaniment in C-K</td>
+<td>Access to the pre-symbolic stratum through non-linguistic channels. The formal mechanism is not fully formalized (G18)</td>
+<td>Years / decades</td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">M</span>: transition conditions</strong></td>
+<td><span class="math inline">\Beta_F</span> training (acceptance and commitment therapy, behavioral activation); restoring <span class="math inline">\Pi_R</span> (pharmacotherapy, psychoeducation); strengthening <span class="math inline">\Tau_F</span> (narrative identity work); building <span class="math inline">\Upsilon_{US}</span> (emotion regulation therapy)</td>
+<td>Each component of <span class="math inline">M</span> has specific interventions with differentiated evidence</td>
+<td>Weeks / months</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\mathcal{F}_t^{(p)}</span>: support expansion</strong></td>
+<td>Combining sufficient <span class="math inline">\kappa(t)</span> + optimal perturbation (<span class="math inline">\varepsilon_t^{\text{ef}}</span>) + preserved <span class="math inline">\Pi_R</span></td>
+<td>Produces the conditions for the field to reach previously inaccessible regions of <span class="math inline">\mathcal{W}</span> (regime 2, §II.5quater, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a>)</td>
+<td>Variable</td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\Omega_t^{(\text{int})}</span>: interstitial field</strong></td>
+<td>Active repair of ruptures in the alliance; continuity and regularity of the frame (<span class="math inline">\varepsilon_t^{(\text{int})}</span>); joint elaboration of misunderstandings; clinical supervision focused on the clinician’s own field (<span class="math inline">\Psi_t^{(\text{int})}</span>)</td>
+<td>Restores <span class="math inline">\kappa^{(\text{int})}(t)</span> without reducing <span class="math inline">D_p^{(\text{int})}(t)</span>. Repairing a rupture is analogous to <span class="math inline">\rho(t)</span> in the individual field: the rupture’s <span class="math inline">D_p^{(\text{int})}(t)</span> does not shrink, but its function in the field changes with active repair. The dominant propagation direction in <span class="math inline">\Psi_t^{(\text{int})}</span> is <span class="math inline">D_p^{(\text{int})} \to \kappa^{(\text{int})}</span>: ruptures drain receptive capacity; the reverse direction requires deliberate repair, it does not happen spontaneously. An interstitial field in a restricted regime limits access to <span class="math inline">\xi_t^{(p)}</span> even when individual parameters would allow Unveiling</td>
+<td>Weeks / months</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sequencing principle:</strong> the priority sequence among parameters is a direct consequence of P12, not optional. When <span class="math inline">\kappa(t) &lt; \kappa_{\text{umbral}}(D_p)</span>, any intervention on <span class="math inline">D_p(t)</span>, <span class="math inline">\sigma_t</span>, or <span class="math inline">\varepsilon_t</span> produces plasticity that restricts <span class="math inline">\mathcal{F}_t^{(p)}</span>. Restoring <span class="math inline">\kappa(t)</span> is always the first-order intervention when position in <span class="math inline">S_m</span> is R2 or R4.</p>
+<p><strong>Note on <span class="math inline">\sigma_t</span>:</strong> access to <span class="math inline">\sigma_t</span> is the most limited in the system. Interventions operating at that level require <span class="math inline">\kappa(t)</span> and <span class="math inline">\Pi_R</span> to be in sufficient shape (the pre-symbolic cannot be elaborated without receptive capacity and without preserved reality testing), and they require the clinical relationship to have enough history: the interstitial field (G17) is particularly relevant here.</p>
+<h2 id="architectural-protection-against-clinical-discretization">Architectural Protection Against Clinical Discretization</h2>
+<p>The most significant implementation risk is a chain of reduction:</p>
+<p><span class="math display">\text{Trajectory} \to \Omega_t^{(p)} \to \text{Modal configuration} \to \text{Label} \to \text{Category}</span></p>
+<p>At each step, irreducible clinical information is lost. The model protects against this chain through an architectural rule, not merely a pedagogical one:</p>
+<p><strong>Clinical report sufficiency rule:</strong> no clinical output is informationally sufficient if it reports only the modal configuration. A valid report in Syntropia requires the following three elements:</p>
+<ol type="1">
+<li><p><strong>The distribution of <span class="math inline">\Omega_t^{(p)}</span></strong> over the configuration system: the mass on each configuration and that distribution’s variance, not just the mode. A concentrated distribution (a clear mode, minimal mass elsewhere) and a diffuse distribution (mass spread across multiple configurations) carry radically different clinical implications, even when the mode is identical.</p></li>
+<li><p><strong><span class="math inline">T_2</span>’s direction:</strong> the second-order trajectory indicating whether the field is moving, in what direction, and with what posterior variance. A static modal configuration with no <span class="math inline">T_2</span> is a photograph with no film behind it.</p></li>
+<li><p><strong>A description of the difference:</strong> when the clinician activated a configuration schema at the first encounter, the report must explicitly articulate how this person’s field differs from the canonical pattern activated. This statement serves two functions: it makes the clinician’s reading auditable, and it protects the clinician from naturalizing the schema.</p></li>
+</ol>
+<p><strong>Consequence for reporting systems:</strong> any institutional system implementing Syntropia must require the three elements of a valid report as mandatory fields, not optional ones. A system that allows reporting only the modal configuration, with no distribution and no <span class="math inline">T_2</span>, structurally reproduces the diagnostic problem the model is trying to overcome.</p>
+<p><strong>Warning on the risk of categorical use of the canonical system (v0.3.6):</strong> the 14 syntropic configurations have names that function as nouns. In clinical practice under institutional pressure, a 14-configuration system with names can function exactly like a categorical system, with all the reification consequences the model is trying to overcome. The protections in C6 and C7 are declarative: no mechanism makes reification impossible in practice. Institutional pressure can override any declaration of principle.</p>
+<p><strong>Architectural mitigation measure:</strong> SCRF-1’s Field 3 (difference from the canonical pattern) is the only mandatory architectural protection in every report. <em>The modal configuration should never be communicated to the person, whether in the clinical report or in conversation, without Field 3 being completed.</em> A report that records “C-D” with no Field 3 violates C7, regardless of whether the clinician knows the model’s theory. In Operational System v0.2.1 and in clinician training, an incomplete Field 3 is an unacceptable error, not an expected one.</p>
+<p><strong>Fifth structural obligation: informed consent from A7 (<a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.0).</strong> If diagnosis is an ontological intervention, and the clinical encounter produces an interstitial field with its own properties that condition Unveiling, the person has a right to understand that the assessment is not neutral. Informed consent in Syntropia includes the person knowing: (a) that being assessed has an effect on their individuation field, and can widen or narrow <span class="math inline">\mathcal{F}_t^{(p)}</span>; (b) that the clinical relationship produces its own field (<span class="math inline">\Omega_t^{(\text{int})}</span>) with accumulating history; (c) that the first encounter is irreversible, in the sense that it inscribes <span class="math inline">\sigma^{(\text{int})}</span>. This obligation is a direct consequence of the model’s ontology, not a technicality.</p>
+<h2 id="reading-the-clinicians-field-post-encounter">Reading the Clinician’s Field Post-Encounter</h2>
+<p>Reformulated A7 (<a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.0) states that the clinician also reorganizes during the encounter. The practical implication: what the clinician feels after the encounter is partial information about <span class="math inline">\Omega_t^{(\text{int})}</span> and about the person’s field, not only information about their own state.</p>
+<p><strong>Minimum post-encounter reading protocol:</strong></p>
+<p>Immediately after every encounter, before reading notes or talking with colleagues, the clinician records three observations:</p>
+<ol type="1">
+<li><p><em>What stayed in the body?</em> Residual autonomic activation, somatic location, quality (tension, weight, openness, etc.). This is the interstitial field’s resonance in the clinician’s own field: a signal of the encounter’s <span class="math inline">\Psi_t</span>.</p></li>
+<li><p><em>What image surfaced?</em> Any image, metaphor, or personal memory activated during the encounter that was not communicated. This is information about the person’s <span class="math inline">\Omega_t^{(p)}</span> topography, read through the clinician’s own field.</p></li>
+<li><p><em>What was left unfinished?</em> What the clinician could not say, what they felt was not the moment for, what remained as an unasked question. This is information about <span class="math inline">\Omega_t^{(\text{int})}</span>’s barriers in this encounter.</p></li>
+</ol>
+<p><strong>Resonance/projection distinction criterion, applied post-encounter:</strong> if the three observations co-vary with patterns of the person’s field already known from prior evaluations, they are a signal of the field (valid resonance). If they are idiosyncratic to the clinician and do not co-vary with the known pattern, they are the observer’s hypothesis (projection), with reduced <span class="math inline">w_a</span> weight.</p>
+<p><strong>G22: covariation of the interstitial field with the person’s reorganization.</strong> The hypothesis that the clinician’s post-encounter observations co-vary with the person’s reorganizations in subsequent evaluations is the object of G22 (<a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.1). Verifying it requires a specific design. See G22.</p>
+<h2 id="clinical-detection-of-t1-phases">Clinical Detection of §T1 Phases</h2>
+<p>The Unveiling protocol operates differently depending on which phase of the transformation process the field is in. The table of observational indicators (§VIII.5, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.14) translates §T1’s phases into clinically accessible signals. Their operational implications are as follows.</p>
+<p><strong>In Phase 1 (silent accumulation):</strong> the clinician will see an apparently stable field with increasing posterior variance, and possibly elevated <span class="math inline">B_t^{(a)}</span>. The correct action is <em>not</em> to increase the intervention’s magnitude: the field is accumulating tension, and a high-magnitude perturbation can precipitate an unplanned Phase 2. Indicated actions: (a) verify <span class="math inline">\kappa(t)</span> (that it will be sufficient by the time reorganization arrives); (b) reduce the encounter’s demand; (c) record increasing posterior variance as information about rising <span class="math inline">\chi_t</span>, not as an Unveiling failure. CE19 applies: during this period, sources of <span class="math inline">\mathcal{O}(t)</span> with access not mediated by the engine (the somatic signal of <span class="math inline">B_t^{(a)}</span>, resonance, and narrative variance) carry greater relative weight in inference about the real process.</p>
+<p><strong>In Phase 2 (threshold and reorganization):</strong> the clinician will see change in <span class="math inline">H_t</span> and in the posterior’s modal configuration. Intervention has its greatest effect on the <em>direction</em> of reorganization at this point: where it heads, not whether it happens. P12 applies with maximum urgency: verify that <span class="math inline">\kappa(t) \geq \kappa_{\text{umbral}}</span> before any work on <span class="math inline">D_p(t)</span>.</p>
+<p><strong>In Phase 3 (transitional regime):</strong> the clinician will see high posterior variance across multiple configurations with no clear mode. The correct action is to <em>minimize</em> perturbations: the field is at its point of greatest vulnerability. Do not interpret the variance as an Unveiling failure or diagnostic confusion: it is the correct signal of the transitional process (H-TRANS). CE19 applies in its most severe form: during this period, sources of <span class="math inline">\mathcal{O}(t)</span> with access not mediated by the engine (the somatic signal of <span class="math inline">B_t^{(a)}</span>, resonance, and narrative variance) carry greater relative weight; the engine’s posterior in this period reflects estimation uncertainty, not necessarily an absent process. Additionally: <span class="math inline">\kappa(t)</span> is at its minimum during the transitional regime, so P12 applies with maximum urgency: no intervention on <span class="math inline">D_p(t)</span>, <span class="math inline">\sigma_t</span>, or <span class="math inline">\varepsilon_t</span> during the transitional regime without first restoring <span class="math inline">\kappa(t)</span>.</p>
+<p><strong>In Phase 4 (installation and consolidation):</strong> the clinician will see the posterior converge toward the new modal configuration, with variance decreasing. The correct action is to sustain the conditions that allow consolidation: regularity of the frame, continuity of the interstitial field, avoiding high-magnitude perturbation while the new attractor still lacks sufficient depth. CE19 applies in the early phase: the engine may not yet distinguish basin installation from random variability: narrative variance and resonance are the primary signal.</p>
+<p><em>Note on the phases:</em> the four phases are overlapping regimes of the process, not discrete states or a mandatory sequence. The field can be in transition between phases, and empirical detection works on gradients and trends, not precise thresholds. Classifying a phase is an orienting description of the predominant regime, not a diagnosis of state.</p>
+<h2 id="t3-in-practice-processual-clinical-language-in-the-encounter">§T3 in Practice: Processual Clinical Language in the Encounter</h2>
+<p>§T3’s five principles (<a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a> v0.3.17) translate directly into operational practice in the clinical encounter. This section applies them with concrete examples.</p>
+<p><strong>Principle 1: the verb over the noun.</strong> Instead of: “You have an Anchoring configuration.” In Syntropia: “What I’m seeing is that your field is anchoring itself: organizing very stably around that pattern.” The difference: the noun assigns identity; the gerund describes a process under way.</p>
+<p><strong>Principle 2: the full distribution, not the mode.</strong> Instead of: “You’re in a Loop.” In Syntropia: “There’s a very strong part of you that’s in that circular pattern, but there’s also something pushing in another direction, even though it doesn’t yet have enough force to break the cycle. Both things are real at the same time.” The distribution gets communicated as real internal tension.</p>
+<p><strong>Principle 3: <span class="math inline">T_2</span> without teleology.</strong> Instead of: “You’re going to reach a reorganization.” In Syntropia: “What I’m seeing is that there’s movement in this direction, though it’s not yet clear whether that’s what will consolidate, or whether it’s the first move of something bigger.” Direction is presented as a process under way, not a destination.</p>
+<p><strong>Principle 4: the configuration as a provisional description.</strong> Whenever a configuration name is used with the person: “This thing I’m calling Anchoring is a description of how your field is right now, not of who you are. And what makes your field singular is this, the thing that sets it apart from the general pattern: [specific articulation of the difference].”</p>
+<p><strong>Principle 5: the field’s temporality.</strong> A configuration has speed. Communicate that temporality: “This thing you’re describing, this way of organizing yourself, has been installed for a long time. It doesn’t move fast. That’s not a problem: it’s information about how deep the attractor is.” Or: “What’s happening here moves in weeks, not years. That’s information too: the field has capacity for this.”</p>
+<p><strong>Principle 6: potentialities are not destinations.</strong> D-POT defines a trajectory’s potentialities as the set of configurations the field can reach under specifiable conditions. In communicating with the person, potentialities are always presented conditionally: “if the field can [condition on <span class="math inline">\kappa(t)</span> and aligned perturbation], it could open toward [potential configuration].” Never as a statement of where the field will go.</p>
+<p>Incorrect language: “you’re going to reach C-G: that’s what can happen here.” Correct language: “C-G is within what the field can reach if [condition], though I don’t know if that’s what’s going to consolidate.”</p>
+<p>The distinction reflects the ontology; it is not stylistic: potentialities are properties of the current field, not predictions of the future. Using them as predictions violates A1 (process precedes form) and produces exactly the teleological effect §T3 Principle 5 is meant to avoid.</p>
+<hr />
+<h2 id="scrf-1-minimum-syntropic-clinical-report-format">SCRF-1: Minimum Syntropic Clinical Report Format</h2>
+<p>SCRF-1 operationalizes C6: the valid clinical report in Syntropia. It is the minimum record enabling comparability across evaluations and across clinicians. Without a complete SCRF-1, encounter data cannot be used for the pilot.</p>
+<p><strong>Field 1: distribution of <span class="math inline">\Omega_t^{(p)}</span>.</strong> The three configurations with the highest posterior mass in this evaluation. Format: “<span class="math inline">\mathfrak{C}_k</span> (mass <span class="math inline">\approx p_k</span>), <span class="math inline">\mathfrak{C}_j</span> (mass <span class="math inline">\approx p_j</span>), <span class="math inline">\mathfrak{C}_i</span> (mass <span class="math inline">\approx p_i</span>).” Criterion: report the full distribution, never just the mode. If no configuration exceeds mass <span class="math inline">0.4</span>: record “widely dispersed distribution: Phase 3 likely,” with the configurations carrying mass <span class="math inline">&gt; 0.15</span>.</p>
+<p><strong>Field 2: <span class="math inline">T_2</span> direction and variance.</strong> “<span class="math inline">T_2</span>: [toward <span class="math inline">\mathfrak{C}_k</span> / stable / toward restriction / indeterminate], variance [high / medium / low].” Direction is determined by comparing this encounter’s posterior mode against the last one’s.</p>
+<p><strong>Field 3: difference from the canonical pattern (C7).</strong> If the clinician activated a configuration schema during the encounter, describe how this field differs from the canonical pattern activated: at least one sentence referencing a specific parameter (<span class="math inline">\Psi_t</span>, <span class="math inline">\varepsilon_t</span>, <span class="math inline">D_p(t)</span>, <span class="math inline">\kappa(t)</span>, <span class="math inline">\sigma_t</span>). If no schema was activated: “no schema activation.” Add the note “<span class="math inline">\rho(t)</span>: [active / not active / indeterminate]” when applicable, with supporting observables.</p>
+<p><strong>Field 4: position in <span class="math inline">S_m</span>.</strong> Qualitative estimate of the <span class="math inline">D_p(t)</span> / <span class="math inline">\kappa(t)</span> combination. Record “[R1 / R2 / R3 / R4].” Determines whether P12 applies before the next encounter.</p>
+<p><strong>Field 5: §T1 phase.</strong> “[Phase 1 / Phase 2 / Phase 3 / Phase 4 / Indeterminate].” In Phase 4, add: “Consolidation [stable / superficial / false improvement / to be determined]. Active latent basins during this period: [list if any].”</p>
+<p><em>SCRF-1 is the minimum record for comparability; it does not replace <a href="/syntropia/en/nucleos/piac/">CAIP</a> or a full syntropic profile assessment. Fields 4 and 5 are orienting and can be left as “indeterminate” when the evidence is insufficient.</em></p>
+<hr />
+<h2 id="consolidation-theory-t1-phase-4">Consolidation Theory: §T1 Phase 4</h2>
+<p>Phase 4 is the period when the nature of clinical work changes, not when it ends: from producing reorganization to protecting consolidation. Without this distinction, a clinician can withdraw support at the process’s most critical moment.</p>
+<p><strong>What is consolidation?</strong> The process by which <span class="math inline">\Omega_t^{(p)}</span> stabilizes in the new region of <span class="math inline">\mathcal{W}</span> reached during reorganization, accumulating <span class="math inline">D_p^{(\text{new})}(t)</span> until the new basin is deep enough to be stable under ordinary perturbation. Consolidation is the process by which the field’s arrival at the new configuration turns into residency; it is not the moment the field “arrives.”</p>
+<p><strong>Stable consolidation</strong>: criteria: low, stable posterior variance across <span class="math inline">\geq 6</span> consecutive evaluations with the new modal configuration; ordinary perturbations produce reorganization <em>within</em> the new basin, not activation of latent basins; sustained decline in <span class="math inline">B_t^{(a)}</span>; <span class="math inline">\kappa(t)</span> recovering; a self-image elaborated from the new configuration’s logic.</p>
+<p><strong>Superficial consolidation</strong>: criteria: low average posterior variance but with episodic spikes activating latent basins under medium-magnitude perturbation; <span class="math inline">T_2</span> micro-fluctuating toward earlier configurations; <span class="math inline">\kappa(t)</span> close to threshold under perturbation; the field describes new patterns but reacts emotionally with the logic of latent basins.</p>
+<p><strong>False improvement</strong>: criteria: the field looks consolidated, but there is no growth in <span class="math inline">D_p^{(\text{new})}(t)</span>: it visits the new basin without inhabiting it; the field is in the new basin because perturbations happen to be absent, not because of accumulated history. Distinguishing signal: verification protocol: narratively evoke perturbations connected to the latent basins’ history; if the field responds with latent-basin activation, it is false improvement.</p>
+<p><strong>Interventions that support consolidation:</strong> regularity of the frame (repeated sub-threshold perturbations build <span class="math inline">D_p^{(\text{new})}</span>); protecting <span class="math inline">\kappa(t)</span> in maintenance mode (P12 stays active); <span class="math inline">\rho(t)</span> work on competing latent basins; narrative from the new configuration (an updated self-image).</p>
+<p><strong>Interventions that weaken consolidation:</strong> deep work on <span class="math inline">\sigma_t</span> in early Phase 4 (can destabilize the new basin before it has history); cutting back encounter frequency too early; teleological language about consolidation (“you’ve arrived”).</p>
+<p><strong>Phase 4 tracking: add to SCRF-1 Field 5:</strong> latent basin activation in the previous 15 days (perturbation plus the field’s response); a signal of stable / superficial / indeterminate consolidation.</p>
+<hr />
+<h2 id="operational-development-of-rhot">Operational Development of <span class="math inline">\rho(t)</span></h2>
+<p><span class="math inline">\rho(t)</span> (the resignification operator, D-H1c in the <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>) modifies the function <span class="math inline">D_p(t)</span> serves in <span class="math inline">\Omega_t^{(p)}</span> without reducing <span class="math inline">D_p(t)</span> itself. It does not contradict A2 (irreversibility): resignification changes how that history organizes the field, it does not erase history.</p>
+<p><strong>Signs of active <span class="math inline">\rho(t)</span>:</strong> (a) the person describes the same historical events in a qualitatively different way; the facts did not change, their function in the field did; (b) latent basins that used to activate under type-X perturbation no longer activate at the same frequency; (c) a self-image with new narrative coherence about prior history; (d) the field holds its new modal configuration under perturbations connected to latent-basin history.</p>
+<p><strong>Signs of restored <span class="math inline">\kappa(t)</span>:</strong> (a) the field responds more easily to medium-magnitude perturbation without disorganizing; (b) lower posterior variance in general, regardless of which themes are being worked on; (c) somatic indicators improve (<span class="math inline">B_t^{(a)}</span> declining, sleep more stable); (d) the field can receive work on <span class="math inline">D_p(t)</span> or <span class="math inline">\sigma_t</span> without disorganizing.</p>
+<p><strong>Operational difference:</strong> restoring <span class="math inline">\kappa(t)</span> produces <em>general</em> improvement (the field is more responsive across every context). Resignification produces <em>specific</em> improvement (the latent basins tied to the history that was worked on stop activating, while latent basins tied to other histories can remain active). This difference is G18’s empirical criterion.</p>
+<p><strong><span class="math inline">\rho(t)</span> interventions:</strong> psychodynamic psychotherapy, EMDR, narrative work, episodic memory work. Timescale: months to years.</p>
+<p><strong><span class="math inline">\kappa(t)</span>-restoration interventions:</strong> pharmacotherapy, sleep regulation, reducing allostatic load, autonomic regulation. Timescale: weeks to months.</p>
+<p><strong>Documentation in SCRF-1:</strong> Field 3, note “<span class="math inline">\rho(t)</span>: [active / not active / indeterminate].” Confirmation requires at least two consecutive evaluations in which the specific latent basins do not activate under their characteristic perturbations.</p>
+<hr />
+<p><em>Version 0.3.13 — July 13, 2026.</em> <em>Author: Diego F. Pereira-Perdomo MD, MSci.</em> <em>Cross-check against: <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.16, <a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a> v0.3.19, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.27.</em></p>
+
+      </article>
+    </div>
+  </section>
+
+  <!-- Back -->
+  <section class="py-16 bg-slate-50 text-center">
+    <div class="max-w-2xl mx-auto px-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/syntropia/en/nucleos/"
+        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        &larr; All Core Documents
+      </a>
+      <a href="/syntropia/en/"
+        class="inline-block bg-white border border-slate-300 hover:border-teal-500 text-slate-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        Back to Syntropia
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
+    <p class="mb-2">&copy; 2026 Syntropia &mdash; Clinical and Scientific Model</p>
+  </footer>
+
+</body>
+
+</html>

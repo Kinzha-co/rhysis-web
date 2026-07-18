@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formal Dictionary &mdash; Syntropia</title>
+  <meta name="description" content="Canonical definitions of the model's fundamental terms, for quick reference and terminological consistency.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%); }
+    .prose :where(code):not(:where([class~="not-prose"] *)) {
+      background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em;
+    }
+    .prose blockquote { border-left-color: #0f766e; font-style: normal; }
+    .prose table { font-size: 0.92em; }
+    .prose thead th { background: #f8fafc; }
+  </style>
+<script defer
+src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+</script>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+</head>
+
+<body class="m-0 p-0 bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4">
+    <a href="/en/">
+      <img src="/assets/Logo-rhysis.svg" alt="Rhysis"
+        class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity">
+    </a>
+    <div class="text-sm md:text-base font-medium text-white tracking-wide">
+      <span class="font-bold border-b-2 border-teal-400 pb-0.5">EN</span>
+      <span class="mx-2 text-slate-400">|</span>
+      <a href="/syntropia/es/nucleos/diccionario-formal/" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropia &mdash; Canonical Document</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
+        Formal Dictionary
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Canonical definitions of the model's fundamental terms, for quick reference and terminological consistency.</p>
+      <p class="text-slate-400 text-sm mt-6">Version 0.4.18 &middot; July 13, 2026</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-slate lg:prose-lg max-w-none
+                       prose-headings:text-teal-800 prose-a:text-teal-700
+                       prose-strong:text-slate-900">
+<h1 id="formal-dictionary-of-syntropia-v0.4.18">Formal Dictionary of Syntropia v0.4.18</h1>
+<h2 id="preliminary-note-the-mathcald-collision">Preliminary Note — The <span class="math inline">\mathcal{D}</span> Collision</h2>
+<p>The symbol <span class="math inline">\mathcal{D}</span> is already assigned in the <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> to the <strong>unveiling operator</strong>:</p>
+<p><span class="math display">\mathcal{D}: \mathcal{O}(t) \to P(\xi_t \mid \mathcal{O}(t))</span></p>
+<p>So it <strong>cannot</strong> be reused to symbolize “Domain”: that would collide directly. We propose <span class="math inline">\mathscr{D}</span> (mathematical script, distinct from calligraphic) for the generic concept of Domain when it needs to be named as a type of entity. The five specific domains keep their current symbols: <span class="math inline">V_t, R_t, P_t, A_t, B_t</span>.</p>
+<hr />
+<h2 id="part-i-the-fundamental-objects">Part I — The Fundamental Objects</h2>
+<h3 id="d1.-personal-trajectory">D1. Personal Trajectory</h3>
+<p><strong>Ontological definition.</strong> The personal trajectory is the model’s primitive object. It is not an attribute of the person. It is the person, in their processual dimension: a singular, unrepeatable becoming that unfolds in time and produces successive functional organizations.</p>
+<p><strong>Formal definition.</strong> A personal trajectory is a curve <span class="math inline">\gamma: \mathbb{R}_{\geq 0} \to \mathcal{W}</span> on the manifold of configurations, continuous and differentiable almost everywhere, satisfying existence conditions CE2 and CE4:</p>
+<ul>
+<li><strong>CE2 (non-ergodicity):</strong> the trajectory cannot reproduce its exact history; the time average does not equal the ensemble average. Two trajectories passing through the same observable state at different points in their history are ontologically distinct.</li>
+<li><strong>CE4 (history dependence):</strong> the present state is a function of the entire accumulated history, not just the immediately prior state. The trajectory carries constitutive memory that no finite time window can reduce.</li>
+</ul>
+<p>And it operates under two epistemological conditions that bound how knowable it is:</p>
+<ul>
+<li><strong>CE17 (double constitutive inaccessibility):</strong> the trajectory’s process is continuous; the observational apparatus is discrete. <span class="math inline">T_2</span> captures the process’s trace, not the process itself. A constitutive limit of any practical process science, not a defect of the model.</li>
+<li><strong>CE18 (basis for comparability):</strong> comparability between trajectories works over the space of structural parameters (basin type, <span class="math inline">\Psi_t</span> direction, position in <span class="math inline">S_m</span>, the form of <span class="math inline">f_t</span>), not over trajectory content. Compatible with A10 (radical singularity).</li>
+</ul>
+<p><strong>Critical distinction.</strong> The trajectory does not <em>have</em> a history. It <em>is</em> its history. <span class="math inline">D_p(t)</span> does not describe something that happens to the trajectory; it describes the trajectory’s current constitution as the outcome of its own history of deformation.</p>
+<p><strong>Symbol:</strong> the trajectory is denoted implicitly through temporal subscripts. When the object needs to be named explicitly: <span class="math inline">\gamma^{(p)}(t)</span> for person <span class="math inline">p</span>’s trajectory at time <span class="math inline">t</span>.</p>
+<hr />
+<h3 id="d2.-configuration">D2. Configuration</h3>
+<p><strong>Ontological definition.</strong> A configuration is a functionally coherent organization of the individuation field: a mode of producing presence-in-the-world that the field sustains stably. It is a dynamic attractor, not a passing state: the field tends to stay in it, or return to it after moderate perturbation.</p>
+<p><strong>Formal definition.</strong> A canonical configuration <span class="math inline">\mathfrak{C}_k</span> is a local minimum of <span class="math inline">\Phi(\cdot, t)</span> in <span class="math inline">\mathcal{W}</span> with a non-empty basin of attraction:</p>
+<p><span class="math display">\mathfrak{C}_k \equiv w_k^* = \arg\min_{w \in \mathcal{B}_k} \Phi(w,t)</span></p>
+<p>Canonical system v1.2 identifies 14 candidate configurations (C-A through C-M, with C-C split into C-C1 and C-C2), organized by dominant propagation pattern in <span class="math inline">\Psi_t</span>, basin type, and, selectively, domain of origin. The full formalization is in <a href="/syntropia/en/nucleos/canonical-configurations/"><code>Configuraciones_Canonicas_v1_3_14.qmd</code></a>. The 14 configurations of the historical system (<span class="math inline">\mathfrak{C}_1, \ldots, \mathfrak{C}_{14}</span>, identified with <span class="math inline">H_t \in [0,1]^4</span>) have historical status: they are a record of the model’s conceptual development and part of its genealogy.</p>
+<p><strong>Distinction from state.</strong> At the mathematical layer, “state” names the instantaneous position <span class="math inline">H_t</span>. At the ontological layer, “configuration” names the attractor that organizes that position. A trajectory can be <em>in</em> <span class="math inline">\mathfrak{C}_k</span>’s basin without having reached the minimum <span class="math inline">w_k^*</span>.</p>
+<hr />
+<h3 id="d3.-basin">D3. Basin</h3>
+<p><strong>Ontological definition.</strong> A configuration’s basin is the region of possibility space from which the field, absent clinical perturbation, converges toward that configuration. It is an attractor’s “gravitational field.”</p>
+<p><strong>Formal definition.</strong> The basin of <span class="math inline">\mathfrak{C}_k</span> is:</p>
+<p><span class="math display">\mathcal{B}_k(t) = \{w \in \mathcal{W} : \lim_{\tau \to \infty}
+\gamma_{w,t}(\tau) = w_k^*\}</span></p>
+<p>where <span class="math inline">\gamma_{w,t}</span> is the gradient-descent trajectory of <span class="math inline">\Phi(\cdot,t)</span> starting at <span class="math inline">w</span>.</p>
+<p><strong>Depth.</strong> Depth <span class="math inline">\delta_k(t)</span> is the difference between <span class="math inline">\Phi</span>’s minimum value at the boundary <span class="math inline">\partial\mathcal{B}_k</span> and its value at the bottom, <span class="math inline">\Phi(w_k^*, t)</span>. <span class="math inline">D_p(t)</span> accumulated in <span class="math inline">\mathfrak{C}_k</span>’s direction contributes directly to <span class="math inline">\delta_k(t)</span>.</p>
+<p><strong>Clinical consequence.</strong> The basin determines intervention indication before the <span class="math inline">H_t</span> profile does: two trajectories at the same observable position can require opposite interventions if they belong to different basins.</p>
+<p><strong>Disambiguation note: “basin” vs. “basin type” (E.21).</strong> This term has two senses in the corpus that should not be conflated. <strong>Basin</strong> (D3, here) is the continuous object defined above: a region of <span class="math inline">\mathcal{W}</span> with extent, depth, and gradient, all computable from <span class="math inline">\Phi(\cdot,t)</span>. <strong>Basin type</strong> (D4*, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>, spatium Axis 2) is a discrete classificatory label with five values (transitory, reconfiguration, residency, early dispositional, failed reconfiguration) that describes the <em>regime</em> under which a configuration got installed, not its geometry. The formal relationship between the two, whether “basin type” can be derived as a function of basin’s continuous properties (D3), is explicitly pending formalization (G15, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>). Treating “basin type” as though it inherited D3’s metric properties before that function exists is the exact error that contaminated §III.12bis of the <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> (June 2026). See the equivalent note in D4* of the <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a>.</p>
+<hr />
+<h3 id="d4.-domain-mathscrd">D4. Domain — <span class="math inline">\mathscr{D}</span></h3>
+<p><strong>Ontological definition.</strong> A domain is a transcendental dimension of the trajectory’s functional production: a direction in which the individuation field unfolds presence-in-the-world, irreducible to the others. “Transcendental” in the formal sense: every domain is present in every personal trajectory, varying only in its level of coherence.</p>
+<p><strong>Formal definition.</strong> A domain <span class="math inline">\mathscr{D}_i</span> is a coordinate of <span class="math inline">H_t \in [0,1]^5</span> describing the trajectory’s functional coherence in that direction. The five domains:</p>
+<p><span class="math display">H_t = (V_t, R_t, P_t, A_t, B_t)</span></p>
+<p>where <span class="math inline">\mathscr{D}_V = V_t</span> (volition), <span class="math inline">\mathscr{D}_R = R_t</span> (Relational Bonds), <span class="math inline">\mathscr{D}_P = P_t</span> (temporal projection), <span class="math inline">\mathscr{D}_A = A_t</span> (existential anchoring), and <span class="math inline">\mathscr{D}_B = B_t</span> (somatic domain). <span class="math inline">B_t</span>’s clinical formalization is in <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> §2.5, and its plain-language description is in <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> §0 (item 0.6).</p>
+<p><strong>Constitutive independence.</strong> The domains are ontologically independent: the coherence level in <span class="math inline">\mathscr{D}_V</span> neither determines nor is determined by the level in <span class="math inline">\mathscr{D}_R</span>. That independence is not statistical. It is ontological. A scalar averaging the domains would erase the clinical difference between two trajectories with identical <span class="math inline">\|H_t\|</span> and radically different profiles.</p>
+<p><strong>Distinction from transition conditions.</strong> Domains describe <em>what the trajectory produces</em>. Transition conditions describe <em>the conditions under which</em> it can sustain or change that production. These are different ontological planes: a domain is an observable of the field; a transition condition is a condition on the evolution operator.</p>
+<p><strong>Note on the symbol.</strong> <span class="math inline">\mathscr{D}</span> (mathematical script) names the generic concept of domain as a type of entity. It should not be confused with <span class="math inline">\mathcal{D}</span> (calligraphic), the Unveiling operator.</p>
+<hr />
+<h3 id="d5.-propagation-psi_t">D5. Propagation — <span class="math inline">\Psi_t</span></h3>
+<p><strong>Ontological definition.</strong> Propagation is the transfer of effects between domains of the individuation field: a perturbation in one domain produces change in another, with its own intensity, direction, and delay. It is the property that keeps the field from being the mere sum of its domains.</p>
+<p><strong>Formal definition.</strong> <span class="math inline">\Psi_t \in \mathbb{R}^{5 \times 5}</span> is the operative representation of the Riemannian metric <span class="math inline">g_t</span>, projected onto the five domains (including the somatic domain <span class="math inline">B_t</span>). In the canonical formulation, <span class="math inline">\psi_{ij} \in \{-1, 0, +1\}</span>; in the first-phase approximation, <span class="math inline">\psi_{ij} \geq 0</span>. The coefficient <span class="math inline">\psi_{ij}(t)</span> is the intensity of propagation from domain <span class="math inline">j</span> into domain <span class="math inline">i</span> at time <span class="math inline">t</span>.</p>
+<p><strong>Constitutive properties:</strong></p>
+<p><em>Asymmetry:</em> <span class="math inline">\psi_{ij}(t) \neq \psi_{ji}(t)</span> in general. Propagation from the relational domain to the existential one does not run at the same intensity as the reverse. This asymmetry is clinical information, not a representational flaw.</p>
+<p><em>History dependence:</em> <span class="math inline">\Psi_t</span> evolves with <span class="math inline">\xi_t</span>. Trajectories with high <span class="math inline">D_p(t)</span> tend toward more rigid propagation: coupling patterns become more resistant to change.</p>
+<p><em>Positive vs. negative propagation:</em> <span class="math inline">\psi_{ij} &gt; 0</span> means a rise in domain <span class="math inline">j</span> produces a rise in domain <span class="math inline">i</span>. Values near 0 mean decoupling. Negative propagation (<span class="math inline">\psi_{ij} &lt; 0</span>) happens when a rise in <span class="math inline">j</span> produces a drop in <span class="math inline">i</span>: clinically, when recovery in one domain comes at the expense of another.</p>
+<p><strong>Gap G3.</strong> <span class="math inline">\Psi_t</span>’s functional dependence on <span class="math inline">\xi_t</span> is not specified, and the weights <span class="math inline">w_s</span>, <span class="math inline">w_a</span> that weigh the observation sources’ contributions need empirical estimation. This requires longitudinal pilot data.</p>
+<hr />
+<h3 id="d6.-perturbation">D6. Perturbation</h3>
+<p><strong>Ontological definition.</strong> A perturbation is an action on the individuation field that shifts the trajectory from its current position in <span class="math inline">\mathcal{W}</span>. It can be clinical (deliberate intervention), vital (an unplanned event), or somatic (a change in biological state).</p>
+<p><strong>Formal definition.</strong> A perturbation of magnitude <span class="math inline">\varepsilon</span> in direction <span class="math inline">\hat{u} \in T_w \mathcal{W}</span> shifts the trajectory from <span class="math inline">w</span> to <span class="math inline">w + \varepsilon \hat{u}</span>.</p>
+<p><strong>Types by outcome:</strong></p>
+<p><em>Elastic perturbation:</em> the field returns to its prior minimum. No change in <span class="math inline">\Phi(\cdot, t)</span>: the basin is preserved. <span class="math inline">\varepsilon &lt; \varepsilon_t^{(i)}</span>.</p>
+<p><em>Expansive plastic perturbation:</em> the field reorganizes toward a configuration that widens <span class="math inline">\mathcal{F}_t^{(p)}</span>. It changes <span class="math inline">\Phi(\cdot, t)</span> in the direction of lower depth. Requires sufficient <span class="math inline">\kappa(t)</span> and <span class="math inline">\varepsilon</span> greater than the relevant barrier <span class="math inline">B_{ij}</span>.</p>
+<p><em>Restrictive plastic perturbation:</em> the field reorganizes, but toward a configuration that narrows <span class="math inline">\mathcal{F}_t^{(p)}</span>, or toward an unplanned basin. Happens when <span class="math inline">\kappa(t) &lt; \kappa_{\min}</span> (P12).</p>
+<p><strong>Direct consequence of P12.</strong> Whether a clinical perturbation is indicated depends on <span class="math inline">\kappa(t)</span>, not just on the perturbation’s magnitude. A clinically appropriate perturbation delivered to a field with low <span class="math inline">\kappa(t)</span> produces a restrictive plastic perturbation.</p>
+<hr />
+<h3 id="d7.-plasticity-receptivity-and-clinical-energy">D7. Plasticity, Receptivity, and Clinical Energy</h3>
+<p>The model distinguishes three properties of the field that colloquial clinical language collapses under the single term “plasticity.” They differ in kind, not in degree.</p>
+<p><strong>D7a. Receptivity — <span class="math inline">\kappa(t)</span>.</strong> Whether the field can <em>absorb</em> a perturbation without disorganizing. See D10 for the complete formal definition.</p>
+<p><strong>D7b. Plasticity.</strong> Whether the field can <em>reorganize</em> toward a configuration different from its current one, given an absorbed perturbation. It is the condition of possibility for reorganization; it does not reduce to <span class="math inline">\kappa(t)</span>.</p>
+<p><strong>Ontological definition.</strong> Plasticity is the individuation field’s capacity to reorganize toward configurations other than the current one under perturbation. It is not a fixed trait. It is a property of the field’s current state, variable over time.</p>
+<p><strong>Clinical distinction between receptivity and plasticity.</strong> A field can have high receptivity with low plasticity: it absorbs the perturbation without disorganizing, but the functional <span class="math inline">\Phi</span> has no more-coherent configurations accessible within <span class="math inline">\mathcal{F}_t^{(p)}</span>. And a field can have low receptivity with high potential plasticity: more-coherent configurations are accessible, but the field cannot absorb the perturbation that would get it there. The most common clinical error is confusing the two: intervening as though potential plasticity were available when <span class="math inline">\kappa(t)</span> is not.</p>
+<p><strong>D7c. Clinical energy — <span class="math inline">E_c(t)</span>.</strong> The trajectory’s capacity to leave its current configuration and reach configurations of greater functional coherence (<a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> §III.9):</p>
+<p><span class="math display">E_c(t) = \Phi(w_{\max}, t) - \Phi(w_t^*, t)</span></p>
+<p>where <span class="math inline">w_t^* = \arg\min_{w \in \mathcal{F}_t^{(p)}} \Phi(w,t)</span> is the current position and <span class="math inline">w_{\max}</span> is the point of highest <span class="math inline">\Phi</span> at <span class="math inline">\mathcal{F}_t^{(p)}</span>’s boundary.</p>
+<p><span class="math inline">E_c(t) = 0</span> indicates a collapsed field of possibilities: no reorganization potential is accessible, regardless of <span class="math inline">\kappa(t)</span>. High <span class="math inline">E_c(t)</span> indicates a field with surmountable barriers toward more coherent configurations.</p>
+<p><strong>The tripartite distinction as a clinical map:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Clinical question</th>
+<th>Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Receptivity</td>
+<td>Can the field absorb without disorganizing?</td>
+<td><span class="math inline">\kappa(t)</span></td>
+</tr>
+<tr class="even">
+<td>Plasticity</td>
+<td>Can the field reorganize once it absorbs?</td>
+<td>(emergent)</td>
+</tr>
+<tr class="odd">
+<td>Clinical energy</td>
+<td>Are more-coherent configurations accessible?</td>
+<td><span class="math inline">E_c(t)</span></td>
+</tr>
+</tbody>
+</table>
+<p>A field can have high <span class="math inline">\kappa(t)</span>, high plasticity, and <span class="math inline">E_c(t) = 0</span>: it can absorb and reorganize, but there is no more-coherent configuration anywhere in <span class="math inline">\mathcal{F}_t^{(p)}</span>. That field will not improve through intervention aimed at reorganization: it needs prior work on <span class="math inline">\Omega_t^{(p)}</span>’s geometry (on <span class="math inline">D_p(t)</span>) before <span class="math inline">E_c(t) &gt; 0</span>.</p>
+<hr />
+<h3 id="d8.-rigidity">D8. Rigidity</h3>
+<p><strong>Ontological definition.</strong> Rigidity is the individuation field’s resistance to leaving its current configuration, regardless of whether that configuration is high- or low-coherence. It is plasticity’s mirror property: a field rigid in an actively reconfiguring configuration (e.g., C-C1 or C-C2) and a field rigid in a chronic residency configuration (e.g., C-A or C-B) are equally rigid; the difference is in which configuration they hold, and in that rigidity’s clinical consequences.</p>
+<p><strong>Formal definition.</strong> Rigidity in domain <span class="math inline">i</span>’s direction is <span class="math inline">\varepsilon_t^{(i)}</span>: the minimum perturbation magnitude in that direction needed to produce permanent reorganization. Global rigidity: <span class="math inline">\|\varepsilon_t\| = \|\varepsilon_t\|_2</span>.</p>
+<p><strong>Distinction from basin depth.</strong> Depth <span class="math inline">\delta_k(t)</span> describes how much total energy it takes to leave the basin. Rigidity <span class="math inline">\varepsilon_t^{(i)}</span> describes how much perturbation, per domain, produces permanent displacement from the current minimum. These properties complement each other: a field can have a deep basin (hard to leave) but low rigidity in one specific domain (that domain responds easily to perturbation).</p>
+<hr />
+<h3 id="d9.-disorganization">D9. Disorganization</h3>
+<p><strong>Ontological definition.</strong> Disorganization is the loss of global functional coherence with no transition to a new stable configuration: the trajectory leaves its current minimum without converging on another. Clinically, this corresponds to an acute crisis state with no new organization emerging.</p>
+<p><strong>Formal definition.</strong> A trajectory is disorganized at <span class="math inline">t</span> if:</p>
+<p><span class="math display">\Phi(w_t, t) &gt; \min_k \Phi(w_k^*, t) + \delta_{\min}</span></p>
+<p>and there is simultaneously no convergence toward any minimum: <span class="math inline">w_t \notin \bigcup_k \mathcal{B}_k(t)</span>.</p>
+<p><strong>Distinction from transition.</strong> In a transition, the trajectory leaves one basin and converges on another. In disorganization, the trajectory leaves its basin with no access to any alternative basin, or the perturbation is so large the field has no time to converge.</p>
+<hr />
+<h3 id="d10.-receptive-capacity-kappat">D10. Receptive Capacity — <span class="math inline">\kappa(t)</span></h3>
+<p><strong>Ontological definition.</strong> Receptive capacity is the individuation field’s current disposition to absorb perturbation without disorganizing. It is not the disposition to change (plasticity). It is the disposition to let itself be affected without collapsing.</p>
+<p><strong>Formal definition.</strong> <span class="math inline">\kappa(t) \in [0,1]</span> is the inverse curvature of <span class="math inline">\Phi</span> at the current minimum:</p>
+<p><span class="math display">\kappa(t) = \left.\left(\frac{\partial^2 \Phi}{\partial w^2}\right)^{-1}
+\right|_{w = w_t^*}</span></p>
+<p>High <span class="math inline">\kappa(t)</span>: the current minimum’s basin is flat. The field can absorb perturbation without shifting significantly. Low <span class="math inline">\kappa(t)</span>: the basin is narrow. Small perturbations produce displacement or disorganization.</p>
+<p><strong>Physiological correlate.</strong> <span class="math inline">\kappa(t)</span> correlates directly with heart rate variability (HRV-RMSSD) and with DFA α1. This correlation is the basis for using <span class="math inline">T_\text{temporal}</span> as an estimator of <span class="math inline">\kappa(t)</span> in ambulatory settings, and <span class="math inline">T_\text{hospitalario}</span> as an alternative estimator in hospital settings (from the adaptive frequency of structured clinical observations) when the sensor is unavailable. Both operators produce comparable estimates of <span class="math inline">\kappa(t)</span>; their divergence is itself diagnostic information about the field.</p>
+<hr />
+<h3 id="d11.-accumulated-history-d_pt">D11. Accumulated History — <span class="math inline">D_p(t)</span></h3>
+<p><strong>Ontological definition.</strong> Accumulated history is the inscription, in the individuation field, of the plastic deformation produced by past perturbation. It is not the declarative memory of events; it is the individuation field’s current geometry as the result of everything that has deformed it.</p>
+<p><strong>Formal definition.</strong> <span class="math inline">D_p(t) \in [0,1]</span> is the total accumulated variation of <span class="math inline">\Phi</span> across history:</p>
+<p><span class="math display">D_p(t) = \int_{t_0}^t \left|\frac{d\Phi(w_s^*, s)}{ds}\right| ds</span></p>
+<p><strong>Constitutive irreversibility.</strong> <span class="math inline">D_p(t)</span> is monotonically non-decreasing over time: accumulated history does not spontaneously shrink. It can only be modified by sustained, high-magnitude expansive plastic perturbation, and only if <span class="math inline">\kappa(t)</span> is sufficient for that perturbation to widen <span class="math inline">\mathcal{F}_t^{(p)}</span>.</p>
+<p><strong>Independence from <span class="math inline">\kappa(t)</span>.</strong> <span class="math inline">D_p(t)</span> and <span class="math inline">\kappa(t)</span> are mathematically independent (<a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> §II bis). This independence underlies P12 and the four regions of <span class="math inline">S_m</span>.</p>
+<hr />
+<h3 id="d12.-transition">D12. Transition</h3>
+<p><strong>Ontological definition.</strong> A transition is the trajectory’s passage from one configuration’s basin into another’s. It is not instantaneous. It is a process that can take weeks or months, crossing the barrier <span class="math inline">B_{ij}</span> between the two basins.</p>
+<p><strong>Formal definition.</strong> A transition from <span class="math inline">\mathfrak{C}_i</span> to <span class="math inline">\mathfrak{C}_j</span> occurs when the trajectory leaves <span class="math inline">\mathcal{B}_i(t)</span> and converges on <span class="math inline">\mathcal{B}_j(t)</span>. The transition’s minimal path is the clinical geodesic from <span class="math inline">w_i^*</span> to <span class="math inline">w_j^*</span>.</p>
+<p><strong>Types of transition:</strong></p>
+<p><em>Syntropizing transition:</em> toward a configuration with higher <span class="math inline">\|H_t\|</span>.</p>
+<p><em>Dystropizing transition:</em> toward a configuration with lower <span class="math inline">\|H_t\|</span>.</p>
+<p><em>Horizontal transition:</em> between configurations with similar <span class="math inline">\|H_t\|</span> but different domain profiles or propagation direction. Example: from C-C1 (psych→<span class="math inline">B_t</span>, reconfiguration, origin <span class="math inline">R_t</span>) to C-C2 (psych→<span class="math inline">B_t</span>, reconfiguration, origin <span class="math inline">A_t</span>) when the reconfiguration process shifts origin domain without changing overall coherence level; or from C-A (psych→<span class="math inline">B_t</span>, residency) to C-B (bidirectional, residency) when a cyclical somatic component gets added to a chronic psychological configuration.</p>
+<p><strong>Hysteresis.</strong> <span class="math inline">B_{ij}(t) \neq B_{ji}(t)</span> means a transition from <span class="math inline">i</span> to <span class="math inline">j</span> does not require the same energy as the reverse transition. Hysteresis is the formal expression of the clinical experience that “relapsing is easier than improving,” and also that “some gains are irreversible.”</p>
+<hr />
+<h3 id="d13.-observability-upsilon_us">D13. Observability — <span class="math inline">\Upsilon_{US}</span></h3>
+<p><strong>Ontological definition.</strong> Observability describes how available the trajectory is to be known from the inside: the person’s capacity to access their own functional field and report it validly.</p>
+<p><strong>Relationship to <span class="math inline">\Upsilon_{US}</span>.</strong> <span class="math inline">\Upsilon_{US}</span> (stability under stress) is observability’s most direct operational correlate: when <span class="math inline">\Upsilon_{US} &lt; \Upsilon_{US_{\min}}</span>, the field is too perturbed for self-report to reflect its state faithfully. Observability is a gradient, not a binary: as <span class="math inline">\Upsilon_{US}</span> drops, self-report’s validity degrades progressively.</p>
+<p><strong>Consequence for unveiling.</strong> Existence condition CE7 (unveiling changes the field it describes) establishes that the clinical encounter is an ontological intervention (A7). Observability is the condition of possibility for that process: without a minimum of stability (sufficient <span class="math inline">\Upsilon_{US}</span>), unveiling cannot operate on the intensive field, only on the observable extensive field. CE7 implies that the validation pilot’s design includes assessment conditions with no intervention, to estimate unveiling’s own effect (P11).</p>
+<p><strong>Gap G4.</strong> The exact relationship between <span class="math inline">\Upsilon_{US}</span> and self-report validity is not quantified: <span class="math inline">\Upsilon_{US_{\min}}</span> is currently a clinical threshold set by evaluator judgment. Formalizing it operationally requires pilot data (G4: determining <span class="math inline">\kappa_{\min}</span>, <span class="math inline">\varepsilon_{\min}</span>, <span class="math inline">\Upsilon_{US_{\min}}</span>, <span class="math inline">\theta</span>).</p>
+<hr />
+<h3 id="d14.-clinical-resonance">D14. Clinical Resonance</h3>
+<p><strong>Ontological definition.</strong> Clinical resonance is the information the person’s individuation field produces in the clinician’s individuation field during the encounter. It is not subjective intuition. It is a channel of information about the intensive field that precedes narrative elaboration, and one the clinician can learn to read with training.</p>
+<p><strong>Epistemological status.</strong> Clinical resonance is a pre-narrative observable of the intensive field: it belongs to the same level as sensor signal, not to the level of self-report. Like the sensor, it captures information prior to conscious elaboration. Like the sensor, it can diverge from self-report when <span class="math inline">\Upsilon_{US}</span> is low.</p>
+<p><strong>Operational components.</strong> Three dimensions the clinician trains to discriminate:</p>
+<p><em>The clinician’s somatic field:</em> somatic sensations during the encounter: tension, weight, lightness, contraction. This is information about the person’s field, not the clinician’s own states.</p>
+<p><em>The clinician’s emotional field:</em> affective resonance during the encounter: sadness, urgency, apathy, vitality. Same status as the somatic field.</p>
+<p><em>The clinician’s imaginal field:</em> images, metaphors, scenes that arise spontaneously during the encounter. These are the symbolic representation of the person’s field within the clinician’s own field.</p>
+<p><strong>Reliability and biases.</strong> Clinical resonance carries its own biases: countertransference (the person’s field activates patterns in the clinician’s own field), projection (the clinician reads their own field as though it were the person’s), and depletion (resonance dulls with fatigue). Training in clinical resonance includes training to recognize these biases.</p>
+<p><strong>Integration into <span class="math inline">\mathcal{O}(t)</span>.</strong> Clinical resonance is recorded in the observation field as free text, not as a scalar. Its integration into the engine’s likelihood is not formalized in the model’s current version. This is the object of G12 (clinical resonance as an observational channel in <span class="math inline">\mathcal{O}(t)</span>, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.2.4).</p>
+<hr />
+<h3 id="d15.-clinical-evidence-mathcalet">D15. Clinical Evidence — <span class="math inline">\mathcal{E}(t)</span></h3>
+<p><strong>Ontological definition.</strong> Clinical evidence is the set of structured observations the clinician produces during the encounter that feed <span class="math inline">T_\text{histórico}</span>. It is distinct from raw observation: it is observation filtered through the model’s conceptual system.</p>
+<p><strong>Formal definition.</strong> <span class="math inline">\mathcal{E}(t) = \{e_1, \ldots, e_n\}</span> where each <span class="math inline">e_i</span> is an instance of <span class="math inline">\text{HistoricalEvidence}(\text{type}, \text{intensity}, \text{reliability}, t_{\text{formative}})</span>.</p>
+<p><strong>Type hierarchy.</strong> The five evidence types are ordered by what they imply about the field’s geometry:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>What it implies about the field</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\mathcal{E}_{\text{activation}}</span></td>
+<td>The attractor has activated: the minimum exists</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\mathcal{E}_{\text{resistance}}</span></td>
+<td>The attractor is deep: the basin resists perturbation</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\mathcal{E}_{\text{propagation}}</span></td>
+<td>The metric <span class="math inline">g_t</span> has structure: <span class="math inline">\Psi_t</span> is not null</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\mathcal{E}_{\text{threshold}}</span></td>
+<td>The basin’s edge has shifted: <span class="math inline">\delta_k(t)</span> is dynamic</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\mathcal{E}_{\text{absence}}</span></td>
+<td>There is pre-narrative structure: the basin predates memory</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Distinction from <span class="math inline">\mathcal{O}(t)</span>.</strong> <span class="math inline">\mathcal{O}(t)</span> is the encounter’s complete set of observations: <span class="math inline">H_t</span>, <span class="math inline">M</span>, <span class="math inline">\mathcal{E}(t)</span>, sensor signal, and clinical resonance. <span class="math inline">\mathcal{E}(t)</span> is only the subset that feeds <span class="math inline">T_\text{histórico}</span>: evidence about accumulated history.</p>
+<hr />
+<h3 id="d15-int.-interstitial-field-omega_ttextint">D15-int. Interstitial Field — <span class="math inline">\Omega_t^{(\text{int})}</span></h3>
+<p><strong>Ontological definition.</strong> The interstitial field is the stability function describing the organization of the encounter between two fields of individuation. It is not the sum of the two fields. It is the organization their historical encounter produces on its own terms. A canonical formal object since <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.2.4 (D15-int).</p>
+<p><strong>Formal definition.</strong> <span class="math inline">\Omega_t^{(\text{int})}: \mathcal{W} \to \mathbb{R}_{\geq 0}</span>, with its own constitutive history:</p>
+<p><span class="math display">\xi_t^{(\text{int})} = \{D_p^{(\text{int})}(t),\; \kappa^{(\text{int})}(t),\; \sigma^{(\text{int})}\}</span></p>
+<ul>
+<li><span class="math inline">D_p^{(\text{int})}(t)</span>: what the relationship has deformed irreversibly (unprocessed ruptures, unrepaired harm, crystallized relational patterns).</li>
+<li><span class="math inline">\kappa^{(\text{int})}(t)</span>: the interstitial field’s current receptive capacity.</li>
+<li><span class="math inline">\sigma^{(\text{int})}</span>: the constitutive, pre-symbolic imprint of the earliest encounters.</li>
+</ul>
+<p><strong>Constitutive asymmetry.</strong> The interstitial field is not symmetric: the clinician has competencies for unveiling that the person does not; the person has access to their own <span class="math inline">\xi_t^{(p)}</span> that the clinician does not.</p>
+<p><strong>Predicate types.</strong> <em>Clinical</em> (between clinician and person) / <em>familial</em> (between members of a family system) / <em>bonding</em> (between the trajectory and a significant attachment figure). Each type has distinct structural properties.</p>
+<p><strong>Clinical consequence.</strong> <span class="math inline">\Omega_t^{(\text{int})}</span>’s properties determine which aspects of <span class="math inline">\xi_t^{(p)}</span> are accessible in this encounter. An interstitial field with reduced <span class="math inline">\kappa^{(\text{int})}(t)</span> produces reduced access to <span class="math inline">\xi_t^{(p)}</span> even when individual parameters would allow unveiling. Quantitatively formalizing <span class="math inline">\xi_t^{(\text{int})}</span> is the object of G17.</p>
+<p><strong>Its own dynamics: three regimes.</strong> <span class="math inline">\Omega_t^{(\text{int})}</span> evolves over the course of the relationship. Events that accumulate <span class="math inline">D_p^{(\text{int})}(t)</span>: unprocessed ruptures, frame transgressions, crystallized relational patterns. Events that restore <span class="math inline">\kappa^{(\text{int})}(t)</span>: active repair, frame continuity, accumulated successful co-regulation. Three regimes: (a) <em>productive</em>, high <span class="math inline">\kappa^{(\text{int})}(t)</span>: unveiling can reach deep basins; (b) <em>restricted</em>, reduced <span class="math inline">\kappa^{(\text{int})}(t)</span>: only <span class="math inline">\xi_t^{(p)}</span>’s surface is accessible; (c) <em>in rupture</em>, <span class="math inline">\kappa^{(\text{int})}(t) &lt; \kappa^{(\text{int})}_{\text{umbral}}</span>: intervening on <span class="math inline">D_p(t)</span> in this state produces harm analogous to what P12 describes. The priority is restoring the interstitial field before any work on constitutive memory.</p>
+<p><strong>Interstitial spatium.</strong> <span class="math inline">\Omega_t^{(\text{int})}</span> has its own spatium, <span class="math inline">(\varepsilon_t^{(\text{int})}, \Psi_t^{(\text{int})})</span>. <span class="math inline">\varepsilon_t^{(\text{int})}</span> is relational functional elasticity, higher in the relationship’s early phases, lower with a history of accumulated rupture. <span class="math inline">\Psi_t^{(\text{int})}</span> has constitutive asymmetric propagation: the dominant direction is <span class="math inline">D_p^{(\text{int})} \to \kappa^{(\text{int})}</span>: ruptures drain receptive capacity; the reverse direction requires deliberate repair. This asymmetry distinguishes the interstitial field from the individual field (where <span class="math inline">\Psi_t</span> can be bidirectional), and it formalizes why damaged relationships do not restore themselves through the passage of time alone.</p>
+<h2 id="status-canonical-formal-definition.-source-d15-int-ontological-core-v2.3.1."><strong>Status:</strong> canonical formal definition. Source: D15-int, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.1.</h2>
+<h2 id="part-ii-transition-conditions-formalized">Part II — Transition Conditions, Formalized</h2>
+<h3 id="d16.-transition-conditions-m">D16. Transition Conditions — <span class="math inline">M</span></h3>
+<p><strong>Ontological definition.</strong> A transition condition is a condition on the trajectory’s evolution operator: a property that determines which transitions between configurations are possible, how easily, and at what cost. Transition conditions describe <em>how</em> the trajectory moves across configuration space, not <em>what it produces</em> (that is what domains describe).</p>
+<p><strong>Ontological distinction from domains.</strong> Domains are coordinates of the individuation field in <span class="math inline">\mathcal{W}</span>. Transition conditions are properties of the evolution operator: in terms of the triad, they are properties of the dynamics over <span class="math inline">(\mathcal{W}, g_t, \mathcal{A})</span>, not of the configuration space itself. This is why <span class="math inline">M</span> stays independent of the triad (full formalization in the <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a>).</p>
+<p><strong>Formal definition.</strong> <span class="math display">M = (\Beta_F^{(r)}, \Beta_F^{(i)}, \Pi_R, \Tau_F, \Upsilon_{US}) \in [0,1]^5</span></p>
+<p>Each transition condition is a scalar in <span class="math inline">[0,1]</span> describing the level of its corresponding condition at time <span class="math inline">t</span>.</p>
+<p><strong>The five transition conditions:</strong></p>
+<p><span class="math inline">\Beta_F^{(r)}</span> — <strong>Behavioral response flexibility.</strong> The observable behavioral repertoire under different conditions: the <em>external</em> component of behavioral flexibility. It describes the evolution operator’s variety: a field with high <span class="math inline">\Beta_F^{(r)}</span> can reach configurations through multiple paths; one with low <span class="math inline">\Beta_F^{(r)}</span> can only evolve along stereotyped paths.</p>
+<p><span class="math inline">\Beta_F^{(i)}</span> — <strong>Introspective flexibility.</strong> The capacity to observe one’s own patterns from some distance and use them as leverage (the clinical vocabulary’s <em>observing image</em>, NC-11). It is the <em>internal, metacognitive</em> component of behavioral flexibility. A field with high <span class="math inline">\Beta_F^{(i)}</span> can detect its own patterns activating in real time; one with low <span class="math inline">\Beta_F^{(i)}</span> experiences them as invisible, or as the only ones possible.</p>
+<p><strong>Independence of <span class="math inline">\Beta_F^{(r)}</span> and <span class="math inline">\Beta_F^{(i)}</span>:</strong> the two dimensions are orthogonal. A field can have a wide behavioral repertoire (high <span class="math inline">\Beta_F^{(r)}</span>) and low metacognitive capacity (low <span class="math inline">\Beta_F^{(i)}</span>). This is the pattern observable in OCPD: varied, precise rituals, fully ego-syntonic. Or the reverse dissociation: high awareness of one’s own patterns (high <span class="math inline">\Beta_F^{(i)}</span>) with no capacity to vary the response (low <span class="math inline">\Beta_F^{(r)}</span>). Formalization approved by Diego (session 5, June 2026).</p>
+<p><span class="math inline">\Pi_R</span> — <strong>Reality testing.</strong> The capacity to calibrate interpretations of the environment against shared reference points. It describes the observation operator’s precision: a field with low <span class="math inline">\Pi_R</span> produces less reliable observations <span class="math inline">\mathcal{O}(t)</span>: clinical evidence loses validity.</p>
+<p><span class="math inline">\Tau_F</span> — <strong>Trajectory continuity.</strong> The capacity to sustain narrative and directional coherence over time. It describes the evolution operator’s memory: a field with low <span class="math inline">\Tau_F</span> produces fragmented trajectories that fail to accumulate the effect of clinical perturbation.</p>
+<p><span class="math inline">\Upsilon_{US}</span> — <strong>Stability under stress.</strong> The capacity to sustain organization that widens <span class="math inline">\mathcal{F}_t^{(p)}</span> under high-intensity perturbation. It is the transition condition with the greatest impact on intervention indication: below <span class="math inline">\Upsilon_{US_{\min}}</span>, the Unveiling protocol cannot operate on the intensive field.</p>
+<hr />
+<h3 id="d-ideal.-reference-point-for-functional-coherence-h_t-m">D-ideal. Reference Point for Functional Coherence — <span class="math inline">H_t^*</span>, <span class="math inline">M^*</span></h3>
+<p><strong>Formal definition.</strong> <span class="math display">H_t^* = (1.0,\,1.0,\,1.0,\,1.0,\,1.0) \qquad M^* = (1.0,\,1.0,\,1.0,\,1.0,\,1.0)</span></p>
+<p><strong>Status:</strong> the declared upper bounds of D4’s (<span class="math inline">H_t</span>) and D16’s (<span class="math inline">M</span>) scales. This is not an empirical norm. It does not describe any real person, or a permanent state of any trajectory. It is the orienting axis for the functional coherence profile: a direction of possible movement, not any treatment’s destination.</p>
+<p><strong>What <span class="math inline">H_t^*</span> names:</strong> the organization in which all five domains simultaneously reach the maximum functional coherence level the corpus’s scales declare: volition with sustained agency, bonds with full reciprocal affection, temporal projection with continuity and affect, existential anchoring with full presence carrying its own weight, the somatic domain as an active resource.</p>
+<p><strong>What <span class="math inline">M^*</span> names:</strong> the organization in which all five transition conditions simultaneously reach their maximum level: a wide response repertoire available under activation, the observing image fully available, high epistemic calibration, full narrative and experiential continuity, sustained presence under high-load perturbation.</p>
+<p><strong>Clinical function:</strong> <span class="math inline">H_t^*</span> and <span class="math inline">M^*</span> let you measure the trajectory’s <em>functional coherence gap</em> without needing a population norm. For each parameter <span class="math inline">x_i</span>, the gap is <span class="math inline">1 - x_i</span>. The functional coherence radar represents this gap visually: the area between the current profile and the radar’s outer edge (which corresponds to <span class="math inline">H_t^*</span>, <span class="math inline">M^*</span>). The clinically relevant reading is the gap’s <em>shape</em>, not its absolute value: which parameters show the greatest distance, and which are most accessible given <span class="math inline">\xi_t</span>.</p>
+<p><strong>Relationship to <span class="math inline">\sigma_t</span>:</strong> the <span class="math inline">B_t</span> and <span class="math inline">A_t</span> axes on the functional coherence radar carry a differential shading that indicates <span class="math inline">\sigma_t</span>’s presence: the morphological imprint of pre-linguistic early experience. When <span class="math inline">\sigma_t</span> is high, the gap in <span class="math inline">B_t</span> and <span class="math inline">A_t</span> carries a higher reorganization cost than the same gap in other domains, independent of <span class="math inline">\kappa(t)</span>. The shading adds no axis to the radar: it is a visual annotation on how the gap is read, not a new dimension. (See D20, note on <span class="math inline">\sigma_t</span>.)</p>
+<p><strong>Approved by Diego (session 5, June 2026).</strong></p>
+<hr />
+<h2 id="part-iii-terms-with-partial-definitions-in-current-documents">Part III — Terms with Partial Definitions in Current Documents</h2>
+<p>The following terms have a conceptual definition in the <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> but do not yet have a complete mathematical formalization. They are recorded here for traceability.</p>
+<p><strong>D17. Temporal horizon.</strong> The extension into the future accessible to the trajectory: how broad the field of possibilities is along the temporal dimension. Correlated with <span class="math inline">P_t</span> but not identical to it: the horizon can be present even with low <span class="math inline">P_t</span> if the trajectory has access to short-term projection. Formalization pending.</p>
+<p><strong>D18. Existential anchoring.</strong> The ground of meaning from which the trajectory organizes its experience. The domain <span class="math inline">A_t</span> is its extensive representation. Formalizing the relationship between the ground of meaning and the intensive field’s organization (including whether <span class="math inline">A_t</span> produces systematically greater asymmetry in <span class="math inline">\Psi_t</span> than other domains) is the object of G13 (formalizing existential anchoring in the intensive field, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.2.4).</p>
+<p><strong>D19. Dynamic regime.</strong> <em>A prohibited term in the model’s technical vocabulary.</em> Always replace it with “dynamic organization,” “configuration,” or “dynamic state,” depending on context. The prohibition is historical: “regime” carries a connotation of abrupt discontinuity that does not sit well with Syntropia’s rhysic ontology.</p>
+<p><strong>D-H1a. Generative potential functional — <span class="math inline">\Phi_t^{(p)}</span>.</strong> <em>Status: working structural hypothesis, pending empirical calibration (log rule 103).</em> <span class="math inline">\Omega_t^{(p)}</span>’s complement: where <span class="math inline">\Omega_t^{(p)}</span> describes where the field is (accessibility/stability), <span class="math inline">\Phi_t^{(p)}</span> describes where it is pushing toward (generative tension). Formally: the functional gradient of <span class="math inline">\mathcal{A}[\Omega, t]</span> in the direction of <span class="math inline">\Omega_t^{(p)}</span>’s support expansion. Three regimes: <span class="math inline">\Phi_t^{(p)} \approx 0</span> (deep residency: a field stable through equilibrium); <span class="math inline">\Phi_t^{(p)} &gt; 0</span> (active reconfiguration); <span class="math inline">\Phi_t^{(p)} \gg 0</span> with <span class="math inline">\kappa(t) &lt; \kappa_{\text{umbral}}</span> (crisis: a field stable through exhaustion). This distinction cannot be captured from <span class="math inline">\Omega_t^{(p)}</span> alone. Its formal derivation requires PEA1 resolved; its empirical calibration requires pilot data. Source: §II.5sexies, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.13.</p>
+<p><strong>D-H1b. The process’s rhythm — <span class="math inline">\chi_t</span>.</strong> <em>Status: a formal object with approximate estimators available, not yet calibrated.</em> The field’s state of readiness to produce a reorganization: the tension accumulated in <span class="math inline">\Omega_t^{(p)}</span> before that reorganization becomes observable in <span class="math inline">H_t</span>. Distinct from <span class="math inline">\dot{H}_t = \nabla H_t / \Delta t</span> (the observable’s rate of change): the two are dissociable (log rule 104). <span class="math inline">\dot{H}_t \approx 0</span> with <span class="math inline">\chi_t</span> high is the silent period before a major reorganization; high <span class="math inline">\dot{H}_t</span> with low <span class="math inline">\chi_t</span> is reactive movement with no underlying reorganization. Never present <span class="math inline">\dot{H}_t</span> as equivalent to <span class="math inline">\chi_t</span>. Source: §VIII.5, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.13.</p>
+<p><strong>D-H1c. Resignification operator — <span class="math inline">\rho(t)</span>.</strong> <em>Status: a hypothetical object pending G18 (log rule 105).</em> A factor that modulates <span class="math inline">D_p(t)</span>’s functional contribution to the field without altering its magnitude: <span class="math inline">\Omega_t^{(p)} = F(\sigma_t,\; \rho(t) \cdot D_p(t),\; \kappa(t))</span>. It captures the resignification of history: what once organized the field from fear can reorganize toward integrated memory without <span class="math inline">D_p(t)</span> itself decreasing. Unlock condition: pilot data with pre/post measures of narrative versus somatic interventions at constant <span class="math inline">D_p(t)</span>. Do not incorporate into the Bayesian model’s formal equations until G18 produces evidence that it is distinguishable from <span class="math inline">\kappa(t)</span>. Source: D10 note, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.3.</p>
+<p><strong>Pre-pilot operational development (v0.4.10):</strong> the functional distinction from restored <span class="math inline">\kappa(t)</span>: restoring <span class="math inline">\kappa(t)</span> produces <em>general</em> improvement (the field is more responsive across all contexts); active <span class="math inline">\rho(t)</span> produces <em>specific</em> improvement (the latent basins tied to the history that was worked on stop activating under their type of perturbation, while other latent basins can remain active). Signs of active <span class="math inline">\rho(t)</span>: the field describes the same historical events in a qualitatively different way with no change in the facts themselves; latent basins that used to activate under type-X perturbation stop activating at the same frequency; a self-image with new narrative coherence. <span class="math inline">\rho(t)</span> interventions: psychodynamic psychotherapy, EMDR, narrative work, episodic work (months-to-years timescale). <span class="math inline">\kappa(t)</span> interventions: pharmacotherapy, sleep, allostatic load (weeks-to-months timescale). Documentation in SCRF-1 Field 3: “<span class="math inline">\rho(t)</span>: [active / not active / indeterminate].” See <a href="/syntropia/en/nucleos/clinical-core/">Clinical Core</a> v0.3.5.</p>
+<p><strong>D20. Somatic domain — <span class="math inline">B_t</span>.</strong> <span class="math inline">H_t</span>’s fifth constitutive domain. Canonical since <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> version 1.5.0. <span class="math inline">H_t = (V_t, R_t, P_t, A_t, B_t) \in [0,1]^5</span>. Its four subdimensions: <span class="math inline">B_t^{(s)}</span> sleep regulation, <span class="math inline">B_t^{(m)}</span> metabolic and neurobiological regulation, <span class="math inline">B_t^{(a)}</span> baseline autonomic activation, <span class="math inline">B_t^{(i)}</span> somatic integrity.</p>
+<p><strong>Note on <span class="math inline">\xi_t</span> and <span class="math inline">\sigma_t</span>.</strong> Constitutive memory <span class="math inline">\xi_t = \{D_p(t), \kappa(t), \sigma_t\}</span> has had three components since <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.0. The pre-symbolic dispositional structure <span class="math inline">\sigma_t</span>, the morphological imprint of pre-linguistic early experience, has a special relationship to <span class="math inline">B_t^{(s)}</span> (sleep regulation) and <span class="math inline">B_t^{(m)}</span> (metabolic and neurobiological regulation), since those subdimensions capture <span class="math inline">\sigma_t</span>’s somatic expression prior to narrative elaboration. Interventions with access to <span class="math inline">\sigma_t</span> are primarily body-centered (<span class="math inline">B_t</span>), focused on early relationship and the sensory environment.</p>
+<p><strong>Note on the canonical configurations.</strong> The canonical configurations should be derived from the space <span class="math inline">H_t \in [0,1]^5</span>. Canonical system v1.2 has 14 candidate configurations organized by dominant propagation pattern in <span class="math inline">\Psi_t</span> × basin × domain of origin (selective). See <a href="/syntropia/en/nucleos/canonical-configurations/"><code>Configuraciones_Canonicas_v1_3_14.qmd</code></a>. Whether the number of canonical configurations is final is the object of G10.</p>
+<hr />
+<h3 id="formal-hypotheses-h-nov-through-h-orden">Formal Hypotheses — H-NOV Through H-ORDEN</h3>
+<p><em>Added in v0.4.7 after a deep architectural review of Core 1.0. Formal hypotheses are provisional structural commitments about relationships in the model that cannot be verified given the corpus’s current state. Status: working structural hypothesis (more than a heuristic analogy, less than a strong ontological commitment). Each carries a declared unlock condition.</em></p>
+<p><strong>H-NOV. The novelty hypothesis.</strong> <em>Status: latent hypothesis, conditional on PEA1 resolved and <span class="math inline">\Phi_t^{(p)}</span> calibrated (RC-6.2). Not active in the current pilot. Horizon: H4.</em> Expanding <span class="math inline">\mathcal{F}_t^{(p)}</span>’s support into previously inaccessible regions of <span class="math inline">\mathcal{W}</span> requires, simultaneously: (a) sustained <span class="math inline">\Phi_t^{(p)} &gt; 0</span>; (b) <span class="math inline">\kappa(t) \geq \kappa_{\text{umbral}}(D_p)</span>; (c) perturbation aligned with <span class="math inline">\Phi_t^{(p)}</span>’s gradient. An orthogonal or opposing perturbation produces level 1 (modal shift) or level 3 (contraction). Source: A5 level 2, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.0.</p>
+<p><strong>H-COMP. The processual comparability hypothesis: directed processual premetric.</strong> <em>Status: urgent working structural hypothesis; declared a directed premetric (not a symmetric metric) since <a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a> v0.3.10. Unlock condition: G2 (<span class="math inline">g_t</span> calibration). Horizon: H2–H3.</em> The processual distance between two trajectories <span class="math inline">p</span> and <span class="math inline">q</span> at time <span class="math inline">t</span>: <span class="math inline">d_{\text{proc}}(p,q,t) = \alpha \|\xi_t^{(p)} - \xi_t^{(q)}\|_{g_t} + \beta\, d_{\text{config}}(\Omega_t^{(p)}, \Omega_t^{(q)}) + \gamma\, d_{S_m}(p,q,t)</span>. This operationalizes CE18. It blocks the pilot’s population-level validation until the metric is calibrated. Source: CE18, <a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a> v0.3.9; §II bis.2, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.13.</p>
+<p><strong>H-TRANS. The transitional regime hypothesis.</strong> <em>Status: working structural hypothesis. Unlock condition: G19. Horizon: H2–H3.</em> The period between basins is characterized by: high variance in <span class="math inline">\Omega_t^{(p)}</span> across multiple configurations; <span class="math inline">\chi_t</span> declining from its pre-transitional peak; <span class="math inline">\kappa(t)</span> at a minimum; heightened sensitivity to perturbation (<span class="math inline">\varepsilon_t^{\text{ef}}</span> transiently reduced). Asymmetric through hysteresis: the crossing <span class="math inline">\mathfrak{C}_i \to \mathfrak{C}_j</span> has different dynamics than the reverse crossing. P12 applies at maximum urgency during this regime. Source: HST, extended D15-int, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.0.</p>
+<p><strong>H-POT. The potentialities hypothesis.</strong> <em>Status: working structural hypothesis. Unlock condition: <span class="math inline">\Phi_t^{(p)}</span> empirically calibrated. Horizon: H3–H4.</em> <span class="math inline">\mathcal{F}_t^{(p)}</span>’s most probable direction of expansion is determined by <span class="math inline">\Phi_t^{(p)}</span>’s gradient over <span class="math inline">\partial\mathcal{F}_t^{(p)}</span>. The most probably accessible regions are those for which <span class="math inline">d_{g_t}(\mathfrak{C}_j, \partial\mathcal{F}_t^{(p)}) &lt; \delta_{\Phi}(t)</span>, where <span class="math inline">\delta_{\Phi}</span> depends on <span class="math inline">\Phi_t^{(p)}</span> and <span class="math inline">\kappa(t)</span>. Source: §II.5sexies, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.13.</p>
+<p><strong>H-TEMPO. The trajectory’s internal time hypothesis.</strong> <em>Status: latent hypothesis, conditional on PEA1 resolved and <span class="math inline">\Phi_t^{(p)}</span> calibrated (RC-6.2). Not active in the current pilot. Horizon: H3.</em> Internal time <span class="math inline">\tau_t \approx \Phi_t^{(p)} / \kappa(t)</span>: a field with high generative tension and high receptive capacity processes perturbation faster than one with low tension and low capacity. If empirically verified (G24), <span class="math inline">\tau_t</span> is an independent predictor of reorganization speed with additional power over <span class="math inline">\chi_t</span> and <span class="math inline">\dot{H}_t</span>. Source: §VIII.5, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.17.</p>
+<p><strong>H-TRANS-ESC. The cross-scale propagation without reduction hypothesis.</strong> <em>Status: programmatic hypothesis. Horizon: H4.</em> Propagation across scales satisfies the no-reduction condition if and only if the translation operators (<span class="math inline">T_{\text{ontológico}}</span>, <span class="math inline">T_{\text{escala}}</span>, <span class="math inline">T_{\text{histórico}}</span>) have no exact inverse: information is lost in a controlled, declared way in each direction. The two main gaps: a field-to-molecular operator (<span class="math inline">T_{\text{ontológico}}^{-1}</span>), and propagation from the individual field to a supra-individual field. Source: §II.5quinquies, §IV, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.13.</p>
+<p><strong>H-ORDEN. The higher-order fields hypothesis.</strong> <em>Status: programmatic hypothesis. Horizon: H4.</em> Families, organizations, and cultures have architecture analogous to <span class="math inline">\Omega_t^{(\text{int})}</span>, with their own predicates (familial, organizational, cultural), and they condition the individual <span class="math inline">\Omega_t^{(p)}</span> through <span class="math inline">\Psi_t</span> and <span class="math inline">\sigma_t</span>. Higher-order fields have their own constitutive history, <span class="math inline">\xi_t^{(\text{ord})}</span>, with the same three components at a different scale. Source: extended D15-int, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.1.</p>
+<p><strong>H-TRANS-F. The transition’s functional form hypothesis.</strong> <em>Status: working structural hypothesis; derived from <span class="math inline">\mathcal{W}</span>’s Riemannian geometry; falsifiable with pilot data. Unlock condition: G2 plus pilot transition-frequency data. Horizon: H2.</em> <span class="math inline">P(\mathfrak{C}_j \mid \mathfrak{C}_i, t) \propto \exp(-d_{g_t}(\mathfrak{C}_i, \mathfrak{C}_j) / \kappa(t) \cdot \|\Delta u_t\|) \cdot \mathbf{1}[\kappa(t) \geq \kappa_{\text{umbral}}(D_p)]</span>. This turns the HST’s three qualitative properties into a falsifiable quantitative prediction. Source: extended G10, <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.1; §VIII.7, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.14.</p>
+<p><strong>CE19. The limit of <span class="math inline">\xi_t</span> as a representation of constitutive history.</strong> <em>Status: canonical epistemological commitment since <a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a> v0.3.10.</em> <span class="math inline">\xi_t</span> is the trace of the accumulated process, not the process itself. Two trajectories with <span class="math inline">\xi_t^{(p)} \approx \xi_t^{(q)}</span> can have arrived by different paths and respond differently to identical perturbation. Maximum severity during Phases 1, 3, and early 4 of §T1: in those periods, direct clinical reading carries more weight than the Bayesian engine. Source: CE19, <a href="/syntropia/en/nucleos/epistemological-core/">Epistemic Core</a> v0.3.10; §VI.2 and §VIII.5, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.14.</p>
+<hr />
+<h2 id="part-iv-relational-vocabulary-retired-historical-status">Part IV — Relational Vocabulary (Retired: Historical Status)</h2>
+<p>The relational vocabulary (14 technical terms of Greek root across two generations: Eudaimonia, Euexia, Allotropy, Anexia, Epitropy, Entelopy, and Proexia, from the original system; Eutropy, Dysintropy, Neotropy, Cathexy, Apexy, Anastropy, and Heterotropy, D21–D27, formalized on June 10, 2026, alongside the names of the 14 canonical configurations) was retired from the corpus by Diego F. Pereira-Perdomo’s explicit instruction (June 2026). It served its heuristic function during the model’s construction (exploring dimensions for describing the field: global coherence, movement over time, normative environment; independent of the canonical configuration system), but no term from either generation is active. Canonical system v1.2’s 14 configurations and their Spanish names (D28) are the only nomenclature currently in force.</p>
+<hr />
+<h3 id="d28.-quick-reference-table-canonical-names-and-phrases">D28. Quick Reference Table — Canonical Names and Phrases</h3>
+<p>The 14 canonical configuration names (system v1.2) and their canonical phrases: approved clinical formulations for communicating each configuration’s internal logic to the patient. Full formalization in <a href="/syntropia/en/nucleos/canonical-configurations/"><code>Configuraciones_Canonicas_v1_3_14.qmd</code></a>.</p>
+<p><em>English names confirmed against Table 1 of the Foundational Article (July 15, 2026).</em></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Canonical phrase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C-A</td>
+<td style="text-align: left;">Anchoring</td>
+<td style="text-align: left;">The person becomes a pattern installed in the psychological dimension that has, for decades, carried through into the somatic domain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-B</td>
+<td style="text-align: left;">Loop</td>
+<td style="text-align: left;">The somatic and the psychological modulate each other in a cycle that perpetuates itself with no clear point of origin</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-C1</td>
+<td style="text-align: left;">Bond</td>
+<td style="text-align: left;">The person is going through a process of active reorganization whose origin is relational</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-C2</td>
+<td style="text-align: left;">Existential</td>
+<td style="text-align: left;">The person is going through a process of existential reorganization: reality testing requires assessment at every encounter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-D</td>
+<td style="text-align: left;">Chrysalis</td>
+<td style="text-align: left;">The somatic and the psychological are reorganizing simultaneously, in an active bidirectional process</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-E</td>
+<td style="text-align: left;">Jolt</td>
+<td style="text-align: left;">The somatic is disrupting psychological functioning, with no stabilization yet</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-F</td>
+<td style="text-align: left;">Suspension</td>
+<td style="text-align: left;">Psychological disruption is active, and the trajectory has not yet stabilized</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-G</td>
+<td style="text-align: left;">Transformation</td>
+<td style="text-align: left;">The somatic domain is producing sustained reorganization across the other domains</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-H</td>
+<td style="text-align: left;">Vortex</td>
+<td style="text-align: left;">The somatic and the psychological disrupt each other in a recent cycle: the window for intervention is open</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-I</td>
+<td style="text-align: left;">Embodiment</td>
+<td style="text-align: left;">The somatic domain has organized the trajectory for decades, and the other domains have stabilized around it</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-J</td>
+<td style="text-align: left;">Collapse</td>
+<td style="text-align: left;">All domains collapsed simultaneously: integration and reality testing are unavailable</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-K</td>
+<td style="text-align: left;">Idiosyncratic</td>
+<td style="text-align: left;">The trajectory organized divergently during or before early childhood: that organization is the constitutive base it operates from</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C-L</td>
+<td style="text-align: left;">Encapsulation</td>
+<td style="text-align: left;">What’s observable in the encounter shows internal coherence with processes that likely exist but do not surface</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C-M</td>
+<td style="text-align: left;">Drift</td>
+<td style="text-align: left;">The trajectory becomes without ever stabilizing</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Version 0.4.18 — July 13, 2026.</em> <em>Author: Diego F. Pereira-Perdomo.</em> <em>Cross-check against: <a href="/syntropia/en/nucleos/ontological-core/">Ontological Core</a> v2.3.16, <a href="/syntropia/en/nucleos/mathematical-core/">Mathematical Core</a> v0.4.27, Canonical Configurations v1.3.15.</em> <em>This document is a canonical reference: any modification requires a new semantic version.</em></p>
+
+      </article>
+    </div>
+  </section>
+
+  <!-- Back -->
+  <section class="py-16 bg-slate-50 text-center">
+    <div class="max-w-2xl mx-auto px-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/syntropia/en/nucleos/"
+        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        &larr; All Core Documents
+      </a>
+      <a href="/syntropia/en/"
+        class="inline-block bg-white border border-slate-300 hover:border-teal-500 text-slate-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        Back to Syntropia
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
+    <p class="mb-2">&copy; 2026 Syntropia &mdash; Clinical and Scientific Model</p>
+  </footer>
+
+</body>
+
+</html>
