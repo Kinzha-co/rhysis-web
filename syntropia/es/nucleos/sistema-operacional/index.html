@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema Operacional &mdash; Syntropía</title>
-  <meta name="description" content="Protocolo de operacionalización
-prepiloto.">
+  <meta name="description" content="Procedimientos clínicos reproducibles que traducen la arquitectura conceptual del modelo para el piloto de validación.">
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
@@ -18,7 +17,7 @@ prepiloto.">
     .prose table { font-size: 0.92em; }
     .prose thead th { background: #f8fafc; }
   </style>
-<script defer=""
+<script defer
 src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -56,14 +55,12 @@ href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <!-- Hero -->
   <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
     <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
-      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropía &mdash; Núcleo canónico</p>
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropía &mdash; Documento canónico-operacional</p>
       <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
         Sistema Operacional
       </h1>
-      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Protocolo
-de operacionalización prepiloto.</p>
-      <p class="text-slate-400 text-sm mt-6">Versión 0.2.5 &middot; 13
-de julio de 2026</p>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Procedimientos clínicos reproducibles que traducen la arquitectura conceptual del modelo para el piloto de validación.</p>
+      <p class="text-slate-400 text-sm mt-6">Versión 0.2.5 &middot; 13 de julio de 2026</p>
     </div>
   </section>
 
@@ -73,26 +70,13 @@ de julio de 2026</p>
       <article class="prose prose-slate lg:prose-lg max-w-none
                        prose-headings:text-teal-800 prose-a:text-teal-700
                        prose-strong:text-slate-900">
-<h1 id="sistema-operacional-de-syntropía-v0.2.5">Sistema Operacional de
-Syntropía — v0.2.5</h1>
+<h1 id="sistema-operacional-de-syntropía-v0.2.5">Sistema Operacional de Syntropía — v0.2.5</h1>
 <h2 id="nota-de-uso">Nota de uso</h2>
-<p>Este documento traduce la arquitectura conceptual del Core 1.2 y los
-cuatro núcleos canónicos en procedimientos clínicos reproducibles para
-el piloto de validación. No es un manual de teoría — es un manual de
-práctica. El clínico que lee este documento sin haber estudiado el Core
-y los núcleos no tiene el contexto necesario para aplicarlo
-correctamente; este documento es el último eslabón de la cadena, no el
-primero.</p>
-<p><strong>Referencia canónica:</strong> toda afirmación de este
-documento tiene su fundamento en el Core 1.2. En caso de duda sobre el
-significado de un término o procedimiento, el Core 1.2 y los núcleos
-fuente son la autoridad, no este documento.</p>
+<p>Este documento traduce la arquitectura conceptual del Core 1.2 y los cuatro núcleos canónicos en procedimientos clínicos reproducibles para el piloto de validación. No es un manual de teoría: es un manual de práctica. El clínico que lee este documento sin haber estudiado el Core y los núcleos no tiene el contexto necesario para aplicarlo correctamente; este documento es el último eslabón de la cadena, no el primero.</p>
+<p><strong>Referencia canónica:</strong> toda afirmación de este documento tiene su fundamento en el Core 1.2. En caso de duda sobre el significado de un término o procedimiento, el Core 1.2 y los núcleos fuente son la autoridad, no este documento.</p>
 <hr />
-<h1 id="parte-i-flujo-clínico-completo">Parte I — Flujo Clínico
-Completo</h1>
-<h2
-id="diagrama-textual-de-primer-contacto-a-seguimiento-longitudinal">Diagrama
-textual: de primer contacto a seguimiento longitudinal</h2>
+<h1 id="parte-i-flujo-clínico-completo">Parte I — Flujo Clínico Completo</h1>
+<h2 id="diagrama-textual-de-primer-contacto-a-seguimiento-longitudinal">Diagrama textual: de primer contacto a seguimiento longitudinal</h2>
 <pre><code>PRIMER CONTACTO
 │
 ├─ 1. Evaluación de posición en S_m
@@ -142,116 +126,40 @@ textual: de primer contacto a seguimiento longitudinal</h2>
      ├─ Señales de recaída: activación de cuencas latentes
      ├─ Documentación de ρ(t) si hay resignificación activa
      └─ Cierre o continuación según criterios de S_m y T_2</code></pre>
-<p><strong>Frecuencia mínima recomendada para el piloto:</strong> -
-Encuentro clínico: quincenal durante fases de reconfiguración activa
-(Fases 2, 3); mensual en residencia (Fase 1) y consolidación estable
-(Fase 4). - Sensor de alta frecuencia (<span
-class="math inline">T_{\text{temporal}}</span>): semanal durante Fases
-1–3; puede reducirse a quincenal en Fase 4 estable. - Motor PyMC:
-actualización posterior a cada encuentro clínico.</p>
+<p><strong>Frecuencia mínima recomendada para el piloto:</strong> - Encuentro clínico: quincenal durante fases de reconfiguración activa (Fases 2, 3); mensual en residencia (Fase 1) y consolidación estable (Fase 4). - Sensor de alta frecuencia (<span class="math inline">T_{\text{temporal}}</span>): semanal durante Fases 1–3; puede reducirse a quincenal en Fase 4 estable. - Motor PyMC: actualización posterior a cada encuentro clínico.</p>
 <hr />
-<h1 id="parte-ii-manual-de-uso-del-frcs-1">Parte II — Manual de Uso del
-FRCS-1</h1>
-<h2 id="formato-mínimo-de-reporte-clínico-sintrópico-frcs-1">Formato
-Mínimo de Reporte Clínico Sintrópico — FRCS-1</h2>
-<p>El FRCS-1 operacionaliza C6 del Núcleo Clínico. Es el registro mínimo
-que permite comparabilidad entre evaluaciones y entre clínicos.</p>
+<h1 id="parte-ii-manual-de-uso-del-frcs-1">Parte II — Manual de Uso del FRCS-1</h1>
+<h2 id="formato-mínimo-de-reporte-clínico-sintrópico-frcs-1">Formato Mínimo de Reporte Clínico Sintrópico — FRCS-1</h2>
+<p>El FRCS-1 operacionaliza C6 del Núcleo Clínico. Es el registro mínimo que permite comparabilidad entre evaluaciones y entre clínicos.</p>
 <hr />
-<h3 id="campo-1-distribución-de-omega_tp">Campo 1 — Distribución de
-<span class="math inline">\Omega_t^{(p)}</span></h3>
-<p><strong>Qué observa el clínico:</strong> las tres configuraciones del
-sistema canónico v1.2 con mayor masa posterior en esta evaluación, desde
-el output del motor PyMC.</p>
-<p><strong>Cómo lo registra:</strong> “<span
-class="math inline">\mathfrak{C}_k</span> (masa <span
-class="math inline">\approx p_k</span>), <span
-class="math inline">\mathfrak{C}_j</span> (masa <span
-class="math inline">\approx p_j</span>), <span
-class="math inline">\mathfrak{C}_i</span> (masa <span
-class="math inline">\approx p_i</span>)”</p>
-<p><strong>Criterio de calidad:</strong> las masas deben sumar <span
-class="math inline">\leq 1.0</span> y <span class="math inline">\geq
-0.5</span> para las tres configuraciones reportadas. Si la masa está más
-dispersa (ninguna <span class="math inline">&gt; 0.3</span>), reportar
-todas con masa <span class="math inline">&gt; 0.15</span> y señalar
-“distribución ampliamente dispersa — Fase 3 probable”.</p>
-<p><strong>Error frecuente:</strong> reportar solo la configuración
-modal (“el paciente está en C-D”) sin la distribución. Esto viola C6 y
-hace el reporte inútil para comparabilidad longitudinal.</p>
-<p><strong>Ejemplo correcto:</strong> “C-D (0.52), C-B (0.21), C-C1
-(0.14)”</p>
-<p><strong>Ejemplo incorrecto:</strong> “El paciente está en
-Crisálida.”</p>
-<p><strong>Señales de interpretación:</strong> - Masa <span
-class="math inline">&gt; 0.7</span> en una configuración: estabilidad
-alta en esa cuenca. - Masa distribuida con ninguna <span
-class="math inline">&gt; 0.4</span> en tres o más configuraciones:
-probable Fase 3 (régimen transicional). - Moda diferente respecto al
-FRCS-1 anterior con varianza decreciente: probable Fase 4
-(consolidación).</p>
+<h3 id="campo-1-distribución-de-omega_tp">Campo 1 — Distribución de <span class="math inline">\Omega_t^{(p)}</span></h3>
+<p><strong>Qué observa el clínico:</strong> las tres configuraciones del sistema canónico v1.2 con mayor masa posterior en esta evaluación, desde el output del motor PyMC.</p>
+<p><strong>Cómo lo registra:</strong> “<span class="math inline">\mathfrak{C}_k</span> (masa <span class="math inline">\approx p_k</span>), <span class="math inline">\mathfrak{C}_j</span> (masa <span class="math inline">\approx p_j</span>), <span class="math inline">\mathfrak{C}_i</span> (masa <span class="math inline">\approx p_i</span>)”</p>
+<p><strong>Criterio de calidad:</strong> las masas deben sumar <span class="math inline">\leq 1.0</span> y <span class="math inline">\geq 0.5</span> para las tres configuraciones reportadas. Si la masa está más dispersa (ninguna <span class="math inline">&gt; 0.3</span>), reportar todas con masa <span class="math inline">&gt; 0.15</span> y señalar “distribución ampliamente dispersa: Fase 3 probable”.</p>
+<p><strong>Error frecuente:</strong> reportar solo la configuración modal (“el paciente está en C-D”) sin la distribución. Esto viola C6 y hace el reporte inútil para comparabilidad longitudinal.</p>
+<p><strong>Ejemplo correcto:</strong> “C-D (0.52), C-B (0.21), C-C1 (0.14)”</p>
+<p><strong>Ejemplo incorrecto:</strong> “El paciente está en Crisálida.”</p>
+<p><strong>Señales de interpretación:</strong> - Masa <span class="math inline">&gt; 0.7</span> en una configuración: estabilidad alta en esa cuenca. - Masa distribuida con ninguna <span class="math inline">&gt; 0.4</span> en tres o más configuraciones: probable Fase 3 (régimen transicional). - Moda diferente respecto al FRCS-1 anterior con varianza decreciente: probable Fase 4 (consolidación).</p>
 <hr />
-<h3 id="campo-2-t_2-dirección-y-varianza">Campo 2 — <span
-class="math inline">T_2</span> dirección y varianza</h3>
-<p><strong>Qué observa el clínico:</strong> la dirección del movimiento
-del campo desde la evaluación anterior y la varianza del posterior.</p>
-<p><strong>Cómo lo registra:</strong> “<span
-class="math inline">T_2</span>: [hacia <span
-class="math inline">\mathfrak{C}_k</span> / estable / hacia restricción
-/ indeterminado], varianza [alta / media / baja]”</p>
-<p><strong>Criterio de calidad:</strong> la dirección se determina
-comparando la moda posterior de este encuentro con la del anterior. La
-varianza es cualitativa en esta versión — si el motor produce varianza
-cuantitativa, anotarla como numérico.</p>
-<p><strong>Error frecuente:</strong> registrar “<span
-class="math inline">T_2</span>: positivo” sin especificar dirección.
-“Positivo” no existe en el vocabulario formal — existe “hacia <span
-class="math inline">\mathfrak{C}_k</span>” o “hacia expansión de
-soporte”.</p>
-<p><strong>Ejemplo correcto:</strong> “<span
-class="math inline">T_2</span>: hacia C-G desde C-D, varianza media y
-decreciendo”</p>
-<p><strong>Ejemplo incorrecto:</strong> “<span
-class="math inline">T_2</span>: mejorando”</p>
-<p><strong>Señales de interpretación:</strong> - Varianza alta +
-dirección indeterminada: Fase 3, CE19 aplica con máxima severidad. -
-Varianza decreciente + dirección estable: Fase 4, sostener condiciones.
-- Varianza creciente + <span class="math inline">\|H_t\|</span> estable:
-Fase 1, <span class="math inline">\chi_t</span> posiblemente alto, no
-intervenir sobre <span class="math inline">D_p(t)</span>.</p>
+<h3 id="campo-2-t_2-dirección-y-varianza">Campo 2 — <span class="math inline">T_2</span> dirección y varianza</h3>
+<p><strong>Qué observa el clínico:</strong> la dirección del movimiento del campo desde la evaluación anterior y la varianza del posterior.</p>
+<p><strong>Cómo lo registra:</strong> “<span class="math inline">T_2</span>: [hacia <span class="math inline">\mathfrak{C}_k</span> / estable / hacia restricción / indeterminado], varianza [alta / media / baja]”</p>
+<p><strong>Criterio de calidad:</strong> la dirección se determina comparando la moda posterior de este encuentro con la del anterior. La varianza es cualitativa en esta versión: si el motor produce varianza cuantitativa, anotarla como numérico.</p>
+<p><strong>Error frecuente:</strong> registrar “<span class="math inline">T_2</span>: positivo” sin especificar dirección. “Positivo” no existe en el vocabulario formal: existe “hacia <span class="math inline">\mathfrak{C}_k</span>” o “hacia expansión de soporte”.</p>
+<p><strong>Ejemplo correcto:</strong> “<span class="math inline">T_2</span>: hacia C-G desde C-D, varianza media y decreciendo”</p>
+<p><strong>Ejemplo incorrecto:</strong> “<span class="math inline">T_2</span>: mejorando”</p>
+<p><strong>Señales de interpretación:</strong> - Varianza alta + dirección indeterminada: Fase 3, CE19 aplica con máxima severidad. - Varianza decreciente + dirección estable: Fase 4, sostener condiciones. - Varianza creciente + <span class="math inline">\|H_t\|</span> estable: Fase 1, <span class="math inline">\chi_t</span> posiblemente alto, no intervenir sobre <span class="math inline">D_p(t)</span>.</p>
 <hr />
-<h3 id="campo-3-diferencia-respecto-al-patrón-canónico-c7">Campo 3 —
-Diferencia respecto al patrón canónico (C7)</h3>
-<p><strong>Qué observa el clínico:</strong> en qué difiere el campo de
-esta persona del patrón canónico de la configuración que activó el
-esquema del clínico.</p>
-<p><strong>Cómo lo registra:</strong> formato libre, mínimo una oración.
-Si no activó ningún esquema, escribir “sin activación de esquema en este
-encuentro”.</p>
-<p><strong>Criterio de calidad:</strong> la diferencia debe ser
-específica — describir un parámetro (<span
-class="math inline">\Psi_t</span>, <span
-class="math inline">\varepsilon_t</span>, <span
-class="math inline">D_p(t)</span>, <span
-class="math inline">\kappa(t)</span>, <span
-class="math inline">\sigma_t</span>) que difiere del patrón canónico, no
-una impresión general.</p>
-<p><strong>Error frecuente:</strong> omitir este campo o escribir
-“similar al patrón” sin especificar en qué.</p>
-<p><strong>Ejemplo correcto:</strong> “Activa C-B (Bucle) pero sin el
-componente de <span class="math inline">R_t</span> bajo característico —
-la bidireccionalidad de <span class="math inline">\Psi_t</span> opera
-principalmente en <span class="math inline">V_t</span>-<span
-class="math inline">P_t</span>, no en <span
-class="math inline">R_t</span>-<span class="math inline">V_t</span>. El
-campo relacional está mejor preservado que en el patrón canónico.”</p>
-<p><strong>Ejemplo incorrecto:</strong> “Típica presentación de
-Bucle.”</p>
+<h3 id="campo-3-diferencia-respecto-al-patrón-canónico-c7">Campo 3 — Diferencia respecto al patrón canónico (C7)</h3>
+<p><strong>Qué observa el clínico:</strong> en qué difiere el campo de esta persona del patrón canónico de la configuración que activó el esquema del clínico.</p>
+<p><strong>Cómo lo registra:</strong> formato libre, mínimo una oración. Si no activó ningún esquema, escribir “sin activación de esquema en este encuentro”.</p>
+<p><strong>Criterio de calidad:</strong> la diferencia debe ser específica: describir un parámetro (<span class="math inline">\Psi_t</span>, <span class="math inline">\varepsilon_t</span>, <span class="math inline">D_p(t)</span>, <span class="math inline">\kappa(t)</span>, <span class="math inline">\sigma_t</span>) que difiere del patrón canónico, no una impresión general.</p>
+<p><strong>Error frecuente:</strong> omitir este campo o escribir “similar al patrón” sin especificar en qué.</p>
+<p><strong>Ejemplo correcto:</strong> “Activa C-B (Bucle) pero sin el componente de <span class="math inline">R_t</span> bajo característico: la bidireccionalidad de <span class="math inline">\Psi_t</span> opera principalmente en <span class="math inline">V_t</span>-<span class="math inline">P_t</span>, no en <span class="math inline">R_t</span>-<span class="math inline">V_t</span>. El campo relacional está mejor preservado que en el patrón canónico.”</p>
+<p><strong>Ejemplo incorrecto:</strong> “Típica presentación de Bucle.”</p>
 <hr />
-<h3 id="campo-4-posición-en-s_m">Campo 4 — Posición en <span
-class="math inline">S_m</span></h3>
-<p><strong>Qué observa el clínico:</strong> estimación cualitativa de
-<span class="math inline">D_p(t)</span> (historia acumulada) y <span
-class="math inline">\kappa(t)</span> (capacidad receptiva actual).</p>
+<h3 id="campo-4-posición-en-s_m">Campo 4 — Posición en <span class="math inline">S_m</span></h3>
+<p><strong>Qué observa el clínico:</strong> estimación cualitativa de <span class="math inline">D_p(t)</span> (historia acumulada) y <span class="math inline">\kappa(t)</span> (capacidad receptiva actual).</p>
 <p><strong>Cómo lo registra:</strong> “[R1 / R2 / R3 / R4]”</p>
 <table>
 <colgroup>
@@ -273,15 +181,13 @@ class="math inline">\kappa(t)</span> (capacidad receptiva actual).</p>
 <td>R1</td>
 <td>Bajo</td>
 <td>Alto</td>
-<td>Trabajo sobre contenido de <span class="math inline">\xi_t</span>
-posible</td>
+<td>Trabajo sobre contenido de <span class="math inline">\xi_t</span> posible</td>
 </tr>
 <tr class="even">
 <td>R2</td>
 <td>Alto</td>
 <td>Bajo</td>
-<td>Restaurar <span class="math inline">\kappa(t)</span> antes de
-cualquier otra intervención — P12 urgente</td>
+<td>Restaurar <span class="math inline">\kappa(t)</span> antes de cualquier otra intervención — P12 urgente</td>
 </tr>
 <tr class="odd">
 <td>R3</td>
@@ -293,212 +199,54 @@ cualquier otra intervención — P12 urgente</td>
 <td>R4</td>
 <td>Alto</td>
 <td>Mínimo</td>
-<td>Urgencia: restaurar <span class="math inline">\kappa(t)</span> y
-<span class="math inline">\Pi_R</span> — P12 máxima urgencia</td>
+<td>Urgencia: restaurar <span class="math inline">\kappa(t)</span> y <span class="math inline">\Pi_R</span> — P12 máxima urgencia</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Error frecuente:</strong> asumir R1 porque la persona “parece
-bien”. La posición en <span class="math inline">S_m</span> se infiere
-del historial acumulado (<span class="math inline">D_p</span>) y de la
-responsividad del campo en este encuentro (<span
-class="math inline">\kappa</span>), no del nivel de funcionamiento
-observable.</p>
+<p><strong>Error frecuente:</strong> asumir R1 porque la persona “parece bien”. La posición en <span class="math inline">S_m</span> se infiere del historial acumulado (<span class="math inline">D_p</span>) y de la responsividad del campo en este encuentro (<span class="math inline">\kappa</span>), no del nivel de funcionamiento observable.</p>
 <hr />
 <h3 id="campo-5-fase-t1-estimada">Campo 5 — Fase §T1 estimada</h3>
-<p><strong>Qué observa el clínico:</strong> síntesis de los campos
-anteriores para estimar en qué fase del proceso de transformación está
-el campo.</p>
-<p><strong>Cómo lo registra:</strong> “[Fase 1 / Fase 2 / Fase 3 / Fase
-4 / Indeterminado]”</p>
-<p><strong>Criterio de calidad:</strong> la fase estimada debe ser
-consistente con los Campos 1, 2 y 4. Si hay inconsistencia, registrar
-“Indeterminado” y anotar la tensión.</p>
-<p><strong>Implicación de intervención por fase:</strong> - Fase 1: no
-aumentar demanda; proteger <span class="math inline">\kappa(t)</span>;
-registrar señales de <span class="math inline">\chi_t</span>. - Fase 2:
-verificar <span class="math inline">\kappa(t) \geq
-\kappa_{\text{umbral}}</span> antes de actuar sobre <span
-class="math inline">D_p(t)</span>. - Fase 3: minimizar perturbaciones;
-P12 máxima urgencia; CE19 severo. - Fase 4: sostener regularidad; no
-introducir perturbaciones de alta magnitud; evaluar estable
-vs. superficial.</p>
+<p><strong>Qué observa el clínico:</strong> síntesis de los campos anteriores para estimar en qué fase del proceso de transformación está el campo.</p>
+<p><strong>Cómo lo registra:</strong> “[Fase 1 / Fase 2 / Fase 3 / Fase 4 / Indeterminado]”</p>
+<p><strong>Criterio de calidad:</strong> la fase estimada debe ser consistente con los Campos 1, 2 y 4. Si hay inconsistencia, registrar “Indeterminado” y anotar la tensión.</p>
+<p><strong>Implicación de intervención por fase:</strong> - Fase 1: no aumentar demanda; proteger <span class="math inline">\kappa(t)</span>; registrar señales de <span class="math inline">\chi_t</span>. - Fase 2: verificar <span class="math inline">\kappa(t) \geq \kappa_{\text{umbral}}</span> antes de actuar sobre <span class="math inline">D_p(t)</span>. - Fase 3: minimizar perturbaciones; P12 máxima urgencia; CE19 severo. - Fase 4: sostener regularidad; no introducir perturbaciones de alta magnitud; evaluar estable vs. superficial.</p>
 <hr />
-<h1 id="parte-iii-manual-de-consolidación-fase-4-de-t1">Parte III —
-Manual de Consolidación (Fase 4 de §T1)</h1>
-<h2 id="cómo-reconocer-consolidación">¿Cómo reconocer
-consolidación?</h2>
-<p>La Fase 4 comienza cuando la varianza del posterior empieza a
-descender desde su pico en Fase 3, y la configuración modal del nuevo
-atractor comienza a ganar masa de forma sostenida. Los criterios mínimos
-de entrada en Fase 4: - Varianza del posterior en descenso durante al
-menos dos evaluaciones consecutivas. - Una configuración con masa <span
-class="math inline">&gt; 0.5</span> por primera vez desde el inicio de
-la transición. - <span class="math inline">\kappa(t)</span> en
-recuperación (el campo responde a perturbaciones de magnitud ordinaria
-sin desorganizarse).</p>
-<p><strong>No confundir con:</strong> <span
-class="math inline">T_2</span> estable en la configuración
-<em>anterior</em> a la reorganización (eso es residencia, no
-consolidación). La Fase 4 siempre sigue a una Fase 3 documentada.</p>
-<h2 id="cómo-reconocer-consolidación-estable">¿Cómo reconocer
-consolidación estable?</h2>
-<p>Señales de que la consolidación es estable (el nuevo atractor tiene
-profundidad suficiente): - La varianza del posterior permanece baja
-durante 6–8 evaluaciones consecutivas con la nueva configuración modal.
-- Perturbaciones ordinarias de la vida (eventos de magnitud media)
-producen reorganización <em>dentro</em> de la nueva cuenca, no
-activación de cuencas latentes. - <span
-class="math inline">B_t^{(a)}</span> en descenso desde el pico de la
-Fase 2/3 — la señal somática de tensión se resuelve. - El campo conecta
-los eventos actuales con la lógica de la nueva configuración, no con la
-lógica de las configuraciones anteriores (evaluable desde la imagen de
-sí en el PIAC). - <span class="math inline">T_2</span> en <span
-class="math inline">S_m</span>: <span
-class="math inline">\kappa(t)</span> en recuperación sostenida.</p>
-<h2 id="cómo-reconocer-consolidación-superficial">¿Cómo reconocer
-consolidación superficial?</h2>
-<p>Señales de que la consolidación es superficial (<span
-class="math inline">D_p^{(\text{nuevo})}(t)</span> insuficiente para
-competir con cuencas latentes): - Varianza del posterior baja en
-promedio pero con picos episódicos que activan cuencas latentes ante
-perturbaciones de magnitud media. - <span class="math inline">T_2</span>
-con microfluctuaciones hacia las configuraciones anteriores después de
-perturbaciones. - <span class="math inline">\kappa(t)</span> cerca del
-umbral cuando hay perturbación — el campo no tiene margen. - El campo
-describe los nuevos patrones en el lenguaje de la nueva configuración
-pero responde a perturbaciones con la lógica emocional-conductual de las
-cuencas latentes (por ejemplo: narra desde C-G pero reacciona
-emocionalmente con el patrón de C-A). - Activación de cuencas latentes
-ante perturbaciones que conectan específicamente con la historia de esas
-cuencas — “los mismos temas de siempre producen el mismo efecto”.</p>
-<h2 id="cómo-reconocer-falsa-mejoría">¿Cómo reconocer falsa
-mejoría?</h2>
-<p>La falsa mejoría es el caso límite de consolidación superficial en
-que el campo parece consolidado pero <span
-class="math inline">\kappa(t)</span> está sosteniendo el campo en la
-nueva cuenca sin que <span
-class="math inline">D_p^{(\text{nuevo})}(t)</span> haya aumentado
-suficientemente: - El campo “está bien” cuando las condiciones son
-favorables pero se desorganiza rápidamente ante estrés ordinario. - No
-hay activación de cuencas latentes pero tampoco hay crecimiento de <span
-class="math inline">D_p^{(\text{nuevo})}(t)</span> — el campo visita la
-nueva cuenca sin habitarla. - La señal diferenciadora: en consolidación
-genuina (estable o superficial), el campo tiene historia en la nueva
-cuenca. En falsa mejoría, el campo está en la nueva cuenca por ausencia
-de perturbaciones, no por acumulación de historia. - Protocolo de
-verificación: introducir deliberadamente una perturbación de magnitud
-sub-umbral relacionada con la historia de las cuencas latentes
-(evocación narrativa controlada en el encuentro). Si el campo responde
-con activación de cuencas latentes, es falsa mejoría. Si responde con la
-lógica de la nueva cuenca, es consolidación genuina.</p>
-<h2 id="intervenciones-que-favorecen-la-consolidación">Intervenciones
-que favorecen la consolidación</h2>
+<h1 id="parte-iii-manual-de-consolidación-fase-4-de-t1">Parte III — Manual de Consolidación (Fase 4 de §T1)</h1>
+<h2 id="cómo-reconocer-consolidación">¿Cómo reconocer consolidación?</h2>
+<p>La Fase 4 comienza cuando la varianza del posterior empieza a descender desde su pico en Fase 3, y la configuración modal del nuevo atractor comienza a ganar masa de forma sostenida. Los criterios mínimos de entrada en Fase 4: - Varianza del posterior en descenso durante al menos dos evaluaciones consecutivas. - Una configuración con masa <span class="math inline">&gt; 0.5</span> por primera vez desde el inicio de la transición. - <span class="math inline">\kappa(t)</span> en recuperación (el campo responde a perturbaciones de magnitud ordinaria sin desorganizarse).</p>
+<p><strong>No confundir con:</strong> <span class="math inline">T_2</span> estable en la configuración <em>anterior</em> a la reorganización (eso es residencia, no consolidación). La Fase 4 siempre sigue a una Fase 3 documentada.</p>
+<h2 id="cómo-reconocer-consolidación-estable">¿Cómo reconocer consolidación estable?</h2>
+<p>Señales de que la consolidación es estable (el nuevo atractor tiene profundidad suficiente): - La varianza del posterior permanece baja durante 6–8 evaluaciones consecutivas con la nueva configuración modal. - Perturbaciones ordinarias de la vida (eventos de magnitud media) producen reorganización <em>dentro</em> de la nueva cuenca, no activación de cuencas latentes. - <span class="math inline">B_t^{(a)}</span> en descenso desde el pico de la Fase 2/3: la señal somática de tensión se resuelve. - El campo conecta los eventos actuales con la lógica de la nueva configuración, no con la lógica de las configuraciones anteriores (evaluable desde la imagen de sí en el PIAC). - <span class="math inline">T_2</span> en <span class="math inline">S_m</span>: <span class="math inline">\kappa(t)</span> en recuperación sostenida.</p>
+<h2 id="cómo-reconocer-consolidación-superficial">¿Cómo reconocer consolidación superficial?</h2>
+<p>Señales de que la consolidación es superficial (<span class="math inline">D_p^{(\text{nuevo})}(t)</span> insuficiente para competir con cuencas latentes): - Varianza del posterior baja en promedio pero con picos episódicos que activan cuencas latentes ante perturbaciones de magnitud media. - <span class="math inline">T_2</span> con microfluctuaciones hacia las configuraciones anteriores después de perturbaciones. - <span class="math inline">\kappa(t)</span> cerca del umbral cuando hay perturbación: el campo no tiene margen. - El campo describe los nuevos patrones en el lenguaje de la nueva configuración pero responde a perturbaciones con la lógica emocional-conductual de las cuencas latentes (por ejemplo: narra desde C-G pero reacciona emocionalmente con el patrón de C-A). - Activación de cuencas latentes ante perturbaciones que conectan específicamente con la historia de esas cuencas: “los mismos temas de siempre producen el mismo efecto”.</p>
+<h2 id="cómo-reconocer-falsa-mejoría">¿Cómo reconocer falsa mejoría?</h2>
+<p>La falsa mejoría es el caso límite de consolidación superficial en que el campo parece consolidado pero <span class="math inline">\kappa(t)</span> está sosteniendo el campo en la nueva cuenca sin que <span class="math inline">D_p^{(\text{nuevo})}(t)</span> haya aumentado suficientemente: - El campo “está bien” cuando las condiciones son favorables pero se desorganiza rápidamente ante estrés ordinario. - No hay activación de cuencas latentes pero tampoco hay crecimiento de <span class="math inline">D_p^{(\text{nuevo})}(t)</span>: el campo visita la nueva cuenca sin habitarla. - La señal diferenciadora: en consolidación genuina (estable o superficial), el campo tiene historia en la nueva cuenca. En falsa mejoría, el campo está en la nueva cuenca por ausencia de perturbaciones, no por acumulación de historia. - Protocolo de verificación: introducir deliberadamente una perturbación de magnitud sub-umbral relacionada con la historia de las cuencas latentes (evocación narrativa controlada en el encuentro). Si el campo responde con activación de cuencas latentes, es falsa mejoría. Si responde con la lógica de la nueva cuenca, es consolidación genuina.</p>
+<h2 id="intervenciones-que-favorecen-la-consolidación">Intervenciones que favorecen la consolidación</h2>
 <ol type="1">
-<li><p><strong>Regularidad del marco:</strong> encuentros con frecuencia
-predecible y continuidad del clínico. Esto proporciona perturbaciones
-repetidas de magnitud sub-umbral que acumulan <span
-class="math inline">D_p^{(\text{nuevo})}(t)</span> sin
-desestabilizar.</p></li>
-<li><p><strong>Protección de <span
-class="math inline">\kappa(t)</span>:</strong> durante la Fase 4, P12
-sigue aplicando en modo mantenimiento (no urgencia). Intervenciones que
-restauran <span class="math inline">\kappa(t)</span> (regulación del
-sueño, reducción de carga alostática) siguen siendo parte del
-trabajo.</p></li>
-<li><p><strong>Trabajo de <span class="math inline">\rho(t)</span>
-activo:</strong> intervenciones que modifican la función de <span
-class="math inline">D_p(t)</span> en las cuencas latentes competidoras
-reducen la probabilidad de que perturbaciones ordinarias las activen.
-Ver Parte IV.</p></li>
-<li><p><strong>Trabajo sobre imagen de sí:</strong> facilitar que el
-campo elabore una narrativa de sí mismo desde la nueva configuración —
-no desde las anteriores. El lenguaje del PIAC y §T3 son los
-instrumentos.</p></li>
-<li><p><strong>Identificación y procesamiento de las cuencas latentes
-competidoras:</strong> trabajar explícitamente sobre los “temas que
-siempre regresan” — identificarlos como cuencas latentes con historia,
-no como fracasos del proceso.</p></li>
+<li><p><strong>Regularidad del marco:</strong> encuentros con frecuencia predecible y continuidad del clínico. Esto proporciona perturbaciones repetidas de magnitud sub-umbral que acumulan <span class="math inline">D_p^{(\text{nuevo})}(t)</span> sin desestabilizar.</p></li>
+<li><p><strong>Protección de <span class="math inline">\kappa(t)</span>:</strong> durante la Fase 4, P12 sigue aplicando en modo mantenimiento (no urgencia). Intervenciones que restauran <span class="math inline">\kappa(t)</span> (regulación del sueño, reducción de carga alostática) siguen siendo parte del trabajo.</p></li>
+<li><p><strong>Trabajo de <span class="math inline">\rho(t)</span> activo:</strong> intervenciones que modifican la función de <span class="math inline">D_p(t)</span> en las cuencas latentes competidoras reducen la probabilidad de que perturbaciones ordinarias las activen. Ver Parte IV.</p></li>
+<li><p><strong>Trabajo sobre imagen de sí:</strong> facilitar que el campo elabore una narrativa de sí mismo desde la nueva configuración, no desde las anteriores. El lenguaje del PIAC y §T3 son los instrumentos.</p></li>
+<li><p><strong>Identificación y procesamiento de las cuencas latentes competidoras:</strong> trabajar explícitamente sobre los “temas que siempre regresan”: identificarlos como cuencas latentes con historia, no como fracasos del proceso.</p></li>
 </ol>
-<h2 id="intervenciones-que-debilitan-la-consolidación">Intervenciones
-que debilitan la consolidación</h2>
+<h2 id="intervenciones-que-debilitan-la-consolidación">Intervenciones que debilitan la consolidación</h2>
 <ol type="1">
-<li><p><strong>Introducir perturbaciones de alta magnitud sobre <span
-class="math inline">D_p(t)</span></strong> cuando <span
-class="math inline">D_p^{(\text{nuevo})}(t)</span> aún es bajo. El
-trabajo profundo sobre trauma (acceso a <span
-class="math inline">\sigma_t</span>) durante Fase 4 temprana puede
-desestabilizar la nueva cuenca antes de que tenga suficiente
-historia.</p></li>
-<li><p><strong>Reducir la frecuencia de encuentros
-prematuramente</strong> — antes de que la varianza del posterior sea
-baja y estable por al menos 6 evaluaciones.</p></li>
-<li><p><strong>Teleologizar la consolidación:</strong> decirle a la
-persona “ya llegaste” o “esto es lo que eres ahora” viola §T3 y puede
-producir el mismo efecto que una perturbación de alta magnitud sobre el
-campo en Fase 4 temprana.</p></li>
-<li><p><strong>No documentar las cuencas latentes activas:</strong> si
-el clínico no identifica qué cuencas latentes están compitiendo con la
-nueva, no puede diseñar intervenciones de <span
-class="math inline">\rho(t)</span>.</p></li>
+<li><p><strong>Introducir perturbaciones de alta magnitud sobre <span class="math inline">D_p(t)</span></strong> cuando <span class="math inline">D_p^{(\text{nuevo})}(t)</span> aún es bajo. El trabajo profundo sobre trauma (acceso a <span class="math inline">\sigma_t</span>) durante Fase 4 temprana puede desestabilizar la nueva cuenca antes de que tenga suficiente historia.</p></li>
+<li><p><strong>Reducir la frecuencia de encuentros prematuramente</strong>, antes de que la varianza del posterior sea baja y estable por al menos 6 evaluaciones.</p></li>
+<li><p><strong>Teleologizar la consolidación:</strong> decirle a la persona “ya llegaste” o “esto es lo que eres ahora” viola §T3 y puede producir el mismo efecto que una perturbación de alta magnitud sobre el campo en Fase 4 temprana.</p></li>
+<li><p><strong>No documentar las cuencas latentes activas:</strong> si el clínico no identifica qué cuencas latentes están compitiendo con la nueva, no puede diseñar intervenciones de <span class="math inline">\rho(t)</span>.</p></li>
 </ol>
-<h2 id="indicadores-longitudinales-de-seguimiento-en-fase-4">Indicadores
-longitudinales de seguimiento en Fase 4</h2>
-<p>En el FRCS-1 de cada encuentro durante Fase 4 registrar: - Campo 1:
-¿la configuración modal gana masa respecto a la evaluación anterior? -
-Campo 2: ¿la varianza del posterior sigue decreciendo? - Campo 5: ¿hubo
-activación de cuencas latentes en los 15 días anteriores? Describir
-perturbación y respuesta del campo. - Nota adicional (Fase 4
-únicamente): “Cuencas latentes activas en este periodo: [listar]. Señal
-de consolidación estable / superficial: [especificar].”</p>
+<h2 id="indicadores-longitudinales-de-seguimiento-en-fase-4">Indicadores longitudinales de seguimiento en Fase 4</h2>
+<p>En el FRCS-1 de cada encuentro durante Fase 4 registrar: - Campo 1: ¿la configuración modal gana masa respecto a la evaluación anterior? - Campo 2: ¿la varianza del posterior sigue decreciendo? - Campo 5: ¿hubo activación de cuencas latentes en los 15 días anteriores? Describir perturbación y respuesta del campo. - Nota adicional (Fase 4 únicamente): “Cuencas latentes activas en este periodo: [listar]. Señal de consolidación estable / superficial: [especificar].”</p>
 <hr />
-<h1 id="parte-iv-manual-operacional-de-rhot">Parte IV — Manual
-Operacional de <span class="math inline">\rho(t)</span></h1>
-<h2 id="cuándo-sospechar-resignificación-activa">¿Cuándo sospechar
-resignificación activa?</h2>
-<p>La resignificación (<span class="math inline">\rho(t)</span> activo)
-debe sospecharse cuando: - La persona describe los <em>mismos eventos de
-la historia</em> de forma cualitativamente distinta — porque la función
-que esos hechos tienen en su campo es diferente, no porque hayan
-cambiado los hechos. - Las cuencas latentes que antes se activaban ante
-perturbaciones tipo X ya no se activan con la misma frecuencia o
-intensidad, aunque la magnitud de las perturbaciones sea la misma. - El
-campo mantiene la nueva configuración modal ante perturbaciones que
-conectan con la historia de cuencas latentes — señal de que <span
-class="math inline">\rho(t) \cdot D_p(t)</span> en esas cuencas ha
-disminuido. - El PIAC produce imagen de sí con nueva coherencia
-narrativa sobre la historia previa — el campo explica su pasado desde la
-lógica de la nueva cuenca, no desde la lógica de las cuencas
-latentes.</p>
-<h2 id="cuándo-sospechar-restauración-de-kappat">¿Cuándo sospechar
-restauración de <span class="math inline">\kappa(t)</span>?</h2>
-<p>La restauración de <span class="math inline">\kappa(t)</span> debe
-sospecharse cuando: - El campo responde más fácilmente a perturbaciones
-de magnitud media sin desorganizarse. - La varianza del posterior es más
-baja y el campo es más estable en general — independientemente de qué
-temas se trabajen. - Los indicadores somáticos mejoran: sueño más
-estable, regulación autonómica mejorada, <span
-class="math inline">B_t^{(a)}</span> en descenso. - El campo puede
-“recibir” trabajo sobre <span class="math inline">D_p(t)</span> o <span
-class="math inline">\sigma_t</span> sin desorganizarse — señal de que
-<span class="math inline">\kappa(t) \geq
-\kappa_{\text{umbral}}</span>.</p>
-<h2 id="cuándo-ocurren-simultáneamente">¿Cuándo ocurren
-simultáneamente?</h2>
-<p><span class="math inline">\kappa(t)</span> restaurado y <span
-class="math inline">\rho(t)</span> activo son condiciones independientes
-que pueden coexistir. La señal de su co-ocurrencia: - El campo es más
-estable en general (<span class="math inline">\kappa(t)</span> alto) Y
-las cuencas latentes específicas ya no se activan ante sus
-perturbaciones características (<span class="math inline">\rho(t)</span>
-activo). - La consolidación Fase 4 es <em>estable</em> (no superficial)
-— esto requiere ambos: <span class="math inline">\kappa(t)</span> para
-la capacidad de mantener la nueva cuenca, y <span
-class="math inline">\rho(t)</span> para reducir la competencia de las
-cuencas latentes.</p>
-<h2 id="tabla-diferencial-kappat-vs.-rhot">Tabla diferencial <span
-class="math inline">\kappa(t)</span> vs. <span
-class="math inline">\rho(t)</span></h2>
+<h1 id="parte-iv-manual-operacional-de-rhot">Parte IV — Manual Operacional de <span class="math inline">\rho(t)</span></h1>
+<h2 id="cuándo-sospechar-resignificación-activa">¿Cuándo sospechar resignificación activa?</h2>
+<p>La resignificación (<span class="math inline">\rho(t)</span> activo) debe sospecharse cuando: - La persona describe los <em>mismos eventos de la historia</em> de forma cualitativamente distinta: porque la función que esos hechos tienen en su campo es diferente, no porque hayan cambiado los hechos. - Las cuencas latentes que antes se activaban ante perturbaciones tipo X ya no se activan con la misma frecuencia o intensidad, aunque la magnitud de las perturbaciones sea la misma. - El campo mantiene la nueva configuración modal ante perturbaciones que conectan con la historia de cuencas latentes: señal de que <span class="math inline">\rho(t) \cdot D_p(t)</span> en esas cuencas ha disminuido. - El PIAC produce imagen de sí con nueva coherencia narrativa sobre la historia previa: el campo explica su pasado desde la lógica de la nueva cuenca, no desde la lógica de las cuencas latentes.</p>
+<h2 id="cuándo-sospechar-restauración-de-kappat">¿Cuándo sospechar restauración de <span class="math inline">\kappa(t)</span>?</h2>
+<p>La restauración de <span class="math inline">\kappa(t)</span> debe sospecharse cuando: - El campo responde más fácilmente a perturbaciones de magnitud media sin desorganizarse. - La varianza del posterior es más baja y el campo es más estable en general, independientemente de qué temas se trabajen. - Los indicadores somáticos mejoran: sueño más estable, regulación autonómica mejorada, <span class="math inline">B_t^{(a)}</span> en descenso. - El campo puede “recibir” trabajo sobre <span class="math inline">D_p(t)</span> o <span class="math inline">\sigma_t</span> sin desorganizarse: señal de que <span class="math inline">\kappa(t) \geq \kappa_{\text{umbral}}</span>.</p>
+<h2 id="cuándo-ocurren-simultáneamente">¿Cuándo ocurren simultáneamente?</h2>
+<p><span class="math inline">\kappa(t)</span> restaurado y <span class="math inline">\rho(t)</span> activo son condiciones independientes que pueden coexistir. La señal de su co-ocurrencia: - El campo es más estable en general (<span class="math inline">\kappa(t)</span> alto) Y las cuencas latentes específicas ya no se activan ante sus perturbaciones características (<span class="math inline">\rho(t)</span> activo). - La consolidación Fase 4 es <em>estable</em> (no superficial), esto requiere ambos: <span class="math inline">\kappa(t)</span> para la capacidad de mantener la nueva cuenca, y <span class="math inline">\rho(t)</span> para reducir la competencia de las cuencas latentes.</p>
+<h2 id="tabla-diferencial-kappat-vs.-rhot">Tabla diferencial <span class="math inline">\kappa(t)</span> vs. <span class="math inline">\rho(t)</span></h2>
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -525,15 +273,13 @@ class="math inline">\rho(t)</span></h2>
 </tr>
 <tr class="odd">
 <td>Intervenciones principales</td>
-<td>Farmacoterapia, regulación del sueño, carga alostática, <span
-class="math inline">\Upsilon_{US}</span></td>
+<td>Farmacoterapia, regulación del sueño, carga alostática, <span class="math inline">\Upsilon_{US}</span></td>
 <td>Psicoterapia psicodinámica, EMDR, narrativa, trabajo episódico</td>
 </tr>
 <tr class="even">
 <td>Observable en <span class="math inline">T_2</span></td>
 <td>Varianza↓ general; campo más responsivo</td>
-<td>Cuencas latentes menos activadas ante perturbaciones
-específicas</td>
+<td>Cuencas latentes menos activadas ante perturbaciones específicas</td>
 </tr>
 <tr class="odd">
 <td>Observable en imagen de sí</td>
@@ -542,119 +288,49 @@ específicas</td>
 </tr>
 <tr class="even">
 <td>Reversibilidad</td>
-<td><span class="math inline">\kappa(t)</span> puede caer si carga
-alostática aumenta</td>
-<td><span class="math inline">\rho(t)</span> más estable — no se
-revierte fácilmente</td>
+<td><span class="math inline">\kappa(t)</span> puede caer si carga alostática aumenta</td>
+<td><span class="math inline">\rho(t)</span> más estable — no se revierte fácilmente</td>
 </tr>
 <tr class="odd">
 <td>Posición en S_m</td>
 <td>R2 → R1 o R4 → R3</td>
-<td>No cambia la posición pero cambia la velocidad de activación de
-cuencas latentes</td>
+<td>No cambia la posición pero cambia la velocidad de activación de cuencas latentes</td>
 </tr>
 </tbody>
 </table>
-<h2 id="cómo-documentar-en-el-frcs-1">¿Cómo documentar en el
-FRCS-1?</h2>
-<p>En el Campo 3 (diferencia respecto al patrón canónico) añadir, cuando
-aplique:</p>
-<p>“<em>Nota <span class="math inline">\rho(t)</span>:</em> [activo / no
-activo / indeterminado]. Si activo: cuencas latentes trabajadas y señal
-observada. Si indeterminado: hipótesis pendiente de confirmación
-longitudinal.”</p>
-<p>La confirmación de <span class="math inline">\rho(t)</span> activo
-requiere al menos dos evaluaciones consecutivas en que las cuencas
-latentes específicas no se activen ante sus perturbaciones
-características.</p>
+<h2 id="cómo-documentar-en-el-frcs-1">¿Cómo documentar en el FRCS-1?</h2>
+<p>En el Campo 3 (diferencia respecto al patrón canónico) añadir, cuando aplique:</p>
+<p>“<em>Nota <span class="math inline">\rho(t)</span>:</em> [activo / no activo / indeterminado]. Si activo: cuencas latentes trabajadas y señal observada. Si indeterminado: hipótesis pendiente de confirmación longitudinal.”</p>
+<p>La confirmación de <span class="math inline">\rho(t)</span> activo requiere al menos dos evaluaciones consecutivas en que las cuencas latentes específicas no se activen ante sus perturbaciones características.</p>
 <hr />
-<h1 id="parte-v-protocolo-de-entrenamiento-de-clínicos">Parte V —
-Protocolo de Entrenamiento de Clínicos</h1>
-<h2 id="qué-debe-aprender-un-clínico-antes-del-piloto">Qué debe aprender
-un clínico antes del piloto</h2>
-<p><strong>Módulo 1 — Fundamentos (obligatorio, no evaluable en
-tiempo):</strong> - Core 1.2 completo, con énfasis en I.1–I.12 (capa
-ontológica) y IV.1–IV.3 (capa clínica). - Los diez axiomas A1–A10 y sus
-consecuencias clínicas. - P12: la secuencia de intervención y su
-fundamento formal. - El sistema canónico v1.2: las 14 configuraciones,
-sus ejes de organización, y sus diferencias entre sí. - CE19: los
-límites del motor bayesiano y las fuentes de acceso no mediado.</p>
-<p><strong>Módulo 2 — PIAC (obligatorio, evaluable):</strong> - Lectura
-del campo: los cinco dominios y los cuatro moduladores. - Construcción
-del prior bayesiano desde la historia clínica. - Criterio de distinción
-resonancia/proyección (CE7, C4). - Protocolo post-encuentro: las tres
-observaciones y el criterio de validación longitudinal.</p>
-<p><strong>Módulo 3 — Motor PyMC y FRCS-1 (obligatorio,
-evaluable):</strong> - Uso del motor PyMC v0.1.1: carga de datos,
-actualización del posterior, lectura del output. - FRCS-1: completar los
-cinco campos con precisión. Ver Parte II de este documento. - Errores
-comunes del FRCS-1: ver ejemplos incorrectos en cada campo.</p>
-<p><strong>Módulo 4 — Clínica procesual (obligatorio,
-evaluable):</strong> - §T1: detección de las cuatro fases mediante
-indicadores observacionales (tabla §VIII.5 del Matemático). - Manual de
-consolidación (Parte III de este documento). - Manual de <span
-class="math inline">\rho(t)</span> (Parte IV de este documento). - §T3
-operacional: los seis principios del lenguaje clínico procesual (Núcleo
-Clínico).</p>
-<h2 id="errores-inaceptables-producen-datos-no-utilizables">Errores
-inaceptables (producen datos no utilizables)</h2>
+<h1 id="parte-v-protocolo-de-entrenamiento-de-clínicos">Parte V — Protocolo de Entrenamiento de Clínicos</h1>
+<h2 id="qué-debe-aprender-un-clínico-antes-del-piloto">Qué debe aprender un clínico antes del piloto</h2>
+<p><strong>Módulo 1 — Fundamentos (obligatorio, no evaluable en tiempo):</strong> - Core 1.2 completo, con énfasis en I.1–I.12 (capa ontológica) y IV.1–IV.3 (capa clínica). - Los diez axiomas A1–A10 y sus consecuencias clínicas. - P12: la secuencia de intervención y su fundamento formal. - El sistema canónico v1.2: las 14 configuraciones, sus ejes de organización, y sus diferencias entre sí. - CE19: los límites del motor bayesiano y las fuentes de acceso no mediado.</p>
+<p><strong>Módulo 2 — PIAC (obligatorio, evaluable):</strong> - Lectura del campo: los cinco dominios y los cuatro moduladores. - Construcción del prior bayesiano desde la historia clínica. - Criterio de distinción resonancia/proyección (CE7, C4). - Protocolo post-encuentro: las tres observaciones y el criterio de validación longitudinal.</p>
+<p><strong>Módulo 3 — Motor PyMC y FRCS-1 (obligatorio, evaluable):</strong> - Uso del motor PyMC v0.1.1: carga de datos, actualización del posterior, lectura del output. - FRCS-1: completar los cinco campos con precisión. Ver Parte II de este documento. - Errores comunes del FRCS-1: ver ejemplos incorrectos en cada campo.</p>
+<p><strong>Módulo 4 — Clínica procesual (obligatorio, evaluable):</strong> - §T1: detección de las cuatro fases mediante indicadores observacionales (tabla §VIII.5 del Matemático). - Manual de consolidación (Parte III de este documento). - Manual de <span class="math inline">\rho(t)</span> (Parte IV de este documento). - §T3 operacional: los seis principios del lenguaje clínico procesual (Núcleo Clínico).</p>
+<h2 id="errores-inaceptables-producen-datos-no-utilizables">Errores inaceptables (producen datos no utilizables)</h2>
 <ol type="1">
-<li>Reportar configuración modal sin distribución en Campo 1 del
-FRCS-1.</li>
-<li>Intervenir sobre <span class="math inline">D_p(t)</span> o <span
-class="math inline">\sigma_t</span> cuando el campo está en R2 o R4 sin
-restauración previa de <span class="math inline">\kappa(t)</span> —
-violación de P12.</li>
-<li>Comunicar la configuración a la persona como identidad (“usted es
-una Deriva”) en lugar de como descripción procesual — violación de §T3 y
-C6.</li>
+<li>Reportar configuración modal sin distribución en Campo 1 del FRCS-1.</li>
+<li>Intervenir sobre <span class="math inline">D_p(t)</span> o <span class="math inline">\sigma_t</span> cuando el campo está en R2 o R4 sin restauración previa de <span class="math inline">\kappa(t)</span>: violación de P12.</li>
+<li>Comunicar la configuración a la persona como identidad (“usted es una Deriva”) en lugar de como descripción procesual: violación de §T3 y C6.</li>
 <li>Actualizar el motor PyMC con datos de un FRCS-1 incompleto.</li>
 <li>No documentar la fase §T1 estimada en Campo 5.</li>
 </ol>
-<h2
-id="errores-esperables-requieren-calibración-no-descalifican">Errores
-esperables (requieren calibración, no descalifican)</h2>
+<h2 id="errores-esperables-requieren-calibración-no-descalifican">Errores esperables (requieren calibración, no descalifican)</h2>
 <ol type="1">
-<li>Incertidumbre inicial sobre qué cuenta como “perturbación ordinaria”
-vs. “perturbación de alta magnitud” — calibrable con supervisión.</li>
-<li>Confusión entre <span class="math inline">\kappa(t)</span> bajo y
-<span class="math inline">D_p(t)</span> alto como razones distintas para
-no intervenir sobre memoria constitutiva — calibrable con práctica.</li>
-<li>Tendencia a usar nombres de configuraciones en lenguaje teleológico
-— corregible con revisión de FRCS-1.</li>
-<li>Dificultad para distinguir Fase 1 (silenciosa) de ausencia de
-proceso — el indicador clave es la varianza del posterior creciente con
-<span class="math inline">H_t</span> estable.</li>
+<li>Incertidumbre inicial sobre qué cuenta como “perturbación ordinaria” vs. “perturbación de alta magnitud”: calibrable con supervisión.</li>
+<li>Confusión entre <span class="math inline">\kappa(t)</span> bajo y <span class="math inline">D_p(t)</span> alto como razones distintas para no intervenir sobre memoria constitutiva, calibrable con práctica.</li>
+<li>Tendencia a usar nombres de configuraciones en lenguaje teleológico, corregible con revisión de FRCS-1.</li>
+<li>Dificultad para distinguir Fase 1 (silenciosa) de ausencia de proceso: el indicador clave es la varianza del posterior creciente con <span class="math inline">H_t</span> estable.</li>
 </ol>
-<h2 id="ejercicios-de-calibración-inter-evaluador">Ejercicios de
-calibración inter-evaluador</h2>
-<p><strong>Ejercicio 1 — Calibración FRCS-1:</strong> presentar a dos
-clínicos la misma transcripción de un encuentro clínico (sin el output
-del motor). Comparar sus FRCS-1 campo a campo. Concordancia mínima
-aceptable: configuración modal en ±1 configuración adyacente; dirección
-de <span class="math inline">T_2</span> idéntica; posición en <span
-class="math inline">S_m</span> idéntica o en región adyacente.</p>
-<p><strong>Ejercicio 2 — Calibración de fases §T1:</strong> presentar
-una serie de cinco FRCS-1 consecutivos de un caso (con output del
-motor). Los clínicos clasifican cada evaluación en la fase §T1.
-Concordancia mínima: 4 de 5 evaluaciones en la misma fase o fases
-adyacentes.</p>
-<p><strong>Ejercicio 3 — Calibración de <span
-class="math inline">\rho(t)</span> vs. <span
-class="math inline">\kappa(t)</span>:</strong> presentar dos viñetas
-clínicas — una con señales principalmente de <span
-class="math inline">\kappa(t)</span> restaurado y otra con señales
-principalmente de <span class="math inline">\rho(t)</span> activo. Los
-clínicos identifican cuál es cuál y explican los observables.
-Concordancia esperada: <span class="math inline">&gt; 80\%</span> en la
-clasificación principal.</p>
-<p><strong>Umbral de habilitación:</strong> completar los tres
-ejercicios con concordancia satisfactoria + supervisión de tres casos
-piloto completos (primer contacto → Fase 4 o cierre) con feedback del
-supervisor formado.</p>
+<h2 id="ejercicios-de-calibración-inter-evaluador">Ejercicios de calibración inter-evaluador</h2>
+<p><strong>Ejercicio 1 — Calibración FRCS-1:</strong> presentar a dos clínicos la misma transcripción de un encuentro clínico (sin el output del motor). Comparar sus FRCS-1 campo a campo. Concordancia mínima aceptable: configuración modal en ±1 configuración adyacente; dirección de <span class="math inline">T_2</span> idéntica; posición en <span class="math inline">S_m</span> idéntica o en región adyacente.</p>
+<p><strong>Ejercicio 2 — Calibración de fases §T1:</strong> presentar una serie de cinco FRCS-1 consecutivos de un caso (con output del motor). Los clínicos clasifican cada evaluación en la fase §T1. Concordancia mínima: 4 de 5 evaluaciones en la misma fase o fases adyacentes.</p>
+<p><strong>Ejercicio 3 — Calibración de <span class="math inline">\rho(t)</span> vs. <span class="math inline">\kappa(t)</span>:</strong> presentar dos viñetas clínicas — una con señales principalmente de <span class="math inline">\kappa(t)</span> restaurado y otra con señales principalmente de <span class="math inline">\rho(t)</span> activo. Los clínicos identifican cuál es cuál y explican los observables. Concordancia esperada: <span class="math inline">&gt; 80\%</span> en la clasificación principal.</p>
+<p><strong>Umbral de habilitación:</strong> completar los tres ejercicios con concordancia satisfactoria + supervisión de tres casos piloto completos (primer contacto → Fase 4 o cierre) con feedback del supervisor formado.</p>
 <hr />
-<h1 id="parte-vi-plan-de-captura-de-datos-del-piloto">Parte VI — Plan de
-Captura de Datos del Piloto</h1>
+<h1 id="parte-vi-plan-de-captura-de-datos-del-piloto">Parte VI — Plan de Captura de Datos del Piloto</h1>
 <h2 id="qué-datos-se-recogerán">Qué datos se recogerán</h2>
 <table>
 <colgroup>
@@ -679,24 +355,19 @@ Captura de Datos del Piloto</h1>
 <td>G5, G6, G10, G11, G12</td>
 </tr>
 <tr class="even">
-<td>Perfil sintrópico completo (<span class="math inline">H_t</span>,
-<span class="math inline">M</span>, <span
-class="math inline">\varepsilon_t</span>, <span
-class="math inline">\Psi_t</span>)</td>
+<td>Perfil sintrópico completo (<span class="math inline">H_t</span>, <span class="math inline">M</span>, <span class="math inline">\varepsilon_t</span>, <span class="math inline">\Psi_t</span>)</td>
 <td>PIAC</td>
 <td>Por encuentro</td>
 <td>G1, G2, G3a, G3b, G8</td>
 </tr>
 <tr class="odd">
-<td>Posterior <span class="math inline">P(\xi_t \mid
-\mathcal{O}(t))</span></td>
+<td>Posterior <span class="math inline">P(\xi_t \mid \mathcal{O}(t))</span></td>
 <td>Motor PyMC</td>
 <td>Por encuentro</td>
 <td>G2, G7, G11</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">T_{\text{temporal}}</span> — señal del
-sensor</td>
+<td><span class="math inline">T_{\text{temporal}}</span> — señal del sensor</td>
 <td>Sensor semanal</td>
 <td>Semanal</td>
 <td>G8, G11, G19, G24</td>
@@ -708,8 +379,7 @@ sensor</td>
 <td>G10, G18</td>
 </tr>
 <tr class="even">
-<td>Señales de <span class="math inline">\rho(t)</span> vs. <span
-class="math inline">\kappa(t)</span></td>
+<td>Señales de <span class="math inline">\rho(t)</span> vs. <span class="math inline">\kappa(t)</span></td>
 <td>Campo 3 FRCS-1 (nota <span class="math inline">\rho(t)</span>)</td>
 <td>Por encuentro</td>
 <td>G18</td>
@@ -740,75 +410,42 @@ class="math inline">\kappa(t)</span></td>
 </tr>
 <tr class="odd">
 <td><strong>G26 — Modelo simplificado</strong></td>
-<td><strong>Regresión bayesiana longitudinal estándar sobre <span
-class="math inline">H_t</span> (sin arquitectura
-Syntropía)</strong></td>
+<td><strong>Regresión bayesiana longitudinal estándar sobre <span class="math inline">H_t</span> (sin arquitectura Syntropía)</strong></td>
 <td><strong>Cierre del primer año</strong></td>
 <td><strong>G26 — análisis obligatorio</strong></td>
 </tr>
 <tr class="even">
 <td><strong>G10 — Análisis de cluster latente</strong></td>
-<td><strong>k-modes + análisis de silueta sobre perfiles <span
-class="math inline">H_t + M + \xi_t</span> completos</strong></td>
-<td><strong>Primer año (señal mínima con <span class="math inline">N
-\geq 100</span>)</strong></td>
+<td><strong>k-modes + análisis de silueta sobre perfiles <span class="math inline">H_t + M + \xi_t</span> completos</strong></td>
+<td><strong>Primer año (señal mínima con <span class="math inline">N \geq 100</span>)</strong></td>
 <td><strong>G10 — prioridad crítica</strong></td>
 </tr>
 </tbody>
 </table>
-<h2 id="qué-preguntas-podrán-responderse-con-el-piloto">Qué preguntas
-podrán responderse con el piloto</h2>
+<h2 id="qué-preguntas-podrán-responderse-con-el-piloto">Qué preguntas podrán responderse con el piloto</h2>
 <ul>
-<li>G5: ¿el protocolo adaptativo reduce varianza del posterior más
-rápido que secuencia fija?</li>
-<li>G6: ¿<span class="math inline">T_2</span> predice resultado clínico
-a 6 meses mejor que <span class="math inline">\|H_t\|</span>?</li>
-<li>G10: primeros datos para análisis de cluster latente (requiere <span
-class="math inline">N \geq 100</span> como mínimo para señal).</li>
-<li>G11: ¿el aparato observacional produce señales de alerta temprana de
-transición?</li>
-<li>G12: ¿la resonancia clínica produce representaciones
-contrastablemente distintas de la proyección?</li>
-<li>G18: ¿<span class="math inline">\rho(t)</span> es empíricamente
-distinguible de <span class="math inline">\kappa(t)</span>?</li>
+<li>G5: ¿el protocolo adaptativo reduce varianza del posterior más rápido que secuencia fija?</li>
+<li>G6: ¿<span class="math inline">T_2</span> predice resultado clínico a 6 meses mejor que <span class="math inline">\|H_t\|</span>?</li>
+<li>G10: primeros datos para análisis de cluster latente (requiere <span class="math inline">N \geq 100</span> como mínimo para señal).</li>
+<li>G11: ¿el aparato observacional produce señales de alerta temprana de transición?</li>
+<li>G12: ¿la resonancia clínica produce representaciones contrastablemente distintas de la proyección?</li>
+<li>G18: ¿<span class="math inline">\rho(t)</span> es empíricamente distinguible de <span class="math inline">\kappa(t)</span>?</li>
 <li>G19: primeros datos sobre propiedades del régimen transicional.</li>
-<li>G25: ¿el campo del clínico covaría con la reorganización de la
-persona?</li>
-<li><strong>G26 (análisis obligatorio):</strong> ¿el modelo completo de
-Syntropía predice mejor que un modelo longitudinal bayesiano estándar
-sin la arquitectura ontológica? Responder esta pregunta es condición
-necesaria para justificar la complejidad del programa frente a
-alternativas más parsimoniosas.</li>
+<li>G25: ¿el campo del clínico covaría con la reorganización de la persona?</li>
+<li><strong>G26 (análisis obligatorio):</strong> ¿el modelo completo de Syntropía predice mejor que un modelo longitudinal bayesiano estándar sin la arquitectura ontológica? Responder esta pregunta es condición necesaria para justificar la complejidad del programa frente a alternativas más parsimoniosas.</li>
 </ul>
-<h2 id="qué-preguntas-seguirán-abiertas-después-del-piloto">Qué
-preguntas seguirán abiertas después del piloto</h2>
-<p>G2 (tensor métrico <span class="math inline">g_t</span>) requiere
-<span class="math inline">N \geq 150</span> con series densas para
-calibración. G20 (premetrica <span
-class="math inline">d_{\text{proc}}</span>) depende de G2. G21
-(naturaleza <span class="math inline">M</span>↔︎<span
-class="math inline">\Omega_t^{(p)}</span>) requiere diseño específico
-con intervenciones controladas sobre <span class="math inline">M</span>.
-G24 (tiempo interno <span class="math inline">\tau_t</span>) requiere
-PEA1 resuelta. G9 y G23 requieren submuestra con epigenómica (estimada
-<span class="math inline">N \geq 80</span>).</p>
+<h2 id="qué-preguntas-seguirán-abiertas-después-del-piloto">Qué preguntas seguirán abiertas después del piloto</h2>
+<p>G2 (tensor métrico <span class="math inline">g_t</span>) requiere <span class="math inline">N \geq 150</span> con series densas para calibración. G20 (premetrica <span class="math inline">d_{\text{proc}}</span>) depende de G2. G21 (naturaleza <span class="math inline">M</span>↔︎<span class="math inline">\Omega_t^{(p)}</span>) requiere diseño específico con intervenciones controladas sobre <span class="math inline">M</span>. G24 (tiempo interno <span class="math inline">\tau_t</span>) requiere PEA1 resuelta. G9 y G23 requieren submuestra con epigenómica (estimada <span class="math inline">N \geq 80</span>).</p>
 <hr />
-<h1 id="parte-vii-reglas-de-congelamiento-arquitectónico">Parte VII —
-Reglas de Congelamiento Arquitectónico</h1>
-<h2 id="qué-puede-modificarse-durante-el-primer-año-del-piloto">Qué
-puede modificarse durante el primer año del piloto</h2>
+<h1 id="parte-vii-reglas-de-congelamiento-arquitectónico">Parte VII — Reglas de Congelamiento Arquitectónico</h1>
+<h2 id="qué-puede-modificarse-durante-el-primer-año-del-piloto">Qué puede modificarse durante el primer año del piloto</h2>
 <ul>
-<li>Procedimientos operacionales (este documento): se pueden actualizar
-con versiones menores sin afectar los núcleos canónicos.</li>
-<li>Motor PyMC: actualizaciones de implementación computacional que no
-cambien la semántica del modelo.</li>
-<li>FRCS-1: ajustes de formato si la práctica revela inconsistencias —
-requieren aprobación del supervisor metodológico.</li>
-<li>Changelogs y depends_on de los núcleos canónicos si hay correcciones
-de referencias.</li>
+<li>Procedimientos operacionales (este documento): se pueden actualizar con versiones menores sin afectar los núcleos canónicos.</li>
+<li>Motor PyMC: actualizaciones de implementación computacional que no cambien la semántica del modelo.</li>
+<li>FRCS-1: ajustes de formato si la práctica revela inconsistencias, requieren aprobación del supervisor metodológico.</li>
+<li>Changelogs y depends_on de los núcleos canónicos si hay correcciones de referencias.</li>
 </ul>
-<h2 id="qué-no-puede-modificarse-durante-el-primer-año-del-piloto">Qué
-no puede modificarse durante el primer año del piloto</h2>
+<h2 id="qué-no-puede-modificarse-durante-el-primer-año-del-piloto">Qué no puede modificarse durante el primer año del piloto</h2>
 <ul>
 <li>A1–A10 (axiomas del Núcleo Ontológico).</li>
 <li>CE1–CE19 (compromisos epistemológicos).</li>
@@ -817,132 +454,59 @@ no puede modificarse durante el primer año del piloto</h2>
 <li>El sistema canónico v1.2 de 14 configuraciones.</li>
 <li>FRCS-1 en sus cinco campos estructurales.</li>
 </ul>
-<h2 id="qué-evidencia-justificaría-revisar-una-hipótesis-auxiliar">¿Qué
-evidencia justificaría revisar una hipótesis auxiliar?</h2>
-<p>Una hipótesis (H-NOV, H-COMP, H-TRANS, H-TRANS-F, H-POT, H-TEMPO)
-requiere revisión cuando: - Los datos del piloto refutan
-sistemáticamente su predicción específica en al menos <span
-class="math inline">N = 30</span> trayectorias con diseño apropiado. -
-La refutación se replica en al menos dos clínicos independientes. - La
-alternativa propuesta es más consistente con los axiomas A1–A10 que la
-hipótesis original.</p>
-<p>Procedimiento: documentar la refutación en el FRCS-1 y en un reporte
-de caso metodológico. Presentar al supervisor metodológico. Revisión en
-reunión del equipo piloto. Cambio requiere aprobación explícita y nueva
-versión del núcleo afectado.</p>
-<h2 id="qué-evidencia-justificaría-revisar-un-axioma">¿Qué evidencia
-justificaría revisar un axioma?</h2>
-<p>La revisión de un axioma requiere un estándar mucho más alto: - Una
-predicción derivada directamente del axioma (no solo de hipótesis
-auxiliares) es refutada sistemáticamente. - La refutación no puede
-explicarse por deficiencia del instrumento, error de implementación, o
-limitación de la aproximación matemática. - No existe ninguna hipótesis
-auxiliar revisable que pueda absorber la refutación sin modificar el
-axioma. - La alternativa propuesta preserva todos los demás compromisos
-del modelo y produce predicciones más precisas.</p>
-<p>Procedimiento: requiere sesión específica del equipo de
-investigación, documentación completa, y revisión por el autor. El
-axioma no se revisa “durante” el piloto — se documenta la tensión y se
-revisa al cierre del piloto.</p>
-<h2
-id="qué-evidencia-es-insuficiente-para-justificar-cualquier-revisión">¿Qué
-evidencia es insuficiente para justificar cualquier revisión?</h2>
+<h2 id="qué-evidencia-justificaría-revisar-una-hipótesis-auxiliar">¿Qué evidencia justificaría revisar una hipótesis auxiliar?</h2>
+<p>Una hipótesis (H-NOV, H-COMP, H-TRANS, H-TRANS-F, H-POT, H-TEMPO) requiere revisión cuando: - Los datos del piloto refutan sistemáticamente su predicción específica en al menos <span class="math inline">N = 30</span> trayectorias con diseño apropiado. - La refutación se replica en al menos dos clínicos independientes. - La alternativa propuesta es más consistente con los axiomas A1–A10 que la hipótesis original.</p>
+<p>Procedimiento: documentar la refutación en el FRCS-1 y en un reporte de caso metodológico. Presentar al supervisor metodológico. Revisión en reunión del equipo piloto. Cambio requiere aprobación explícita y nueva versión del núcleo afectado.</p>
+<h2 id="qué-evidencia-justificaría-revisar-un-axioma">¿Qué evidencia justificaría revisar un axioma?</h2>
+<p>La revisión de un axioma requiere un estándar mucho más alto: - Una predicción derivada directamente del axioma (no solo de hipótesis auxiliares) es refutada sistemáticamente. - La refutación no puede explicarse por deficiencia del instrumento, error de implementación, o limitación de la aproximación matemática. - No existe ninguna hipótesis auxiliar revisable que pueda absorber la refutación sin modificar el axioma. - La alternativa propuesta preserva todos los demás compromisos del modelo y produce predicciones más precisas.</p>
+<p>Procedimiento: requiere sesión específica del equipo de investigación, documentación completa, y revisión por el autor. El axioma no se revisa “durante” el piloto: se documenta la tensión y se revisa al cierre del piloto.</p>
+<h2 id="qué-evidencia-es-insuficiente-para-justificar-cualquier-revisión">¿Qué evidencia es insuficiente para justificar cualquier revisión?</h2>
 <ul>
-<li>Un caso individual que no sigue el patrón predicho. La ontología
-procesual predice que cada trayectoria es singular (A10) — un caso
-atípico no refuta el modelo.</li>
-<li>Datos que contradicen una hipótesis formal (H-*) sin
-replicación.</li>
+<li>Un caso individual que no sigue el patrón predicho. La ontología rhísica predice que cada trayectoria es singular (A10): un caso atípico no refuta el modelo.</li>
+<li>Datos que contradicen una hipótesis formal (H-*) sin replicación.</li>
 <li>Impresiones clínicas sin FRCS-1 documentado.</li>
-<li>Discrepancias entre el modelo y marcos diagnósticos alternativos
-(DSM, RDoC) — estos son marcos distintos con preguntas distintas (CE6,
-VI.3 del Core).</li>
+<li>Discrepancias entre el modelo y marcos diagnósticos alternativos (DSM, RDoC): estos son marcos distintos con preguntas distintas (CE6, VI.3 del Core).</li>
 </ul>
 <hr />
-<h1 id="parte-viii-checklist-final-de-preparación-para-el-piloto">Parte
-VIII — Checklist Final de Preparación para el Piloto</h1>
+<h1 id="parte-viii-checklist-final-de-preparación-para-el-piloto">Parte VIII — Checklist Final de Preparación para el Piloto</h1>
 <h2 id="infraestructura-conceptual">Infraestructura conceptual</h2>
 <ul class="task-list">
-<li><label><input type="checkbox" checked="" />Core 1.2 finalizado y
-accesible.</label></li>
-<li><label><input type="checkbox" checked="" />Cuatro núcleos canónicos
-en versiones actuales (v2.3.5 / v0.3.15 / v0.4.19 /
-v0.3.7).</label></li>
-<li><label><input type="checkbox" checked="" />Sistema canónico v1.2 de
-14 configuraciones.</label></li>
-<li><label><input type="checkbox" checked="" />§T1 completo con Fase 4 y
-teoría de consolidación.</label></li>
-<li><label><input type="checkbox" checked="" /><span
-class="math inline">\rho(t)</span> operacionalizado con tabla
-diferencial y observables clínicos.</label></li>
-<li><label><input type="checkbox" checked="" />CE19 con conexión
-explícita al protocolo post-encuentro.</label></li>
-<li><label><input type="checkbox" checked="" />§T3 fundamento ontológico
-en C6 del Ontológico.</label></li>
-<li><label><input type="checkbox" />Horizonte H2 del programa evolutivo
-(forma empírica de la función de transición, <span
-class="math inline">\kappa_{\text{umbral}}(D_p)</span>, distinguibilidad
-<span class="math inline">\rho(t)/\kappa(t)</span>, velocidad de
-instalación de cuencas) — pendiente, requiere datos del piloto (Regla
-109, hoja de ruta de ausencias, Core 1.2 Parte V). No puede marcarse
-cerrado antes de que el piloto produzca esos datos.</label></li>
+<li><label><input type="checkbox" checked="" />Core 1.2 finalizado y accesible.</label></li>
+<li><label><input type="checkbox" checked="" />Cuatro núcleos canónicos en versiones actuales (v2.3.5 / v0.3.15 / v0.4.19 / v0.3.7).</label></li>
+<li><label><input type="checkbox" checked="" />Sistema canónico v1.2 de 14 configuraciones.</label></li>
+<li><label><input type="checkbox" checked="" />§T1 completo con Fase 4 y teoría de consolidación.</label></li>
+<li><label><input type="checkbox" checked="" /><span class="math inline">\rho(t)</span> operacionalizado con tabla diferencial y observables clínicos.</label></li>
+<li><label><input type="checkbox" checked="" />CE19 con conexión explícita al protocolo post-encuentro.</label></li>
+<li><label><input type="checkbox" checked="" />§T3 fundamento ontológico en C6 del Ontológico.</label></li>
+<li><label><input type="checkbox" />Horizonte H2 del programa evolutivo (forma empírica de la función de transición, <span class="math inline">\kappa_{\text{umbral}}(D_p)</span>, distinguibilidad <span class="math inline">\rho(t)/\kappa(t)</span>, velocidad de instalación de cuencas), pendiente, requiere datos del piloto (Regla 109, hoja de ruta de ausencias, Core 1.2 Parte V). No puede marcarse cerrado antes de que el piloto produzca esos datos.</label></li>
 </ul>
 <h2 id="infraestructura-operacional">Infraestructura operacional</h2>
 <ul class="task-list">
-<li><label><input type="checkbox" checked="" />PIAC con cuatro pasos
-documentados en el Clínico.</label></li>
-<li><label><input type="checkbox" checked="" />FRCS-1 con cinco campos y
-manual de uso (Parte II de este documento).</label></li>
-<li><label><input type="checkbox" checked="" />Motor PyMC v0.1.1
-canónico.</label></li>
-<li><label><input type="checkbox" checked="" /><span
-class="math inline">t\_historico\_v0\_2\_0.py</span>
-canónico.</label></li>
-<li><label><input type="checkbox" checked="" />Protocolo post-encuentro
-con criterio de validación longitudinal.</label></li>
-<li><label><input type="checkbox" checked="" />Manual de consolidación
-Fase 4 (Parte III de este documento).</label></li>
-<li><label><input type="checkbox" checked="" />Manual operacional <span
-class="math inline">\rho(t)</span> (Parte IV de este
-documento).</label></li>
-<li><label><input type="checkbox" checked="" />Protocolo de
-entrenamiento de clínicos (Parte V de este documento).</label></li>
+<li><label><input type="checkbox" checked="" />PIAC con cuatro pasos documentados en el Clínico.</label></li>
+<li><label><input type="checkbox" checked="" />FRCS-1 con cinco campos y manual de uso (Parte II de este documento).</label></li>
+<li><label><input type="checkbox" checked="" />Motor PyMC v0.1.1 canónico.</label></li>
+<li><label><input type="checkbox" checked="" /><span class="math inline">t\_historico\_v0\_2\_0.py</span> canónico.</label></li>
+<li><label><input type="checkbox" checked="" />Protocolo post-encuentro con criterio de validación longitudinal.</label></li>
+<li><label><input type="checkbox" checked="" />Manual de consolidación Fase 4 (Parte III de este documento).</label></li>
+<li><label><input type="checkbox" checked="" />Manual operacional <span class="math inline">\rho(t)</span> (Parte IV de este documento).</label></li>
+<li><label><input type="checkbox" checked="" />Protocolo de entrenamiento de clínicos (Parte V de este documento).</label></li>
 </ul>
 <h2 id="infraestructura-de-datos">Infraestructura de datos</h2>
 <ul class="task-list">
-<li><label><input type="checkbox" checked="" />Plan de captura de datos
-con grietas correspondientes (Parte VI).</label></li>
-<li><label><input type="checkbox" checked="" />Reglas de congelamiento
-arquitectónico (Parte VII).</label></li>
-<li><label><input type="checkbox" />Sensor de alta frecuencia (<span
-class="math inline">T_{\text{temporal}}</span>): pendiente de
-implementación técnica.</label></li>
-<li><label><input type="checkbox" />Base de datos del piloto: pendiente
-de diseño de la BD.</label></li>
-<li><label><input type="checkbox" />Submuestra epigenómica: pendiente de
-protocolo de laboratorio y consentimiento.</label></li>
-<li><label><input type="checkbox" />Acuerdo inter-institucional para
-casos multicéntricos: pendiente.</label></li>
+<li><label><input type="checkbox" checked="" />Plan de captura de datos con grietas correspondientes (Parte VI).</label></li>
+<li><label><input type="checkbox" checked="" />Reglas de congelamiento arquitectónico (Parte VII).</label></li>
+<li><label><input type="checkbox" />Sensor de alta frecuencia (<span class="math inline">T_{\text{temporal}}</span>): pendiente de implementación técnica.</label></li>
+<li><label><input type="checkbox" />Base de datos del piloto: pendiente de diseño de la BD.</label></li>
+<li><label><input type="checkbox" />Submuestra epigenómica: pendiente de protocolo de laboratorio y consentimiento.</label></li>
+<li><label><input type="checkbox" />Acuerdo inter-institucional para casos multicéntricos: pendiente.</label></li>
 </ul>
-<h2 id="infraestructura-de-entrenamiento">Infraestructura de
-entrenamiento</h2>
+<h2 id="infraestructura-de-entrenamiento">Infraestructura de entrenamiento</h2>
 <ul class="task-list">
-<li><label><input type="checkbox" />Formador principal habilitado:
-requiere que Diego F. Pereira-Perdomo habilite al primer
-formador.</label></li>
-<li><label><input type="checkbox" />Material de calibración
-inter-evaluador (ejercicios 1–3): producidos en Parte V, requieren
-transcripciones reales para aplicarlos.</label></li>
-<li><label><input type="checkbox" />Primer grupo de clínicos:
-reclutamiento pendiente.</label></li>
+<li><label><input type="checkbox" />Formador principal habilitado: requiere que Diego F. Pereira-Perdomo habilite al primer formador.</label></li>
+<li><label><input type="checkbox" />Material de calibración inter-evaluador (ejercicios 1–3): producidos en Parte V, requieren transcripciones reales para aplicarlos.</label></li>
+<li><label><input type="checkbox" />Primer grupo de clínicos: reclutamiento pendiente.</label></li>
 </ul>
-<hr />
-<p><em>Sistema Operacional de Syntropía v0.2.5 — 13 de julio de
-2026.</em> <em>Autor: Diego F. Pereira-Perdomo MD, MSci.</em> <em>Este
-documento es operacional, no canónico. Toda discrepancia con los núcleos
-canónicos se resuelve en favor de los núcleos.</em> <em>Cotejar contra:
-Core 1.2.10, Núcleo Clínico v0.3.12, Núcleo Ontológico v2.3.16, Núcleo
-Epistemológico v0.3.19, Núcleo Matemático v0.4.27.</em></p>
+
       </article>
     </div>
   </section>
@@ -952,11 +516,11 @@ Epistemológico v0.3.19, Núcleo Matemático v0.4.27.</em></p>
     <div class="max-w-2xl mx-auto px-6 flex flex-col sm:flex-row gap-4 justify-center">
       <a href="/syntropia/es/nucleos/"
         class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all">
-        ← Todos los núcleos
+        &larr; Todos los n&uacute;cleos
       </a>
       <a href="/syntropia/es/"
         class="inline-block bg-white border border-slate-300 hover:border-teal-500 text-slate-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all">
-        Volver a Syntropía
+        Volver a Syntrop&iacute;a
       </a>
     </div>
   </section>
