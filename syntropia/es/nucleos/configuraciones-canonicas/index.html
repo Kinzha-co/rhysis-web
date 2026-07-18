@@ -17,6 +17,16 @@ configuraciones sintrópicas.">
     .prose blockquote { border-left-color: #0f766e; font-style: normal; }
     .prose table { font-size: 0.92em; }
     .prose thead th { background: #f8fafc; }
+    .wide-table-wrap { overflow-x: auto; }
+    @media (min-width: 1100px) {
+      .wide-table-wrap {
+        width: 1100px;
+        max-width: 1100px;
+        margin-left: calc(50% - 550px);
+        margin-right: calc(50% - 550px);
+      }
+    }
+    .wide-table-wrap table { font-size: 0.88em; white-space: nowrap; }
   </style>
 <script defer=""
 src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -78,7 +88,7 @@ de julio de 2026</p>
 <!-- * Nomenclatura: sistema canónico v1.2 con 14 nombres en español definitivos (v1.3.0) -->
 <h1
 id="configuraciones-sintrópicas-sistema-canónico-v1.2">Configuraciones
-Sintrópicas — Sistema Canónico v1.2</h1>
+Sintrópicas: Sistema Canónico v1.2</h1>
 <h2 id="nota-de-arquitectura">Nota de arquitectura</h2>
 <p>Este documento establece el sistema canónico de configuraciones
 sintrópicas derivado desde <span class="math inline">H_t \in
@@ -113,25 +123,25 @@ class="math inline">\Psi_t</span> con origen en <span
 class="math inline">B_t</span> × cuenca=reconfiguración, que da lugar a
 C-C1 (origen <span class="math inline">R_t</span>) y C-C2 (origen <span
 class="math inline">A_t</span>). Para C-A y C-F el Eje 3 queda pendiente
-de contraste en el piloto — ver extensión de G10.</p></li>
+de contraste en el piloto: ver extensión de G10.</p></li>
 </ul>
 <p><span class="math inline">\|H_t\|</span> y <span
 class="math inline">\nabla H_t</span> son <strong>propiedades
-derivadas</strong> de cada configuración — describen lo que el campo
+derivadas</strong> de cada configuración: describen lo que el campo
 produce en cada una, pero no la definen.</p>
 <p><strong>Referencia para intervención.</strong> Los perfiles de
 intervención orientativa de cada configuración deben leerse en
 conjunción con C5 (Modos de intervención por parámetro objetivo,
 Ontológico v2.3.5 y Clínico v0.3.0), que establece la relación entre
 parámetros formales del modelo y tipos de intervención con su escala
-temporal. C5 es posterior a este documento — su integración completa en
+temporal. C5 es posterior a este documento: su integración completa en
 los perfiles individuales es Pendiente 7.</p>
 <p><strong>Base empírica.</strong> Las propiedades de cada configuración
 se derivaron del análisis de 105 casos del corpus Barnhill 2023
 (<em>DSM-5-TR Clinical Cases</em>), mapeados al perfil sintrópico <span
 class="math inline">H_t \in [0,1]^5</span>, y del cotejo sistemático
 contra las 7 organizaciones emergentes del clustering k-modes sobre ese
-corpus. El corpus tiene sesgos de selección conocidos — sobrerrepresenta
+corpus. El corpus tiene sesgos de selección conocidos: sobrerrepresenta
 cuadros agudos y de alta complejidad, subrepresenta trastornos
 subumbrales, adaptativos leves y variantes culturales.</p>
 <p><strong>Nota de incertidumbre estadística (CC10):</strong> los
@@ -148,6 +158,7 @@ intervalos de confianza en las tablas de perfil refleja esta limitación,
 no una omisión metodológica.</p>
 <hr />
 <h2 id="tabla-de-referencia-rápida">Tabla de referencia rápida</h2>
+<div class="wide-table-wrap not-prose">
 <table style="width:100%;">
 <colgroup>
 <col style="width: 14%" />
@@ -310,7 +321,8 @@ class="math inline">B_t</span></td>
 </tr>
 </tbody>
 </table>
-<p>†Justificación teórica y clínica — N bajo en corpus; ver perfil
+</div>
+<p>†Justificación teórica y clínica: N bajo en corpus; ver perfil
 individual.</p>
 <hr />
 <h2
@@ -345,7 +357,7 @@ produjo los siguientes resultados:</p>
 <td style="text-align: left;">O2 — Reorganización relacional activa</td>
 <td style="text-align: center;">17</td>
 <td style="text-align: left;">C-C1</td>
-<td style="text-align: left;">Directa — motivó la división de C-C</td>
+<td style="text-align: left;">Directa: motivó la división de C-C</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">O3 — Perturbación somática aguda</td>
@@ -377,7 +389,7 @@ somático-psicológica</td>
 activa</td>
 <td style="text-align: center;">9</td>
 <td style="text-align: left;">C-C2</td>
-<td style="text-align: left;">Directa — motivó la división de C-C</td>
+<td style="text-align: left;">Directa: motivó la división de C-C</td>
 </tr>
 </tbody>
 </table>
@@ -386,7 +398,7 @@ clustering:</strong> C-B, C-F, C-G, C-H, C-K, C-L, C-M. Las razones son
 distintas: C-B, C-G, C-H tienen N bajo en el corpus y probablemente se
 absorben en clústeres adyacentes; C-K opera en <span
 class="math inline">\sigma_t</span>, dimensión no capturada por las
-variables del clustering; C-L y C-M tienen N=2 y N=1 respectivamente —
+variables del clustering; C-L y C-M tienen N=2 y N=1 respectivamente:
 invisibles para k-modes. La ausencia en el clustering no invalida su
 estatuto de configuración canónica.</p>
 <p><strong>Pregunta abierta — extensión de G10:</strong> si el dominio
@@ -404,15 +416,15 @@ configuración de destino.</p>
 Psicológico→Bt · Residencia crónica</h3>
 <p><strong>Definición por ejes.</strong> <span
 class="math inline">\Psi_t</span> dominante: Psic → <span
-class="math inline">B_t</span> — la perturbación se origina en los
+class="math inline">B_t</span>: la perturbación se origina en los
 dominios psicológicos (<span class="math inline">A_t</span>, <span
 class="math inline">R_t</span>) y propaga hacia <span
-class="math inline">B_t</span>. Cuenca: residencia — el campo está
+class="math inline">B_t</span>. Cuenca: residencia: el campo está
 estabilizado en su configuración actual; el atractor es profundo y de
 larga data.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: variable por dominio — el
+<li><span class="math inline">\|H_t\|</span>: variable por dominio: el
 perfil no es simétrico. Los dominios psicológicos (<span
 class="math inline">A_t</span> predominantemente, <span
 class="math inline">R_t</span> en segundo lugar) muestran el compromiso
@@ -420,12 +432,12 @@ primario; <span class="math inline">B_t</span> está afectado como efecto
 propagado. La norma global puede ser moderada aunque el perfil de
 dominio sea marcadamente asimétrico.</li>
 <li><span class="math inline">\nabla H_t</span>: <span
-class="math inline">\approx 0</span> sostenido — el campo no se mueve;
+class="math inline">\approx 0</span> sostenido: el campo no se mueve;
 el atractor es estable.</li>
 <li><span class="math inline">\varepsilon_t</span>: bajo especialmente
 en los dominios de origen (<span
 class="math inline">\varepsilon_A</span>, <span
-class="math inline">\varepsilon_R</span>) — la historia acumulada ha
+class="math inline">\varepsilon_R</span>): la historia acumulada ha
 rigidizado los dominios de anclaje existencial y vincular.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
@@ -437,19 +449,19 @@ estar sesgada en la dirección del contenido de la cuenca (desconfianza,
 rumiación, grandiosidad) sin estar globalmente comprometida.</p>
 <p><strong>Velocidad:</strong> décadas (72%) / años (28%). Es el patrón
 de instalación más lenta del corpus.</p>
-<p><strong><span class="math inline">D_p(t)</span>:</strong> alto — la
+<p><strong><span class="math inline">D_p(t)</span>:</strong> alto, la
 historia de deformaciones plásticas es extensa. <span
 class="math inline">\kappa(t)</span>: reducido por historia acumulada.
 Posición modal en <span class="math inline">S_m</span>: R2 (<span
 class="math inline">D_p(t)</span> alto, <span
 class="math inline">\kappa(t)</span> bajo a moderado).</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: moderada-baja — el repertorio de
+class="math inline">\Beta_F</span>: moderada-baja: el repertorio de
 respuesta está estrechado por la cuenca. <span
 class="math inline">\Pi_R</span>: variable según contenido de la cuenca.
-<span class="math inline">\Tau_F</span>: moderada — la continuidad
+<span class="math inline">\Tau_F</span>: moderada: la continuidad
 narrativa existe pero organizada en torno a la cuenca. <span
-class="math inline">\Upsilon_{US}</span>: moderada — la cuenca mismo
+class="math inline">\Upsilon_{US}</span>: moderada: la cuenca mismo
 provee una forma de estabilidad.</p>
 <p><strong>Correlatos clínicos representativos:</strong> trastornos de
 personalidad (TPP, TPE, TPN, TPEV, TPH, TPD, TPOC), distimia, TEPT
@@ -458,10 +470,10 @@ residencia, TUS con cuenca existencial.</p>
 <p><strong>Lógica interna.</strong> El campo ha organizado su coherencia
 en torno a un eje psicológico que propaga crónicamente hacia <span
 class="math inline">B_t</span>. La perturbación somática es real pero
-secundaria — intervenir solo sobre <span class="math inline">B_t</span>
+secundaria: intervenir solo sobre <span class="math inline">B_t</span>
 sin modificar la cuenca psicológico produce alivio transitorio. La
 cuenca de residencia implica que el campo no está en proceso de cambio
-espontáneo — requiere perturbación clínica calibrada.</p>
+espontáneo: requiere perturbación clínica calibrada.</p>
 <p><strong>Error clínico típico.</strong> Tratar los síntomas somáticos
 sin abordar la cuenca psicológico de origen. Intentar reorganización de
 alta intensidad en un campo con <span
@@ -476,25 +488,25 @@ desvelamiento de <span class="math inline">D_p(t)</span>.</p>
 <h3 id="c-b-bucle-bidireccional-residencia-crónica">C-B — Bucle ·
 Bidireccional · Residencia crónica</h3>
 <p><strong>Definición por ejes.</strong> <span
-class="math inline">\Psi_t</span> dominante: bidireccional — <span
+class="math inline">\Psi_t</span> dominante: bidireccional: <span
 class="math inline">B_t</span> y los dominios psicológicos se perturban
-mutuamente en ciclo. Cuenca: residencia — el ciclo está establecido y se
+mutuamente en ciclo. Cuenca: residencia: el ciclo está establecido y se
 autoalimenta.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: bajo a moderado — el ciclo
+<li><span class="math inline">\|H_t\|</span>: bajo a moderado: el ciclo
 consume recursos de todos los dominios. <span
 class="math inline">B_t</span> y al menos un dominio psicológico están
 simultáneamente comprometidos.</li>
 <li><span class="math inline">\nabla H_t</span>: <span
-class="math inline">\approx 0</span> sostenido — la estabilidad es la
+class="math inline">\approx 0</span> sostenido: la estabilidad es la
 del ciclo, no del campo en reposo.</li>
 <li><span class="math inline">\varepsilon_t</span>: bajo en los dominios
-del ciclo — la bidireccionalidad crónica rigidiza los canales de <span
+del ciclo: la bidireccionalidad crónica rigidiza los canales de <span
 class="math inline">\Psi_t</span>.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
-class="math inline">B_t</span> en 64% de casos — el ciclo frecuentemente
+class="math inline">B_t</span> en 64% de casos: el ciclo frecuentemente
 se inicia desde el cuerpo aunque se perpetúa en ambas direcciones. <span
 class="math inline">A_t</span> en 29%, <span
 class="math inline">R_t</span> en 7%.</p>
@@ -504,17 +516,17 @@ prueba de realidad puede estar sesgada en la dirección del ciclo (por
 ejemplo, hacia la seguridad en manía, hacia el control en TCA).</p>
 <p><strong>Velocidad:</strong> décadas (57%) / años (43%). Patrón
 crónico de instalación lenta.</p>
-<p><strong><span class="math inline">D_p(t)</span>:</strong> alto — el
+<p><strong><span class="math inline">D_p(t)</span>:</strong> alto, el
 ciclo acumula deformaciones plásticas en ambas direcciones. <span
 class="math inline">\kappa(t)</span>: reducido. Posición modal en <span
 class="math inline">S_m</span>: R2.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: moderada — puede haber flexibilidad
+class="math inline">\Beta_F</span>: moderada: puede haber flexibilidad
 dentro del ciclo pero no para salir de él. <span
 class="math inline">\Pi_R</span>: variable. <span
-class="math inline">\Tau_F</span>: moderada — la continuidad narrativa
+class="math inline">\Tau_F</span>: moderada: la continuidad narrativa
 existe pero organizada en torno al ciclo. <span
-class="math inline">\Upsilon_{US}</span>: moderada — el ciclo mismo es
+class="math inline">\Upsilon_{US}</span>: moderada: el ciclo mismo es
 la forma de estabilidad.</p>
 <p><strong>Correlatos clínicos representativos:</strong> TCA crónicos
 (BN, BED), TOC con componente motor (tricotilomanía, excoriación),
@@ -524,7 +536,7 @@ ciclo relacional-somático.</p>
 <p><strong>Lógica interna.</strong> El ciclo bidireccional es la
 organización del campo, no una disfunción aditiva. Interrumpir el ciclo
 solo en un polo (solo <span class="math inline">B_t</span> o solo el
-dominio psicológico) produce cambio transitorio — el ciclo se
+dominio psicológico) produce cambio transitorio: el ciclo se
 reconstituye desde el polo no intervenido. La intervención pertinente
 interrumpe el ciclo en su punto más accesible dado <span
 class="math inline">\kappa(t)</span> actual.</p>
@@ -544,11 +556,11 @@ id="c-c1-vínculo-psicológicobt-reconfiguración-origen-relacional">C-C1 —
 Vínculo · Psicológico→Bt · Reconfiguración · Origen relacional</h3>
 <p><strong>Definición por ejes.</strong> <span
 class="math inline">\Psi_t</span> dominante: Psic → <span
-class="math inline">B_t</span> — la perturbación se origina en el
+class="math inline">B_t</span>: la perturbación se origina en el
 dominio vincular (<span class="math inline">R_t</span>) y propaga hacia
-<span class="math inline">B_t</span>. Cuenca: reconfiguración — el campo
+<span class="math inline">B_t</span>. Cuenca: reconfiguración: el campo
 está en proceso activo de cambio. Dominio de origen: <span
-class="math inline">R_t</span> — la perturbación que inicia o sostiene
+class="math inline">R_t</span>: la perturbación que inicia o sostiene
 la reconfiguración es vincular: ruptura relacional, invalidación
 sostenida, pérdida de figura de apego, o reencuadre de la historia
 relacional. Esta es la propiedad que distingue C-C1 de C-C2 y que el
@@ -557,19 +569,19 @@ valles distintos en <span class="math inline">\mathcal{W}</span>.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
 <li><span class="math inline">\|H_t\|</span>: variable entre
-evaluaciones — el proceso de reconfiguración produce variación. El
+evaluaciones: el proceso de reconfiguración produce variación. El
 dominio <span class="math inline">R_t</span> muestra el movimiento más
 marcado; <span class="math inline">B_t</span> está afectado
 secundariamente por la propagación.</li>
 <li><span class="math inline">\nabla H_t</span>: variable, tendiendo
-positivo — el campo se está moviendo en dirección de mayor coherencia,
+positivo: el campo se está moviendo en dirección de mayor coherencia,
 aunque con oscilaciones propias del proceso.</li>
 <li><span class="math inline">\varepsilon_t</span>: moderado-alto en
-<span class="math inline">R_t</span> y dominios adyacentes — el campo
+<span class="math inline">R_t</span> y dominios adyacentes: el campo
 está receptivo en la dimensión vincular.</li>
 </ul>
 <p><strong>Dominio de origen:</strong> <span
-class="math inline">R_t</span> — propiedad definitoria de C-C1.</p>
+class="math inline">R_t</span>: propiedad definitoria de C-C1.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> preservada
 en la casi totalidad de casos. Esta es la propiedad más discriminante
 respecto a C-C2: la prueba de realidad intacta es la condición de
@@ -577,18 +589,18 @@ posibilidad del trabajo de desvelamiento desde lo vincular. El campo
 puede comprometerse vincularmente sin perder la capacidad de actualizar
 sus representaciones.</p>
 <p><strong>Velocidad:</strong> años predominantemente. El proceso de
-reconfiguración vincular es más lento que el existencial — la historia
+reconfiguración vincular es más lento que el existencial: la historia
 relacional acumulada requiere más tiempo para reorganizarse.</p>
 <p><strong><span class="math inline">D_p(t)</span>:</strong> variable,
 frecuentemente moderado-alto en el dominio vincular. <span
-class="math inline">\kappa(t)</span>: suficiente — la reconfiguración
+class="math inline">\kappa(t)</span>: suficiente: la reconfiguración
 activa implica que el campo tiene capacidad receptiva. Posición modal en
 <span class="math inline">S_m</span>: R3 o transición R2→R3.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: moderada-alta — hay exploración
+class="math inline">\Beta_F</span>: moderada-alta: hay exploración
 activa de nuevas formas de relación. <span
-class="math inline">\Pi_R</span>: preservada — condición de posibilidad
-del trabajo. <span class="math inline">\Tau_F</span>: moderada-baja — la
+class="math inline">\Pi_R</span>: preservada: condición de posibilidad
+del trabajo. <span class="math inline">\Tau_F</span>: moderada-baja: la
 continuidad narrativa vincular está en construcción. <span
 class="math inline">\Upsilon_{US}</span>: moderada.</p>
 <p><strong>Correlatos clínicos representativos:</strong> Trastorno de
@@ -600,7 +612,7 @@ duelo complicado con reencuadre del vínculo perdido.</p>
 <p>Casos representativos del corpus: Logan (5.1, TAS + pánico), Nadine
 (5.3, ansiedad social + TEPT + agorafobia), Peggy Isaac (5.5, TAG).</p>
 <p><strong>Lógica interna.</strong> El campo está en proceso de
-reconfiguración desde el dominio vincular — la perturbación que inició
+reconfiguración desde el dominio vincular: la perturbación que inició
 el proceso fue relacional, y la reconfiguración se procesa
 principalmente a través de la dimensión relacional. La <span
 class="math inline">\Pi_R</span> preservada es la condición que hace
@@ -613,7 +625,7 @@ integren en continuidad narrativa.</p>
 más allá del ritmo vincular del campo. Tratar los síntomas somáticos
 secundarios como si fueran el objeto primario de la intervención. No
 reconocer que la <span class="math inline">\Pi_R</span> preservada es el
-recurso central — y asumir fragilidad que el campo no tiene.</p>
+recurso central: y asumir fragilidad que el campo no tiene.</p>
 <p><strong>Intervención orientativa.</strong> El campo relacional es el
 punto de entrada y el instrumento principal. Trabajo sobre <span
 class="math inline">\Tau_F</span> vincular para integrar los avances. La
@@ -626,11 +638,11 @@ id="c-c2-existencial-psicológicobt-reconfiguración-origen-existencial">C-C2
 existencial</h3>
 <p><strong>Definición por ejes.</strong> <span
 class="math inline">\Psi_t</span> dominante: Psic → <span
-class="math inline">B_t</span> — la perturbación se origina en el
+class="math inline">B_t</span>: la perturbación se origina en el
 dominio de anclaje existencial (<span class="math inline">A_t</span>) y
 propaga hacia <span class="math inline">B_t</span>. Cuenca:
-reconfiguración — el campo está en proceso activo de cambio. Dominio de
-origen: <span class="math inline">A_t</span> — la perturbación que
+reconfiguración: el campo está en proceso activo de cambio. Dominio de
+origen: <span class="math inline">A_t</span>: la perturbación que
 inicia o sostiene la reconfiguración es existencial: crisis de sentido,
 pérdida de anclaje, reencuadre de la identidad, ruptura del suelo desde
 el que la trayectoria opera. Esta es la propiedad que distingue C-C2 de
@@ -642,42 +654,41 @@ evaluaciones y frecuentemente bajo durante la fase aguda de la
 reconfiguración existencial. El dominio <span
 class="math inline">A_t</span> muestra el compromiso primario; <span
 class="math inline">B_t</span> está afectado secundariamente.</li>
-<li><span class="math inline">\nabla H_t</span>: variable — puede ser
+<li><span class="math inline">\nabla H_t</span>: variable: puede ser
 descendente en la fase de desorganización existencial y ascendente en la
 fase de reorganización. La dirección es más inestable que en C-C1.</li>
 <li><span class="math inline">\varepsilon_t</span>: variable por dominio
-— <span class="math inline">A_t</span> puede estar tanto muy abierto
+: <span class="math inline">A_t</span> puede estar tanto muy abierto
 (receptivo a la reconfiguración de sentido) como muy comprometido
 (cuando el anclaje existencial se ha perdido).</li>
 </ul>
 <p><strong>Dominio de origen:</strong> <span
-class="math inline">A_t</span> — propiedad definitoria de C-C2.</p>
-<p><strong><span class="math inline">\Pi_R</span>:</strong> variable —
-preservada, encapsulada o comprometida global según la naturaleza de la
+class="math inline">A_t</span>: propiedad definitoria de C-C2.</p>
+<p><strong><span class="math inline">\Pi_R</span>:</strong> variable, preservada, encapsulada o comprometida global según la naturaleza de la
 perturbación existencial. Esta variabilidad es la propiedad más
 discriminante respecto a C-C1 y determina la estrategia de entrada.
 Cuando <span class="math inline">\Pi_R</span> está comprometida
 (psicosis en reconfiguración, manía con proceso existencial subyacente),
 la intervención debe restaurar <span class="math inline">\Pi_R</span>
 antes de trabajar el contenido existencial.</p>
-<p><strong>Velocidad:</strong> meses predominantemente — más rápida que
+<p><strong>Velocidad:</strong> meses predominantemente, más rápida que
 C-C1, lo que refleja que las reconfiguraciones existenciales pueden
 tener resolución más acelerada cuando hay andamiaje suficiente, pero
 también pueden deteriorarse rápidamente cuando no lo hay.</p>
 <p><strong><span class="math inline">D_p(t)</span>:</strong> variable.
-<span class="math inline">\kappa(t)</span>: variable — depende
+<span class="math inline">\kappa(t)</span>: variable: depende
 criticamente del nivel de <span class="math inline">\Pi_R</span> y de la
 profundidad de la crisis existencial. Posición modal en <span
 class="math inline">S_m</span>: R3 en los casos con <span
 class="math inline">\Pi_R</span> preservada; R2 o R4 cuando <span
 class="math inline">\Pi_R</span> está comprometida.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: variable — alta en trayectorias con
+class="math inline">\Beta_F</span>: variable: alta en trayectorias con
 <span class="math inline">\Pi_R</span> preservada, muy baja cuando <span
 class="math inline">\Pi_R</span> está comprometida. <span
-class="math inline">\Pi_R</span>: variable — el modulador más crítico
+class="math inline">\Pi_R</span>: variable: el modulador más crítico
 para determinar la intervención. <span
-class="math inline">\Tau_F</span>: baja — la continuidad narrativa
+class="math inline">\Tau_F</span>: baja: la continuidad narrativa
 existencial está en mayor disrupción que en C-C1. <span
 class="math inline">\Upsilon_{US}</span>: variable.</p>
 <p><strong>Correlatos clínicos representativos:</strong> primer episodio
@@ -690,17 +701,17 @@ melancólico (Crystal Smith, 4.5), depresión somática de origen cultural
 (Ka Fang, 4.12), Trastorno por Uso de Opioides (TUO) severo en
 reconfiguración existencial (Raymond Xavier, 16.5).</p>
 <p><strong>Lógica interna.</strong> El campo está en proceso de
-reconfiguración desde el dominio existencial — la pérdida de anclaje de
+reconfiguración desde el dominio existencial: la pérdida de anclaje de
 sentido es el motor del proceso. La variabilidad de <span
 class="math inline">\Pi_R</span> es la propiedad más clínicamente
 relevante: determina si el trabajo de desvelamiento existencial es
 posible directamente o si requiere primero la restauración de la
 capacidad de actualizar representaciones. A diferencia de C-C1, en C-C2
 el clínico no puede asumir que el campo tiene acceso a la realidad
-compartida — debe evaluarlo en cada encuentro.</p>
+compartida: debe evaluarlo en cada encuentro.</p>
 <p><strong>Error clínico típico.</strong> Asumir que toda
 reconfiguración existencial tiene <span class="math inline">\Pi_R</span>
-preservada — e iniciar trabajo de desvelamiento de contenido existencial
+preservada: e iniciar trabajo de desvelamiento de contenido existencial
 cuando <span class="math inline">\Pi_R</span> está comprometida. Esto
 produce desorganización en lugar de reconfiguración. El otro error:
 tratar los síntomas del primer plano (psicosis, manía, depresión severa)
@@ -713,46 +724,46 @@ class="math inline">\Pi_R</span> comprometida: restauración de <span
 class="math inline">\Pi_R</span> como primera intervención antes de
 cualquier trabajo de desvelamiento. La velocidad más rápida de C-C2
 respecto a C-C1 implica que las ventanas de intervención son más
-estrechas — tanto para el deterioro como para la consolidación.</p>
+estrechas: tanto para el deterioro como para la consolidación.</p>
 <hr />
 <h3 id="c-d-crisálida-bidireccional-reconfiguración-activa">C-D —
 Crisálida · Bidireccional · Reconfiguración activa</h3>
 <p><strong>Definición por ejes.</strong> <span
-class="math inline">\Psi_t</span> dominante: bidireccional — ciclo
+class="math inline">\Psi_t</span> dominante: bidireccional: ciclo
 activo entre <span class="math inline">B_t</span> y dominios
-psicológicos. Cuenca: reconfiguración — el ciclo está cambiando; hay
+psicológicos. Cuenca: reconfiguración: el ciclo está cambiando; hay
 proceso activo de reorganización.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
 <li><span class="math inline">\|H_t\|</span>: bajo a moderado, con
-variación entre evaluaciones — el ciclo en proceso de cambio produce
+variación entre evaluaciones: el ciclo en proceso de cambio produce
 fluctuación.</li>
-<li><span class="math inline">\nabla H_t</span>: variable — en la
+<li><span class="math inline">\nabla H_t</span>: variable: en la
 mayoría de casos tiende positivo, pero con oscilaciones propias del
 proceso de salida del ciclo.</li>
 <li><span class="math inline">\varepsilon_t</span>: moderado-alto en los
-dominios del ciclo — el proceso de reconfiguración ha abierto el
+dominios del ciclo: el proceso de reconfiguración ha abierto el
 campo.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
-class="math inline">B_t</span> en 80% de casos — el ciclo tiene
+class="math inline">B_t</span> en 80% de casos: el ciclo tiene
 predominantemente origen somático incluso en reconfiguración.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> preservada
 (70%) / sesgada (30%). Alta proporción de <span
-class="math inline">\Pi_R</span> preservada — diferencia significativa
+class="math inline">\Pi_R</span> preservada: diferencia significativa
 respecto a C-B (residencia).</p>
 <p><strong>Velocidad:</strong> años (70%) / meses (30%). El proceso de
 salida del ciclo bidireccional es lento.</p>
 <p><strong><span class="math inline">D_p(t)</span>:</strong> moderado a
-alto — el ciclo ha dejado huella. <span
+alto, el ciclo ha dejado huella. <span
 class="math inline">\kappa(t)</span>: suficiente para el proceso de
 reconfiguración, mayor que en C-B. Posición modal en <span
 class="math inline">S_m</span>: R3 o transición R2→R3.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: moderada-alta — hay exploración
+class="math inline">\Beta_F</span>: moderada-alta: hay exploración
 activa de alternativas al ciclo. <span class="math inline">\Pi_R</span>:
 predominantemente preservada. <span class="math inline">\Tau_F</span>:
-moderada — en construcción. <span
+moderada: en construcción. <span
 class="math inline">\Upsilon_{US}</span>: moderada.</p>
 <p><strong>Correlatos clínicos representativos:</strong> Trastorno por
 Uso de Alcohol (TUA) en recuperación activa, trastorno de juego en
@@ -760,14 +771,14 @@ tratamiento, ciclotimia en reorganización, trastorno de pánico en
 proceso de deshabituación, Trastorno Neurocognitivo (TNC) leve en
 intervención temprana.</p>
 <p><strong>Lógica interna.</strong> El ciclo bidireccional está
-abriéndose — el campo tiene suficiente <span
+abriéndose: el campo tiene suficiente <span
 class="math inline">\kappa(t)</span> para sostener el proceso. La
 diferencia respecto a C-B (residencia) es que en C-D el campo está
 activamente buscando una nueva organización. La <span
 class="math inline">\Pi_R</span> preservada es la condición de
 posibilidad del trabajo de desvelamiento.</p>
 <p><strong>Error clínico típico.</strong> No reconocer que el origen
-somático del ciclo persiste incluso en reconfiguración — intervenir solo
+somático del ciclo persiste incluso en reconfiguración: intervenir solo
 sobre el polo psicológico sin mantener el trabajo sobre <span
 class="math inline">B_t</span>.</p>
 <p><strong>Intervención orientativa.</strong> Sostener el proceso de
@@ -779,45 +790,45 @@ coherencia sin ciclo se integren en narrativa acumulable.</p>
 Transitorio</h3>
 <p><strong>Definición por ejes.</strong> <span
 class="math inline">\Psi_t</span> dominante: <span
-class="math inline">B_t</span> → Psic — la perturbación se origina en
+class="math inline">B_t</span> → Psic: la perturbación se origina en
 <span class="math inline">B_t</span> y propaga hacia los dominios
-psicológicos. Cuenca: transitorio — el campo no ha establecido un nuevo
+psicológicos. Cuenca: transitorio: el campo no ha establecido un nuevo
 cuenca; la perturbación es aguda o subaguda.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: variable — depende de la
+<li><span class="math inline">\|H_t\|</span>: variable: depende de la
 magnitud de la perturbación somática y de la velocidad de propagación.
 Los dominios psicológicos pueden caer rápidamente si la perturbación
 somática es severa.</li>
-<li><span class="math inline">\nabla H_t</span>: activo — descendente
+<li><span class="math inline">\nabla H_t</span>: activo: descendente
 durante la perturbación, ascendente en la recuperación. La dirección es
 el indicador clínico crítico.</li>
 <li><span class="math inline">\varepsilon_t</span>: moderado-alto en los
-dominios psicológicos — el campo psicológico puede recuperarse cuando
+dominios psicológicos: el campo psicológico puede recuperarse cuando
 cesa la perturbación somática.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
-class="math inline">B_t</span> en 78% de casos — patrón puro de origen
+class="math inline">B_t</span> en 78% de casos: patrón puro de origen
 somático.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> preservada
-(78%) — el campo sabe lo que le pasa; la dificultad es somática, no
+(78%), el campo sabe lo que le pasa; la dificultad es somática, no
 representacional. Excepción: psicosis inducida por sustancias donde
 <span class="math inline">\Pi_R</span> puede estar comprometida.</p>
 <p><strong>Velocidad:</strong> semanas (56%) / días (33%). La velocidad
 más rápida de todo el sistema (salvo C-J). La escala temporal es parte
 de la identidad de C-E.</p>
 <p><strong><span class="math inline">D_p(t)</span>:</strong> bajo a
-moderado — el campo no tiene historia acumulada extensa en este cuenca.
-<span class="math inline">\kappa(t)</span>: moderado-alto — el campo
+moderado, el campo no tiene historia acumulada extensa en este cuenca.
+<span class="math inline">\kappa(t)</span>: moderado-alto: el campo
 tiene capacidad receptiva para recuperarse cuando cesa la perturbación.
 Posición modal en <span class="math inline">S_m</span>: R3 durante la
 recuperación.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: moderada — el repertorio no está
+class="math inline">\Beta_F</span>: moderada: el repertorio no está
 dañado, solo perturbado. <span class="math inline">\Pi_R</span>:
 preservada en la mayoría. <span class="math inline">\Tau_F</span>:
-moderada — la continuidad se mantiene salvo en las formas severas. <span
-class="math inline">\Upsilon_{US}</span>: moderada — variable según la
+moderada: la continuidad se mantiene salvo en las formas severas. <span
+class="math inline">\Upsilon_{US}</span>: moderada: variable según la
 magnitud de la perturbación.</p>
 <p><strong>Correlatos clínicos representativos:</strong> psicosis
 inducida por cannabis/TBI (aguda), TDPM, ansiedad inducida por
@@ -826,39 +837,38 @@ farmacológica, trastorno adaptativo con estrés agudo somático, enuresis
 como síntoma de campo Bt.</p>
 <p><strong>Lógica interna.</strong> El campo psicológico está siendo
 perturbado desde <span class="math inline">B_t</span> pero no ha
-establecido un nuevo cuenca — es genuinamente transitorio. La
+establecido un nuevo cuenca: es genuinamente transitorio. La
 recuperación es posible cuando cesa o se trata la perturbación somática.
 La intervención prioritaria es sobre <span
 class="math inline">B_t</span>, no sobre los dominios psicológicos que
 son efecto.</p>
 <p><strong>Error clínico típico.</strong> Tratar los síntomas
-psicológicos como si fueran el origen — iniciar psicoterapia intensiva
+psicológicos como si fueran el origen: iniciar psicoterapia intensiva
 cuando la perturbación es somática aguda. No identificar la causa
 somática subyacente.</p>
 <p><strong>Intervención orientativa.</strong> Identificar y tratar la
 perturbación somática de origen. Los dominios psicológicos no requieren
-intervención directa en la mayoría de casos — se recuperan cuando cesa
+intervención directa en la mayoría de casos: se recuperan cuando cesa
 la perturbación somática.</p>
 <hr />
 <h3 id="c-f-suspensión-psicológicobt-transitorio">C-F — Suspensión ·
 Psicológico→Bt · Transitorio</h3>
 <p><strong>Definición por ejes.</strong> <span
 class="math inline">\Psi_t</span> dominante: Psic → <span
-class="math inline">B_t</span> — la perturbación se origina en los
+class="math inline">B_t</span>: la perturbación se origina en los
 dominios psicológicos y propaga hacia <span
-class="math inline">B_t</span>. Cuenca: transitorio — el campo no ha
+class="math inline">B_t</span>. Cuenca: transitorio: el campo no ha
 establecido un nuevo cuenca; hay movilidad.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: moderado, con variación —
-el campo está perturbado pero tiene recursos. Los dominios psicológicos
+<li><span class="math inline">\|H_t\|</span>: moderado, con variación: el campo está perturbado pero tiene recursos. Los dominios psicológicos
 (<span class="math inline">A_t</span>, <span
 class="math inline">R_t</span>) muestran el compromiso primario; <span
 class="math inline">B_t</span> está afectado secundariamente (sueño,
 apetito, activación).</li>
-<li><span class="math inline">\nabla H_t</span>: activo — puede ser
+<li><span class="math inline">\nabla H_t</span>: activo: puede ser
 descendente en la fase aguda, ascendente en la resolución.</li>
-<li><span class="math inline">\varepsilon_t</span>: moderado-alto — el
+<li><span class="math inline">\varepsilon_t</span>: moderado-alto: el
 campo tiene capacidad receptiva para la resolución.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
@@ -866,7 +876,7 @@ class="math inline">A_t</span> en 63% de casos, <span
 class="math inline">R_t</span> en 37%. Los dominios de anclaje
 existencial y vínculos relacionales son los focos primarios.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> preservada
-(75%) — alta proporción, lo que facilita el trabajo de desvelamiento. La
+(75%), alta proporción, lo que facilita el trabajo de desvelamiento. La
 prueba de realidad está relativamente intacta.</p>
 <p><strong>Velocidad:</strong> meses (50%) / semanas (25%). El patrón
 más frecuente es resolución en meses cuando hay andamiaje
@@ -877,7 +887,7 @@ Posición modal en <span class="math inline">S_m</span>: R3.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
 class="math inline">\Beta_F</span>: moderada-alta. <span
 class="math inline">\Pi_R</span>: preservada en la mayoría. <span
-class="math inline">\Tau_F</span>: moderada — la continuidad narrativa
+class="math inline">\Tau_F</span>: moderada: la continuidad narrativa
 puede estar parcialmente perturbada por el evento vital. <span
 class="math inline">\Upsilon_{US}</span>: moderada.</p>
 <p><strong>Correlatos clínicos representativos:</strong> trastorno
@@ -887,7 +897,7 @@ situacional, crisis vital con repercusión somática.</p>
 <p><strong>Lógica interna.</strong> El campo está perturbado por un
 evento o proceso vital que afecta los dominios psicológicos y propaga
 secundariamente hacia <span class="math inline">B_t</span> (el duelo que
-produce alteraciones del sueño, del apetito, de la actividad física — el
+produce alteraciones del sueño, del apetito, de la actividad física: el
 ejemplo que Diego describió). La cuenca es transitorio porque el campo
 tiene capacidad de reorganizarse sin intervención de alta intensidad. El
 andamiaje relacional y el tiempo son los primeros instrumentos.</p>
@@ -907,44 +917,43 @@ secundariamente.</p>
 Transformación · Bt→afuera · Reconfiguración activa</h3>
 <p><strong>Definición por ejes.</strong> <span
 class="math inline">\Psi_t</span> dominante: <span
-class="math inline">B_t</span> → Psic — la perturbación se origina en
+class="math inline">B_t</span> → Psic: la perturbación se origina en
 <span class="math inline">B_t</span> y propaga hacia los dominios
-psicológicos. Cuenca: reconfiguración — el campo somático está en
+psicológicos. Cuenca: reconfiguración: el campo somático está en
 proceso activo de cambio.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
 <li><span class="math inline">\|H_t\|</span>: variable, heterogéneo
-entre casos — el proceso de reconfiguración somática produce variación
+entre casos: el proceso de reconfiguración somática produce variación
 impredecible en los dominios psicológicos.</li>
-<li><span class="math inline">\nabla H_t</span>: heterogéneo — puede ser
+<li><span class="math inline">\nabla H_t</span>: heterogéneo: puede ser
 ascendente (recuperación somática), descendente (progresión de la
 enfermedad somática) o variable. La dirección depende de la naturaleza
 del proceso somático.</li>
 <li><span class="math inline">\varepsilon_t</span>: variable por dominio
-— los dominios psicológicos pueden tener <span
+: los dominios psicológicos pueden tener <span
 class="math inline">\varepsilon</span> preservada mientras <span
 class="math inline">B_t</span> está en proceso de cambio.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
-class="math inline">B_t</span> en 100% de casos — patrón puro de origen
+class="math inline">B_t</span> en 100% de casos: patrón puro de origen
 somático en proceso de cambio.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> preservada
 (50%) / comprometida global (25%) / encapsulada (25%). Más heterogéneo
-que C-E — la reconfiguración somática puede comprometer <span
+que C-E: la reconfiguración somática puede comprometer <span
 class="math inline">\Pi_R</span> cuando el proceso somático afecta el
 sustrato neurobiológico.</p>
 <p><strong>Velocidad:</strong> años (38%) / meses (25%) / heterogéneo.
-La velocidad más variable del sistema — refleja la diversidad de
+La velocidad más variable del sistema: refleja la diversidad de
 procesos somáticos en reconfiguración.</p>
 <p><strong><span class="math inline">D_p(t)</span>:</strong> moderado a
-alto — el proceso somático deja huella. <span
+alto, el proceso somático deja huella. <span
 class="math inline">\kappa(t)</span>: variable según la fase del
 proceso. Posición modal en <span class="math inline">S_m</span>: R3 en
 fases de mejora; R2 en fases de progresión.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: moderada — puede estar limitada por
-el proceso somático. <span class="math inline">\Pi_R</span>: variable —
-es el modulador más crítico para determinar la intervención. <span
+class="math inline">\Beta_F</span>: moderada: puede estar limitada por
+el proceso somático. <span class="math inline">\Pi_R</span>: variable: es el modulador más crítico para determinar la intervención. <span
 class="math inline">\Tau_F</span>: moderada. <span
 class="math inline">\Upsilon_{US}</span>: moderada, variable según la
 fase somática.</p>
@@ -955,7 +964,7 @@ en tratamiento, Trastorno de Evitación/Restricción de la Ingesta de
 Alimentos (ARFID) en recuperación, Trastorno Neurocognitivo (TNC) por
 Huntington (progresión), TNC post-TBI (recuperación), depresión inducida
 por cocaína en abstinencia.</p>
-<p><strong>Lógica interna.</strong> El proceso somático está activo — es
+<p><strong>Lógica interna.</strong> El proceso somático está activo: es
 un proceso que se desarrolla en el tiempo, no una perturbación que cesa
 (C-E). La dirección del proceso somático determina la dirección del
 campo psicológico. La intervención sobre los dominios psicológicos es
@@ -964,7 +973,7 @@ pertinente pero secundaria al manejo del proceso somático.</p>
 campo cuando el proceso somático cambia de fase. Intervenir sobre los
 dominios psicológicos como si fueran autónomos cuando son dependientes
 del proceso somático.</p>
-<p><strong>Intervención orientativa.</strong> Monitoreo frecuente — la
+<p><strong>Intervención orientativa.</strong> Monitoreo frecuente: la
 velocidad heterogénea de C-G requiere evaluación más frecuente que en
 configuraciones de cuenca estable. La intervención psicológica se
 calibra en función de la fase del proceso somático y del nivel de <span
@@ -973,21 +982,20 @@ class="math inline">\Pi_R</span>.</p>
 <h3 id="c-h-vorágine-bidireccional-transitorio">C-H — Vorágine ·
 Bidireccional · Transitorio</h3>
 <p><strong>Definición por ejes.</strong> <span
-class="math inline">\Psi_t</span> dominante: bidireccional — ciclo entre
+class="math inline">\Psi_t</span> dominante: bidireccional: ciclo entre
 <span class="math inline">B_t</span> y dominios psicológicos. Cuenca:
-transitorio — el ciclo no está establecido; puede romperse.</p>
+transitorio: el ciclo no está establecido; puede romperse.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: moderado, con variación —
-el ciclo transitorio no ha producido el nivel de <span
+<li><span class="math inline">\|H_t\|</span>: moderado, con variación: el ciclo transitorio no ha producido el nivel de <span
 class="math inline">D_p(t)</span> que producirá C-B si se
 cronifica.</li>
-<li><span class="math inline">\nabla H_t</span>: oscilante — el ciclo
+<li><span class="math inline">\nabla H_t</span>: oscilante: el ciclo
 produce variación entre evaluaciones sin dirección sostenida.</li>
-<li><span class="math inline">\varepsilon_t</span>: moderado — el campo
+<li><span class="math inline">\varepsilon_t</span>: moderado: el campo
 tiene más capacidad de respuesta que en C-B (residencia).</li>
 </ul>
-<p><strong>Dominio de origen empírico:</strong> heterogéneo — <span
+<p><strong>Dominio de origen empírico:</strong> heterogéneo, <span
 class="math inline">B_t</span>, <span class="math inline">A_t</span>,
 <span class="math inline">R_t</span>, y casos multi-dominio. El origen
 es menos claro que en otras configuraciones, lo que es una propiedad de
@@ -997,9 +1005,9 @@ C-H.</p>
 heterogeneidad de <span class="math inline">\Pi_R</span> en C-H refleja
 la diversidad de los procesos que producen este patrón.</p>
 <p><strong>Velocidad:</strong> semanas (40%) / meses (40%). Más rápida
-que C-B — el ciclo aún no está cronificado.</p>
+que C-B: el ciclo aún no está cronificado.</p>
 <p><strong><span class="math inline">D_p(t)</span>:</strong> bajo a
-moderado. <span class="math inline">\kappa(t)</span>: moderado-alto — la
+moderado. <span class="math inline">\kappa(t)</span>: moderado-alto: la
 ventana de intervención antes de cronificación es el recurso clínico
 principal. Posición modal en <span class="math inline">S_m</span>:
 R3.</p>
@@ -1014,59 +1022,58 @@ ansiedad, trastorno disruptivo del estado de ánimo (pediátrico),
 reacción normativa con ciclo somático.</p>
 <p><strong>Lógica interna.</strong> El ciclo bidireccional es reciente y
 no está consolidado. Esta es la ventana de intervención más valiosa de
-las configuraciones bidireccionales — el campo puede reorganizarse hacia
+las configuraciones bidireccionales: el campo puede reorganizarse hacia
 un patrón sin ciclo antes de que la residencia se establezca. La
 detección precoz de C-H es el instrumento preventivo más importante para
 evitar la progresión a C-B.</p>
 <p><strong>Error clínico típico.</strong> No actuar sobre el ciclo
 cuando aún es transitorio. Esperar a que el patrón se consolide para
-intervenir — en ese punto se habrá cronificado hacia C-B.</p>
+intervenir: en ese punto se habrá cronificado hacia C-B.</p>
 <p><strong>Intervención orientativa.</strong> Actuar sobre el ciclo en
 su punto más accesible dado <span class="math inline">M</span> actual.
-La velocidad de semanas/meses es la ventana — el campo puede organizarse
+La velocidad de semanas/meses es la ventana: el campo puede organizarse
 de forma distinta si se interviene con precisión en esta fase.</p>
 <hr />
 <h3 id="c-i-encarnación-btafuera-residencia-crónica">C-I — Encarnación ·
 Bt→afuera · Residencia crónica</h3>
 <p><strong>Definición por ejes.</strong> <span
 class="math inline">\Psi_t</span> dominante: <span
-class="math inline">B_t</span> → Psic — la perturbación se origina en
+class="math inline">B_t</span> → Psic: la perturbación se origina en
 <span class="math inline">B_t</span> y propaga hacia los dominios
-psicológicos. Cuenca: residencia — el patrón somático está cronificado y
+psicológicos. Cuenca: residencia: el patrón somático está cronificado y
 el campo psicológico está organizado en torno a él.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: bajo a moderado — la
+<li><span class="math inline">\|H_t\|</span>: bajo a moderado: la
 cronificación somática ha comprometido los dominios psicológicos de
 forma estable. <span class="math inline">B_t</span> es el dominio más
 comprometido; los dominios psicológicos muestran compromiso secundario
 establecido.</li>
 <li><span class="math inline">\nabla H_t</span>: <span
-class="math inline">\approx 0</span> sostenido — el campo no se mueve;
+class="math inline">\approx 0</span> sostenido: el campo no se mueve;
 la cronificación es el atractor.</li>
 <li><span class="math inline">\varepsilon_t</span>: bajo en <span
-class="math inline">B_t</span> — la historia crónica del proceso
+class="math inline">B_t</span>: la historia crónica del proceso
 somático ha rigidizado el dominio somático.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
-class="math inline">B_t</span> en 100% de casos — patrón puro de origen
+class="math inline">B_t</span> en 100% de casos: patrón puro de origen
 somático crónico.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> preservada
 (60%) / en construcción (40%). El 40% de en construcción es la
-proporción más alta del corpus — refleja que los TNC y los trastornos
+proporción más alta del corpus: refleja que los TNC y los trastornos
 del sueño crónicos severos comprometen la capacidad de elaboración.</p>
 <p><strong>Velocidad:</strong> décadas (80%) / años (20%). El patrón de
 instalación más lenta de las configuraciones <span
 class="math inline">B_t</span> → Psic.</p>
-<p><strong><span class="math inline">D_p(t)</span>:</strong> alto —
-décadas de proceso somático dejan huella profunda. <span
+<p><strong><span class="math inline">D_p(t)</span>:</strong> alto, décadas de proceso somático dejan huella profunda. <span
 class="math inline">\kappa(t)</span>: reducido por la cronificación.
 Posición modal en <span class="math inline">S_m</span>: R2.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: moderada-baja — el repertorio de
+class="math inline">\Beta_F</span>: moderada-baja: el repertorio de
 respuesta está limitado por el proceso somático crónico. <span
 class="math inline">\Pi_R</span>: preservada o en construcción. <span
-class="math inline">\Tau_F</span>: moderada — la continuidad narrativa
+class="math inline">\Tau_F</span>: moderada: la continuidad narrativa
 existe pero organizada en torno a la condición somática. <span
 class="math inline">\Upsilon_{US}</span>: moderada-baja.</p>
 <p><strong>Correlatos clínicos representativos:</strong> Síndrome de
@@ -1074,7 +1081,7 @@ Apnea-Hipopnea del Sueño establecido (SAHS, décadas), hipersomnia
 idiopática crónica, TNC mayor (Alzheimer, cuerpos de Lewy) en fase de
 residencia, TUA severo con abstinencia crónica establecida.</p>
 <p><strong>Lógica interna.</strong> El proceso somático crónico ha
-reorganizado el campo psicológico en torno a él — el campo psicológico
+reorganizado el campo psicológico en torno a él: el campo psicológico
 no es autónomo respecto a <span class="math inline">B_t</span> en C-I.
 La intervención sobre los dominios psicológicos sin tratar el proceso
 somático produce cambio mínimo. En los TNC, la dirección del proceso
@@ -1085,22 +1092,22 @@ somático crónico. En los TNC, plantear objetivos de reorganización
 psicológica incompatibles con la progresión del proceso somático.</p>
 <p><strong>Intervención orientativa.</strong> El manejo del proceso
 somático es la intervención primaria. Los dominios psicológicos
-responden secundariamente — y en los TNC progresivos, el objetivo
+responden secundariamente: y en los TNC progresivos, el objetivo
 clínico se desplaza hacia la preservación de la calidad de vida en el
 campo accesible.</p>
 <hr />
 <h3 id="c-j-colapso-colapso-global-transitorio">C-J — Colapso · Colapso
 global · Transitorio</h3>
 <p><strong>Definición por ejes.</strong> <span
-class="math inline">\Psi_t</span> dominante: colapso global — todos los
+class="math inline">\Psi_t</span> dominante: colapso global: todos los
 canales de <span class="math inline">\Psi_t</span> están perturbados
 simultáneamente; hay colapso de la integración, no dirección
 preferencial. Cuenca: transitorio en la mayoría de casos (aunque puede
-instalarse en residencia en las formas crónicas — ver Lucas Sandahl,
+instalarse en residencia en las formas crónicas: ver Lucas Sandahl,
 TEI).</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: muy bajo — el colapso
+<li><span class="math inline">\|H_t\|</span>: muy bajo: el colapso
 global compromete todos los dominios simultáneamente. <span
 class="math inline">H_t</span> es una norma cercana a cero en todos los
 dominios, no un vector con perfil asimétrico.</li>
@@ -1108,7 +1115,7 @@ dominios, no un vector con perfil asimétrico.</li>
 class="math inline">&lt; 0</span> en el colapso, variable en la
 recuperación.</li>
 <li><span class="math inline">\varepsilon_t</span>: muy bajo en todos
-los dominios — el colapso elimina la capacidad receptiva del campo.</li>
+los dominios: el colapso elimina la capacidad receptiva del campo.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
 class="math inline">B_t</span> en 67%, <span
@@ -1118,32 +1125,30 @@ origen somático agudo o en bypass de <span
 class="math inline">\Pi_R</span>.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> comprometida
 global (67%) / bypass (33%). Es la única configuración donde <span
-class="math inline">\Pi_R</span> comprometida o bypass es la norma — no
+class="math inline">\Pi_R</span> comprometida o bypass es la norma: no
 la excepción. Esta es la propiedad más discriminante de C-J.</p>
 <p><strong>Velocidad:</strong> horas (50%) / días (33%). La
-configuración de mayor velocidad del sistema — la escala temporal de
+configuración de mayor velocidad del sistema: la escala temporal de
 horas es definitoria de C-J.</p>
-<p><strong><span class="math inline">D_p(t)</span>:</strong> variable —
-puede ser bajo (colapso agudo sin historia) o alto (colapso sobre campo
+<p><strong><span class="math inline">D_p(t)</span>:</strong> variable, puede ser bajo (colapso agudo sin historia) o alto (colapso sobre campo
 con historia extensa). <span class="math inline">\kappa(t)</span>:
-mínimo durante el colapso — P12 en su forma más urgente. Posición en
+mínimo durante el colapso: P12 en su forma más urgente. Posición en
 <span class="math inline">S_m</span>: R4 (urgencia máxima).</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: muy baja — el colapso elimina el
+class="math inline">\Beta_F</span>: muy baja: el colapso elimina el
 repertorio de respuesta. <span class="math inline">\Pi_R</span>:
-comprometida o bypass — la variable más crítica para C-J. <span
-class="math inline">\Tau_F</span>: muy baja — la continuidad narrativa
+comprometida o bypass: la variable más crítica para C-J. <span
+class="math inline">\Tau_F</span>: muy baja: la continuidad narrativa
 no opera durante el colapso. <span
 class="math inline">\Upsilon_{US}</span>: mínima.</p>
 <p><strong>Correlatos clínicos representativos:</strong> delirio
 postoperatorio (horas), delirio anticolinérgico (días), catatonía
 inducida por esteroides (días), psicosis puerperal aguda (horas),
-colapso suicida impulsivo (horas — bypass), ataque de nervios agudo
+colapso suicida impulsivo (horas: bypass), ataque de nervios agudo
 (horas), TEI en episodio agudo (residencia con episodios de
 colapso).</p>
 <p><strong>Lógica interna.</strong> C-J es cualitativamente distinto de
-todas las demás configuraciones porque no hay dirección de propagación —
-hay colapso de la integración. La intervención no puede operar sobre el
+todas las demás configuraciones porque no hay dirección de propagación: hay colapso de la integración. La intervención no puede operar sobre el
 contenido del campo porque <span class="math inline">\Pi_R</span>
 comprometida o bypass impide el procesamiento. La intervención
 prioritaria es restaurar la integración del campo antes de cualquier
@@ -1158,7 +1163,7 @@ urgencia clínica. No priorizar la restauración de la integración del
 campo.</p>
 <p><strong>Intervención orientativa.</strong> Prioridad: restaurar la
 integración del campo. Esto precede estructuralmente a cualquier otro
-trabajo — incluido el diagnóstico de causa. En colapso por bypass, la
+trabajo: incluido el diagnóstico de causa. En colapso por bypass, la
 intervención sobre <span class="math inline">B_t^{(a)}</span>
 (activación autonómica basal) es la más urgente. En colapso por <span
 class="math inline">\Pi_R</span> comprometida global, la contención y
@@ -1167,70 +1172,69 @@ orientación básica del campo preceden al diagnóstico.</p>
 <h3 id="c-k-idiosincrática-cuenca-disposicional-temprana">C-K —
 Idiosincrática · Cuenca disposicional temprana</h3>
 <p><strong>Definición por ejes.</strong> Cuenca: disposicional temprana
-— el campo se organizó durante el desarrollo temprano, antes de que
+: el campo se organizó durante el desarrollo temprano, antes de que
 hubiera recursos simbólicos para elaborarlo. Es la cuenca de mayor
-profundidad del sistema — instalada en <span
+profundidad del sistema: instalada en <span
 class="math inline">\sigma_t</span> (estructura disposicional
 pre-simbólica, componente de <span class="math inline">\xi_t</span>
 formalizado en D8 del Núcleo Ontológico v2.3.5). <span
-class="math inline">\Psi_t</span>: variable — Psic → <span
+class="math inline">\Psi_t</span>: variable: Psic → <span
 class="math inline">B_t</span> en 67% de casos, <span
 class="math inline">B_t</span> → Psic en 33%.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: variable — el campo puede
+<li><span class="math inline">\|H_t\|</span>: variable: el campo puede
 tener coherencia alta dentro de su propia lógica (como en el TEA sin DI
 o el TPAS) o coherencia baja en múltiples dominios (como en el TEA+DI o
 el TVSD).</li>
 <li><span class="math inline">\nabla H_t</span>: <span
-class="math inline">\approx 0</span> sostenido — la profundidad de la
+class="math inline">\approx 0</span> sostenido: la profundidad de la
 cuenca disposicional produce estabilidad extrema. El campo no se mueve
 hacia configuraciones distintas sin perturbaciones de muy alta magnitud
 sostenidas.</li>
-<li><span class="math inline">\varepsilon_t</span>: muy bajo — la
+<li><span class="math inline">\varepsilon_t</span>: muy bajo: la
 historia disposicional temprana ha producido la rigidización más
 profunda del sistema.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
 class="math inline">R_t</span> en 67%, <span
 class="math inline">B_t</span> en 33%. La relacionalidad temprana
-(apego, vinculación) es el dominio de origen más frecuente — consecuente
+(apego, vinculación) es el dominio de origen más frecuente: consecuente
 con la naturaleza disposicional de la cuenca.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> en
 construcción (33%) / preservada (33%) / encapsulada (17%) / comprometida
 global (17%). La proporción de en construcción es la más alta del corpus
-— refleja que algunos basins disposicionales tempranos comprometen el
+: refleja que algunos basins disposicionales tempranos comprometen el
 desarrollo de <span class="math inline">\Pi_R</span> (como en el TEA+DI
 o el TVSD).</p>
 <p><strong>Velocidad:</strong> décadas (67%) / años (33%). La velocidad
-más lenta del sistema — la cuenca disposicional es el más resistente al
+más lenta del sistema: la cuenca disposicional es el más resistente al
 cambio.</p>
 <p><strong><span class="math inline">\sigma_t</span>:</strong> alta
-relevancia — C-K es la configuración donde <span
+relevancia, C-K es la configuración donde <span
 class="math inline">\sigma_t</span> tiene el mayor peso en <span
 class="math inline">\xi_t</span>. Las intervenciones narrativas tienen
 acceso limitado; las intervenciones sobre <span
 class="math inline">B_t</span>, la relación temprana y el entorno
 sensorial son las de mayor acceso a <span
 class="math inline">\sigma_t</span>.</p>
-<p><strong><span class="math inline">D_p(t)</span>:</strong> máximo — la
+<p><strong><span class="math inline">D_p(t)</span>:</strong> máximo, la
 cuenca es la historia más antigua. <span
-class="math inline">\kappa(t)</span>: mínimo estructural — por
+class="math inline">\kappa(t)</span>: mínimo estructural: por
 constitución del campo, no por fatiga. La distinción entre reducción de
 <span class="math inline">\kappa(t)</span> por historia acumulada y
 <span class="math inline">\kappa(t)</span> bajo constitutivo es
 clínicamente crítica: en C-K, el bajo <span
 class="math inline">\kappa(t)</span> no es restaurable del mismo modo
 que en otras configuraciones.</p>
-<p><strong>Posición en <span class="math inline">S_m</span>:</strong> R2
-— pero con la característica de que <span
+<p><strong>Posición en <span class="math inline">S_m</span>:</strong> R2, pero con la característica de que <span
 class="math inline">C_{\text{umbral}}(D_p)</span> es muy bajo, lo que
 limita la magnitud de toda intervención.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
-class="math inline">\Beta_F</span>: baja-moderada — el repertorio está
+class="math inline">\Beta_F</span>: baja-moderada: el repertorio está
 fuertemente condicionado por el campo disposicional. <span
-class="math inline">\Pi_R</span>: variable — desde en construcción hasta
-preservada. <span class="math inline">\Tau_F</span>: baja — la
+class="math inline">\Pi_R</span>: variable: desde en construcción hasta
+preservada. <span class="math inline">\Tau_F</span>: baja: la
 continuidad narrativa convencional tiene acceso limitado al campo
 disposicional. <span class="math inline">\Upsilon_{US}</span>: baja.</p>
 <p><strong>Correlatos clínicos representativos:</strong> TEA+DI con
@@ -1243,22 +1247,22 @@ isomería más radical del sistema: el campo tiene una geometría
 constitutiva instalada antes del lenguaje. Dos trayectorias en C-K con
 <span class="math inline">H_t</span> similar pueden tener
 configuraciones radicalmente distintas porque la cuenca disposicional
-tiene contenido específico — el TEA+DI y el TPAS son polimorfos del
+tiene contenido específico: el TEA+DI y el TPAS son polimorfos del
 mismo cuenca disposicional en cuanto a profundidad y pre-simbolismo,
 pero con organizaciones completamente distintas.</p>
-<p>La predicción genómica tiene valor particular en C-K — las variantes
+<p>La predicción genómica tiene valor particular en C-K: las variantes
 que modulan los períodos sensibles del apego y el desarrollo relacional
 temprano son los correlatos más directos de la cuenca disposicional.</p>
 <p><strong>Error clínico típico.</strong> Aplicar intervenciones
 diseñadas para basins de residencia o reconfiguración a una cuenca
-disposicional — las expectativas de cambio son incompatibles con la
+disposicional: las expectativas de cambio son incompatibles con la
 naturaleza del campo. Confundir la estabilidad de la cuenca
 disposicional con resistencia voluntaria al cambio.</p>
 <p><strong>Intervención orientativa.</strong> Las intervenciones de
 mayor acceso a <span class="math inline">\sigma_t</span>: centradas en
 el cuerpo (<span class="math inline">B_t</span>), relacionales de larga
 data, entorno sensorial. Las intervenciones narrativas tienen acceso
-diferencial — pueden modificar <span class="math inline">D_p(t)</span>
+diferencial: pueden modificar <span class="math inline">D_p(t)</span>
 sin acceso directo a <span class="math inline">\sigma_t</span>. El
 objetivo clínico es ampliar el campo de posibilidades <span
 class="math inline">\mathcal{F}_t^{(p)}</span> dentro de la geometría
@@ -1267,7 +1271,7 @@ disposicional, no reorganizar la cuenca.</p>
 <h3 id="c-l-encapsulamiento-segmentado-residenciareconfiguración">C-L —
 Encapsulamiento · Segmentado · Residencia/Reconfiguración</h3>
 <p><strong>Definición por ejes.</strong> <span
-class="math inline">\Psi_t</span> dominante: segmentado — algunos
+class="math inline">\Psi_t</span> dominante: segmentado: algunos
 canales de <span class="math inline">\Psi_t</span> están bloqueados
 selectivamente. El contenido encapsulado existe en el campo pero no
 propaga hacia la conciencia ordinaria. Cuenca: variable (residencia o
@@ -1275,11 +1279,11 @@ reconfiguración según el caso).</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
 <li><span class="math inline">\|H_t\|</span>: aparentemente normal en
-los dominios no segmentados — el campo parece preservado en la
+los dominios no segmentados: el campo parece preservado en la
 evaluación estándar. El perfil observable no refleja el compromiso real
 del campo.</li>
 <li><span class="math inline">\nabla H_t</span>: <span
-class="math inline">\approx 0</span> en los dominios no segmentados — el
+class="math inline">\approx 0</span> en los dominios no segmentados: el
 campo parece estable desde afuera. El movimiento real ocurre en el
 material encapsulado.</li>
 <li><span class="math inline">\varepsilon_t</span>: preservado en los
@@ -1287,29 +1291,29 @@ dominios accesibles; el segmento bloqueado no tiene <span
 class="math inline">\varepsilon</span> evaluable desde el exterior.</li>
 </ul>
 <p><strong>Dominio de origen empírico:</strong> <span
-class="math inline">A_t</span> en 100% de los casos del corpus — el
+class="math inline">A_t</span> en 100% de los casos del corpus: el
 anclaje existencial es el dominio más frecuentemente implicado en la
-segmentación. N=2 — dato orientativo, no concluyente.</p>
+segmentación. N=2: dato orientativo, no concluyente.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> preservada
 en todos los casos del corpus. Esta es la propiedad más discriminante de
 C-L: el campo sabe que existe pero hay contenido que no propaga hacia la
 conciencia ordinaria. No es un compromiso de <span
-class="math inline">\Pi_R</span> — es una segmentación de la
+class="math inline">\Pi_R</span>: es una segmentación de la
 propagación.</p>
-<p><strong>Velocidad:</strong> décadas en todos los casos — el patrón de
+<p><strong>Velocidad:</strong> décadas en todos los casos, el patrón de
 segmentación es de larga data.</p>
 <p><strong>Nota sobre N=2.</strong> El corpus de Barnhill subrepresenta
 gravemente los trastornos disociativos y las disfunciones sexuales de
 origen psicológico. La justificación de C-L como configuración canónica
 es teórica y clínica, no estadística en este corpus.</p>
-<p><strong><span class="math inline">D_p(t)</span>:</strong> alto — el
+<p><strong><span class="math inline">D_p(t)</span>:</strong> alto, el
 patrón segmentado de larga data ha dejado huella profunda. <span
-class="math inline">\kappa(t)</span>: bajo en el segmento bloqueado — no
+class="math inline">\kappa(t)</span>: bajo en el segmento bloqueado: no
 está disponible para el desvelamiento directo.</p>
 <p><strong>Perfil de moduladores modal:</strong> <span
 class="math inline">\Beta_F</span>: moderada en los dominios accesibles;
 irrelevante en el segmento. <span class="math inline">\Pi_R</span>:
-preservada — condición de posibilidad del trabajo clínico. <span
+preservada: condición de posibilidad del trabajo clínico. <span
 class="math inline">\Tau_F</span>: moderada en los dominios accesibles.
 <span class="math inline">\Upsilon_{US}</span>: moderada.</p>
 <p><strong>Correlatos clínicos representativos:</strong> amnesia
@@ -1329,7 +1333,7 @@ cuales el campo puede integrar gradualmente el material bloqueado, no
 forzar el acceso al segmento.</p>
 <p><strong>Error clínico típico.</strong> Intentar acceso directo al
 material bloqueado sin establecer las condiciones de <span
-class="math inline">\kappa(t)</span> suficiente — esto produce o bien
+class="math inline">\kappa(t)</span> suficiente: esto produce o bien
 rebloqueo o bien desestabilización. Subestimar la función de la
 segmentación como organización que amplió <span
 class="math inline">\mathcal{F}_t^{(p)}</span>.</p>
@@ -1342,24 +1346,24 @@ acceso al segmento lo determina el campo, no el clínico.</p>
 · Psicológico→Bt · Falla de reconfiguración</h3>
 <p><strong>Definición por ejes.</strong> <span
 class="math inline">\Psi_t</span> dominante: Psic → <span
-class="math inline">B_t</span> — la perturbación se origina en los
+class="math inline">B_t</span>: la perturbación se origina en los
 dominios psicológicos y propaga hacia <span
-class="math inline">B_t</span>. Cuenca: falla de reconfiguración — el
+class="math inline">B_t</span>. Cuenca: falla de reconfiguración: el
 campo intenta salir de la cuenca sin lograrlo; hay movimiento sin
 consolidación.</p>
 <p><strong>Propiedades derivadas.</strong></p>
 <ul>
-<li><span class="math inline">\|H_t\|</span>: oscilante — el campo
+<li><span class="math inline">\|H_t\|</span>: oscilante: el campo
 produce episodios de coherencia que no se consolidan. El perfil muestra
 variabilidad sin dirección sostenida.</li>
 <li><span class="math inline">\nabla H_t</span>: oscilante sin dirección
-sostenida — esta es la propiedad formal que distingue C-M de todas las
+sostenida: esta es la propiedad formal que distingue C-M de todas las
 demás configuraciones. <span class="math inline">\nabla H_t</span> es
-oscilante sin consolidación — no positivo sostenido (C-C), negativo
+oscilante sin consolidación: no positivo sostenido (C-C), negativo
 sostenido (catexía histórica), ni cero (residencia).</li>
 <li><span class="math inline">\varepsilon_t</span>: aparentemente
 suficiente para iniciar reorganizaciones, pero insuficiente para
-consolidarlas — el campo alcanza el umbral de reorganización pero no
+consolidarlas: el campo alcanza el umbral de reorganización pero no
 puede mantenerlo.</li>
 </ul>
 <p><strong>N=1 en corpus.</strong> Isaac Ulysse (TDM+duelo prolongado)
@@ -1374,38 +1378,38 @@ análogas son frecuentes: adicciones donde el proceso de recuperación
 fracasa repetidamente sin establecer un nuevo cuenca estable, procesos
 terapéuticos de larga data que producen movimiento sin consolidación,
 transiciones vitales que no logran reorganizar el campo. El corpus de
-Barnhill no es el universo — subrepresenta gravemente estos
+Barnhill no es el universo: subrepresenta gravemente estos
 patrones.</p>
 <p><strong><span class="math inline">\Pi_R</span>:</strong> sesgada en
 el único caso del corpus. La hipótesis es que el sesgo en <span
-class="math inline">\Pi_R</span> es parte del mecanismo de la falla — el
+class="math inline">\Pi_R</span> es parte del mecanismo de la falla: el
 campo interpreta la realidad de modo que confirma la imposibilidad de la
 reconfiguración (el duelo que no puede completarse porque implicaría
 “traicionar” al objeto perdido, la adicción que fracasa porque la
 recuperación es “imposible”).</p>
 <p><strong>Dominio de origen empírico:</strong> <span
-class="math inline">R_t</span> — la falla de reconfiguración tiene
+class="math inline">R_t</span>: la falla de reconfiguración tiene
 origen vincular en el único caso del corpus.</p>
 <p><strong>Velocidad:</strong> meses en el único caso. La hipótesis es
-que la velocidad de C-M es variable — puede ser meses o años dependiendo
+que la velocidad de C-M es variable: puede ser meses o años dependiendo
 de la magnitud del material que bloquea la reconfiguración.</p>
 <p><strong><span class="math inline">D_p(t)</span>:</strong> moderado a
-alto — los intentos fallidos de reconfiguración acumulan <span
+alto, los intentos fallidos de reconfiguración acumulan <span
 class="math inline">D_p(t)</span>. <span
-class="math inline">\kappa(t)</span>: variable — suficiente para iniciar
+class="math inline">\kappa(t)</span>: variable: suficiente para iniciar
 reorganizaciones pero insuficiente para consolidarlas. La hipótesis es
 que <span class="math inline">\kappa(t)</span> se restaura entre
 intentos pero se consume en cada intento fallido.</p>
 <p><strong>Grieta G-Duelo1.</strong> C-M es la configuración que
 formaliza la grieta G-Duelo1 del log de hallazgos del mapeo. La
-formalización completa de C-M requiere datos del piloto — en particular,
+formalización completa de C-M requiere datos del piloto: en particular,
 la especificación de las condiciones de <span
 class="math inline">\xi_t</span> que producen falla de reconfiguración
 vs. reconfiguración exitosa.</p>
 <p><strong>Subforma identificada en el mapeo (21 jun 2026):</strong> el
 duelo prolongado (TDP) presenta una versión específica de C-M con
 mecanismo distinguible del ciclo oscilatorio genérico: hay un atractor
-de residencia previo —la relación con la persona fallecida— que sigue
+de residencia previo (la relación con la persona fallecida) que sigue
 organizando el campo después de que su fuente desapareció. Es
 persistencia activa de un atractor que no puede actualizarse porque su
 objeto externo ya no existe, no falla de consolidación por agotamiento
@@ -1417,20 +1421,20 @@ distinguible del ciclo oscilatorio de C-M genérica por el perfil de Ψ_t
 horizonte temporal de los intentos de reorganización (correlacionados
 con fechas significativas de la relación perdida). Pendiente de
 formalización completa en Pendiente 3 de esta misma sección.</p>
-<p><strong>Perfil de moduladores modal (hipotético — N=1):</strong>
-<span class="math inline">\Beta_F</span>: moderada — el campo puede
+<p><strong>Perfil de moduladores modal (hipotético: N=1):</strong>
+<span class="math inline">\Beta_F</span>: moderada: el campo puede
 intentar reorganizaciones pero no consolidarlas. <span
-class="math inline">\Pi_R</span>: sesgada — en la dirección que confirma
+class="math inline">\Pi_R</span>: sesgada: en la dirección que confirma
 la imposibilidad del cambio. <span class="math inline">\Tau_F</span>:
-baja — los avances no se integran en narrativa continua. <span
+baja: los avances no se integran en narrativa continua. <span
 class="math inline">\Upsilon_{US}</span>: moderada.</p>
 <p><strong>Correlatos clínicos hipotéticos:</strong> duelo prolongado
 (TDP), adicciones con intentos repetidos de recuperación fallidos,
 procesos terapéuticos de larga data sin consolidación, transiciones
 vitales bloqueadas (emigración forzada con duelo cultural no elaborado,
 post-traumáticos con falla de elaboración).</p>
-<p><strong>Lógica interna.</strong> El campo no está en residencia — hay
-movimiento. No está en reconfiguración exitosa — los avances no se
+<p><strong>Lógica interna.</strong> El campo no está en residencia: hay
+movimiento. No está en reconfiguración exitosa: los avances no se
 consolidan. La falla es en el mecanismo de consolidación de la cuenca
 nuevo: el campo alcanza el umbral de reorganización pero algo devuelve
 la masa a la cuenca previo antes de que la nueva organización pueda
@@ -1438,7 +1442,7 @@ establecerse. La identificación de ese mecanismo es el objeto clínico
 central en C-M.</p>
 <p><strong>Error clínico típico.</strong> Tratar C-M como C-C1 o C-C2
 (reconfiguración exitosa) y aumentar la intensidad de la intervención
-cuando los avances no se consolidan — esto puede producir plasticidad
+cuando los avances no se consolidan: esto puede producir plasticidad
 que restringe <span class="math inline">\mathcal{F}_t^{(p)}</span>. O
 tratarla como resistencia voluntaria al cambio.</p>
 <p><strong>Intervención orientativa.</strong> Identificar el mecanismo
@@ -1450,14 +1454,14 @@ sean reconocibles y acumulables es el trabajo central.</p>
 <hr />
 <h2 id="vocabulario-relacional-retirado-estatuto-histórico">Vocabulario
 relacional (retirado — estatuto histórico)</h2>
-<p>El vocabulario relacional —7 términos técnicos de raíz griega
-(Eutropía, Disintropía, Neotropía, Catexía, Apexía, Anastropía,
-Heterotropía), formalizados el 10 de junio de 2026 junto con los nombres
-de las 14 configuraciones canónicas— fue retirado del corpus por
+<p>El vocabulario relacional (7 términos técnicos de raíz griega:
+Eutropía, Disintropía, Neotropía, Catexía, Apexía, Anastropía,
+Heterotropía, formalizados el 10 de junio de 2026 junto con los nombres
+de las 14 configuraciones canónicas) fue retirado del corpus por
 instrucción explícita de Diego F. Pereira-Perdomo. Cumplió su función
 heurística durante la construcción del modelo y se fusiona, en estatuto,
 con los 7 términos griegos ya históricos (Eudaimonía, Euexía, Alotropía,
-Anexía, Epitropía, Entelopía, Proexía — ver Diccionario Formal). Ningún
+Anexía, Epitropía, Entelopía, Proexía: ver Diccionario Formal). Ningún
 término griego, de ninguna de las dos generaciones, es activo. El único
 sistema de nomenclatura vigente son los 14 nombres en español del
 sistema canónico v1.2 y sus frases canónicas, abajo.</p>
@@ -1504,7 +1508,7 @@ reorganización activa cuyo origen es vincular</td>
 <td style="text-align: left;">C-C2</td>
 <td style="text-align: left;">Existencial</td>
 <td style="text-align: left;">La persona atraviesa un proceso de
-reorganización existencial — la prueba de realidad requiere evaluación
+reorganización existencial: la prueba de realidad requiere evaluación
 en cada encuentro</td>
 </tr>
 <tr class="odd">
@@ -1535,7 +1539,7 @@ reorganización sostenida en los demás dominios</td>
 <td style="text-align: left;">C-H</td>
 <td style="text-align: left;">Vorágine</td>
 <td style="text-align: left;">Lo somático y lo psicológico se perturban
-mutuamente en un ciclo reciente — la ventana de intervención está
+mutuamente en un ciclo reciente: la ventana de intervención está
 abierta</td>
 </tr>
 <tr class="even">
@@ -1549,14 +1553,14 @@ en torno a él</td>
 <td style="text-align: left;">C-J</td>
 <td style="text-align: left;">Colapso</td>
 <td style="text-align: left;">Todos los dominios colapsaron
-simultáneamente — la integración y la prueba de realidad no están
+simultáneamente: la integración y la prueba de realidad no están
 disponibles</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">C-K</td>
 <td style="text-align: left;">Idiosincrática</td>
 <td style="text-align: left;">La trayectoria se organizó de manera
-divergente durante o antes de la infancia temprana — esa organización es
+divergente durante o antes de la infancia temprana: esa organización es
 la base constitutiva desde la que opera</td>
 </tr>
 <tr class="odd">
@@ -1602,18 +1606,18 @@ formalización cuantitativa como función de transición es objeto de H2.
 La tabla de rutas de transición (Pendiente 2) debe derivarse una vez que
 los datos del piloto permitan contrastar las tres propiedades.</p>
 <ul>
-<li><strong>C-A y C-B</strong> — la cronificación psicológica y el ciclo
+<li><strong>C-A y C-B</strong>: la cronificación psicológica y el ciclo
 crónico comparten la cuenca de residencia; el movimiento entre ellas es
 frecuente cuando se añade o pierde el componente somático cíclico.</li>
-<li><strong>C-C1, C-C2 y C-D</strong> — las reconfiguraciones
+<li><strong>C-C1, C-C2 y C-D</strong>: las reconfiguraciones
 psicológica (relacional y existencial) y la del ciclo bidireccional
 comparten el proceso activo de cambio; pueden coexistir en trayectorias
 con componentes mixtos.</li>
-<li><strong>C-E y C-F</strong> — la perturbación somática aguda y la
+<li><strong>C-E y C-F</strong>: la perturbación somática aguda y la
 psicológica situacional comparten la cuenca transitorio; el duelo con
 repercusión somática es el ejemplo paradigmático de ambas activas
 simultáneamente.</li>
-<li><strong>C-J y cualquier otra</strong> — el colapso global puede
+<li><strong>C-J y cualquier otra</strong>: el colapso global puede
 superponerse a cualquier configuración de base cuando la perturbación
 supera todos los umbrales.</li>
 </ul>
@@ -1641,7 +1645,7 @@ H_t</span> modal</th>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">C-A</td>
-<td style="text-align: left;">moderado — variable por dominio</td>
+<td style="text-align: left;">moderado: variable por dominio</td>
 <td style="text-align: left;"><span class="math inline">\approx 0</span>
 sostenido</td>
 </tr>
@@ -1653,15 +1657,15 @@ sostenido (ciclo estabilizado)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">C-C1</td>
-<td style="text-align: left;">variable — dominios relacionales muestran
+<td style="text-align: left;">variable: dominios relacionales muestran
 el movimiento más marcado</td>
 <td style="text-align: left;">variable, tendiendo positivo</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">C-C2</td>
-<td style="text-align: left;">variable — frecuentemente bajo en fase
+<td style="text-align: left;">variable: frecuentemente bajo en fase
 aguda</td>
-<td style="text-align: left;">variable — más inestable que C-C1</td>
+<td style="text-align: left;">variable: más inestable que C-C1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">C-D</td>
@@ -1670,7 +1674,7 @@ aguda</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">C-E</td>
-<td style="text-align: left;">variable — caída rápida, recuperación
+<td style="text-align: left;">variable: caída rápida, recuperación
 posible</td>
 <td style="text-align: left;">activo (+ o -)</td>
 </tr>
@@ -1682,7 +1686,7 @@ posible</td>
 <tr class="even">
 <td style="text-align: left;">C-G</td>
 <td style="text-align: left;">muy variable</td>
-<td style="text-align: left;">muy variable — dependiente del proceso
+<td style="text-align: left;">muy variable: dependiente del proceso
 somático</td>
 </tr>
 <tr class="odd">
@@ -1698,7 +1702,7 @@ sostenido</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">C-J</td>
-<td style="text-align: left;">muy bajo — todos los dominios</td>
+<td style="text-align: left;">muy bajo: todos los dominios</td>
 <td style="text-align: left;"><span class="math inline">&lt; 0</span> en
 colapso</td>
 </tr>
@@ -1707,7 +1711,7 @@ colapso</td>
 <td style="text-align: left;">variable (alta dentro del campo
 propio)</td>
 <td style="text-align: left;"><span class="math inline">\approx 0</span>
-— cuenca profundo</td>
+: cuenca profundo</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">C-L</td>
@@ -1726,39 +1730,38 @@ en dominios accesibles</td>
 <h2 id="pendientes-formales">Pendientes formales</h2>
 <ol type="1">
 <li><p><strong>Perfiles de <span
-class="math inline">\Omega_t^{(p)}</span></strong> por configuración —
-requieren los datos del piloto para especificar la distribución de masa
+class="math inline">\Omega_t^{(p)}</span></strong> por configuración: requieren los datos del piloto para especificar la distribución de masa
 sobre configuraciones adyacentes.</p></li>
-<li><p><strong>Tabla de rutas de transición</strong> — el sistema
+<li><p><strong>Tabla de rutas de transición</strong>: el sistema
 histórico tenía una tabla de rutas frecuentes (Cap06 §6.4.2) derivada de
 los 14 configuraciones. Esta tabla debe re-derivarse desde el sistema
 canónico v1.2. <strong>Cerrada en el nivel de determinación por par (21
 jun 2026):</strong> Núcleo Matemático v0.4.21, §III.12bis, da estatus
 explícito a los 182 pares dirigidos posibles entre las 14
 configuraciones, mediante sistema de reglas auditable (no 182 juicios
-sueltos) — 64 declarados verbatim en “Topología global”, 41 extendidos
+sueltos): 64 declarados verbatim en “Topología global”, 41 extendidos
 por analogía (32 textual, 9 estructural), 77 sin base textual ni
 analógica razonable, declarados explícitamente como tales. <strong>Lo
 que sigue abierto, y sí requiere piloto:</strong> ningún <span
 class="math inline">\mu_{\text{alto}}</span> tiene magnitud numérica
 fija; los 77 pares sin base permanecen en <span
 class="math inline">\mu=1</span> por defecto, por ausencia de
-fundamento, no por decisión — la mayoría involucra a C-M (perfil propio:
+fundamento, no por decisión: la mayoría involucra a C-M (perfil propio:
 “formalización completa requiere datos del piloto”), entrada a C-K, o a
 C-L (N=2 en su propio perfil). Tabla completa con procedencia por celda:
 <code>tabla_mu_ij_completa.csv</code>.</p></li>
-<li><p><strong>Formalización de C-M</strong> — G-Duelo1. Requiere sesión
+<li><p><strong>Formalización de C-M</strong>: G-Duelo1. Requiere sesión
 dedicada con el Núcleo Matemático §II.7bis (<span
 class="math inline">D_p(t)</span> como función sobre <span
-class="math inline">\mathcal{W}</span> — erosión diferencial) y datos
+class="math inline">\mathcal{W}</span>: erosión diferencial) y datos
 del piloto sobre condiciones de <span class="math inline">\xi_t</span>
 que producen falla de consolidación vs. reconfiguración exitosa. (ApB
 absorbido en Núcleo Matemático v0.4.0.)</p></li>
-<li><p><strong>Subtipo C-J(r)</strong> — C-J con cuenca de residencia
+<li><p><strong>Subtipo C-J(r)</strong>: C-J con cuenca de residencia
 (Lucas Sandahl, TEI). <strong>Cerrado (21 jun 2026):</strong> no se
 introduce como configuración separada. Aplicando la misma política ya
 establecida para C-A/C-F (“mientras el piloto no produzca esa evidencia,
-permanecen unificadas — introducir la subdivisión antes de tener
+permanecen unificadas: introducir la subdivisión antes de tener
 evidencia empírica que las distinga produciría configuraciones sin
 respaldo, lo que el modelo evita”, Núcleo Ontológico, “Topología
 global”): un solo caso (N=1) es la misma situación exacta que ya se
@@ -1766,11 +1769,11 @@ decidió no resolver por subdivisión. C-J(r) queda documentada como nota
 dentro del perfil de C-J (ya está, ver línea 956), no como configuración
 candidata aparte. Se reabre si el piloto produce más casos del mismo
 patrón.</p></li>
-<li><p>Integración con las 7 organizaciones emergentes — completada en
+<li><p>Integración con las 7 organizaciones emergentes: completada en
 v1.1. El cotejo sistemático produjo 5 correspondencias directas y motivó
 la división de C-C en C-C1 y C-C2. Las preguntas abiertas residuales
 están declaradas como extensión de G10.</p></li>
-<li><p><strong>Cierre matemático</strong> — evaluar si hay combinaciones
+<li><p><strong>Cierre matemático</strong>: evaluar si hay combinaciones
 de organización dominante de propagación × cuenca con justificación
 teórica pero N=0 en el corpus que deban declararse como configuraciones
 candidatas con estatuto especulativo. <strong>Evaluado (21 jun
@@ -1778,16 +1781,16 @@ candidatas con estatuto especulativo. <strong>Evaluado (21 jun
 (todos poblados) y los cruces de cada valor especial de Eje 1
 (segmentado, colapso global) y Eje 2 (disposicional temprana, falla de
 reconfiguración) contra el resto del espacio. Un candidato real, no
-forzado: <strong>segmentado × transitoria</strong> — C-L (N=2 en el
+forzado: <strong>segmentado × transitoria</strong>: C-L (N=2 en el
 corpus) está documentada como patrón de “décadas” exclusivamente; una
 segmentación aguda/transitoria (p. ej. amnesia disociativa transitoria
 post-trauma agudo, distinta del patrón crónico de C-L) es teóricamente
 plausible y coherente con la lógica de segmentación ya descrita, y el
 propio perfil de C-L declara que “el corpus de Barnhill subrepresenta
-gravemente los trastornos disociativos” — el N=0 es más probablemente
+gravemente los trastornos disociativos”: el N=0 es más probablemente
 artefacto de muestra que ausencia real. <strong>No se introduce como
-configuración nueva</strong> —sería exactamente el error que la política
-de C-A/C-F ya evita— se deja registrada aquí como candidata especulativa
+configuración nueva</strong> (sería exactamente el error que la política
+de C-A/C-F ya evita), se deja registrada aquí como candidata especulativa
 nombrada, a la espera de que el piloto (o un caso clínico futuro) la
 confirme o la descarte. Ningún otro cruce revisado tuvo justificación
 teórica suficiente para nombrarse.</p></li>
@@ -1797,7 +1800,7 @@ teórica suficiente para nombrarse.</p></li>
 histórico</h2>
 <p>Las 14 configuraciones del sistema histórico (v0.3.0) permanecen como
 registro del desarrollo conceptual del modelo. Algunos nombres y lógicas
-internas son recuperables en el sistema v1.1 — la correspondencia no es
+internas son recuperables en el sistema v1.1: la correspondencia no es
 exacta pero hay alineación parcial:</p>
 <table>
 <colgroup>
@@ -1843,7 +1846,7 @@ reconfiguración</td>
 <tr class="even">
 <td style="text-align: left;">C-E (<span class="math inline">B_t</span>
 → Psic · transitoria)</td>
-<td style="text-align: left;">sin equivalente directo — la dimensión
+<td style="text-align: left;">sin equivalente directo: la dimensión
 somática era invisible</td>
 </tr>
 <tr class="odd">
@@ -1872,7 +1875,7 @@ inicial)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">C-K (disposicional temprana)</td>
-<td style="text-align: left;">sin equivalente directo — no había cuenca
+<td style="text-align: left;">sin equivalente directo: no había cuenca
 como eje</td>
 </tr>
 <tr class="odd">
@@ -1892,7 +1895,7 @@ análisis del mapeo de 105 casos. C-C1 y C-C2 son el aporte del cotejo
 sistemático con las 7 organizaciones emergentes del clustering
 k-modes.</p>
 <hr />
-<p><em>Versión 1.3.15 — 22 de junio de 2026.</em> <em>Autor: Diego F.
+<p><em>Versión 1.3.15 &mdash; 22 de junio de 2026.</em> <em>Autor: Diego F.
 Pereira-Perdomo MD, MSci.</em> <em>Aprobado por Diego F.
 Pereira-Perdomo.</em> <em>Base empírica: matriz de perfiles 105 casos
 Barnhill 2023 (matriz_perfiles_sintr_v0_1_0.tsv).</em> <em>Cotejo: 7
