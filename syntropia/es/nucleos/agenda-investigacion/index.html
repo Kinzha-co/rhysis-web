@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Investigación &mdash; Syntropía</title>
+  <meta name="description" content="El catálogo completo de grietas de investigación, hipótesis formales y prioridades del piloto de validación.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%); }
+    .prose :where(code):not(:where([class~="not-prose"] *)) {
+      background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em;
+    }
+    .prose blockquote { border-left-color: #0f766e; font-style: normal; }
+    .prose table { font-size: 0.92em; }
+    .prose thead th { background: #f8fafc; }
+  </style>
+<script defer
+src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+</script>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+</head>
+
+<body class="m-0 p-0 bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4">
+    <a href="/es/">
+      <img src="/assets/Logo-rhysis.svg" alt="Rhysis"
+        class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity">
+    </a>
+    <div class="text-sm md:text-base font-medium text-white tracking-wide">
+      <span class="text-slate-400">EN pendiente</span>
+      <span class="mx-2 text-slate-400">|</span>
+      <span class="font-bold border-b-2 border-teal-400 pb-0.5">ES</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntrop&iacute;a &mdash; Documento can&oacute;nico</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
+        Agenda de Investigaci&oacute;n
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">El cat&aacute;logo completo de grietas de investigaci&oacute;n, hip&oacute;tesis formales y prioridades del piloto de validaci&oacute;n.</p>
+      <p class="text-slate-400 text-sm mt-6">Versi&oacute;n 0.1.0 &middot; 18 de julio de 2026</p>
+    </div>
+  </section>
+
+  <!-- Contenido -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-slate lg:prose-lg max-w-none
+                       prose-headings:text-teal-800 prose-a:text-teal-700
+                       prose-strong:text-slate-900">
+<h2 id="nota-de-uso">Nota de uso</h2>
+<p>Este documento reúne todas las preguntas empíricas abiertas del modelo Syntropía: las “grietas de investigación”, cada una con su referente formal y su condición de falsabilidad, y las hipótesis estructurales que todavía no tienen estatuto de compromiso ontológico confirmado. Es la fuente completa para quien quiera evaluar el programa de investigación en detalle. Core (la referencia canónica única del modelo) resume esta agenda en un párrafo y señala aquí para el detalle.</p>
+<p>Dos de estas preguntas son obligatorias para el primer año del piloto de validación: si las 14 configuraciones canónicas emergen como atractores reales del espacio de posibilidades o son solo convenciones clínicas bien elegidas, y si el modelo completo predice mejor que una alternativa más simple con los mismos datos. El resto está organizado por bloques temáticos, con un horizonte de tiempo estimado para cada una (durante el piloto, después del piloto, o trabajo teórico sin fecha fija).</p>
+<hr />
+<h2 id="tabla-de-estratificación-temporal-objetos-del-corpus">Tabla de estratificación temporal — objetos del corpus</h2>
+<p>La complejidad del corpus refleja horizontes de maduración distintos. Esta tabla clasifica cada objeto principal para que el lector distinga lo que opera en el piloto actual de lo que pertenece a horizontes posteriores. La columna “función arquitectónica” indica qué hace el objeto dentro de la estructura del programa independientemente de si tiene estimador activo.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Objeto</th>
+<th>Horizonte</th>
+<th>Estado empírico</th>
+<th>Función arquitectónica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">D_p(t)</span></td>
+<td><strong>Activo — piloto</strong></td>
+<td>Estimable via <a href="/syntropia/es/nucleos/piac/">PIAC</a> + motor</td>
+<td>Historia acumulada irreversible — justifica P12</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\kappa(t)</span></td>
+<td><strong>Activo — piloto</strong></td>
+<td>Estimable via <a href="/syntropia/es/nucleos/piac/">PIAC</a> + motor</td>
+<td>Capacidad receptiva actual — justifica P12</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">H_t</span></td>
+<td><strong>Activo — piloto</strong></td>
+<td>Observable directo</td>
+<td>Diferenciación funcional — observable principal</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">T_2</span></td>
+<td><strong>Activo — piloto</strong></td>
+<td>Derivado de <span class="math inline">H_t</span> longitudinal</td>
+<td>Dirección del proceso — predictor diferenciado</td>
+</tr>
+<tr class="odd">
+<td>P12</td>
+<td><strong>Activo — piloto</strong></td>
+<td>Regla derivada de <span class="math inline">D_p/\kappa</span></td>
+<td>Consecuencia clínica más original del programa</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">S_m</span> (R1–R4)</td>
+<td><strong>Activo — piloto</strong></td>
+<td>Estimable cualitativamente</td>
+<td>Orienta P12 operacionalmente</td>
+</tr>
+<tr class="odd">
+<td>Sistema canónico v1.2</td>
+<td><strong>Activo — piloto</strong></td>
+<td>Heurística clínica</td>
+<td>Organiza la lectura del campo — requiere G10 para fundamento empírico</td>
+</tr>
+<tr class="even">
+<td>FRCS-1</td>
+<td><strong>Activo — piloto</strong></td>
+<td>Protocolo operacional</td>
+<td>Registro mínimo de comparabilidad inter-clínico</td>
+</tr>
+<tr class="odd">
+<td>§T1 Fases 2–4</td>
+<td><strong>Activo — piloto</strong></td>
+<td>Indicadores observacionales en §VIII.5</td>
+<td>Teoría clínica del proceso de transformación</td>
+</tr>
+<tr class="even">
+<td>§T3 operacional</td>
+<td><strong>Activo — piloto</strong></td>
+<td>Protección práctica</td>
+<td>Protege contra uso categorial del sistema canónico</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\Omega_t^{(p)}</span></td>
+<td><strong>Activo — piloto</strong> (como concepto)</td>
+<td>Inferido via <span class="math inline">\xi_t</span> (G2 para calibración directa)</td>
+<td>Organización del campo que produce los observables — necesaria para CE20</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">M</span></td>
+<td><strong>Activo — piloto</strong></td>
+<td>Estimable via <a href="/syntropia/es/nucleos/piac/">PIAC</a></td>
+<td>Condiciones de transición — selecciona qué parte del relieve es accesible</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\varepsilon_t</span>, <span class="math inline">\Psi_t</span></td>
+<td><strong>Activo — H2</strong> (cualitativo)</td>
+<td>Sin calibración cuantitativa</td>
+<td>Estructura del spatium — constitutivo pero sin forma funcional todavía (G15)</td>
+</tr>
+<tr class="even">
+<td>CE18 + H-COMP</td>
+<td><strong>Activo — H2</strong></td>
+<td>Premetrica sin calibrar</td>
+<td>Protege la distinción singularidad/comparabilidad — necesaria para ciencia acumulativa</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\sigma_t</span></td>
+<td><strong>Consecuencia ontológica</strong></td>
+<td>Marcador de posición en ecuaciones</td>
+<td>Declara la condición inicial no modelada — protege la honestidad ontológica</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\rho(t)</span></td>
+<td><strong>Objeto latente — H2</strong></td>
+<td>Sin estimador activo (G18)</td>
+<td>Consecuencia de A4: la función de la historia puede cambiar sin que la historia cambie de magnitud</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\Phi_t^{(p)}</span></td>
+<td><strong>Objeto latente — H3</strong></td>
+<td>Sin derivación formal (PEA1)</td>
+<td>Consecuencia ontológica: si existe <span class="math inline">\Omega_t^{(p)}</span> dinámico existe tensión generativa — G14 aproxima sus efectos via proxies</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">g_t</span></td>
+<td><strong>Objeto latente — H2</strong></td>
+<td>Sin calibración (G2)</td>
+<td>Tensor métrico de <span class="math inline">\mathcal{W}</span> — H-TRANS-F y H-COMP cuantitativa dependen de él</td>
+</tr>
+<tr class="odd">
+<td>H-TRANS-F</td>
+<td><strong>Hipótesis latente — H2</strong></td>
+<td>Condicional a G2 (RC-6.2)</td>
+<td>Convierte la HST en predicción cuantitativa falsable</td>
+</tr>
+<tr class="even">
+<td>H-NOV, H-TEMPO</td>
+<td><strong>Hipótesis latentes — H3</strong></td>
+<td>Condicionales a PEA1 (RC-6.2)</td>
+<td>Consecuencias de <span class="math inline">\Phi_t^{(p)}</span> — si PEA1 se resuelve, predicen la novedad y el tiempo interno</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\Omega_t^{(\text{int})}</span> con spatium</td>
+<td><strong>Objeto latente — H2</strong></td>
+<td>Sin estimador (G17)</td>
+<td>Formalización de A7: el encuentro produce campo con propiedades propias</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\mathcal{W}</span></td>
+<td><strong>Consecuencia ontológica</strong></td>
+<td>Postulado — propiedades desde A1–A10 en PEA1</td>
+<td>Espacio de organizaciones posibles — necesario para la geometría del campo</td>
+</tr>
+<tr class="odd">
+<td>G10</td>
+<td><strong>Prioridad crítica del piloto</strong></td>
+<td>Sin datos todavía</td>
+<td>Valida el fundamento empírico del sistema canónico — ver abajo</td>
+</tr>
+<tr class="even">
+<td>G26</td>
+<td><strong>Obligatorio del piloto</strong></td>
+<td>Sin datos todavía</td>
+<td>Test de existencia del valor añadido de la arquitectura completa</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota de lectura:</em> los objetos marcados como “consecuencia ontológica” existen porque la ontología rhísica los requiere, no dependen de tener estimador para ser necesarios. Los objetos “latentes” tienen derivación conceptual sólida pero requieren trabajo matemático (H3) o datos (H2) para volverse activos.</p>
+<hr />
+<h2 id="programa-evolutivo-hoja-de-ruta-de-ausencias">Programa evolutivo — hoja de ruta de ausencias</h2>
+<p>Esta hoja de ruta identifica las ausencias estructurales del programa (lo que todavía no existe pero será necesario) y las organiza en cuatro horizontes.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Horizonte</th>
+<th>Contenido</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>H1</strong> — Antes del piloto</td>
+<td>D15-int, HST, protocolo ómico, distinción <span class="math inline">\chi_t</span>/<span class="math inline">\dot{H}_t</span></td>
+<td><strong>Ejecutado</strong></td>
+</tr>
+<tr class="even">
+<td><strong>H2</strong> — Durante el piloto</td>
+<td>Forma empírica de la función de transición, <span class="math inline">\kappa_{\text{umbral}}(D_p)</span>, distinguibilidad <span class="math inline">\rho(t)/\kappa(t)</span>, velocidad de instalación de cuencas</td>
+<td>Pendiente — requiere datos</td>
+</tr>
+<tr class="odd">
+<td><strong>H3</strong> — Post-piloto</td>
+<td>Calibración de <span class="math inline">\Phi_t^{(p)}</span>, profundidad formal del atractor, operador de propagación descendente, coexistencia de atractores</td>
+<td>Pendiente — requiere datos</td>
+</tr>
+<tr class="even">
+<td><strong>H4</strong> — Largo plazo</td>
+<td>Bifurcación en ontología del proceso, novedad más allá de <span class="math inline">\mathcal{W}</span> fijo, teoría completa del intersticio, umbral de singularización</td>
+<td>Trabajo teórico sin fecha</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ausencias principales identificadas, no ejecutadas todavía:</strong> - Función de transición entre configuraciones como objeto formal cuantitativo (solo hipótesis cualitativa HST; H2, ver H-TRANS-F, condicional a G2) - Profundidad formal del atractor como medida (H3) - Velocidad de instalación de cuencas (H3) - Coexistencia de atractores (H3) - <span class="math inline">\Phi_t^{(p)}</span> calibrado empíricamente (H3, condicional a PEA1) - Teoría completa del intersticio con métricas de <span class="math inline">\xi_t^{(\text{int})}</span> (H4, ver G17) - Bifurcación en ontología del proceso (H4)</p>
+<p><strong>Principio de secuenciación de horizontes.</strong> Los cuatro horizontes no se adelantan sin autorización explícita del autor: H1 está completo; H2 requiere datos; H3 requiere los datos que produzca H2; H4 requiere trabajo teórico específicamente agendado. Ningún objeto de H2–H4 se formaliza, calibra ni se da por cerrado sin esa autorización explícita, incluyendo en los checklists operacionales del <a href="/syntropia/es/nucleos/sistema-operacional/">Sistema Operacional</a>.</p>
+<hr />
+<p>Las <strong>grietas de investigación</strong> son preguntas empíricas cuya respuesta modificaría componentes específicos del modelo. Cada una tiene un referente formal y una condición de falsabilidad.</p>
+<h2 id="bloque-0-prioridad-crítica-del-piloto-g10-y-g26">Bloque 0 — Prioridad crítica del piloto (G10 y G26)</h2>
+<p><em>Estos dos análisis son obligatorios en el primer año del piloto. G10 valida el fundamento empírico del instrumento clínico central. G26 valida que la complejidad del programa añade valor sobre alternativas más parsimoniosas.</em></p>
+<p><strong>G10 — PRIORIDAD MÁXIMA.</strong> ¿Las 14 configuraciones del sistema canónico v1.2 emergen como atractores naturales del espacio de organizaciones posibles, o son convenciones clínicas bien elegidas? ¿El sistema de 14 es exhaustivo para la población clínica estudiada, o existen configuraciones no capturadas? <em>Referente: A1, A5, §T2, D-POT. Evidencia: análisis de clúster latente con <span class="math inline">N \geq 100</span> en el primer año del piloto (señal mínima), <span class="math inline">N \geq 300</span> para resultado definitivo. Diseño: k-modes + análisis de silueta sobre perfiles sintrópicos completos de <span class="math inline">H_t + M + \xi_t</span>; comparación entre el número emergente de clústeres y los 14 canónicos. Impacto: si el sistema canónico no emerge empíricamente, el instrumento clínico principal del programa requiere revisión antes de la validación de G6 y G14.</em></p>
+<p><strong>G26 — OBLIGATORIO.</strong> ¿El modelo completo de Syntropía (con la arquitectura ontológica, <a href="/syntropia/es/nucleos/piac/">PIAC</a>, FRCS-1, motor PyMC, y clasificación por <span class="math inline">\Omega_t^{(p)}</span>) predice resultado clínico mejor que un modelo simplificado que usa los mismos datos longitudinales con regresión bayesiana estándar sobre <span class="math inline">H_t</span> sin la arquitectura ontológica? <em>Referente: CE20, Intuición 2. Diseño: mismo conjunto de datos; modelo A = Syntropía completa; modelo B = modelo longitudinal bayesiano estándar con <span class="math inline">H_t</span>, <span class="math inline">M</span>, <span class="math inline">\varepsilon_t</span> pero sin <span class="math inline">\Omega_t^{(p)}</span> ni <a href="/syntropia/es/nucleos/piac/">PIAC</a>. Comparación en G6, varianza explicada idiográfica, y detección de transiciones (G19). Resultado a presentar al cierre del primer año del piloto.</em></p>
+<h2 id="bloque-i-calibración-paramétrica">Bloque I — Calibración paramétrica</h2>
+<p><strong>G1.</strong> ¿Cuál es la forma de <span class="math inline">\kappa_{\text{umbral}}(D_p)</span> y en qué punto está la inflexión <span class="math inline">D_p^*</span>? <em>Referente: P12. Evidencia: series longitudinales con perturbaciones controladas.</em></p>
+<p><strong>G2.</strong> ¿Puede el tensor métrico <span class="math inline">g_t</span> sobre <span class="math inline">\mathcal{W}</span> calibrarse desde datos longitudinales del piloto? ¿La representación continua de <span class="math inline">\Omega_t^{(p)}</span> como función sobre <span class="math inline">\mathcal{W}</span> converge con la inferencia histórica del <a href="/syntropia/es/nucleos/piac/">PIAC</a>? <em>Referente: D3, Condición 1, <a href="/syntropia/es/nucleos/piac/">PIAC</a> §II.3. Evidencia: análisis de homología persistente sobre señal del sensor en paralelo con inferencia histórica: convergencia entre las dos rutas independientes.</em></p>
+<p><strong>G3a.</strong> ¿Las cuatro fuentes de <span class="math inline">\mathcal{O}(t)</span> son condicionalmente independientes entre sí dado <span class="math inline">\xi_t</span>? <em>Referente: P9. Evidencia: análisis de concordancia inter-fuente.</em></p>
+<p><strong>G3b.</strong> ¿Los pesos <span class="math inline">w_s</span>, <span class="math inline">w_a</span> pueden estimarse por confiabilidad relativa de cada fuente? <em>Referente: P9. Evidencia: diseño de calibración comparativa.</em></p>
+<p><strong>G4.</strong> ¿Cuáles son los umbrales mínimos <span class="math inline">\kappa_{\min}</span>, <span class="math inline">\varepsilon_{\min}</span>, <span class="math inline">\Upsilon_{US_{\min}}</span> con interpretación clínica válida? <em>Referente: P12, P17. Evidencia: análisis de curvas ROC sobre datos del piloto.</em></p>
+<h2 id="bloque-ii-infraestructura-inferencial">Bloque II — Infraestructura inferencial</h2>
+<p><strong>G5.</strong> ¿El protocolo adaptativo reduce la varianza del posterior sobre <span class="math inline">\xi_t</span> más rápidamente que el protocolo de secuencia fija? <em>Referente: C1. Evidencia: ensayo controlado <span class="math inline">N \geq 60</span> por brazo.</em></p>
+<p><strong>G6.</strong> ¿El cambio en <span class="math inline">T_2</span> predice el resultado clínico a 6 meses con mayor precisión que el cambio en <span class="math inline">\|H_t\|</span> en la evaluación inicial? <em>Referente: C3. Evidencia: cohorte longitudinal.</em></p>
+<p><strong>G7.</strong> ¿Es posible extender el modelo bayesiano al espacio continuo <span class="math inline">S_m</span> de forma operativamente admisible? <em>Referente: PEA3. Evidencia: trabajo matemático + verificación empírica en submuestra.</em></p>
+<p><strong>G8.</strong> ¿Los correlatos del aparato observacional producen representaciones de <span class="math inline">\varepsilon_t</span> y <span class="math inline">\Psi_t</span> consistentes con las estimaciones clínicas? <em>Referente: <span class="math inline">T_{\text{temporal}}</span>. Evidencia: submuestra <span class="math inline">N \geq 50</span> con sensor longitudinal.</em></p>
+<h2 id="bloque-iii-integración-biológica-y-emergencia">Bloque III — Integración biológica y emergencia</h2>
+<p><strong>G9.</strong> ¿La metilación de <em>FKBP5</em> predice <span class="math inline">D_p(t)</span> con mayor especificidad que la historia autoreportada? ¿El reloj de Horvath predice <span class="math inline">\kappa(t)</span> reducido independientemente de <span class="math inline">D_p(t)</span>? <em>Referente: <span class="math inline">T_{\text{ontológico}}</span>. Evidencia: subgrupo <span class="math inline">N \geq 80</span> con perfil epigenómico.</em></p>
+<p><strong>G14.</strong> ¿El perfil sintrópico longitudinal (Capa 3) mejora la predicción de <span class="math inline">H_{t+k}</span> sobre Capas 1+2 solas, para todo <span class="math inline">k \geq k_{\min}</span>? <em>Predicción falsable de CE4. Evidencia: cohorte con las tres capas disponibles.</em></p>
+<p><strong>G15.</strong> ¿Existen funciones <span class="math inline">f(\varepsilon_t) = \text{cuenca}</span> y <span class="math inline">g(\Psi_t) = \text{dirección}</span> que clasifiquen correctamente las 14 configuraciones? <em>Referente: D4*, G15 (nuevo). Evidencia: trabajo matemático + verificación sobre corpus Barnhill.</em></p>
+<p><strong>G16.</strong> ¿Las dos dimensiones de <span class="math inline">\Pi_R</span> (<span class="math inline">\Beta_F^{(r)}</span>/<span class="math inline">\Beta_F^{(i)}</span> y bypass/en-construcción) discriminan pronóstico de forma independiente? <em>Referente: D7, Clínico §2.5. Condición de desbloqueo: datos del piloto.</em></p>
+<p><strong>G17.</strong> ¿Puede el campo intersticial clínico formalizarse con propiedades análogas a <span class="math inline">\Omega_t^{(p)}</span>? ¿La capacidad terapéutica del encuentro depende de las propiedades de <span class="math inline">\Omega_t^{(\text{int})}</span> y no solo de las del campo del paciente? <em>Referente: D15-int, A7, C4. Evidencia covariación entre propiedades del campo intersticial y reorganizaciones en el campo del paciente.</em></p>
+<p><strong>G18.</strong> ¿Es <span class="math inline">\rho(t)</span> (el operador de resignificación de <span class="math inline">D_p(t)</span>) empíricamente distinguible de <span class="math inline">\kappa(t)</span>? <em>Condición de desbloqueo: datos del piloto con medidas pre/post de intervenciones narrativas vs. somáticas. Si los perfiles de <span class="math inline">T_2</span> son distintos con <span class="math inline">D_p(t)</span> constante, <span class="math inline">\rho(t)</span> es un objeto formal necesario.</em></p>
+<h2 id="bloque-vi-arquitectura-del-proceso-g19g25">Bloque VI — Arquitectura del proceso (G19–G25)</h2>
+<p><strong>G19.</strong> ¿Cuáles son las propiedades observables del campo durante el régimen transicional (el periodo entre cuencas)? <em>Referente: H-TRANS, HST, A5. Evidencia: series de alta frecuencia con transiciones documentadas: distribución de <span class="math inline">\Omega_t^{(p)}</span>, <span class="math inline">\chi_t</span> y <span class="math inline">\kappa(t)</span> durante la travesía. Horizonte: H2–H3.</em></p>
+<p><strong>G20 (URGENTE).</strong> ¿Puede formalizarse una distancia procesual <span class="math inline">d_{\text{proc}}</span> entre trayectorias sobre el espacio de parámetros estructurales que sea coherente con CE18 y admisible bajo Condición 1? <em>Referente: CE18, H-COMP, G2. Evidencia: trabajo matemático sobre <span class="math inline">g_t</span> + verificación de que agrupamientos por <span class="math inline">d_{\text{proc}}</span> predicen resultado clínico a 6 meses mejor que configuración modal. Bloquea la validación poblacional del piloto. Horizonte: H2 temprano.</em></p>
+<p><strong>G21.</strong> ¿<span class="math inline">M</span> actúa sobre <span class="math inline">\Omega_t^{(p)}</span> como umbral de acceso a regiones del relieve o como modificador de la métrica local? <em>Referente: A6, D7, nota de I.6. Evidencia: evaluaciones densas de <span class="math inline">M</span> con medidas de capacidad de respuesta antes y después de intervenciones específicas sobre <span class="math inline">\Beta_F</span> o <span class="math inline">\Upsilon_{US}</span>. Antecede lógicamente a G8. Horizonte: H2.</em></p>
+<p><strong>G22.</strong> ¿Las propiedades de <span class="math inline">\Omega_t^{(\text{int})}</span> (<span class="math inline">\kappa^{(\text{int})}(t)</span> y <span class="math inline">D_p^{(\text{int})}(t)</span>) covarían con la velocidad y dirección de reorganización del campo de la persona de manera predecible y distinguible del efecto de los parámetros individuales? <em>Referente: D15-int, G17, A7. Depende de G17. Horizonte: H3.</em></p>
+<p><strong>G23.</strong> ¿Las reorganizaciones del campo de individuación (<span class="math inline">\Delta\Omega_t^{(p)} &gt; 0</span> sostenido) producen cambios identificables en los marcadores de <span class="math inline">T_{\text{ontológico}}</span> (desmetilación de <em>BDNF</em>, reducción de aceleración del reloj de Horvath) con precedencia temporal causal distinguible de la dirección inversa? <em>Referente: <span class="math inline">T_{\text{ontológico}}</span>, G9. Dirección inversa a G9, diseño distinto. Horizonte: H3.</em></p>
+<p><strong>G24.</strong> ¿Es <span class="math inline">\tau_t \approx \Phi_t^{(p)} / \kappa(t)</span> un predictor independiente de la velocidad de reorganización observable, con capacidad predictiva adicional sobre <span class="math inline">\chi_t</span> y <span class="math inline">\dot{H}_t</span> por separado? <em>Condición de desbloqueo: PEA1 resuelta y <span class="math inline">\Phi_t^{(p)}</span> con estimador empírico. Horizonte: H3.</em></p>
+<p><strong>G25.</strong> ¿El campo de individuación del clínico muestra cambios post-encuentro que covarían con las propiedades estimadas de <span class="math inline">\Omega_t^{(\text{int})}</span> y con la reorganización de la persona en evaluaciones subsiguientes? <em>Referente: A7 reformulado, C4, G17. Evidencia: evaluaciones pre y post del campo del clínico en al menos 50 encuentros por clínico. Horizonte: H3.</em></p>
+<h2 id="hipótesis-formales-registradas">Hipótesis formales registradas</h2>
+<p><em>Las hipótesis formales son compromisos estructurales provisionales sobre relaciones del modelo que no pueden verificarse en el estado actual del corpus. Tienen estatuto de hipótesis estructural operativa: más que analogías heurísticas, menos que compromisos ontológicos fuertes. Cada una tiene una condición de desbloqueo declarada.</em></p>
+<p><strong>H-NOV</strong> <em>(novedad, A5 nivel 2):</em> expansión del soporte requiere simultáneamente <span class="math inline">\Phi_t^{(p)} &gt; 0</span> sostenido, <span class="math inline">\kappa(t) \geq \kappa_{\text{umbral}}(D_p)</span>, y perturbación alineada con el gradiente de <span class="math inline">\Phi_t^{(p)}</span>. Condición de desbloqueo: PEA1 + datos del piloto. Horizonte: H4.</p>
+<p><strong>H-COMP</strong> <em>(premetrica procesual dirigida, CE18):</em> <span class="math inline">d_{\text{proc}}(p,q,t) = \alpha \|\xi_t^{(p)} - \xi_t^{(q)}\|_{g_t} + \beta \, d_{\text{config}}(\Omega_t^{(p)}, \Omega_t^{(q)}) + \gamma \, d_{S_m}(p,q,t)</span>. Asimétrica por construcción: la asimetría es coherente con la ontología. Condición de desbloqueo: G2 (calibración de <span class="math inline">g_t</span>). Horizonte: H2–H3. Urgente.</p>
+<p><strong>H-TRANS</strong> <em>(régimen transicional, D15-int):</em> el periodo entre cuencas tiene alta varianza de <span class="math inline">\Omega_t^{(p)}</span>, <span class="math inline">\chi_t</span> descendente, <span class="math inline">\kappa(t)</span> mínimo, y sensibilidad aumentada a perturbaciones. Asimétrico por histéresis. Condición de desbloqueo: G19. Horizonte: H2–H3.</p>
+<p><strong>H-TRANS-F</strong> <em>(forma funcional de la transición, G10):</em> <span class="math inline">P(\mathfrak{C}_j \mid \mathfrak{C}_i, t) \propto \exp\!\left(-\dfrac{d_{g_t}(\mathfrak{C}_i, \mathfrak{C}_j)}{\kappa(t) \cdot \|\Delta u_t\|}\right) \cdot \mathbf{1}[\kappa \geq \kappa_{\text{umbral}}]</span>. Convierte la HST en predicción cuantitativa falsable. Condición de desbloqueo: G2 + datos del piloto. Horizonte: H2.</p>
+<p><strong>H-POT</strong> <em>(potencialidades):</em> la dirección de expansión más probable de <span class="math inline">\mathcal{F}_t^{(p)}</span> está determinada por el gradiente de <span class="math inline">\Phi_t^{(p)}</span> sobre el soporte actual; las regiones accesibles son aquellas para las cuales <span class="math inline">d(\mathfrak{C}_j, \mathcal{F}_t^{(p)}) &lt; \delta_{\Phi}</span>. Condición de desbloqueo: <span class="math inline">\Phi_t^{(p)}</span> calibrado (H3). Horizonte: H3–H4.</p>
+<p><strong>H-TEMPO</strong> <em>(tiempo interno):</em> <span class="math inline">\tau_t \approx \Phi_t^{(p)} / \kappa(t)</span>: un campo con alta tensión generativa y alta capacidad receptiva procesa perturbaciones más rápido. Condición de desbloqueo: PEA1 + G24. Horizonte: H3.</p>
+<p><strong>H-TRANS-ESC</strong> <em>(propagación transescalar):</em> la propagación entre escalas opera a través de los operadores <span class="math inline">T_{\text{ontológico}}</span>, <span class="math inline">T_{\text{escala}}</span>, <span class="math inline">T_{\text{histórico}}</span> con pérdida controlada declarada; la condición de no-reducción se satisface si y solo si el operador inverso no existe. La dirección campo→molecular y la propagación a escala supraindividual son las dos ausencias principales. Horizonte: H4.</p>
+<p><strong>H-ORDEN</strong> <em>(campos de orden superior):</em> familias, organizaciones, culturas tienen arquitectura análoga a <span class="math inline">\Omega_t^{(\text{int})}</span> con predicados propios (familiar, organizacional, cultural) y condicionan <span class="math inline">\Omega_t^{(p)}</span> individual a través de <span class="math inline">\Psi_t</span> y <span class="math inline">\sigma_t</span>. Horizonte: H4.</p>
+<h2 id="bloque-iv-teoría-de-estabilización">Bloque IV — Teoría de estabilización</h2>
+<p><strong>G10</strong> — <em>Repriorizada al Bloque 0 (prioridad crítica del piloto). Ver arriba.</em></p>
+<p><strong>G13.</strong> ¿El anclaje existencial (<span class="math inline">A_t</span>) puede formalizarse como objeto del campo intensivo con propiedades geométricas propias? <em>Referente: D5, D4*.</em></p>
+<h2 id="bloque-v-validación-metodológica">Bloque V — Validación metodológica</h2>
+<p><strong>G11.</strong> ¿El aparato observacional produce señales de alerta temprana de transición con antelación suficiente para intervención preventiva? <em>Referente: <span class="math inline">T_{\text{temporal}}</span>. Evidencia: series de alta frecuencia con transiciones documentadas.</em></p>
+<p><strong>G12.</strong> ¿La resonancia clínica como canal de <span class="math inline">\mathcal{O}(t)</span> produce representaciones de <span class="math inline">\xi_t</span> contrastablemente distintas de la proyección del clínico? <em>Referente: CE7, C4. Evidencia: diseño inter-evaluador con declaración pre-formal.</em></p>
+<hr />
+<h2 id="bloque-vi-adición-grietas-integrables-del-mapeo-dsm-5-tr">Bloque VI (adición) — Grietas integrables del mapeo DSM-5-TR</h2>
+<p><em>Grietas formuladas en el mapeo de 105 casos DSM-5-TR (Barnhill 2023) que se anclan en objetos formales ya definidos. Las absorbidas completamente (G-Π1, G-Π2, G-Π5 → G16; G-ξ1, G-ξ2 → D8; G-∇2 → G24 del Matemático) tienen referencias cruzadas en sus entradas y no se duplican aquí. Definiciones formales completas en <a href="/syntropia/es/nucleos/nucleo-ontologico/">Núcleo Ontológico</a>, Bloque VI de su Agenda.</em></p>
+<p><strong>G-Traum1.</strong> ¿Puede definirse “trauma” formalmente desde el modelo como el conjunto de condiciones en que una perturbación produce <span class="math inline">D_p(t+\Delta) &gt; D_p(t)</span> de forma persistente, con independencia de la categoría nosológica del evento? ¿Qué condiciones de <span class="math inline">\xi_t</span> determinan si un mismo evento produce o no trauma en este sentido funcional? <em>Referente: D10, D11, D8. Horizonte: H2.</em></p>
+<p><strong>G-Andam1.</strong> ¿Puede el andamiaje relacional cotidiano (red de personas significativas, instituciones) formalizarse como modificador externo de <span class="math inline">\kappa(t)</span> efectivo (<span class="math inline">\kappa_{\text{ef}}(t) = \kappa(t) \cdot \alpha_t^{(\text{and})}</span>) distinguible del <span class="math inline">\kappa(t)</span> intrínseco y de G17 (campo intersticial clínico)? <em>Referente: D11, D15-int. Horizonte: H2–H3.</em></p>
+<p><strong>G-Obs1/G-Obs2.</strong> ¿Existen clases de sesgos sistemáticos y predecibles en la construcción de <span class="math inline">\mathcal{O}(t)</span> (raciales, de género, de mediación cultural) correg­ibles mediante funciones formales sobre el observador y el sistema? <em>Referente: A7, CE3, CE4. Horizonte: H2.</em></p>
+<p><strong>G-Cult1.</strong> ¿Pueden formalizarse intervenciones culturales (rituales, prácticas comunitarias) como operadores sobre el campo con equivalencia funcional contrastable respecto a intervenciones clínicas formales? <em>Referente: A6, D5. Horizonte: H3.</em></p>
+<hr />
+<h2 id="bloque-vii-grietas-genuinamente-nuevas-del-mapeo-dsm-5-tr">Bloque VII — Grietas genuinamente nuevas del mapeo DSM-5-TR</h2>
+<p><em>Grietas sin ancla en la agenda previa, verificadas por búsqueda de texto completo. Definiciones formales completas en <a href="/syntropia/es/nucleos/nucleo-ontologico/">Núcleo Ontológico</a>, Bloque VII de su Agenda.</em></p>
+<p><strong>G-Ψ2.</strong> ¿Puede <span class="math inline">\Psi_t</span> disociarse parcialmente (bloqueo selectivo y reversible de canales específicos) sin cambio de cuenca ni de dirección dominante? ¿Cómo se distingue formalmente de la segmentación permanente de C-L? <em>Referente: D4*, D5. Horizonte: H2–H3.</em></p>
+<p><strong>G-Ψ3.</strong> ¿Es la dirección de propagación dominante de <span class="math inline">\Psi_t</span> un predictor diagnóstico diferencial de primer orden, superior a la semiología sintomática en la discriminación entre familias de cuadros? <em>Referente: D5, <a href="/syntropia/es/nucleos/piac/">PIAC</a> §2.4. Horizonte: H2.</em></p>
+<p><strong>G-Dis1.</strong> ¿Puede el modelo formalizar dos modos de perturbación de <span class="math inline">\Psi_t</span> estructuralmente opuestos (atractor delirante, alta cohesión, <span class="math inline">\Pi_R</span> comprometida; vs. fragmentación disociativa, baja cohesión, <span class="math inline">\Pi_R</span> frecuentemente preservada) con firmas formales y consecuencias terapéuticas distinguibles? <em>Referente: D5, D7, G16. Horizonte: H2.</em></p>
+<p><strong>G-Farm1/G-Add1.</strong> ¿Pueden formalizarse psicofármacos y sustancias como operadores <span class="math inline">\mathcal{P}_k: \Phi(w,t) \to \Phi(w,t+\Delta)</span> con propiedades distinguibles sobre <span class="math inline">\kappa(t)</span>, <span class="math inline">D_p(t)</span> o el perfil de profundidades del paisaje? ¿Puede distinguirse formalmente entre sustancias amplificadoras del estado actual vs. reorganizadoras transitorias? <em>Referente: D5, D10, D11, §III.12bis del Matemático. Horizonte: H2–H3.</em></p>
+<p><strong>G-Bt1.</strong> ¿Pueden formalizarse las intervenciones sobre <span class="math inline">B_t^{(i)}</span> (señalización interoceptiva) como operadores sobre el campo con mecanismo distinguible (vía directa, pre-simbólica, sin mediación de <span class="math inline">V_t</span> o <span class="math inline">A_t</span>) de las intervenciones sobre los otros dominios? <em>Referente: D5, A6. Horizonte: H2–H3.</em></p>
+<p><strong>G-OC1.</strong> ¿Puede formalizarse el ciclo de retroalimentación negativa a corto plazo / positiva a largo plazo (alivio transitorio → profundización de cuenca) como operador <span class="math inline">\mathcal{R}</span> formal del paisaje, distinguible del operador de perturbación-reorganización que produce <span class="math inline">\nabla H_t &gt; 0</span>? <em>Referente: D5, D10, D11, configuraciones C-A, C-B, C-I. Horizonte: H2.</em></p>
+<p><strong>G-Rec1.</strong> ¿Puede formalizarse “recurso del campo” como objeto (lo que potencia la reorganización hacia mayor <span class="math inline">\mathcal{F}_t^{(p)}</span>) distinguible de <span class="math inline">\kappa(t)</span> y de <span class="math inline">\Beta_F</span>, con propiedades predecibles sobre la probabilidad de transición? <em>Referente: D11, A8, D3.2. Horizonte: H2–H3.</em></p>
+<p><strong>G-Ext1.</strong> ¿Puede el campo de individuación <span class="math inline">\Omega_t^{(p)}</span> extenderse formalmente al entorno físico o institucional como arquitectura distribuida, con propiedades formales distinguibles de la organización puramente interna? <em>Referente: D3, D8, G17. Horizonte: H3.</em></p>
+<p><strong>G-TNC1.</strong> ¿Puede el modelo capturar el perfil de deterioro secuencial por dominio de los TNCs, como transformación de la estructura interna de <span class="math inline">H_t</span> con dominio específico afectado primero, no solo como reducción de <span class="math inline">\|H_t\|</span>? <em>Referente: D5, D6, G-Dis1. Horizonte: H2–H3.</em></p>
+<hr />
+<h2 id="qué-está-resuelto-sin-datos-del-piloto-y-qué-sigue-abierto">Qué está resuelto sin datos del piloto, y qué sigue abierto</h2>
+<p><strong>Resuelto sin datos del piloto:</strong> - La arquitectura formal de cuatro capas y sus relaciones de irreductibilidad - Los diez axiomas A1–A10 y su base ontológica - Las seis condiciones de admisibilidad matemática y su derivación desde los axiomas - La terna <span class="math inline">(\mathcal{W}, g_t, \mathcal{A}[\Omega, t])</span> como estructura unificadora - El sistema canónico v1.2 de 14 configuraciones - Los cuatro operadores de traducción no reductiva - La secuencia de intervención P12 y su base formal - G3a, G3b como partición del problema de pesos de las fuentes</p>
+<p><strong>Abierto, y requiere datos del piloto:</strong> la forma exacta del umbral que P12 usa y dónde está su punto de inflexión (G1, G4); cómo pesar cada fuente de observación entre sí (G3b); extender el modelo bayesiano a un espacio continuo en vez de discreto (G7, PEA3); validar que el aparato de sensores mide lo que dice medir (G8, G11); integrar los marcadores epigenómicos con el perfil sintrópico (G9); si la evaluación funcional longitudinal mejora la predicción sobre los datos genómicos solos (G14); si las dos dimensiones de la prueba de realidad predicen pronóstico de forma independiente (G16); la dinámica del régimen transicional entre configuraciones (G19); cómo se relacionan las condiciones de transición con el campo de individuación (G21); si el campo intersticial covaría con la reorganización de la persona (G22); la propagación entre la escala del campo y la escala molecular (G23); y la detectabilidad empírica de cambios en la estructura disposicional pre-simbólica.</p>
+<p><strong>Abierto, y requiere trabajo matemático todavía no hecho:</strong> formalizar el spatium como función (G15); extender dimensionalmente la prueba de realidad (G16); calibrar la tensión generativa del campo como objeto formal (requiere resolver primero la admisibilidad del espacio de configuraciones); verificar las propiedades de decaimiento exponencial de H-TRANS-F; formalizar el campo intersticial con métricas cuantitativas (G17); la admisibilidad de extensiones estocásticas del modelo; si la terna es composable bajo ciertas condiciones; las propiedades formales de la distancia procesual entre trayectorias, incluyendo si puede simetrizarse (G20); el tiempo interno de la trayectoria (G24, H-TEMPO); el spatium cuantitativo del campo intersticial; y los campos de orden superior, como familias u organizaciones (H-ORDEN).</p>
+<hr />
+<p><em>Agenda de Investigación de Syntropía v0.1.0 — 18 de julio de 2026.</em> <em>Autor: Diego F. Pereira-Perdomo MD, MSci.</em> <em>Extraído de Core 1.2.11, Parte V. Documento canónico: toda modificación requiere nueva versión y aprobación explícita.</em> <em>Cotejar contra: Core v1.2.11, <a href="/syntropia/es/nucleos/nucleo-ontologico/">Núcleo Ontológico</a> v2.3.16, <a href="/syntropia/es/nucleos/nucleo-matematico/">Núcleo Matemático</a> v0.4.27.</em></p>
+
+      </article>
+    </div>
+  </section>
+
+  <!-- Volver -->
+  <section class="py-16 bg-slate-50 text-center">
+    <div class="max-w-2xl mx-auto px-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/syntropia/es/nucleos/"
+        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        &larr; Todos los n&uacute;cleos
+      </a>
+      <a href="/syntropia/es/"
+        class="inline-block bg-white border border-slate-300 hover:border-teal-500 text-slate-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all">
+        Volver a Syntrop&iacute;a
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
+    <p class="mb-2">&copy; 2026 Syntropía &mdash; Modelo Clínico y Científico</p>
+  </footer>
+
+</body>
+
+</html>
