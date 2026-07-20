@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Cores of Syntropía &mdash; Technical Corpus</title>
-  <meta name="description" content="The complete technical corpus of Syntropía: the nine documents that formalize the model — ontological, mathematical, epistemological, clinical, and their derived documents.">
+  <title>Core Documents &mdash; Syntropia</title>
+  <meta name="description" content="The nine canonical documents of the Syntropia model: the ontological, epistemic, mathematical, and clinical foundations, plus the protocols and reference tools that operationalize them.">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -15,6 +15,15 @@
     .hero-bg {
       background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%);
     }
+
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px -8px rgba(15, 118, 110, 0.25);
+    }
   </style>
 </head>
 
@@ -22,7 +31,7 @@
 
   <!-- Navbar -->
   <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4">
-    <a href="/en/">
+    <a href="/syntropia/en/">
       <img src="/assets/Logo-rhysis.svg" alt="Rhysis"
         class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity">
     </a>
@@ -34,180 +43,137 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero-bg min-h-[60vh] flex items-center relative overflow-hidden text-white">
-    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-16">
-      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropía</p>
-      <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6 text-yellow-200">
-        The Cores of Syntropía
+  <section class="hero-bg min-h-[48vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropia</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-yellow-200">
+        Core Documents
       </h1>
-      <p class="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
-        The model's complete technical corpus
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">
+        The nine canonical documents grounding the model: four foundational Cores, and the protocols
+        and reference tools that operationalize them for clinical and research use.
       </p>
     </div>
   </section>
 
-  <!-- Introduction -->
+  <!-- Foundational layer -->
   <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-6">
-      <div class="text-slate-700 text-lg leading-relaxed space-y-6 text-center">
-        <p>Nine canonical documents formalize Syntropía's ontological commitments, its
-          mathematical apparatus, the conditions under which its inference is valid, and the
-          derived clinical protocol.</p>
-        <p>This is the complete corpus: the primary source for anything beyond what Appendix A
-          of the <a href="https://zenodo.org/records/21398153?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjBkZGExNDYwLTU5MmEtNDI2NS1hZDkyLTE5MjUwNjE5ZmY1NiIsImRhdGEiOnt9LCJyYW5kb20iOiJkNjhiYzU0YzcyOWE5NzM1YzI5YmMxZmMxYzQ5YTg2ZSJ9.ROemZdJ1oafRKwPPWx_TWeysPrnJFuNuKOoUdlzlQ7hNYIKKFdYP4SR9Ku97O0N2RB-OSKI9Ti_9n3dZixWb0Q" class="underline hover:text-teal-700">Foundational Article</a> can
-          contain.</p>
-        <p class="text-slate-400 text-base italic">Living corpus, under continuous revision —
-          each document states its version and last update date.</p>
-      </div>
-    </div>
-  </section>
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-2 text-center">The Four Foundational Cores</h2>
+      <p class="text-slate-500 text-center mb-12 max-w-2xl mx-auto">Mutually irreducible layers: ontology conditions
+        epistemology, epistemology conditions mathematics, and all three ground clinical practice.</p>
 
-  <!-- Foundational cores -->
-  <section class="py-20 bg-slate-50">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-teal-800 mb-12 text-center">
-        Foundational cores
-      </h2>
-      <div class="grid gap-5">
+      <div class="grid md:grid-cols-2 gap-6">
 
-        <a href="/syntropia/en/nucleos/ontological-core/"
-          class="block bg-white rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Ontological</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Ontological Core</h3>
-          <p class="text-slate-600 mb-3">The model's foundational commitments: Rhysis, the
-            spatium, the personal trajectory, the individuation field, and constitutive memory.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v2.3.16</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
+        <a href="/syntropia/en/nucleos/core-syntropia/"
+          class="card-hover block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Synthesis</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Core</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Axiomatic formalization of Syntropia: the model's
+            single canonical reference document, integrating all seven other Cores.</p>
         </a>
 
-        <a href="/syntropia/en/nucleos/mathematical-core/"
-          class="block bg-white rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Mathematical</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Mathematical Core</h3>
-          <p class="text-slate-600 mb-3">The mathematical formalization of the individuation
-            field, constitutive memory, and the operators that relate them.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.4.27</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
+        <a href="/syntropia/en/nucleos/ontological-core/"
+          class="card-hover block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Foundational</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Ontological Core</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">What exists and how it is organized: Rhysis, the
+            spatium, the personal trajectory, the individuation field, and constitutive memory.</p>
         </a>
 
         <a href="/syntropia/en/nucleos/epistemological-core/"
-          class="block bg-white rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Epistemological</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Epistemological Core</h3>
-          <p class="text-slate-600 mb-3">The conditions under which the model's inference is
-            valid, and the epistemic status of each type of claim Syntropía makes.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.3.20</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
+          class="card-hover block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Foundational</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Epistemic Core</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">The conditions under which the model's inference is
+            valid, and the epistemological status of each type of claim Syntropia makes.</p>
         </a>
 
-        <a href="/syntropia/en/nucleos/clinical-core/"
-          class="block bg-white rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Clinical</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Clinical Core</h3>
-          <p class="text-slate-600 mb-3">The complete clinical protocol: the unveiling process,
-            the sintropic profile domains, and processual clinical language.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.3.13</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
+        <a href="/syntropia/en/nucleos/mathematical-core/"
+          class="card-hover block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Foundational</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Mathematical Core</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Why the model uses the mathematical structures it
+            uses, what they can and cannot do, and how the field's state gets inferred from longitudinal data.</p>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- Derived documents -->
-  <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-teal-800 mb-12 text-center">
-        Derived documents
-      </h2>
-      <div class="grid gap-5">
+  <!-- Clinical and operational layer -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-2 text-center">Clinical Protocols and Reference
+        Tools</h2>
+      <p class="text-slate-500 text-center mb-12 max-w-2xl mx-auto">What the four Cores become in practice: the
+        assessment protocol, the intervention framework, the shared vocabulary, and the map of syntropic
+        configurations.</p>
 
-        <a href="/syntropia/en/nucleos/core-syntropia/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Synthesis</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Core</h3>
-          <p class="text-slate-600 mb-3">A single axiomatic-formalization document, derived
-            directly from the other eight cores without adding new content.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v1.2.11</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <a href="/syntropia/en/nucleos/clinical-core/"
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Clinical</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Clinical Core</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">The complete clinical protocol: Unveiling, the
+            syntropic profile's five domains, and processual clinical language.</p>
         </a>
 
         <a href="/syntropia/en/nucleos/piac/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Protocol</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">PIAC</h3>
-          <p class="text-slate-600 mb-3">Protocol for Inference of Constitutive Attractors: how
-            clinical history becomes Bayesian evidence about the trajectory.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.4.16</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
-        </a>
-
-        <a href="/syntropia/en/nucleos/formal-dictionary/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Reference</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Formal Dictionary</h3>
-          <p class="text-slate-600 mb-3">The canonical definitions of every symbol and object
-            in the model, in one consultable place.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.4.18</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
-        </a>
-
-        <a href="/syntropia/en/nucleos/canonical-configurations/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Clinical</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Canonical Configurations</h3>
-          <p class="text-slate-600 mb-3">The system of 14 sintropic configurations: their
-            internal logic, empirical basis, and declared limitations.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v1.3.16</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Clinical</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">CAIP</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Constitutive Attractor Inference Protocol: the
+            epistemology governing the relationship between clinical history and constitutive memory.</p>
         </a>
 
         <a href="/syntropia/en/nucleos/operational-system/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Operational</p>
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Operational</p>
           <h3 class="text-xl font-bold text-slate-900 mb-2">Operational System</h3>
-          <p class="text-slate-600 mb-3">The translation of the canonical cores into
-            reproducible clinical procedures, step by step.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.2.5</span>
-            <span class="text-teal-700 font-medium">Read →</span>
-          </div>
+          <p class="text-slate-600 text-sm leading-relaxed">Reproducible clinical procedures translating the
+            canonical Cores' conceptual architecture for the validation pilot.</p>
+        </a>
+
+        <a href="/syntropia/en/nucleos/formal-dictionary/"
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Reference</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Formal Dictionary</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Canonical definitions of the model's fundamental
+            terms, for quick reference and terminological consistency.</p>
+        </a>
+
+        <a href="/syntropia/en/nucleos/canonical-configurations/"
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400 md:col-span-2">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Reference</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Canonical Configurations</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Canonical System v1.2: the 14 syntropic
+            configurations, their internal logic, and their clinical correlates.</p>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- Back -->
-  <section class="py-16 bg-slate-50 text-center">
-    <div class="max-w-2xl mx-auto px-6">
+  <!-- Where to start -->
+  <section class="py-20 bg-white">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-6">New to Syntropia?</h2>
+      <p class="text-slate-600 text-lg leading-relaxed mb-8">
+        <a href="/syntropia/en/clinicians/syntropia-20-minutes/" class="text-teal-700 font-semibold hover:underline">Syntropia
+          in 20 Minutes</a> is the shortest path into the model: the trajectory, accumulated history, receptive
+        capacity, and syntropic configurations, without the formal apparatus. Clinicians looking for a practice-oriented
+        introduction can start with
+        <a href="/syntropia/en/clinicians/" class="text-teal-700 font-semibold hover:underline">For Clinicians</a>.
+        Readers who want the complete formal reference should start with <a href="/syntropia/en/nucleos/core-syntropia/"
+          class="text-teal-700 font-semibold hover:underline">Core</a>.
+      </p>
       <a href="/syntropia/en/"
-        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-10 py-5 rounded-2xl text-lg transition-all">
-        ← Back to Syntropía
-      </a>
+        class="inline-block bg-teal-700 hover:bg-teal-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors">&larr;
+        Back to Syntropia</a>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
-    <p class="mb-2">&copy; 2026 Syntropía &mdash; Clinical and Scientific Model</p>
-  </footer>
 
 </body>
 
