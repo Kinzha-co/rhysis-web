@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Núcleos de Syntropía &mdash; Corpus técnico</title>
-  <meta name="description" content="El corpus técnico completo de Syntropía: los nueve documentos que formalizan el modelo — ontológico, matemático, epistemológico, clínico y sus documentos derivados.">
+  <title>Núcleos &mdash; Syntropía</title>
+  <meta name="description" content="Los nueve documentos canónicos del modelo Syntropía: los fundamentos ontológico, epistemológico, matemático y clínico, más los protocolos y herramientas de referencia que los operacionalizan.">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -14,6 +14,15 @@
 
     .hero-bg {
       background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%);
+    }
+
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px -8px rgba(15, 118, 110, 0.25);
     }
   </style>
 </head>
@@ -34,181 +43,140 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero-bg min-h-[60vh] flex items-center relative overflow-hidden text-white">
-    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-16">
+  <section class="hero-bg min-h-[48vh] flex items-center relative overflow-hidden text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
       <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropía</p>
-      <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6 text-yellow-200">
-        Núcleos de Syntropía
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-yellow-200">
+        Núcleos
       </h1>
-      <p class="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
-        El corpus técnico completo del modelo
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">
+        Los nueve documentos canónicos que fundamentan el modelo: cuatro núcleos fundacionales, y los
+        protocolos y herramientas de referencia que los operacionalizan para uso clínico y de investigación.
       </p>
     </div>
   </section>
 
-  <!-- Introducción -->
+  <!-- Capa fundacional -->
   <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-6">
-      <div class="text-slate-700 text-lg leading-relaxed space-y-6 text-center">
-        <p>Nueve documentos canónicos formalizan los compromisos ontológicos de Syntropía, su
-          aparato matemático, las condiciones bajo las cuales su inferencia es válida, y el
-          protocolo clínico derivado.</p>
-        <p>Este es el corpus completo: la fuente primaria para cualquier consulta que exceda lo
-          que el Apéndice A del <a href="https://zenodo.org/records/21398153?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjBkZGExNDYwLTU5MmEtNDI2NS1hZDkyLTE5MjUwNjE5ZmY1NiIsImRhdGEiOnt9LCJyYW5kb20iOiJkNjhiYzU0YzcyOWE5NzM1YzI5YmMxZmMxYzQ5YTg2ZSJ9.ROemZdJ1oafRKwPPWx_TWeysPrnJFuNuKOoUdlzlQ7hNYIKKFdYP4SR9Ku97O0N2RB-OSKI9Ti_9n3dZixWb0Q" class="underline hover:text-teal-700">Artículo
-          Fundacional</a> puede contener.</p>
-        <p class="text-slate-400 text-base italic">Corpus vivo, en revisión continua — cada
-          documento indica su versión y fecha de última actualización.</p>
-      </div>
-    </div>
-  </section>
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-2 text-center">Los cuatro núcleos fundacionales</h2>
+      <p class="text-slate-500 text-center mb-12 max-w-2xl mx-auto">Capas mutuamente irreductibles: la ontología
+        condiciona la epistemología, la epistemología condiciona la matemática, y las tres fundamentan la
+        práctica clínica.</p>
 
-  <!-- Núcleos fundacionales -->
-  <section class="py-20 bg-slate-50">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-teal-800 mb-12 text-center">
-        Núcleos fundacionales
-      </h2>
-      <div class="grid gap-5">
+      <div class="grid md:grid-cols-2 gap-6">
 
-        <a href="/syntropia/es/nucleos/nucleo-ontologico/"
-          class="block bg-white rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Ontológico</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Núcleo Ontológico</h3>
-          <p class="text-slate-600 mb-3">Los compromisos fundacionales del modelo: Rhysis, el
-            spatium, la trayectoria personal, el campo de individuación y la memoria constitutiva.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v2.3.16</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
+        <a href="/syntropia/es/nucleos/core-syntropia/"
+          class="card-hover block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Síntesis</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Core</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Formalización axiomática de Syntropía: el
+            documento de referencia canónico único del modelo, que integra los otros siete núcleos.</p>
         </a>
 
-        <a href="/syntropia/es/nucleos/nucleo-matematico/"
-          class="block bg-white rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Matemático</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Núcleo Matemático</h3>
-          <p class="text-slate-600 mb-3">La formalización matemática del campo de individuación,
-            la memoria constitutiva y los operadores que los relacionan.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.4.27</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
+        <a href="/syntropia/es/nucleos/nucleo-ontologico/"
+          class="card-hover block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Fundacional</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Núcleo Ontológico</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Qué existe y cómo está organizado: Rhysis, el
+            spatium, la trayectoria personal, el campo de individuación y la memoria constitutiva.</p>
         </a>
 
         <a href="/syntropia/es/nucleos/nucleo-epistemologico/"
-          class="block bg-white rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Epistemológico</p>
+          class="card-hover block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Fundacional</p>
           <h3 class="text-xl font-bold text-slate-900 mb-2">Núcleo Epistemológico</h3>
-          <p class="text-slate-600 mb-3">Las condiciones bajo las cuales la inferencia del
-            modelo es válida, y el estatuto epistemológico de cada tipo de afirmación que
-            Syntropía hace.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.3.20</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
+          <p class="text-slate-600 text-sm leading-relaxed">Las condiciones bajo las cuales la inferencia
+            del modelo es válida, y el estatuto epistemológico de cada tipo de afirmación que Syntropía hace.</p>
         </a>
 
-        <a href="/syntropia/es/nucleos/nucleo-clinico/"
-          class="block bg-white rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Clínico</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Núcleo Clínico</h3>
-          <p class="text-slate-600 mb-3">El protocolo clínico completo: el desvelamiento, los
-            dominios del perfil sintrópico, y el lenguaje clínico procesual.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.3.13</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
+        <a href="/syntropia/es/nucleos/nucleo-matematico/"
+          class="card-hover block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Fundacional</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Núcleo Matemático</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Por qué el modelo usa las estructuras
+            matemáticas que usa, qué pueden y no pueden hacer, y cómo se infiere el estado del campo desde
+            datos longitudinales.</p>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- Documentos derivados -->
-  <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-teal-800 mb-12 text-center">
-        Documentos derivados
-      </h2>
-      <div class="grid gap-5">
+  <!-- Capa clínica y operacional -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-2 text-center">Protocolos clínicos y
+        herramientas de referencia</h2>
+      <p class="text-slate-500 text-center mb-12 max-w-2xl mx-auto">En qué se traducen los cuatro núcleos en
+        la práctica: el protocolo de evaluación, el marco de intervención, el vocabulario compartido, y el
+        mapa de configuraciones sintrópicas.</p>
 
-        <a href="/syntropia/es/nucleos/core-syntropia/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Síntesis</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Core</h3>
-          <p class="text-slate-600 mb-3">Documento único de formalización axiomática, derivado
-            directamente de los ocho núcleos restantes sin adición de contenido nuevo.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v1.2.11</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <a href="/syntropia/es/nucleos/nucleo-clinico/"
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Clínico</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Núcleo Clínico</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">El protocolo clínico completo: el
+            desvelamiento, los cinco dominios del perfil sintrópico, y el lenguaje clínico procesual.</p>
         </a>
 
         <a href="/syntropia/es/nucleos/piac/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Protocolo</p>
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Clínico</p>
           <h3 class="text-xl font-bold text-slate-900 mb-2">PIAC</h3>
-          <p class="text-slate-600 mb-3">Protocolo de Inferencia de Atractores Constitutivos:
-            cómo la historia clínica se convierte en evidencia bayesiana sobre la trayectoria.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.4.16</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
-        </a>
-
-        <a href="/syntropia/es/nucleos/diccionario-formal/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Referencia</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Diccionario Formal</h3>
-          <p class="text-slate-600 mb-3">Las definiciones canónicas de cada símbolo y objeto
-            del modelo, en un solo lugar consultable.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.4.18</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
-        </a>
-
-        <a href="/syntropia/es/nucleos/configuraciones-canonicas/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Clínico</p>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Configuraciones Canónicas</h3>
-          <p class="text-slate-600 mb-3">El sistema de 14 configuraciones sintrópicas: su
-            lógica interna, su base empírica y sus límites declarados.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v1.3.16</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
+          <p class="text-slate-600 text-sm leading-relaxed">Protocolo de Inferencia de Atractores
+            Constitutivos: la epistemología que gobierna la relación entre la historia clínica y la memoria
+            constitutiva.</p>
         </a>
 
         <a href="/syntropia/es/nucleos/sistema-operacional/"
-          class="block bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-7">
-          <p class="text-teal-700 text-xs font-semibold uppercase tracking-wider mb-2">Operacional</p>
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Operacional</p>
           <h3 class="text-xl font-bold text-slate-900 mb-2">Sistema Operacional</h3>
-          <p class="text-slate-600 mb-3">La traducción de los núcleos canónicos a
-            procedimientos clínicos reproducibles, paso a paso.</p>
-          <div class="flex gap-4 text-sm text-slate-400">
-            <span>v0.2.5</span>
-            <span class="text-teal-700 font-medium">Leer →</span>
-          </div>
+          <p class="text-slate-600 text-sm leading-relaxed">Procedimientos clínicos reproducibles que
+            traducen la arquitectura conceptual de los núcleos canónicos para el piloto de validación.</p>
+        </a>
+
+        <a href="/syntropia/es/nucleos/diccionario-formal/"
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Referencia</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Diccionario Formal</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Definiciones canónicas de los términos
+            fundamentales del modelo, para referencia rápida y consistencia terminológica.</p>
+        </a>
+
+        <a href="/syntropia/es/nucleos/configuraciones-canonicas/"
+          class="card-hover block bg-white border border-slate-200 rounded-xl p-6 hover:border-teal-400 md:col-span-2">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Referencia</p>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Configuraciones Canónicas</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Sistema Canónico v1.2: las 14 configuraciones
+            sintrópicas, su lógica interna, y sus correlatos clínicos.</p>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- Volver -->
-  <section class="py-16 bg-slate-50 text-center">
-    <div class="max-w-2xl mx-auto px-6">
+  <!-- Por dónde empezar -->
+  <section class="py-20 bg-white">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-6">¿Nuevo en Syntropía?</h2>
+      <p class="text-slate-600 text-lg leading-relaxed mb-8">
+        <a href="/syntropia/es/clinicos/syntropia-20-minutos/" class="text-teal-700 font-semibold hover:underline">Syntropía
+          en 20 minutos</a> es el camino más corto hacia el modelo: la trayectoria, la historia acumulada, la
+        capacidad receptiva, y las configuraciones sintrópicas, sin el aparato formal. Los clínicos que buscan
+        una introducción orientada a la práctica pueden empezar por
+        <a href="/syntropia/es/clinicos/" class="text-teal-700 font-semibold hover:underline">Para Clínicos</a>.
+        Quienes quieran la referencia formal completa deberían empezar por
+        <a href="/syntropia/es/nucleos/core-syntropia/" class="text-teal-700 font-semibold hover:underline">Core</a>.
+      </p>
       <a href="/syntropia/es/"
-        class="inline-block bg-teal-700 hover:bg-teal-600 text-white font-semibold px-10 py-5 rounded-2xl text-lg transition-all">
-        ← Volver a Syntropía
-      </a>
+        class="inline-block bg-teal-700 hover:bg-teal-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors">&larr;
+        Volver a Syntropía</a>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="py-16 bg-slate-900 text-slate-400 text-center">
-    <p class="mb-2">&copy; 2026 Syntropía &mdash; Modelo Clínico y Científico</p>
-  </footer>
 
 </body>
 
