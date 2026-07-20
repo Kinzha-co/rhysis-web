@@ -5,18 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Core &mdash; Syntropia</title>
-  <meta name="description" content="Axiomatic formalization of Syntropia: the model's single canonical reference document.">
+  <meta name="description"
+    content="Axiomatic formalization of Syntropia: the model's single canonical reference document.">
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
-    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%); }
-    .prose :where(code):not(:where([class~="not-prose"] *)) {
-      background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em;
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
     }
-    .prose blockquote { border-left-color: #0f766e; font-style: normal; }
-    .prose table { font-size: 0.92em; }
-    .prose thead th { background: #f8fafc; }
-    .wide-table-wrap { overflow-x: auto; }
+
+    .hero-bg {
+      background: linear-gradient(135deg, #0f172a 0%, #134e4a 45%, #1e3a8a 100%);
+    }
+
+    .prose :where(code):not(:where([class~="not-prose"] *)) {
+      background: #f1f5f9;
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    .prose blockquote {
+      border-left-color: #0f766e;
+      font-style: normal;
+    }
+
+    .prose table {
+      font-size: 0.92em;
+    }
+
+    .prose thead th {
+      background: #f8fafc;
+    }
+
+    .wide-table-wrap {
+      overflow-x: auto;
+    }
+
     @media (min-width: 1100px) {
       .wide-table-wrap {
         width: 1100px;
@@ -25,26 +49,30 @@
         margin-right: calc(50% - 550px);
       }
     }
-    .wide-table-wrap table { font-size: 0.88em; white-space: nowrap; }
+
+    .wide-table-wrap table {
+      font-size: 0.88em;
+      white-space: nowrap;
+    }
   </style>
-<script defer
-src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-<script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-</script>
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+          katex.render(texText.data, mathElements[i], {
+            displayMode: mathElements[i].classList.contains('display'),
+            throwOnError: false,
+            macros: macros,
+            fleqn: false
+          });
+        }
+      }
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
 </head>
 
 <body class="m-0 p-0 bg-slate-50 text-slate-800">
@@ -58,18 +86,21 @@ href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <div class="text-sm md:text-base font-medium text-white tracking-wide">
       <span class="font-bold border-b-2 border-teal-400 pb-0.5">EN</span>
       <span class="mx-2 text-slate-400">|</span>
-      <a href="/syntropia/es/nucleos/core-syntropia/" class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
+      <a href="/syntropia/es/nucleos/core-syntropia/"
+        class="text-slate-300 hover:text-white hover:underline transition-all">ES</a>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero-bg min-h-[42vh] flex items-center relative overflow-hidden text-white">
     <div class="max-w-4xl mx-auto px-6 text-center pt-24 pb-14">
-      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropia &mdash; Canonical Document</p>
+      <p class="text-teal-300 text-sm font-semibold uppercase tracking-widest mb-4">Syntropia &mdash; Canonical Document
+      </p>
       <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-yellow-200">
         Core
       </h1>
-      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Axiomatic formalization of Syntropia: the model's single canonical reference document.</p>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">Axiomatic formalization of Syntropia: the model's
+        single canonical reference document.</p>
       <p class="text-slate-400 text-sm mt-6">Version 1.2.12 &middot; July 18, 2026</p>
     </div>
   </section>
@@ -80,523 +111,1096 @@ href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
       <article class="prose prose-slate lg:prose-lg max-w-none
                        prose-headings:text-teal-800 prose-a:text-teal-700
                        prose-strong:text-slate-900">
-<h2 id="the-foundational-scientific-problem">The Foundational Scientific Problem</h2>
-<blockquote>
-<p><em>How can clinical knowledge accumulate if the process that produced a person’s current state carries causal information irreducible to that current state?</em></p>
-</blockquote>
-<p>This question is not an invention of the program. Psychiatry, clinical psychology, behavioral medicine, and systems science have recognized for decades that two people can present the same observable state while being caught in radically different processes. Syntropia proposes that this difference is the primary phenomenon, not a secondary detail of the clinical phenomenon. That inversion of priority may turn out to be wrong. But it deserves exploring, and no existing framework has explored it with the systematicity it requires.</p>
-<p>Most programs acknowledge, in their theory, that people have history, that trajectories matter, that population averages fall short. But then, operationally, they produce dimensions, networks, states, or symptoms. What Syntropia tries to preserve is a different question: what does it mean for a trajectory to have <em>constitutive</em> history, not simply predictive history? That question is not resolved. It is not even clearly formulated in most frameworks.</p>
-<p>HiTOP and RDoC produce cumulative knowledge but do not distinguish two trajectories with the same current profile that arrived by different paths. Idiographic dynamic models capture singularity but do not articulate how the history of arrival conditions the response to future interventions. Process-based therapy (Hayes, Hofmann) operates on analogous intuitions without formalizing them. The Network Approach describes symptom co-occurrence with no theory of those networks’ historical constitution. Every one of these programs has open territory. Syntropia tries to work in some of that territory.</p>
-<p>A note on method: many programs operate on implicit ontologies. HiTOP has ontological assumptions. RDoC has ontological assumptions. Symptom networks have ontological assumptions. What sets Syntropia apart is trying to say exactly what consequences taking that ontology seriously would carry, and deriving them explicitly, rather than simply adopting a process ontology, of which many exist. That has intellectual value even if some consequences turn out to be wrong. A program that makes its assumptions visible can be refuted with precision; a program that hides them cannot.</p>
-<p>The question has four consequences that organize the corpus:</p>
-<ol type="1">
-<li><strong>When do two identical current states carry different response potentials?</strong> When the accumulated history of plastic deformation or the current receptive capacity differ between the two people, even though their observable state today is the same.</li>
-<li><strong>When does intervening on constitutive history help, and when does it harm?</strong> When current receptive capacity falls below the threshold that accumulated history requires to absorb the intervention without harm. This is the intervention sequence the model calls Proposition 12, its most operative consequence (developed in Part IV).</li>
-<li><strong>How can a trajectory’s singularity be integrated with the possibility of accumulating scientific knowledge?</strong> By comparing trajectories on their structural parameters (what type of organization they have, in what direction they are moving), never on the specific content of their history.</li>
-<li><strong>How should the limits of the available inference apparatus be declared formally?</strong> By explicitly recognizing what can and cannot be inferred from the available clinical observations (developed in Part II).</li>
-</ol>
-<p>None of these consequences is operationalized in the alternative frameworks. They are the program’s reason for existing: the questions this ontology permits formulating with enough precision to be tested, not rhysic ontology itself.</p>
-<hr />
-<h2 id="the-two-organizing-intuitions">The Two Organizing Intuitions</h2>
-<p>The complexity of the corpus is the consequence of systematically developing the implications of a single distinction the program refuses to abandon. That distinction shows up in every layer of the model under different names: the observable state versus its direction of change (the functional profile <span class="math inline">H_t</span> versus the second-order trajectory <span class="math inline">T_2</span>); accumulated history versus current receptive capacity (plastic deformation <span class="math inline">D_p</span> versus distensibility <span class="math inline">\kappa</span>); equilibrium versus exhaustion; deep versus superficial consolidation; observation versus constitution. In every case the structure is the same: the same observable outcome can be produced by different processes, and those processes differ in how they will respond to a future intervention. Much of the corpus is a consequence of insisting on that separation systematically.</p>
-<p>Two intuitions cascade out of that insistence:</p>
-<p><strong>Intuition 1: history is causally irreducible to state.</strong> The process that produced the current state (the functional profile <span class="math inline">H_t</span>) cannot be fully inferred from that current state. Two people with the same <span class="math inline">H_t</span> can respond in systematically different ways to the same perturbation, because their accumulated history of plastic deformation (<span class="math inline">D_p(t)</span>) and their current receptive capacity (<span class="math inline">\kappa(t)</span>) differ. This intuition generates: constitutive memory, which groups both variables (<span class="math inline">\xi_t</span>); the intervention sequence that follows from it (Proposition 12); the trajectory’s direction as a differentiated predictor (<span class="math inline">T_2</span>); the equilibrium/exhaustion distinction; and the theory of transformation phases (§T1).</p>
-<p><strong>Intuition 2: the field’s organization is causally prior to the observables.</strong> There exists an organization of the individuation field (<span class="math inline">\Omega_t^{(p)}</span>: the function describing which reorganizations are more or less accessible to this trajectory right now) that produces both the observable state and the responses to future perturbations, and that organization is not directly observable. This intuition generates: <span class="math inline">\Omega_t^{(p)}</span> itself, the total space of possible organizations (<span class="math inline">\mathcal{W}</span>), the metric that structures that space (<span class="math inline">g_t</span>), the subset of that space accessible to this trajectory right now (<span class="math inline">\mathcal{F}_t^{(p)}</span>), the canonical system of configurations, and the whole mathematical architecture of the triad.</p>
-<p>Intuition 1 is sufficient to justify the intervention sequence (P12) and the trajectory’s direction as a predictor (<span class="math inline">T_2</span>) independent of Intuition 2. If only Intuition 1 is confirmed empirically, the program still has genuine clinical value. If Intuition 2 adds predictive value over Intuition 1 (the empirical question of whether the complete model predicts better than a simpler alternative), the program is fully justified in its complete architecture. And if the entire formal architecture collapsed (if <span class="math inline">\Omega_t^{(p)}</span> turned out to be wrong, the geometry failed, the configurations needed revising), the most basic distinction could still survive: that accumulated history and current receptive capacity are different, clinically relevant variables, and that intervening on the first when the second is insufficient can make the process worse. If that ends up validated empirically, the program will have produced useful clinical knowledge. That happens constantly in the history of science.</p>
-<p>Additionally: Syntropia tries to connect scales that normally stay separate: molecular, behavioral, phenomenological, relational, clinical. That generates complexity. It also generates theoretical fertility. Many advances in the history of science appear when someone connects domains that others study separately.</p>
-<hr />
-<h1 id="part-i-the-ontological-layer">Part I — The Ontological Layer</h1>
-<h2 id="i.1.-the-fundamental-process">I.1. The Fundamental Process</h2>
-<p><strong>Rhysis</strong> designates the model’s ontological primitive. It is not an entity, an attribute, a relation, an action, a process, or a becoming. It is the originary ontological activity from which being, stabilization, the <em>spatium</em>, the trajectory, every distinguishable configuration, and the very distinction between entities, actions, and relations all emerge. The model operates under the commitment that fundamental reality is this primitive prior to any stabilization, not the observable state.</p>
-<p>From Rhysis emerges the distinction between the <em>intensive field</em> that constitutes the conditions of possibility for stabilizations (the <strong>spatium</strong>) and the stabilizations themselves (<strong>personal trajectories</strong>).</p>
-<h2 id="i.2.-the-primitive-object-the-personal-trajectory">I.2. The Primitive Object: the Personal Trajectory</h2>
-<p>The <strong>personal trajectory</strong> is the model’s primitive object. The person becomes their trajectory: they do not have it, nor are they a trajectory in the sense of possessing a fixed identity. It is a local stabilization of becoming with differential historical persistence: it has duration, it has direction, it has a history that conditions its future movement without determining it.</p>
-<h2 id="i.3.-the-individuation-field-omega_tp">I.3. The Individuation Field — <span class="math inline">\Omega_t^{(p)}</span></h2>
-<p>The <strong>individuation field</strong> is the trajectory-spatium coupling’s real, singular, differential disposition, which at every moment determines which reorganizations are more or less accessible. It is this trajectory’s relief of accessibility/stability at this moment.</p>
-<p><span class="math inline">\Omega_t^{(p)}: \mathcal{W} \to \mathbb{R}_{\geq 0}</span> is the operative representation: isomorphic to a Lyapunov function, not a probability distribution. <span class="math inline">\Omega_t^{(p)}</span> <em>induces</em> <span class="math inline">\mathcal{W}</span>’s local geometry; it is not the geometry itself.</p>
-<p>The <strong>total manifold</strong> <span class="math inline">\mathcal{W}</span> is the space of every possible organization, independent of person and moment.</p>
-<p>The <strong>field of possibilities</strong> <span class="math inline">\mathcal{F}_t^{(p)} := \{w \in \mathcal{W} \mid \Omega_t^{(p)}(w) \geq \theta(\xi_t)\} \subsetneq \mathcal{W}</span> is the subset accessible to this trajectory right now.</p>
-<h2 id="i.4.-the-spatium-varepsilon_t-psi_t">I.4. The Spatium — <span class="math inline">(\varepsilon_t, \Psi_t)</span></h2>
-<p>The <strong>spatium</strong> is becoming’s real intensive field. Its operative representation has two components:</p>
-<p><span class="math display">(\varepsilon_t, \Psi_t)</span></p>
-<ul>
-<li><span class="math inline">\varepsilon_t \in [0,1]^5</span> — <strong>functional elasticity</strong>: a vector approximating the field’s functional elasticity per domain. Relatively stable; a property of the trajectory.</li>
-<li><span class="math inline">\Psi_t \in \mathbb{R}^{5\times5}</span> — <strong>cross-domain propagation</strong>: a matrix approximating how perturbations propagate between domains. <span class="math inline">\psi_{ij} \geq 0</span> for <span class="math inline">i \neq j</span>; <span class="math inline">\psi_{ii} = 0</span>.</li>
-</ul>
-<p>The formal relationship between <span class="math inline">\varepsilon_t</span> and basin type, and between <span class="math inline">\Psi_t</span> and propagation direction, is a conceptual correspondence in the model’s current state: formalizing it as a mathematical function is still an open question on the research agenda.</p>
-<h2 id="i.5.-functional-differentiation-h_t">I.5. Functional Differentiation — <span class="math inline">H_t</span></h2>
-<p>The <strong>syntropic profile</strong> <span class="math inline">H_t = (V_t, R_t, P_t, A_t, B_t) \in [0,1]^5</span> describes the level of functional coherence across five domains:</p>
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Domain</th>
-<th>Symbol</th>
-<th>What it measures</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Volition</td>
-<td><span class="math inline">V_t</span></td>
-<td>Capacity to act from oneself</td>
-</tr>
-<tr class="even">
-<td>Relational Bonds</td>
-<td><span class="math inline">R_t</span></td>
-<td>Capacity to bond with others</td>
-</tr>
-<tr class="odd">
-<td>Temporal Projection</td>
-<td><span class="math inline">P_t</span></td>
-<td>Integrating past, present, and future</td>
-</tr>
-<tr class="even">
-<td>Existential Anchoring</td>
-<td><span class="math inline">A_t</span></td>
-<td>Capacity to operate from a ground of meaning</td>
-</tr>
-<tr class="odd">
-<td>Somatic Domain</td>
-<td><span class="math inline">B_t</span></td>
-<td>The somatic as constitutive of the process</td>
-</tr>
-</tbody>
-</table>
-<p>The five domains are ontologically independent of one another. The global norm <span class="math inline">\|H_t\| = \frac{1}{\sqrt{5}}\sqrt{V_t^2 + R_t^2 + P_t^2 + A_t^2 + B_t^2}</span> is useful but insufficient for determining the direction of intervention (P13).</p>
-<p><span class="math inline">\nabla H_t</span> is the profile’s variation: the direction and magnitude of <span class="math inline">H_t</span>’s change between successive evaluations.</p>
-<h2 id="i.6.-transition-conditions-m">I.6. Transition Conditions — <span class="math inline">M</span></h2>
-<p><strong>Transition conditions</strong> <span class="math inline">M = (\Beta_F, \Pi_R, \Tau_F, \Upsilon_{US}) \in [0,1]^4</span> represent the trajectory’s readiness to transform from its current configuration: | Component | Name | What it measures | |—|—|—| | <span class="math inline">\Beta_F</span> | Behavioral Flexibility | Available response repertoire | | <span class="math inline">\Pi_R</span> | Reality Testing | Capacity to operate on one’s own premises | | <span class="math inline">\Tau_F</span> | Trajectory Continuity | Continuity of the experience of oneself | | <span class="math inline">\Upsilon_{US}</span> | Stability Under Stress | Tolerance for perturbation without disorganization |</p>
-<p><span class="math inline">M</span> and <span class="math inline">\Omega_t^{(p)}</span> are ontologically distinct: <span class="math inline">M</span> describes readiness to move; <span class="math inline">\Omega_t^{(p)}</span> describes the relief that readiness would move across. Qualitative relationship: <span class="math inline">M</span> selects which part of the relief is operationally accessible right now, given the effective perturbation threshold (<span class="math inline">\varepsilon_t^{\text{ef}}</span>, the minimum perturbation magnitude the field cannot absorb without reorganizing); it does not modify the relief itself. The quantitative form of that relationship is not yet calibrated; it is part of the pilot’s empirical research agenda.</p>
-<h2 id="i.7.-constitutive-memory-xi_t">I.7. Constitutive Memory — <span class="math inline">\xi_t</span></h2>
-<p><strong>Constitutive memory</strong> <span class="math inline">\xi_t = \{D_p(t), \kappa(t), \sigma_t\}</span> is the trajectory’s accumulated history. Three parallel, independent components:</p>
-<ul>
-<li><span class="math inline">D_p(t) \in [0, D_p^{\max}]</span> — <strong>plastic deformation</strong>: what has reorganized the field irreversibly. <span class="math inline">D_p(t)</span> is strictly increasing and irreversible.</li>
-<li><span class="math inline">\kappa(t) \in [\kappa_{\min}, \kappa^*(t)]</span> — <strong>distensibility</strong>: the receptive capacity currently available given what has accumulated. Co-varies with <span class="math inline">\Omega_t^{(p)}</span> in the present (not unidirectional).</li>
-<li><span class="math inline">\sigma_t</span> — <strong>pre-symbolic dispositional structure</strong>: the baseline geometry constituted before episodic memory and language. The field’s initial condition; not accumulable in the same sense as <span class="math inline">D_p(t)</span>.</li>
-</ul>
-<p>The individuation field is a function of all three components: <span class="math inline">\Omega_t^{(p)} = F(\sigma_t, D_p(t), \kappa(t))</span>. <span class="math inline">D_p(t)</span> and <span class="math inline">\sigma_t</span> anchor <span class="math inline">\Omega_t^{(p)}</span> in the past; <span class="math inline">\kappa(t)</span> co-determines it in the present.</p>
-<p><strong>Clinical space</strong> <span class="math inline">S_m = D_p(t) \times \kappa(t)</span> defines four orienting regions for intervention:</p>
-<table>
-<thead>
-<tr class="header">
-<th>Region</th>
-<th><span class="math inline">D_p(t)</span></th>
-<th><span class="math inline">\kappa(t)</span></th>
-<th>Orientation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>R1</td>
-<td>Low</td>
-<td>High</td>
-<td>Work on <span class="math inline">\xi_t</span> content is viable</td>
-</tr>
-<tr class="even">
-<td>R2</td>
-<td>High</td>
-<td>Low</td>
-<td>Restore <span class="math inline">\kappa(t)</span> before any other intervention</td>
-</tr>
-<tr class="odd">
-<td>R3</td>
-<td>Low/moderate</td>
-<td>Sufficient</td>
-<td>Work on <span class="math inline">D_p(t)</span> is viable</td>
-</tr>
-<tr class="even">
-<td>R4</td>
-<td>High</td>
-<td>Minimal</td>
-<td>Urgency: restore <span class="math inline">\kappa(t)</span> and <span class="math inline">\Pi_R</span></td>
-</tr>
-</tbody>
-</table>
-<h2 id="i.8.-the-ten-axioms">I.8. The Ten Axioms</h2>
-<p><strong>A1: Dynamic primacy.</strong> Process is ontologically prior to state. Functional coherence is an emergent property of the process, not a state that gets reached and held.</p>
-<p><strong>A2: Constitutive irreversibility.</strong> The trajectory’s history is constitutive of the individuation field. There is no hypothetical earlier state without the trace.</p>
-<p><strong>A3: The structure of becoming under conditions.</strong> Transformations of the individuation field do not occur in homogeneous space. The same perturbation produces different effects depending on the direction it acts from and the field’s current state.</p>
-<p><strong>A4: Accumulation.</strong> Every reorganization of the individuation field alters the conditions under which subsequent reorganizations will occur.</p>
-<p><strong>A5: Three modes of response for the individuation field.</strong> Faced with a perturbation exceeding the effective threshold <span class="math inline">\varepsilon_t^{\text{ef}}</span> (the minimum magnitude the field cannot absorb without reorganizing), the field can: (a) reorganize internally with no change of configuration (<em>elastic deformation</em>); (b) reorganize toward a new configuration (<em>reorganization</em>, which widens or narrows the field of possibilities <span class="math inline">\mathcal{F}_t^{(p)}</span>); (c) collapse globally (<em>collapse</em>). A large-magnitude observable change in the functional profile (<span class="math inline">\|\Delta H_t\| &gt; \varepsilon_t^{\text{ef}}</span>) is a necessary but not sufficient condition for inferring that a real reorganization of the individuation field occurred.</p>
-<p>Within mode (b), there are three qualitatively distinct levels: <em>Level 1</em>, a shift within the space of possibilities the trajectory already had (a change of modal configuration with no widening of that space); <em>Level 2</em>, that space’s expansion into previously inaccessible regions (the formal mechanism of genuine novelty); <em>Level 3</em>, the irreversible contraction of that space, which accumulates a history of plastic deformation. The model has developed theory for Levels 1 and 3 (channeling and restriction), and theory still under construction for Level 2 (generating new forms): its complete mathematical derivation depends on resolving a prior, still-open question about the configuration space’s formal structure.</p>
-<p>Genuine expansion of the field of possibilities (Level 2) appears to require two conditions at once: that current receptive capacity exceed the threshold accumulated history demands, and that the perturbation arrive aligned with the direction in which the field is already generating tension toward change (its <em>generative potential</em>, <span class="math inline">\Phi_t^{(p)}</span>: a measure of how much internal pressure there is toward a reorganization, distinct from whether that reorganization has already happened). That pressure alone, without sufficient receptive capacity, produces no access to anything new; and receptive capacity alone, without generative tension, produces only relief from exhaustion, not novelty.</p>
-<p><em>Note on A5’s status:</em> A5 is a hypothesis about the structure of the space of outcomes, not a necessary consequence of the earlier axioms. The number of modes (three) is empirically contingent and directly revisable if the pilot’s data fail to distinguish the modes.</p>
-<p><strong>A6: Agency and transition conditions.</strong> Agency is an emergent property of <span class="math inline">M</span> at this moment, not a stable attribute of the person or a capacity independent of the field.</p>
-<p><strong>A7: Diagnosis as ontological intervention, and coupling between fields.</strong> The clinical encounter produces <span class="math inline">\Omega_t^{(\text{int})}</span> (the interstitial field) as an organization emerging from the encounter between the clinician’s field and the person’s field. This field is an organization with its own constitutive history that conditions which aspects of <span class="math inline">\xi_t^{(p)}</span> are accessible; it is not the sum of the two. The clinician also reorganizes in the encounter. Diagnosis modifies the individuation field it describes: the diagnostic perturbation has ontological effect on <span class="math inline">\Omega_t^{(p)}</span>, widening or narrowing <span class="math inline">\mathcal{F}_t^{(p)}</span> depending on its magnitude relative to the effective threshold <span class="math inline">\varepsilon_t^{\text{ef}}</span> and the level of <span class="math inline">\kappa(t)</span>.</p>
-<p><strong>A8: Suffering as restriction of the field of possibilities.</strong> Clinically relevant suffering is what accompanies the restriction of <span class="math inline">\mathcal{F}_t^{(p)}</span>: the reduction of the space of trajectories accessible to this person.</p>
-<p><strong>RM1: The axiom-revision rule</strong> <em>(a methodological rule, not an ontological axiom):</em> every claim in the corpus must have specified revision criteria: what evidence would count against it.</p>
-<p><strong>A10: Radical singularity.</strong> No trajectory is representable by the population’s average behavior. This person’s individuation field, right now, is singular and irreducible to the statistical aggregate. <em>Precise scope (v1.2):</em> singularity operates at the level of the trajectory’s content, not at the level of the field’s structural parameters (basin type, propagation direction, position in clinical space). Comparing trajectories by those structural parameters, without comparing their singular content, does not violate A10.</p>
-<h2 id="i.9.-the-effective-threshold-and-the-intervention-sequence">I.9. The Effective Threshold and the Intervention Sequence</h2>
-<p>The <strong>effective threshold</strong> integrates constitutive memory’s two components:</p>
-<p><span class="math display">\varepsilon_t^{\text{ef}} = \varepsilon_t \cdot f(\kappa(t))</span></p>
-<p>where <span class="math inline">f</span> is increasing in <span class="math inline">\kappa(t)</span> and <span class="math inline">f(\kappa(t_0)) = 1</span> (structural distensibility is the baseline threshold). When <span class="math inline">\kappa(t) &lt; \kappa_{\text{umbral}}(D_p)</span>, intervening on <span class="math inline">D_p(t)</span> produces plasticity that narrows <span class="math inline">\mathcal{F}_t^{(p)}</span> instead of widening it (P12). The correct intervention sequence is a function of position in <span class="math inline">S_m</span>: <span class="math display">\text{If } \kappa(t) &lt; \kappa_{\text{umbral}}(D_p) \Rightarrow \text{restore } \kappa(t) \text{ before working on } D_p(t)</span></p>
-<p>P12 deserves a note on its status within the program. Consider the most adverse scenario possible: <span class="math inline">\Omega_t^{(p)}</span> turns out wrong as a causal construct; the geometry of <span class="math inline">\mathcal{W}</span> needs deep revision; the 14 configurations need to be rebuilt; <span class="math inline">\Phi_t^{(p)}</span> never gets a formal derivation; much of the architecture transforms. Even in that scenario, the distinction P12 formalizes could survive: accumulated history and current receptive capacity are clinically relevant, ontologically distinct variables, and working on the first when the second is insufficient can produce harm. If that ends up validated empirically, the program will have contributed to clinical knowledge regardless of what happens to the rest of the edifice. That is the usual structure of scientific progress.</p>
-<h2 id="i.10.-unveiling-and-the-second-order-trajectory">I.10. Unveiling and the Second-Order Trajectory</h2>
-<p><strong>Unveiling</strong> <span class="math inline">\mathcal{D}: \mathcal{O}(t) \to P(\xi_t \mid \mathcal{O}(t))</span> is the operation that produces clinical knowledge about constitutive memory from the available set of observations <span class="math inline">\mathcal{O}(t)</span>. The four sources of <span class="math inline">\mathcal{O}(t)</span>: self-report, behavioral observation, longitudinal history, and collateral sources including clinical resonance.</p>
-<p><span class="math display">P(\xi_t \mid \mathcal{O}(t)) \propto P(\mathcal{O}(t) \mid \xi_t) \cdot P(\xi_t)</span></p>
-<p>The <strong>second-order trajectory</strong> <span class="math inline">T_2</span> is the sequence of inferential states over <span class="math inline">\xi_t</span> across time. Reading <span class="math inline">T_2</span>’s direction together with the posterior’s variance sets Syntropia apart from every categorical classification system: the same level of <span class="math inline">\|H_t\|</span> can correspond to processes of opposite nature depending on <span class="math inline">T_2</span>’s direction and how the inferential variance behaves.</p>
-<hr />
-<h2 id="i.11.-the-interstitial-field-omega_ttextint">I.11. The Interstitial Field — <span class="math inline">\Omega_t^{(\text{int})}</span></h2>
-<p>A7 declares that the clinician is part of the system under observation. The clinical relationship has history that accumulates: it is a field with its own properties, not a neutral context.</p>
-<p>The <strong>interstitial field</strong> <span class="math inline">\Omega_t^{(\text{int})}</span> is the stability function describing the organization of the encounter between two individuation fields. It has its own constitutive history: <span class="math inline">\xi_t^{(\text{int})} = \{D_p^{(\text{int})}(t), \kappa^{(\text{int})}(t), \sigma^{(\text{int})}\}</span>: what the relationship has deformed irreversibly, the relationship’s current receptive capacity, and the imprint of its earliest encounters.</p>
-<p><strong>Constitutive asymmetry:</strong> the interstitial field is not symmetric. The clinician has competencies for Unveiling that the person does not; the person has access to their own <span class="math inline">\xi_t</span> that the clinician does not. That asymmetry is constitutive, not accidental. <strong>Clinical consequence:</strong> <span class="math inline">\Omega_t^{(\text{int})}</span>’s properties condition which aspects of <span class="math inline">\xi_t^{(p)}</span> are accessible in this encounter. An interstitial field with reduced <span class="math inline">\kappa^{(\text{int})}(t)</span> produces reduced access to <span class="math inline">\xi_t^{(p)}</span> even when individual parameters would allow Unveiling. Its full quantitative formalization is still pending.</p>
-<p><strong>Predicate types:</strong> <em>clinical interstitial field</em> (between clinician and person), <em>familial</em> (between members of a family system), <em>bonding</em> (between the trajectory and a significant attachment figure).</p>
-<p><strong>Interstitial spatium:</strong> <span class="math inline">\Omega_t^{(\text{int})}</span> has its own spatium, <span class="math inline">(\varepsilon_t^{(\text{int})}, \Psi_t^{(\text{int})})</span>. <span class="math inline">\varepsilon_t^{(\text{int})}</span> is relational functional elasticity. <span class="math inline">\Psi_t^{(\text{int})}</span> has constitutive asymmetric propagation: <span class="math inline">D_p^{(\text{int})} \to \kappa^{(\text{int})}</span>: ruptures drain receptive capacity; the reverse direction requires deliberate repair. This asymmetry distinguishes the interstitial field from the individual field, where propagation can be bidirectional.</p>
-<p><strong>Its own dynamics:</strong> <span class="math inline">\Omega_t^{(\text{int})}</span> evolves over the course of the relationship, in three possible regimes. In the <em>productive</em> regime (high <span class="math inline">\kappa^{(\text{int})}(t)</span>, moderate <span class="math inline">D_p^{(\text{int})}(t)</span>), the encounter can unveil deep aspects of <span class="math inline">\xi_t^{(p)}</span>. In the <em>restricted</em> regime (<span class="math inline">\kappa^{(\text{int})}(t)</span> reduced by accumulated <span class="math inline">D_p^{(\text{int})}(t)</span>), only <span class="math inline">\xi_t^{(p)}</span>’s surface is accessible. In the <em>ruptured</em> regime (<span class="math inline">\kappa^{(\text{int})}(t)</span> below its threshold), intervening on the person’s accumulated history in that state produces harm analogous to what P12 describes.</p>
-<p><strong>The transitional regime</strong> (the period between the trajectory leaving one basin and arriving at another) is characterized, as a hypothesis still to be calibrated with pilot data, by high variance in <span class="math inline">\Omega_t^{(p)}</span>, a decline in tension toward change (<span class="math inline">\chi_t</span>), <span class="math inline">\kappa(t)</span> at its minimum, and heightened sensitivity to perturbation. It is asymmetric: crossing from one configuration to another has different dynamics than the reverse crossing. P12 applies with maximum urgency during this regime.</p>
-<p><strong>Potentialities:</strong> the configurations the field could reach under specifiable conditions, with no implication that it will reach them: they are properties of the current field, not destinations. Formally:</p>
-<p><span class="math display">\text{Pot}(t) = \{\mathfrak{C}_j \notin \mathcal{F}_t^{(p)}|_{\text{discreto}} \mid d_{g_t}(\mathfrak{C}_j, \partial\mathcal{F}_t^{(p)}) &lt; \delta_{\Phi}(t)\}</span></p>
-<p>The radius of those potentialities (<span class="math inline">\delta_{\Phi}(t)</span>) grows with the field’s generative tension (<span class="math inline">\Phi_t^{(p)}</span>) and with receptive capacity (<span class="math inline">\kappa(t)</span>). <strong>Latent basins</strong> are the subset of those potentialities with prior history: they reactivate with less perturbation than regions with no history, which explains why patterns that “reappear” after remission are reactivations, not something unexpected.</p>
-<p><em>Scope note:</em> the trajectory’s real potentialities exist over the continuous space of possible organizations; their formulation here is a projection of that space onto the 14 canonical configurations, for operational reasons. Calculating them quantitatively still requires calibrating the configuration space’s metric with pilot data.</p>
-<hr />
-<h2 id="i.12.-process-theories-transformation-and-stabilizations">I.12. Process Theories: Transformation and Stabilizations</h2>
-<p><strong>§T1: transformation as a process, in four phases.</strong> The first phase is <em>silent accumulation</em>: the field accumulates internal tension with none of it observable yet in the functional profile. This is the moment of greatest risk for misreading, because the Bayesian instrument can read a stable field when it is actually under growing tension.</p>
-<p>The second phase is <em>threshold and reorganization</em>: the perturbation exceeds the field’s effective threshold, and receptive capacity gets consumed in the process. If that capacity is sufficient, the result is genuine expansion of the space of possibilities; if it is not, the result is a contraction of that space.</p>
-<p>The third phase is the <em>transitional regime</em>: the field is between basins, at its point of greatest vulnerability. The clinical priority here is minimizing perturbations: this is the moment when the Bayesian instrument can mistake the transitional process’s high variance for simple estimation uncertainty, and when receptive capacity is at its lowest point, so any intervention on the person’s accumulated history must wait for that capacity to be restored.</p>
-<p>The fourth phase is <em>installation and consolidation</em>: the field stabilizes in a new basin, receptive capacity recovers, and the new trace integrates into accumulated history.</p>
-<p>These four phases are overlapping regimes of the process, not discrete states or a mandatory sequence. The field can be in transition between phases, and detecting them in practice is a matter of reading trends, not applying precise thresholds.</p>
-<p>Within this theory, the model distinguishes two blockage mechanisms that look similar from outside but call for opposite interventions: blockage <em>from exhaustion</em> (there is tension toward change, but receptive capacity cannot sustain it, and the correct intervention is to restore that capacity) and blockage <em>from equilibrium</em> (the basin is simply deep, and there is no generative tension pushing toward change, and the correct intervention is to gradually build that tension before perturbing). As a hypothesis still pending comparison against pilot data, the probability that the field transitions from one configuration to another decays with the distance between them in configuration space, and that decay grows steeper the lower the available receptive capacity is:</p>
-<p><span class="math display">P(\mathfrak{C}_j \mid \mathfrak{C}_i, t) \propto \exp\!\left(-\dfrac{d_{g_t}(\mathfrak{C}_i, \mathfrak{C}_j)}{\kappa(t) \cdot \|\Delta u_t\|}\right) \cdot \mathbf{1}[\kappa(t) \geq \kappa_{\text{umbral}}]</span></p>
-<p>This reproduces, from the model’s geometry, the three qualitative properties already observed in the transitional regime: the asymmetry between crossings, the preference for short-range transitions, and the requirement of minimal receptive capacity.</p>
-<p><strong>§T2: stabilizations and their qualitative conditions.</strong> The model distinguishes five basin types, based on how deep and how active the field’s organization is around them. A <em>residency</em> is a deep, stable basin, with little change under way. A <em>reconfiguration</em> is a medium-depth basin with active change. A <em>transient</em> basin is shallow: the field is still searching for where to settle. An <em>early dispositional</em> basin is one installed from the field’s origin, not accumulated through biographical history. And a <em>failed reconfiguration</em> is a field trapped between basins, without enough receptive capacity to complete the transition.</p>
-<p><strong>Latent basins</strong> are a category cutting across these five types, not a sixth type: they are basins with prior history that currently sit below the activation threshold, and that can reactivate with less perturbation than a region with no history. Fully formalizing these types with empirical data remains pending work.</p>
-<hr />
-<h1 id="part-ii-the-epistemological-layer">Part II — The Epistemological Layer</h1>
-<h2 id="ii.1.-epistemological-commitments">II.1. Epistemological Commitments</h2>
-<p><strong>CE1: the model produces knowledge from a question.</strong> The question is: <em>what is happening in this person’s individuation field right now, and in what direction is it moving?</em> Clinical inference does not start from a specific diagnostic hypothesis to confirm or refute. The ten axioms are conditions of possibility for asking that question, not hypotheses about this particular trajectory.</p>
-<p><strong>CE2: inference is dynamic abduction.</strong> The model generates the explanation most coherent with the available observations, and that explanation updates as new observations arrive.</p>
-<p><strong>CE3: knowledge about constitutive memory (<span class="math inline">\xi_t</span>) is constitutively incomplete and revisable.</strong> The estimate of <span class="math inline">\xi_t</span> is always a probability distribution with positive variance: complete certainty about a person’s accumulated history is neither possible nor desirable as a clinical goal.</p>
-<p><strong>CE4: the functional level is irreducible to the molecular level.</strong> Regardless of how good the available genomic and epigenomic data are, longitudinal functional assessment remains the only source of direct access to the field’s history. That the functional profile over time improves prediction of future state beyond what molecular data alone predict is a falsifiable prediction, still to be confirmed with pilot data.</p>
-<p><strong>CE5: validation operates on two distinct planes.</strong> The first is parameter validation: whether functional elasticity, cross-domain propagation, and constitutive memory are measurable with sufficient reliability. The second is validation of the ontological commitments: whether describing a person in terms of trajectory and field adds predictive value over describing them in terms of state and diagnostic category. <strong>CE6: the mathematical layer is admissible, not deduced.</strong> The model’s mathematical representations are not logically deduced from the ontological axioms: they are chosen for being coherent with them, under the six conditions of mathematical admissibility described below.</p>
-<p><strong>CE7: the model recognizes tacit knowledge constitutive of practice.</strong> Clinical resonance (what the encounter produces in the clinician, beyond what gets verbalized) is a legitimate source of evidence, with its own weight in inference. The criterion for distinguishing it from observer bias: a valid tacit reading updates and refines itself as more observation becomes available; bias, by contrast, stays immune to evidence that contradicts it.</p>
-<p><strong>Other epistemological commitments of the model, in synthesis:</strong></p>
-<ul>
-<li>Unveiling (the process of inferring a person’s accumulated history) has a real cost for the field being unveiled; it is not a neutral operation.</li>
-<li>That process cannot be accelerated arbitrarily: it takes the time it takes.</li>
-<li>There is an optimal window of receptivity for Unveiling that is not simply “more is better”: there can be too little openness as well as too much.</li>
-<li>The clinical knowledge the model produces has a different shelf life depending on the type of data: some estimates go stale faster than others.</li>
-<li>The assessment instrument itself modifies what it assesses: there is no neutral observation of the individuation field.</li>
-<li>The model does not assume that a trajectory’s past behavior is representative of its future behavior, nor that a population’s average is representative of any individual trajectory.</li>
-</ul>
-<p><strong>CE17: the process’s constitutive inaccessibility.</strong> The model operates under three limits on access, and none of the three is a defect specific to Syntropia: they are limits of any practical science that tries to formalize processes. The first is observational: the process is continuous, but any observational apparatus is discrete, so what gets captured is the process’s trace, not the process itself. The second is mathematical: the mathematical tools available today describe a given moment’s geometry better than continuous becoming; the trajectory as process still has no direct mathematical representation. The third is structural: the Bayesian model describes transitions between successive states, not the continuous becoming between them; in that sense, it is a description of connected states, not of pure flow.</p>
-<p><strong>CE18: the basis for comparability between trajectories.</strong> That each trajectory is radically singular does not prevent the model from accumulating scientific knowledge. Comparability in Syntropia operates on structural parameters and relationships (the basin type a trajectory is in, the direction its perturbations propagate in, its position in clinical space), never on any trajectory’s specific content. The formal metric that would let this comparison be quantified does not exist yet: it is one of the most urgent pending developments, because without it the model cannot be validated at the population level.</p>
-<p><strong>CE19: the limit of constitutive memory as a representation of history.</strong> The estimate of a person’s constitutive memory is the trace of the accumulated process, not the process itself. Two trajectories with very similar estimates may have arrived by different paths, and may respond differently to the same perturbation. This limit is most severe during the process’s periods of greatest change (silent accumulation, the transitional regime, and the start of consolidation): in those moments, sources of information that do not depend on the Bayesian engine (the somatic signal, clinical resonance, variation in the person’s narrative) carry more weight than the engine’s estimate. This does not mean the Bayesian engine should be ignored in general: it means there are specific periods where its approximation is less reliable and direct clinical reading needs to compensate for it.</p>
-<h2 id="ii.2.-mathematical-admissibility-conditions-conditions-16">II.2. Mathematical Admissibility Conditions (Conditions 1–6)</h2>
-<p>A mathematical representation of the spatium or of the individuation field is <strong>admissible</strong> if and only if it satisfies six conditions derived from the ten axioms:</p>
-<p><strong>Condition 1: Anisotropy</strong> (A3): the metric over the configuration space is non-Euclidean: the metric tensor varies point to point.</p>
-<p><span class="math display">\nexists\; g_{\text{eucl}} : d(\mathfrak{C}_i, \mathfrak{C}_j) = \|\mathfrak{C}_i - \mathfrak{C}_j\|_2</span></p>
-<p><strong>Condition 2: Non-Ergodicity</strong> (A2, A4): the support of the distribution over configurations is a function of the trajectory’s constitutive memory; it is not constant across every person.</p>
-<p><span class="math display">\mathcal{F}_t^{(p)} = \{w \in \mathcal{W} \mid \Omega_t^{(p)}(w) \geq \theta(\xi_t)\} \subsetneq \mathcal{W}</span></p>
-<p><strong>Condition 3: Non-Markovianity</strong> (A2, A4): transition dynamics depend on accumulated history, not only on the immediately prior state.</p>
-<p><span class="math display">P(H_{t+1} \mid H_{[t_0:t]}, \xi_t) \neq P(H_{t+1} \mid H_t)</span></p>
-<p><strong>Condition 4: Emergence</strong> (A1): the operator translating the field’s local organization (functional profile, elasticity, propagation) into its global organization does not give the same result whether it is applied before or after a reorganization: order matters.</p>
-<p><span class="math display">T_{\text{escala}} \circ \text{reorganization} \neq \text{reorganization} \circ T_{\text{escala}}</span></p>
-<p><strong>Condition 5: Irreversibility</strong> (A2): the dynamics operate with broken time symmetry: the past cannot be reconstructed from the present the same way the future can be projected from it.</p>
-<p><span class="math display">P(H_{t-k} \mid H_t, \xi_t) \neq P(H_t \mid H_{t-k}, \xi(t-k))</span></p>
-<p><strong>Condition 6: Singularity</strong> (A10): the mathematical representation must distinguish trajectories with the same current observable state but different histories; it cannot collapse them into the same representation.</p>
-<p><span class="math display">\xi_t^{(p)} \neq \xi_t^{(q)} \;\Rightarrow\; \text{representation}^{(p)} \neq \text{representation}^{(q)}</span></p>
-<table style="width:6%;">
-<colgroup>
-<col style="width: 5%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td># Part III — The Mathematical Layer</td>
-</tr>
-<tr class="even">
-<td>## III.1. The Unifying Structure: the Triad <span class="math inline">(\mathcal{W}, g_t, \mathcal{A}[\Omega, t])</span></td>
-</tr>
-<tr class="odd">
-<td>Five of the model’s seven objects are manifestations of a single geometric structure: a Riemannian manifold with a history-dependent metric. The triad:</td>
-</tr>
-<tr class="even">
-<td><span class="math display">\boxed{(\mathcal{W},\; g_t,\; \mathcal{A}[\Omega, t])}</span></td>
-</tr>
-<tr class="odd">
-<td>- <span class="math inline">\mathcal{W}</span>: the differentiable manifold of the configuration space - <span class="math inline">g_t</span>: the history-dependent metric tensor: <span class="math inline">g_t = g(\xi_t, t)</span> - <span class="math inline">\mathcal{A}[\Omega, t]</span>: the action functional that determines the field’s effective geometry at each moment</td>
-</tr>
-<tr class="even">
-<td>The five representations derivable from the triad: <span class="math inline">H_t</span>, <span class="math inline">\varepsilon_t</span>, <span class="math inline">D_p(t)</span>, <span class="math inline">\kappa(t)</span>, <span class="math inline">\mathcal{F}_t^{(p)}</span>. The two objects not directly derivable: <span class="math inline">\Psi_t</span> (propagation requires additional specification of coupling between domains) and <span class="math inline">M</span> (a property of the evolution operator over <span class="math inline">\mathcal{W}</span>, not of the space’s geometry).</td>
-</tr>
-<tr class="odd">
-<td><strong>The generative potential functional <span class="math inline">\Phi_t^{(p)}</span></strong> is <span class="math inline">\Omega_t^{(p)}</span>’s mathematical complement: where <span class="math inline">\Omega_t^{(p)}</span> describes <em>where</em> the field is (accessibility/stability), <span class="math inline">\Phi_t^{(p)}</span> describes <em>which way it’s pushing</em> (generative tension). Formally, it is <span class="math inline">\mathcal{A}[\Omega, t]</span>’s functional gradient in the direction of <span class="math inline">\Omega_t^{(p)}</span>’s support expanding. It distinguishes three clinical regimes: <span class="math inline">\Phi_t^{(p)} \approx 0</span> is deep residency, a field stable through equilibrium; <span class="math inline">\Phi_t^{(p)} &gt; 0</span> is active reconfiguration; and <span class="math inline">\Phi_t^{(p)} \gg 0</span> combined with insufficient receptive capacity is a crisis: high tension with no capacity to absorb it, a field stable through exhaustion, not equilibrium. This equilibrium/exhaustion distinction cannot be captured from <span class="math inline">\Omega_t^{(p)}</span> alone, and it remains a structural hypothesis pending empirical calibration.</td>
-</tr>
-<tr class="even">
-<td>## III.2. The Bayesian State-Space Model</td>
-</tr>
-<tr class="odd">
-<td>The Bayesian model implements Unveiling as a sequential update of the posterior over <span class="math inline">\xi_t</span>:</td>
-</tr>
-<tr class="even">
-<td><strong>State equation:</strong> <span class="math display">\xi_{t+1} = f_t(\xi_t, u_t) + w_t, \quad w_t \sim \mathcal{N}(0, Q)</span></td>
-</tr>
-<tr class="odd">
-<td>where <span class="math inline">f_t = f(\cdot \mid D_p(t), \sigma_t)</span>: the transition function’s form is itself a function of history accumulated at a slow scale. In the first-phase implementation, <span class="math inline">f</span> is treated as stationary; detecting systematic parameter variation with <span class="math inline">D_p(t)</span> in the pilot will justify updating to a non-stationary <span class="math inline">f_t</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>Observation equation:</strong> <span class="math display">\mathcal{O}(t) = h(\xi_t, H_t) + v_t, \quad v_t \sim \mathcal{N}(0, R)</span></td>
-</tr>
-<tr class="odd">
-<td><strong>Bayesian update:</strong> <span class="math display">P(\xi_t \mid \mathcal{O}(t)) \propto P(\mathcal{O}(t) \mid \xi_t) \cdot P(\xi_t \mid \mathcal{O}(t-1))</span></td>
-</tr>
-<tr class="even">
-<td>The likelihood factors over observation sources with differential weights: <span class="math inline">P(\mathcal{O}(t) \mid \xi_t) = \prod_s P(\mathcal{O}_s(t) \mid \xi_t)^{w_s}</span>, where <span class="math inline">w_s</span> reflects each source’s relative reliability. Empirically estimating those weights is still pending work for the pilot.</td>
-</tr>
-<tr class="odd">
-<td><strong>First-order Markovian approximation</strong> (a declared limit, Condition 3): the current computational implementation uses <span class="math inline">P(H_t \mid H_{t-1}, M, \varepsilon_t)</span> as a tractable approximation. Extending it to the continuous clinical space, with dependence on the complete history rather than only the immediately prior state, is one of the most important pending mathematical developments.</td>
-</tr>
-<tr class="even">
-<td>## III.3. The Four Operators of Non-Reductive Translation</td>
-</tr>
-<tr class="odd">
-<td>The model connects very different levels of description with each other (a sensor’s continuous signal, the clinical history narrated in the encounter, the field’s local organization versus its global organization, and the genomic profile versus the spatium’s geometry) through four translation operators. Each one explicitly declares what information gets lost in translating from one level to another, rather than assuming the translation is perfect:</td>
-</tr>
-<tr class="even">
-<td>| Operator | Translation | Property | |—|—|—| | <span class="math inline">T_{\text{temporal}}</span> | Sensor’s longitudinal signal → constitutive memory (<span class="math inline">\xi_t</span>), effective threshold (<span class="math inline">\varepsilon_t^{\text{ef}}</span>) | Integration with controlled loss | | <span class="math inline">T_{\text{histórico}}</span> | Series of clinical observations → constitutive memory, individuation field | Codetermination: the space’s metric depends on the field it also helps infer | | <span class="math inline">T_{\text{escala}}</span> | The field’s local organization (functional profile, elasticity, propagation) → global individuation field | Non-commutative aggregation: the order of operations matters (Condition 4) | | <span class="math inline">T_{\text{ontológico}}</span> | Genomic and epigenomic differentiation profile → spatium parameters (elasticity, propagation, accumulated deformation) | Modulation with emergence: phenotype is not mechanically deduced from genotype |</td>
-</tr>
-<tr class="odd">
-<td>## III.4. Empirical Anchor Markers (<span class="math inline">T_{\text{ontológico}}</span>)</td>
-</tr>
-<tr class="even">
-<td>| Marker | Mechanism | Model parameter | Direction | |—|—|—|—| | <em>FKBP5</em> intron 7 methylation | HPA axis sensitization | Accumulated <span class="math inline">D_p(t)</span> → <span class="math inline">\varepsilon_t^{\text{ef}} \downarrow</span> | Higher methylation: greater accumulation under stress | | Horvath epigenetic clock | Allostatic load | <span class="math inline">\kappa(t) \downarrow</span> independent of <span class="math inline">D_p(t)</span> | Acceleration → reduced receptive capacity | | <em>BDNF</em> promoter methylation | Neuroplasticity | <span class="math inline">\kappa(t) \uparrow</span> post-intervention | Demethylation → restoration of <span class="math inline">\kappa(t)</span> | | <em>NR3C1</em> promoter methylation | Relational HPA regulation | <span class="math inline">\Psi_t</span> under stress | Higher methylation → greater <span class="math inline">A_t</span>–<span class="math inline">V_t</span> coupling |</td>
-</tr>
-<tr class="odd">
-<td>The convergence of elevated <em>FKBP5</em> and an accelerated Horvath clock corresponds to position R2 in clinical space: urgency to restore <span class="math inline">\kappa(t)</span> before intervening on <span class="math inline">D_p(t)</span>.</td>
-</tr>
-<tr class="even">
-<td>## III.5. Distinguishing the Process’s Rhythm From the Observable’s Rate of Change</td>
-</tr>
-<tr class="odd">
-<td>The <strong>observable’s rate of change</strong> <span class="math inline">\dot{H}_t = \nabla H_t / \Delta t</span> measures how much <span class="math inline">H_t</span> changes between evaluations. The <strong>process’s rhythm</strong> <span class="math inline">\chi_t</span> measures the tension accumulating in <span class="math inline">\Omega_t^{(p)}</span> before a reorganization becomes observable. The two are dissociable: <span class="math inline">\dot{H}_t \approx 0</span> with <span class="math inline">\chi_t</span> high is the silent period preceding a major reorganization. <span class="math inline">\dot{H}_t</span> high with <span class="math inline">\chi_t</span> low is reactive movement with no underlying reorganization process. The minimum evaluation frequency the pilot needs to detect <span class="math inline">\chi_t</span>: weekly with the sensor, biweekly in clinical encounter, during phases of active reconfiguration.</td>
-</tr>
-<tr class="even">
-<td>## III.6. Omic Protocol → Bayesian Prior</td>
-</tr>
-<tr class="odd">
-<td>The <span class="math inline">T_{\text{ontológico}}</span> chain has a four-step operational implementation: (1) <em>FKBP5</em> intron 7 methylation produces an estimate of omic-origin accumulated plastic deformation, through a function still to be calibrated with pilot data; (2) the Horvath epigenetic clock produces an estimate of omic receptive capacity, through a function decreasing in the clock’s acceleration, independent of accumulated deformation by design; (3) <em>NR3C1</em> and <em>BDNF</em> methylation update the prior over cross-domain propagation and over structural distensibility; (4) these three estimates integrate into a joint prior over complete constitutive memory:</td>
-</tr>
-<tr class="even">
-<td><span class="math display">P(\xi_t^{(\text{ómico})}) = P(D_p \mid \text{FKBP5}) \cdot P(\kappa \mid \text{Horvath}) \cdot P(\sigma_t \mid \text{historia temprana})</span></td>
-</tr>
-<tr class="odd">
-<td>This prior enters the Bayesian engine before the first clinical evaluation, and it updates afterward with every new clinical observation.</td>
-</tr>
-</tbody>
-</table>
-<h1 id="part-iv-the-clinical-layer">Part IV — The Clinical Layer</h1>
-<h2 id="iv.1.-the-canonical-configuration-system-v1.2">IV.1. The Canonical Configuration System: v1.2</h2>
-<p><strong>Syntropic configurations</strong> are the individuation field’s positions of dynamic stability: the attractors <span class="math inline">\Omega_t^{(p)}</span>’s geometry conditions. Canonical system v1.2 organizes 14 configurations by two formal axes: dominant propagation direction in <span class="math inline">\Psi_t</span>, and basin type. They are transdiagnostic patterns, not diagnostic categories.</p>
-<table>
-<thead>
-<tr class="header">
-<th>ID</th>
-<th>Name</th>
-<th>Dominant <span class="math inline">\Psi_t</span></th>
-<th>Basin</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>C-A</td>
-<td>Anchoring</td>
-<td>psych.→<span class="math inline">B_t</span></td>
-<td>Residency</td>
-</tr>
-<tr class="even">
-<td>C-B</td>
-<td>Loop</td>
-<td>Bidirectional</td>
-<td>Residency</td>
-</tr>
-<tr class="odd">
-<td>C-C1</td>
-<td>Bond</td>
-<td>psych.→<span class="math inline">B_t</span> (<span class="math inline">R_t</span> origin)</td>
-<td>Reconfiguration</td>
-</tr>
-<tr class="even">
-<td>C-C2</td>
-<td>Existential</td>
-<td>psych.→<span class="math inline">B_t</span> (<span class="math inline">A_t</span> origin)</td>
-<td>Reconfiguration</td>
-</tr>
-<tr class="odd">
-<td>C-D</td>
-<td>Chrysalis</td>
-<td>Bidirectional</td>
-<td>Reconfiguration</td>
-</tr>
-<tr class="even">
-<td>C-E</td>
-<td>Jolt</td>
-<td><span class="math inline">B_t</span>→out</td>
-<td>Transient</td>
-</tr>
-<tr class="odd">
-<td>C-F</td>
-<td>Suspension</td>
-<td>psych.→<span class="math inline">B_t</span></td>
-<td>Transient</td>
-</tr>
-<tr class="even">
-<td>C-G</td>
-<td>Transformation</td>
-<td><span class="math inline">B_t</span>→out</td>
-<td>Reconfiguration</td>
-</tr>
-<tr class="odd">
-<td>C-H</td>
-<td>Vortex</td>
-<td>Bidirectional</td>
-<td>Transient</td>
-</tr>
-<tr class="even">
-<td>C-I</td>
-<td>Embodiment</td>
-<td><span class="math inline">B_t</span>→out</td>
-<td>Residency</td>
-</tr>
-<tr class="odd">
-<td>C-J</td>
-<td>Collapse</td>
-<td>Global</td>
-<td>Transient†</td>
-</tr>
-<tr class="even">
-<td>C-K</td>
-<td>Idiosyncratic</td>
-<td>Variable</td>
-<td>Early dispositional</td>
-</tr>
-<tr class="odd">
-<td>C-L</td>
-<td>Encapsulation</td>
-<td>Segmented</td>
-<td>Residency / reconfiguration</td>
-</tr>
-<tr class="even">
-<td>C-M</td>
-<td>Drift</td>
-<td>psych.→<span class="math inline">B_t</span></td>
-<td>Failed reconfiguration</td>
-</tr>
-</tbody>
-</table>
-<p>†C-J can install as residency in chronic forms.</p>
-<p>Classifying into configurations is a projection of the complete individuation field onto the discrete set of 14 identified attractors, not a complete description of the field. Whether that number, 14, is final, or whether the system needs revision with more data, is one of the open questions on the research agenda (Part V).</p>
-<h2 id="iv.2.-the-four-conditions-of-clinical-practice">IV.2. The Four Conditions of Clinical Practice</h2>
-<p><strong>C1: the assessment protocol is adaptive.</strong> The assessment sequence depends on position in <span class="math inline">S_m</span>: when <span class="math inline">\kappa(t) &lt; \kappa_{\text{umbral}}(D_p)</span>, restoring <span class="math inline">\kappa(t)</span> structurally precedes any assessment of <span class="math inline">D_p(t)</span>.</p>
-<p><strong>C2: neurodivergence is its own individuation field.</strong> C-K (Idiosyncratic) is constitutionally characterized by <span class="math inline">\sigma_t</span>’s heavier structural weight within <span class="math inline">\xi_t</span>. Assessment always operates from the field’s own individuation, not from the statistical norm.</p>
-<p><strong>C3: <span class="math inline">T_2</span> sets Syntropia apart from categorical systems.</strong> Reading <span class="math inline">T_2</span>’s direction together with its variance produces clinical information irreducible to the level of <span class="math inline">\|H_t\|</span>: the same level of coherence can correspond to processes of opposite nature.</p>
-<p><strong>C4: the clinician is part of the field.</strong> The clinical encounter is ontological intervention (A7). To distinguish a genuine signal from the field from the clinician’s own projection: if the same resonance pattern repeats three times in response to the same type of stimulus, within the same encounter, it is treated as a signal from the field with full weight in inference; if it does not repeat, it is treated as the observer’s hypothesis, with reduced weight.</p>
-<p><strong>C5: intervention modes by target parameter.</strong> Clinical intervention operates on conditions of the field, not directly on the process:</p>
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Target parameter</th>
-<th>Characteristic interventions</th>
-<th>Timescale</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Receptive capacity (<span class="math inline">\kappa(t)</span>)</td>
-<td>Pharmacotherapy, sleep regulation, reducing allostatic load</td>
-<td>Weeks</td>
-</tr>
-<tr class="even">
-<td>Functional elasticity by domain (<span class="math inline">\varepsilon_t</span>)</td>
-<td>Domain-specific psychotherapy</td>
-<td>Months/years</td>
-</tr>
-<tr class="odd">
-<td>Cross-domain propagation (<span class="math inline">\Psi_t</span>)</td>
-<td>Somatic therapy, EMDR, autonomic regulation</td>
-<td>Weeks/months</td>
-</tr>
-<tr class="even">
-<td>Accumulated deformation, via resignification (<span class="math inline">D_p(t)</span> / <span class="math inline">\rho(t)</span>)</td>
-<td>Psychodynamic psychotherapy, narrative work, EMDR: modifies that history’s function in the field, does not reduce it</td>
-<td>Months/years</td>
-</tr>
-<tr class="odd">
-<td>Pre-symbolic dispositional structure (<span class="math inline">\sigma_t</span>)</td>
-<td>Limited access: somatic work, long-standing therapeutic relationship</td>
-<td>Years/decades</td>
-</tr>
-<tr class="even">
-<td>Transition conditions (<span class="math inline">M</span>)</td>
-<td>Specific components depending on which is compromised (behavioral flexibility, reality testing, trajectory continuity, stability under stress)</td>
-<td>Variable</td>
-</tr>
-</tbody>
-</table>
-<p>The intervention sequence (Proposition 12) is always active: when receptive capacity falls below the threshold accumulated history requires, restoring that capacity precedes any intervention on history, dispositional structure, or functional elasticity.</p>
-<p><strong>C6: architectural protection against discretization.</strong> A valid clinical report in Syntropia requires three elements: (1) <span class="math inline">\Omega_t^{(p)}</span>’s distribution over the configuration system, not just the mode; (2) <span class="math inline">T_2</span>’s direction; (3) when the clinician activated a schema at the first encounter, an explicit description of how this field differs from the canonical pattern. A report that only states the modal configuration structurally reproduces the diagnostic problem the model is trying to overcome.</p>
-<p><strong>C7: the trained clinician faces the specific risk of expertise.</strong> Training in the configuration system produces stable cognitive representations that can interfere with reading the singular field. The central competency is recognizing configurations and then suspending that recognition in front of the concrete field, not just recognizing them. Operational criterion: the clinician can articulate how this person’s field differs from the canonical pattern that activated at the first encounter.</p>
-<h2 id="iv.3.-canonical-clinical-terms">IV.3. Canonical Clinical Terms</h2>
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Operational definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Preview</strong></td>
-<td>What the individuation field produces before elaboration: prior to the self-image, legible in involuntary channels, in any encounter, not only the first</td>
-</tr>
-<tr class="even">
-<td><strong>Self-image</strong></td>
-<td>The elaboration the field makes of what it presents: the representation it produces of itself to present to the world and to the clinician</td>
-</tr>
-<tr class="odd">
-<td><strong>Observing Image</strong></td>
-<td>The person’s field’s capacity to observe its own self-image from some distance; the function that makes insight and introspection possible</td>
-</tr>
-<tr class="even">
-<td><strong>Interstitial field</strong></td>
-<td>The space between the clinician’s field and the person’s field; always requires specifying its type: clinical, familial, or bonding</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h1 id="part-v-research-agenda">Part V — Research Agenda</h1>
-<p>Syntropia explicitly declares its open empirical questions: which parts of the model still lack data support, and what evidence would change each one. That complete catalog (more than 30 questions organized by thematic block, each with its formal referent and its falsifiability condition, plus the structural hypotheses still unconfirmed) lives in its own document: the <strong>Syntropia Research Agenda</strong>.</p>
-<p>Within that agenda, two questions are mandatory for the validation pilot’s first year. The first is whether the 14 canonical configurations emerge as real attractors of the space of possibilities, or whether they are simply well-chosen clinical conventions with no such backing (critical, because the empirical foundation of the model’s central clinical instrument depends on it). The second is whether the complete model, with its full ontological architecture, predicts better than a simpler, standard Bayesian model using the same data: the test of whether the program’s complexity is justified.</p>
-<h2 id="vi.1.-how-to-cite-this-document">VI.1. How to Cite This Document</h2>
-<p>For journal articles, theses, and books: cite the Foundational Article, which is the registered source with an active DOI.</p>
-<blockquote>
-<p>Pereira Perdomo, D. F. (2026). <em>Syntropia: The First Scientific Theory of Rhysic Ontology, Applied to Transdiagnostic Functional Trajectories</em> (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.21398153</p>
-</blockquote>
-<h2 id="vi.2.-what-is-resolved-and-what-remains-open">VI.2. What Is Resolved, and What Remains Open</h2>
-<p>The complete formal architecture (the ten axioms, the six mathematical admissibility conditions, the unifying structure connecting most of the model’s objects, the canonical system of 14 configurations, the four translation operators between levels, and the formal basis of the intervention sequence) is resolved with no need for pilot data. What remains open (what depends on data the pilot is going to produce, and what depends on mathematical work not yet done) is catalogued in detail in the Research Agenda.</p>
-<h2 id="vi.3.-what-the-model-is-not">VI.3. What the Model Is Not</h2>
-<p>The Syntropia model does not compete with RDoC, HiTOP, or genomic precision medicine: it occupies the space those frameworks leave unarticulated. RDoC provides the substrate’s dimensional map. HiTOP provides the transdiagnostic taxonomic structure. Genomic precision medicine provides Layer 1 of the integrated profile. Syntropia provides Layer 3 (the dynamic functional description of the trajectory in real time) that none of those frameworks generates. Articulating all four frameworks into one integrated clinical protocol is the long-term vision.</p>
-<p><strong>Risk of institutional absorption.</strong> The greatest risk external to the scientific program is absorption, not empirical refutation: the methodological apparatus surviving while rhysic ontology disappears. The specific mechanism: <span class="math inline">\Omega_t^{(p)}</span> reinterpreted as a standard latent variable; syntropic configurations turned into diagnostic categories; <span class="math inline">\xi_t</span> treated as a hidden state with no admissibility conditions (Conditions 1–6); <span class="math inline">T_2</span> reduced to a conventional longitudinal trajectory; the Bayesian engine operating with none of the ten axioms’ commitments. In that scenario, Syntropia’s technical apparatus would get absorbed into existing frameworks as a new longitudinal psychometrics, with none of the ontological break that justifies the program.</p>
-<p>Protection against this risk is a condition of publication, not an architectural one (the model cannot prevent its own domestication from its internal structure alone): the program’s first publications need to present the empirical results <em>and</em> the ontological commitments they derive from, together. A result published without the framework is a result that can be absorbed. A framework published without results is speculation. The two together are what constitutes a scientific program.</p>
-<h2 id="vi.4.-why-this-program-exists">VI.4. Why This Program Exists</h2>
-<p>Many programs share loose pieces of what Syntropia does. Adopting a process ontology: many exist. Criticizing the DSM: thousands of programs do it. Using Bayesian methods or talking about trajectories: dynamic psychology already does that. Sharing those pieces is not, on its own, what justifies Syntropia existing as a separate program.</p>
-<p>What sets it apart is having identified a set of problems about historicity, process, and transformation that the dominant frameworks recognize in theory but leave operationally unresolved, and having produced sufficiently differentiated hypotheses (<span class="math inline">D_p/\kappa</span>, P12, <span class="math inline">T_2</span> as a predictor, the equilibrium/exhaustion distinction) to justify its own empirical investigation.</p>
-<p>That is a high bar for any program, and a higher one still for one that, at the time of this publication, works without its own data. What it does have, and what justifies its existence as a public program, is the capacity to formulate questions the alternative frameworks leave unformulated: when the same intervention helps or harms depending on history; how to distinguish two processes producing the same state; what it means for history to be constitutive and not merely predictive. As long as the answer to “if this program disappeared, which important questions would stop being asked?” stays “some, or they’d get asked worse,” there is reason for it to continue.</p>
-<p>The program has already reached something many projects do not: it has generated new questions, new distinctions, and it has produced audits capable of formulating intellectually interesting objections. That indicates it already functions as a research program. What remains an open question, the only one that matters now, is which parts will survive sustained contact with mathematics, clinical practice, and data.</p>
-<hr />
-<p><em>Syntropia Core 1.2.12 — July 18, 2026.</em> <em>Diego F. Pereira-Perdomo, MD, MSci.</em> <em>Derived from the seven canonical Cores v2.3.16 / v0.3.19 / v0.4.27 / v0.3.12 / v0.4.16 / v1.3.15 / v0.4.18.</em></p>
+        <h2 id="the-foundational-scientific-problem">The Foundational Scientific Problem</h2>
+        <blockquote>
+          <p><em>How can clinical knowledge accumulate if the process that produced a person’s current state carries
+              causal information irreducible to that current state?</em></p>
+        </blockquote>
+        <p>This question is not an invention of the program. Psychiatry, clinical psychology, behavioral medicine, and
+          systems science have recognized for decades that two people can present the same observable state while being
+          caught in radically different processes. Syntropia proposes that this difference is the primary phenomenon,
+          not a secondary detail of the clinical phenomenon. That inversion of priority may turn out to be wrong. But it
+          deserves exploring, and no existing framework has explored it with the systematicity it requires.</p>
+        <p>Most programs acknowledge, in their theory, that people have history, that trajectories matter, that
+          population averages fall short. But then, operationally, they produce dimensions, networks, states, or
+          symptoms. What Syntropia tries to preserve is a different question: what does it mean for a trajectory to have
+          <em>constitutive</em> history, not simply predictive history? That question is not resolved. It is not even
+          clearly formulated in most frameworks.
+        </p>
+        <p>HiTOP and RDoC produce cumulative knowledge but do not distinguish two trajectories with the same current
+          profile that arrived by different paths. Idiographic dynamic models capture singularity but do not articulate
+          how the history of arrival conditions the response to future interventions. Process-based therapy (Hayes,
+          Hofmann) operates on analogous intuitions without formalizing them. The Network Approach describes symptom
+          co-occurrence with no theory of those networks’ historical constitution. Every one of these programs has open
+          territory. Syntropia tries to work in some of that territory.</p>
+        <p>A note on method: many programs operate on implicit ontologies. HiTOP has ontological assumptions. RDoC has
+          ontological assumptions. Symptom networks have ontological assumptions. What sets Syntropia apart is trying to
+          say exactly what consequences taking that ontology seriously would carry, and deriving them explicitly, rather
+          than simply adopting a process ontology, of which many exist. That has intellectual value even if some
+          consequences turn out to be wrong. A program that makes its assumptions visible can be refuted with precision;
+          a program that hides them cannot.</p>
+        <p>The question has four consequences that organize the corpus:</p>
+        <ol type="1">
+          <li><strong>When do two identical current states carry different response potentials?</strong> When the
+            accumulated history of plastic deformation or the current receptive capacity differ between the two people,
+            even though their observable state today is the same.</li>
+          <li><strong>When does intervening on constitutive history help, and when does it harm?</strong> When current
+            receptive capacity falls below the threshold that accumulated history requires to absorb the intervention
+            without harm. This is the intervention sequence the model calls Proposition 12, its most operative
+            consequence (developed in Part IV).</li>
+          <li><strong>How can a trajectory’s singularity be integrated with the possibility of accumulating scientific
+              knowledge?</strong> By comparing trajectories on their structural parameters (what type of organization
+            they have, in what direction they are moving), never on the specific content of their history.</li>
+          <li><strong>How should the limits of the available inference apparatus be declared formally?</strong> By
+            explicitly recognizing what can and cannot be inferred from the available clinical observations (developed
+            in Part II).</li>
+        </ol>
+        <p>None of these consequences is operationalized in the alternative frameworks. They are the program’s reason
+          for existing: the questions this ontology permits formulating with enough precision to be tested, not rhysic
+          ontology itself.</p>
+        <hr />
+        <h2 id="the-two-organizing-intuitions">The Two Organizing Intuitions</h2>
+        <p>The complexity of the corpus is the consequence of systematically developing the implications of a single
+          distinction the program refuses to abandon. That distinction shows up in every layer of the model under
+          different names: the observable state versus its direction of change (the functional profile <span
+            class="math inline">H_t</span> versus the second-order trajectory <span class="math inline">T_2</span>);
+          accumulated history versus current receptive capacity (plastic deformation <span
+            class="math inline">D_p</span> versus distensibility <span class="math inline">\kappa</span>); equilibrium
+          versus exhaustion; deep versus superficial consolidation; observation versus constitution. In every case the
+          structure is the same: the same observable outcome can be produced by different processes, and those processes
+          differ in how they will respond to a future intervention. Much of the corpus is a consequence of insisting on
+          that separation systematically.</p>
+        <p>Two intuitions cascade out of that insistence:</p>
+        <p><strong>Intuition 1: history is causally irreducible to state.</strong> The process that produced the current
+          state (the functional profile <span class="math inline">H_t</span>) cannot be fully inferred from that current
+          state. Two people with the same <span class="math inline">H_t</span> can respond in systematically different
+          ways to the same perturbation, because their accumulated history of plastic deformation (<span
+            class="math inline">D_p(t)</span>) and their current receptive capacity (<span
+            class="math inline">\kappa(t)</span>) differ. This intuition generates: constitutive memory, which groups
+          both variables (<span class="math inline">\xi_t</span>); the intervention sequence that follows from it
+          (Proposition 12); the trajectory’s direction as a differentiated predictor (<span
+            class="math inline">T_2</span>); the equilibrium/exhaustion distinction; and the theory of transformation
+          phases (§T1).</p>
+        <p><strong>Intuition 2: the field’s organization is causally prior to the observables.</strong> There exists an
+          organization of the individuation field (<span class="math inline">\Omega_t^{(p)}</span>: the function
+          describing which reorganizations are more or less accessible to this trajectory right now) that produces both
+          the observable state and the responses to future perturbations, and that organization is not directly
+          observable. This intuition generates: <span class="math inline">\Omega_t^{(p)}</span> itself, the total space
+          of possible organizations (<span class="math inline">\mathcal{W}</span>), the metric that structures that
+          space (<span class="math inline">g_t</span>), the subset of that space accessible to this trajectory right now
+          (<span class="math inline">\mathcal{F}_t^{(p)}</span>), the canonical system of configurations, and the whole
+          mathematical architecture of the triad.</p>
+        <p>Intuition 1 is sufficient to justify the intervention sequence (P12) and the trajectory’s direction as a
+          predictor (<span class="math inline">T_2</span>) independent of Intuition 2. If only Intuition 1 is confirmed
+          empirically, the program still has genuine clinical value. If Intuition 2 adds predictive value over Intuition
+          1 (the empirical question of whether the complete model predicts better than a simpler alternative), the
+          program is fully justified in its complete architecture. And if the entire formal architecture collapsed (if
+          <span class="math inline">\Omega_t^{(p)}</span> turned out to be wrong, the geometry failed, the
+          configurations needed revising), the most basic distinction could still survive: that accumulated history and
+          current receptive capacity are different, clinically relevant variables, and that intervening on the first
+          when the second is insufficient can make the process worse. If that ends up validated empirically, the program
+          will have produced useful clinical knowledge. That happens constantly in the history of science.
+        </p>
+        <p>Additionally: Syntropia tries to connect scales that normally stay separate: molecular, behavioral,
+          phenomenological, relational, clinical. That generates complexity. It also generates theoretical fertility.
+          Many advances in the history of science appear when someone connects domains that others study separately.</p>
+        <hr />
+        <h1 id="part-i-the-ontological-layer">Part I — The Ontological Layer</h1>
+        <h2 id="i.1.-the-fundamental-process">I.1. The Fundamental Process</h2>
+        <p><strong>Rhysis</strong> designates the model’s ontological primitive. It is not an entity, an attribute, a
+          relation, an action, a process, or a becoming. It is the originary ontological activity from which being,
+          stabilization, the <em>spatium</em>, the trajectory, every distinguishable configuration, and the very
+          distinction between entities, actions, and relations all emerge. The model operates under the commitment that
+          fundamental reality is this primitive prior to any stabilization, not the observable state.</p>
+        <p>From Rhysis emerges the distinction between the <em>intensive field</em> that constitutes the conditions of
+          possibility for stabilizations (the <strong>spatium</strong>) and the stabilizations themselves
+          (<strong>personal trajectories</strong>).</p>
+        <h2 id="i.2.-the-primitive-object-the-personal-trajectory">I.2. The Primitive Object: the Personal Trajectory
+        </h2>
+        <p>The <strong>personal trajectory</strong> is the model’s primitive object. The person becomes their
+          trajectory: they do not have it, nor are they a trajectory in the sense of possessing a fixed identity. It is
+          a local stabilization of becoming with differential historical persistence: it has duration, it has direction,
+          it has a history that conditions its future movement without determining it.</p>
+        <h2 id="i.3.-the-individuation-field-omega_tp">I.3. The Individuation Field — <span
+            class="math inline">\Omega_t^{(p)}</span></h2>
+        <p>The <strong>individuation field</strong> is the trajectory-spatium coupling’s real, singular, differential
+          disposition, which at every moment determines which reorganizations are more or less accessible. It is this
+          trajectory’s relief of accessibility/stability at this moment.</p>
+        <p><span class="math inline">\Omega_t^{(p)}: \mathcal{W} \to \mathbb{R}_{\geq 0}</span> is the operative
+          representation: isomorphic to a Lyapunov function, not a probability distribution. <span
+            class="math inline">\Omega_t^{(p)}</span> <em>induces</em> <span class="math inline">\mathcal{W}</span>’s
+          local geometry; it is not the geometry itself.</p>
+        <p>The <strong>total manifold</strong> <span class="math inline">\mathcal{W}</span> is the space of every
+          possible organization, independent of person and moment.</p>
+        <p>The <strong>field of possibilities</strong> <span class="math inline">\mathcal{F}_t^{(p)} := \{w \in
+            \mathcal{W} \mid \Omega_t^{(p)}(w) \geq \theta(\xi_t)\} \subsetneq \mathcal{W}</span> is the subset
+          accessible to this trajectory right now.</p>
+        <h2 id="i.4.-the-spatium-varepsilon_t-psi_t">I.4. The Spatium — <span class="math inline">(\varepsilon_t,
+            \Psi_t)</span></h2>
+        <p>The <strong>spatium</strong> is becoming’s real intensive field. Its operative representation has two
+          components:</p>
+        <p><span class="math display">(\varepsilon_t, \Psi_t)</span></p>
+        <ul>
+          <li><span class="math inline">\varepsilon_t \in [0,1]^5</span> — <strong>functional elasticity</strong>: a
+            vector approximating the field’s functional elasticity per domain. Relatively stable; a property of the
+            trajectory.</li>
+          <li><span class="math inline">\Psi_t \in \mathbb{R}^{5\times5}</span> — <strong>cross-domain
+              propagation</strong>: a matrix approximating how perturbations propagate between domains. <span
+              class="math inline">\psi_{ij} \geq 0</span> for <span class="math inline">i \neq j</span>; <span
+              class="math inline">\psi_{ii} = 0</span>.</li>
+        </ul>
+        <p>The formal relationship between <span class="math inline">\varepsilon_t</span> and basin type, and between
+          <span class="math inline">\Psi_t</span> and propagation direction, is a conceptual correspondence in the
+          model’s current state: formalizing it as a mathematical function is still an open question on the research
+          agenda.
+        </p>
+        <h2 id="i.5.-functional-differentiation-h_t">I.5. Functional Differentiation — <span
+            class="math inline">H_t</span></h2>
+        <p>The <strong>syntropic profile</strong> <span class="math inline">H_t = (V_t, R_t, P_t, A_t, B_t) \in
+            [0,1]^5</span> describes the level of functional coherence across five domains:</p>
+        <table>
+          <colgroup>
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+          </colgroup>
+          <thead>
+            <tr class="header">
+              <th>Domain</th>
+              <th>Symbol</th>
+              <th>What it measures</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td>Volition</td>
+              <td><span class="math inline">V_t</span></td>
+              <td>Capacity to act from oneself</td>
+            </tr>
+            <tr class="even">
+              <td>Relational Bonds</td>
+              <td><span class="math inline">R_t</span></td>
+              <td>Capacity to bond with others</td>
+            </tr>
+            <tr class="odd">
+              <td>Temporal Projection</td>
+              <td><span class="math inline">P_t</span></td>
+              <td>Integrating past, present, and future</td>
+            </tr>
+            <tr class="even">
+              <td>Existential Anchoring</td>
+              <td><span class="math inline">A_t</span></td>
+              <td>Capacity to operate from a ground of meaning</td>
+            </tr>
+            <tr class="odd">
+              <td>Somatic Domain</td>
+              <td><span class="math inline">B_t</span></td>
+              <td>The somatic as constitutive of the process</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The five domains are ontologically independent of one another. The global norm <span
+            class="math inline">\|H_t\| = \frac{1}{\sqrt{5}}\sqrt{V_t^2 + R_t^2 + P_t^2 + A_t^2 + B_t^2}</span> is
+          useful but insufficient for determining the direction of intervention (P13).</p>
+        <p><span class="math inline">\nabla H_t</span> is the profile’s variation: the direction and magnitude of <span
+            class="math inline">H_t</span>’s change between successive evaluations.</p>
+        <h2 id="i.6.-transition-conditions-m">I.6. Transition Conditions — <span class="math inline">M</span></h2>
+        <p><strong>Transition conditions</strong> <span class="math inline">M = (\Beta_F, \Pi_R, \Tau_F, \Upsilon_{US})
+            \in [0,1]^4</span> represent the trajectory’s readiness to transform from its current configuration:</p>
+
+        <table>
+          <colgroup>
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+          </colgroup>
+          <thead>
+            <tr class="header">
+              <th>Component</th>
+              <th>Name</th>
+              <th>What it measures</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td><span class="math inline">\Beta_F</span></td>
+              <td>Behavioral Flexibility</td>
+              <td>Available response repertoire</td>
+            </tr>
+            <tr class="even">
+              <td><span class="math inline">\Pi_R</span></td>
+              <td>Reality Testing</td>
+              <td>Capacity to operate on one’s own premises</td>
+            </tr>
+            <tr class="odd">
+              <td><span class="math inline">\Tau_F</span></td>
+              <td>Trajectory Continuity</td>
+              <td>Continuity of the experience of oneself</td>
+            </tr>
+            <tr class="even">
+              <td><span class="math inline">\Upsilon_{US}</span></td>
+              <td>Stability Under Stress</td>
+              <td>Tolerance for perturbation without disorganization</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <p><span class="math inline">M</span> and <span class="math inline">\Omega_t^{(p)}</span> are ontologically
+          distinct: <span class="math inline">M</span> describes readiness to move; <span
+            class="math inline">\Omega_t^{(p)}</span> describes the relief that readiness would move across. Qualitative
+          relationship: <span class="math inline">M</span> selects which part of the relief is operationally accessible
+          right now, given the effective perturbation threshold (<span
+            class="math inline">\varepsilon_t^{\text{ef}}</span>, the minimum perturbation magnitude the field cannot
+          absorb without reorganizing); it does not modify the relief itself. The quantitative form of that relationship
+          is not yet calibrated; it is part of the pilot’s empirical research agenda.</p>
+        <h2 id="i.7.-constitutive-memory-xi_t">I.7. Constitutive Memory — <span class="math inline">\xi_t</span></h2>
+        <p><strong>Constitutive memory</strong> <span class="math inline">\xi_t = \{D_p(t), \kappa(t), \sigma_t\}</span>
+          is the trajectory’s accumulated history. Three parallel, independent components:</p>
+        <ul>
+          <li><span class="math inline">D_p(t) \in [0, D_p^{\max}]</span> — <strong>plastic deformation</strong>: what
+            has reorganized the field irreversibly. <span class="math inline">D_p(t)</span> is strictly increasing and
+            irreversible.</li>
+          <li><span class="math inline">\kappa(t) \in [\kappa_{\min}, \kappa^*(t)]</span> —
+            <strong>distensibility</strong>: the receptive capacity currently available given what has accumulated.
+            Co-varies with <span class="math inline">\Omega_t^{(p)}</span> in the present (not unidirectional).
+          </li>
+          <li><span class="math inline">\sigma_t</span> — <strong>pre-symbolic dispositional structure</strong>: the
+            baseline geometry constituted before episodic memory and language. The field’s initial condition; not
+            accumulable in the same sense as <span class="math inline">D_p(t)</span>.</li>
+        </ul>
+        <p>The individuation field is a function of all three components: <span class="math inline">\Omega_t^{(p)} =
+            F(\sigma_t, D_p(t), \kappa(t))</span>. <span class="math inline">D_p(t)</span> and <span
+            class="math inline">\sigma_t</span> anchor <span class="math inline">\Omega_t^{(p)}</span> in the past;
+          <span class="math inline">\kappa(t)</span> co-determines it in the present.
+        </p>
+        <p><strong>Clinical space</strong> <span class="math inline">S_m = D_p(t) \times \kappa(t)</span> defines four
+          orienting regions for intervention:</p>
+        <table>
+          <thead>
+            <tr class="header">
+              <th>Region</th>
+              <th><span class="math inline">D_p(t)</span></th>
+              <th><span class="math inline">\kappa(t)</span></th>
+              <th>Orientation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td>R1</td>
+              <td>Low</td>
+              <td>High</td>
+              <td>Work on <span class="math inline">\xi_t</span> content is viable</td>
+            </tr>
+            <tr class="even">
+              <td>R2</td>
+              <td>High</td>
+              <td>Low</td>
+              <td>Restore <span class="math inline">\kappa(t)</span> before any other intervention</td>
+            </tr>
+            <tr class="odd">
+              <td>R3</td>
+              <td>Low/moderate</td>
+              <td>Sufficient</td>
+              <td>Work on <span class="math inline">D_p(t)</span> is viable</td>
+            </tr>
+            <tr class="even">
+              <td>R4</td>
+              <td>High</td>
+              <td>Minimal</td>
+              <td>Urgency: restore <span class="math inline">\kappa(t)</span> and <span class="math inline">\Pi_R</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="i.8.-the-ten-axioms">I.8. The Ten Axioms</h2>
+        <p><strong>A1: Dynamic primacy.</strong> Process is ontologically prior to state. Functional coherence is an
+          emergent property of the process, not a state that gets reached and held.</p>
+        <p><strong>A2: Constitutive irreversibility.</strong> The trajectory’s history is constitutive of the
+          individuation field. There is no hypothetical earlier state without the trace.</p>
+        <p><strong>A3: The structure of becoming under conditions.</strong> Transformations of the individuation field
+          do not occur in homogeneous space. The same perturbation produces different effects depending on the direction
+          it acts from and the field’s current state.</p>
+        <p><strong>A4: Accumulation.</strong> Every reorganization of the individuation field alters the conditions
+          under which subsequent reorganizations will occur.</p>
+        <p><strong>A5: Three modes of response for the individuation field.</strong> Faced with a perturbation exceeding
+          the effective threshold <span class="math inline">\varepsilon_t^{\text{ef}}</span> (the minimum magnitude the
+          field cannot absorb without reorganizing), the field can: (a) reorganize internally with no change of
+          configuration (<em>elastic deformation</em>); (b) reorganize toward a new configuration
+          (<em>reorganization</em>, which widens or narrows the field of possibilities <span
+            class="math inline">\mathcal{F}_t^{(p)}</span>); (c) collapse globally (<em>collapse</em>). A
+          large-magnitude observable change in the functional profile (<span class="math inline">\|\Delta H_t\| &gt;
+            \varepsilon_t^{\text{ef}}</span>) is a necessary but not sufficient condition for inferring that a real
+          reorganization of the individuation field occurred.</p>
+        <p>Within mode (b), there are three qualitatively distinct levels: <em>Level 1</em>, a shift within the space of
+          possibilities the trajectory already had (a change of modal configuration with no widening of that space);
+          <em>Level 2</em>, that space’s expansion into previously inaccessible regions (the formal mechanism of genuine
+          novelty); <em>Level 3</em>, the irreversible contraction of that space, which accumulates a history of plastic
+          deformation. The model has developed theory for Levels 1 and 3 (channeling and restriction), and theory still
+          under construction for Level 2 (generating new forms): its complete mathematical derivation depends on
+          resolving a prior, still-open question about the configuration space’s formal structure.
+        </p>
+        <p>Genuine expansion of the field of possibilities (Level 2) appears to require two conditions at once: that
+          current receptive capacity exceed the threshold accumulated history demands, and that the perturbation arrive
+          aligned with the direction in which the field is already generating tension toward change (its <em>generative
+            potential</em>, <span class="math inline">\Phi_t^{(p)}</span>: a measure of how much internal pressure there
+          is toward a reorganization, distinct from whether that reorganization has already happened). That pressure
+          alone, without sufficient receptive capacity, produces no access to anything new; and receptive capacity
+          alone, without generative tension, produces only relief from exhaustion, not novelty.</p>
+        <p><em>Note on A5’s status:</em> A5 is a hypothesis about the structure of the space of outcomes, not a
+          necessary consequence of the earlier axioms. The number of modes (three) is empirically contingent and
+          directly revisable if the pilot’s data fail to distinguish the modes.</p>
+        <p><strong>A6: Agency and transition conditions.</strong> Agency is an emergent property of <span
+            class="math inline">M</span> at this moment, not a stable attribute of the person or a capacity independent
+          of the field.</p>
+        <p><strong>A7: Diagnosis as ontological intervention, and coupling between fields.</strong> The clinical
+          encounter produces <span class="math inline">\Omega_t^{(\text{int})}</span> (the interstitial field) as an
+          organization emerging from the encounter between the clinician’s field and the person’s field. This field is
+          an organization with its own constitutive history that conditions which aspects of <span
+            class="math inline">\xi_t^{(p)}</span> are accessible; it is not the sum of the two. The clinician also
+          reorganizes in the encounter. Diagnosis modifies the individuation field it describes: the diagnostic
+          perturbation has ontological effect on <span class="math inline">\Omega_t^{(p)}</span>, widening or narrowing
+          <span class="math inline">\mathcal{F}_t^{(p)}</span> depending on its magnitude relative to the effective
+          threshold <span class="math inline">\varepsilon_t^{\text{ef}}</span> and the level of <span
+            class="math inline">\kappa(t)</span>.
+        </p>
+        <p><strong>A8: Suffering as restriction of the field of possibilities.</strong> Clinically relevant suffering is
+          what accompanies the restriction of <span class="math inline">\mathcal{F}_t^{(p)}</span>: the reduction of the
+          space of trajectories accessible to this person.</p>
+        <p><strong>RM1: The axiom-revision rule</strong> <em>(a methodological rule, not an ontological axiom):</em>
+          every claim in the corpus must have specified revision criteria: what evidence would count against it.</p>
+        <p><strong>A10: Radical singularity.</strong> No trajectory is representable by the population’s average
+          behavior. This person’s individuation field, right now, is singular and irreducible to the statistical
+          aggregate. <em>Precise scope (v1.2):</em> singularity operates at the level of the trajectory’s content, not
+          at the level of the field’s structural parameters (basin type, propagation direction, position in clinical
+          space). Comparing trajectories by those structural parameters, without comparing their singular content, does
+          not violate A10.</p>
+        <h2 id="i.9.-the-effective-threshold-and-the-intervention-sequence">I.9. The Effective Threshold and the
+          Intervention Sequence</h2>
+        <p>The <strong>effective threshold</strong> integrates constitutive memory’s two components:</p>
+        <p><span class="math display">\varepsilon_t^{\text{ef}} = \varepsilon_t \cdot f(\kappa(t))</span></p>
+        <p>where <span class="math inline">f</span> is increasing in <span class="math inline">\kappa(t)</span> and
+          <span class="math inline">f(\kappa(t_0)) = 1</span> (structural distensibility is the baseline threshold).
+          When <span class="math inline">\kappa(t) &lt; \kappa_{\text{umbral}}(D_p)</span>, intervening on <span
+            class="math inline">D_p(t)</span> produces plasticity that narrows <span
+            class="math inline">\mathcal{F}_t^{(p)}</span> instead of widening it (P12). The correct intervention
+          sequence is a function of position in <span class="math inline">S_m</span>: <span
+            class="math display">\text{If } \kappa(t) &lt; \kappa_{\text{umbral}}(D_p) \Rightarrow \text{restore }
+            \kappa(t) \text{ before working on } D_p(t)</span>
+        </p>
+        <p>P12 deserves a note on its status within the program. Consider the most adverse scenario possible: <span
+            class="math inline">\Omega_t^{(p)}</span> turns out wrong as a causal construct; the geometry of <span
+            class="math inline">\mathcal{W}</span> needs deep revision; the 14 configurations need to be rebuilt; <span
+            class="math inline">\Phi_t^{(p)}</span> never gets a formal derivation; much of the architecture transforms.
+          Even in that scenario, the distinction P12 formalizes could survive: accumulated history and current receptive
+          capacity are clinically relevant, ontologically distinct variables, and working on the first when the second
+          is insufficient can produce harm. If that ends up validated empirically, the program will have contributed to
+          clinical knowledge regardless of what happens to the rest of the edifice. That is the usual structure of
+          scientific progress.</p>
+        <h2 id="i.10.-unveiling-and-the-second-order-trajectory">I.10. Unveiling and the Second-Order Trajectory</h2>
+        <p><strong>Unveiling</strong> <span class="math inline">\mathcal{D}: \mathcal{O}(t) \to P(\xi_t \mid
+            \mathcal{O}(t))</span> is the operation that produces clinical knowledge about constitutive memory from the
+          available set of observations <span class="math inline">\mathcal{O}(t)</span>. The four sources of <span
+            class="math inline">\mathcal{O}(t)</span>: self-report, behavioral observation, longitudinal history, and
+          collateral sources including clinical resonance.</p>
+        <p><span class="math display">P(\xi_t \mid \mathcal{O}(t)) \propto P(\mathcal{O}(t) \mid \xi_t) \cdot
+            P(\xi_t)</span></p>
+        <p>The <strong>second-order trajectory</strong> <span class="math inline">T_2</span> is the sequence of
+          inferential states over <span class="math inline">\xi_t</span> across time. Reading <span
+            class="math inline">T_2</span>’s direction together with the posterior’s variance sets Syntropia apart from
+          every categorical classification system: the same level of <span class="math inline">\|H_t\|</span> can
+          correspond to processes of opposite nature depending on <span class="math inline">T_2</span>’s direction and
+          how the inferential variance behaves.</p>
+        <hr />
+        <h2 id="i.11.-the-interstitial-field-omega_ttextint">I.11. The Interstitial Field — <span
+            class="math inline">\Omega_t^{(\text{int})}</span></h2>
+        <p>A7 declares that the clinician is part of the system under observation. The clinical relationship has history
+          that accumulates: it is a field with its own properties, not a neutral context.</p>
+        <p>The <strong>interstitial field</strong> <span class="math inline">\Omega_t^{(\text{int})}</span> is the
+          stability function describing the organization of the encounter between two individuation fields. It has its
+          own constitutive history: <span class="math inline">\xi_t^{(\text{int})} = \{D_p^{(\text{int})}(t),
+            \kappa^{(\text{int})}(t), \sigma^{(\text{int})}\}</span>: what the relationship has deformed irreversibly,
+          the relationship’s current receptive capacity, and the imprint of its earliest encounters.</p>
+        <p><strong>Constitutive asymmetry:</strong> the interstitial field is not symmetric. The clinician has
+          competencies for Unveiling that the person does not; the person has access to their own <span
+            class="math inline">\xi_t</span> that the clinician does not. That asymmetry is constitutive, not
+          accidental. <strong>Clinical consequence:</strong> <span class="math inline">\Omega_t^{(\text{int})}</span>’s
+          properties condition which aspects of <span class="math inline">\xi_t^{(p)}</span> are accessible in this
+          encounter. An interstitial field with reduced <span class="math inline">\kappa^{(\text{int})}(t)</span>
+          produces reduced access to <span class="math inline">\xi_t^{(p)}</span> even when individual parameters would
+          allow Unveiling. Its full quantitative formalization is still pending.</p>
+        <p><strong>Predicate types:</strong> <em>clinical interstitial field</em> (between clinician and person),
+          <em>familial</em> (between members of a family system), <em>bonding</em> (between the trajectory and a
+          significant attachment figure).
+        </p>
+        <p><strong>Interstitial spatium:</strong> <span class="math inline">\Omega_t^{(\text{int})}</span> has its own
+          spatium, <span class="math inline">(\varepsilon_t^{(\text{int})}, \Psi_t^{(\text{int})})</span>. <span
+            class="math inline">\varepsilon_t^{(\text{int})}</span> is relational functional elasticity. <span
+            class="math inline">\Psi_t^{(\text{int})}</span> has constitutive asymmetric propagation: <span
+            class="math inline">D_p^{(\text{int})} \to \kappa^{(\text{int})}</span>: ruptures drain receptive capacity;
+          the reverse direction requires deliberate repair. This asymmetry distinguishes the interstitial field from the
+          individual field, where propagation can be bidirectional.</p>
+        <p><strong>Its own dynamics:</strong> <span class="math inline">\Omega_t^{(\text{int})}</span> evolves over the
+          course of the relationship, in three possible regimes. In the <em>productive</em> regime (high <span
+            class="math inline">\kappa^{(\text{int})}(t)</span>, moderate <span
+            class="math inline">D_p^{(\text{int})}(t)</span>), the encounter can unveil deep aspects of <span
+            class="math inline">\xi_t^{(p)}</span>. In the <em>restricted</em> regime (<span
+            class="math inline">\kappa^{(\text{int})}(t)</span> reduced by accumulated <span
+            class="math inline">D_p^{(\text{int})}(t)</span>), only <span class="math inline">\xi_t^{(p)}</span>’s
+          surface is accessible. In the <em>ruptured</em> regime (<span
+            class="math inline">\kappa^{(\text{int})}(t)</span> below its threshold), intervening on the person’s
+          accumulated history in that state produces harm analogous to what P12 describes.</p>
+        <p><strong>The transitional regime</strong> (the period between the trajectory leaving one basin and arriving at
+          another) is characterized, as a hypothesis still to be calibrated with pilot data, by high variance in <span
+            class="math inline">\Omega_t^{(p)}</span>, a decline in tension toward change (<span
+            class="math inline">\chi_t</span>), <span class="math inline">\kappa(t)</span> at its minimum, and
+          heightened sensitivity to perturbation. It is asymmetric: crossing from one configuration to another has
+          different dynamics than the reverse crossing. P12 applies with maximum urgency during this regime.</p>
+        <p><strong>Potentialities:</strong> the configurations the field could reach under specifiable conditions, with
+          no implication that it will reach them: they are properties of the current field, not destinations. Formally:
+        </p>
+        <p><span class="math display">\text{Pot}(t) = \{\mathfrak{C}_j \notin \mathcal{F}_t^{(p)}|_{\text{discreto}}
+            \mid d_{g_t}(\mathfrak{C}_j, \partial\mathcal{F}_t^{(p)}) &lt; \delta_{\Phi}(t)\}</span></p>
+        <p>The radius of those potentialities (<span class="math inline">\delta_{\Phi}(t)</span>) grows with the field’s
+          generative tension (<span class="math inline">\Phi_t^{(p)}</span>) and with receptive capacity (<span
+            class="math inline">\kappa(t)</span>). <strong>Latent basins</strong> are the subset of those potentialities
+          with prior history: they reactivate with less perturbation than regions with no history, which explains why
+          patterns that “reappear” after remission are reactivations, not something unexpected.</p>
+        <p><em>Scope note:</em> the trajectory’s real potentialities exist over the continuous space of possible
+          organizations; their formulation here is a projection of that space onto the 14 canonical configurations, for
+          operational reasons. Calculating them quantitatively still requires calibrating the configuration space’s
+          metric with pilot data.</p>
+        <hr />
+        <h2 id="i.12.-process-theories-transformation-and-stabilizations">I.12. Process Theories: Transformation and
+          Stabilizations</h2>
+        <p><strong>§T1: transformation as a process, in four phases.</strong> The first phase is <em>silent
+            accumulation</em>: the field accumulates internal tension with none of it observable yet in the functional
+          profile. This is the moment of greatest risk for misreading, because the Bayesian instrument can read a stable
+          field when it is actually under growing tension.</p>
+        <p>The second phase is <em>threshold and reorganization</em>: the perturbation exceeds the field’s effective
+          threshold, and receptive capacity gets consumed in the process. If that capacity is sufficient, the result is
+          genuine expansion of the space of possibilities; if it is not, the result is a contraction of that space.</p>
+        <p>The third phase is the <em>transitional regime</em>: the field is between basins, at its point of greatest
+          vulnerability. The clinical priority here is minimizing perturbations: this is the moment when the Bayesian
+          instrument can mistake the transitional process’s high variance for simple estimation uncertainty, and when
+          receptive capacity is at its lowest point, so any intervention on the person’s accumulated history must wait
+          for that capacity to be restored.</p>
+        <p>The fourth phase is <em>installation and consolidation</em>: the field stabilizes in a new basin, receptive
+          capacity recovers, and the new trace integrates into accumulated history.</p>
+        <p>These four phases are overlapping regimes of the process, not discrete states or a mandatory sequence. The
+          field can be in transition between phases, and detecting them in practice is a matter of reading trends, not
+          applying precise thresholds.</p>
+        <p>Within this theory, the model distinguishes two blockage mechanisms that look similar from outside but call
+          for opposite interventions: blockage <em>from exhaustion</em> (there is tension toward change, but receptive
+          capacity cannot sustain it, and the correct intervention is to restore that capacity) and blockage <em>from
+            equilibrium</em> (the basin is simply deep, and there is no generative tension pushing toward change, and
+          the correct intervention is to gradually build that tension before perturbing). As a hypothesis still pending
+          comparison against pilot data, the probability that the field transitions from one configuration to another
+          decays with the distance between them in configuration space, and that decay grows steeper the lower the
+          available receptive capacity is:</p>
+        <p><span class="math display">P(\mathfrak{C}_j \mid \mathfrak{C}_i, t) \propto
+            \exp\!\left(-\dfrac{d_{g_t}(\mathfrak{C}_i, \mathfrak{C}_j)}{\kappa(t) \cdot \|\Delta u_t\|}\right) \cdot
+            \mathbf{1}[\kappa(t) \geq \kappa_{\text{umbral}}]</span></p>
+        <p>This reproduces, from the model’s geometry, the three qualitative properties already observed in the
+          transitional regime: the asymmetry between crossings, the preference for short-range transitions, and the
+          requirement of minimal receptive capacity.</p>
+        <p><strong>§T2: stabilizations and their qualitative conditions.</strong> The model distinguishes five basin
+          types, based on how deep and how active the field’s organization is around them. A <em>residency</em> is a
+          deep, stable basin, with little change under way. A <em>reconfiguration</em> is a medium-depth basin with
+          active change. A <em>transient</em> basin is shallow: the field is still searching for where to settle. An
+          <em>early dispositional</em> basin is one installed from the field’s origin, not accumulated through
+          biographical history. And a <em>failed reconfiguration</em> is a field trapped between basins, without enough
+          receptive capacity to complete the transition.
+        </p>
+        <p><strong>Latent basins</strong> are a category cutting across these five types, not a sixth type: they are
+          basins with prior history that currently sit below the activation threshold, and that can reactivate with less
+          perturbation than a region with no history. Fully formalizing these types with empirical data remains pending
+          work.</p>
+        <hr />
+        <h1 id="part-ii-the-epistemological-layer">Part II — The Epistemological Layer</h1>
+        <h2 id="ii.1.-epistemological-commitments">II.1. Epistemological Commitments</h2>
+        <p><strong>CE1: the model produces knowledge from a question.</strong> The question is: <em>what is happening in
+            this person’s individuation field right now, and in what direction is it moving?</em> Clinical inference
+          does not start from a specific diagnostic hypothesis to confirm or refute. The ten axioms are conditions of
+          possibility for asking that question, not hypotheses about this particular trajectory.</p>
+        <p><strong>CE2: inference is dynamic abduction.</strong> The model generates the explanation most coherent with
+          the available observations, and that explanation updates as new observations arrive.</p>
+        <p><strong>CE3: knowledge about constitutive memory (<span class="math inline">\xi_t</span>) is constitutively
+            incomplete and revisable.</strong> The estimate of <span class="math inline">\xi_t</span> is always a
+          probability distribution with positive variance: complete certainty about a person’s accumulated history is
+          neither possible nor desirable as a clinical goal.</p>
+        <p><strong>CE4: the functional level is irreducible to the molecular level.</strong> Regardless of how good the
+          available genomic and epigenomic data are, longitudinal functional assessment remains the only source of
+          direct access to the field’s history. That the functional profile over time improves prediction of future
+          state beyond what molecular data alone predict is a falsifiable prediction, still to be confirmed with pilot
+          data.</p>
+        <p><strong>CE5: validation operates on two distinct planes.</strong> The first is parameter validation: whether
+          functional elasticity, cross-domain propagation, and constitutive memory are measurable with sufficient
+          reliability. The second is validation of the ontological commitments: whether describing a person in terms of
+          trajectory and field adds predictive value over describing them in terms of state and diagnostic category.</p>
+        <p><strong>CE6: the mathematical layer is admissible, not deduced.</strong> The model’s mathematical
+          representations are not logically deduced from the ontological axioms: they are chosen for being coherent with
+          them, under the six conditions of mathematical admissibility described below.</p>
+        <p><strong>CE7: the model recognizes tacit knowledge constitutive of practice.</strong> Clinical resonance (what
+          the encounter produces in the clinician, beyond what gets verbalized) is a legitimate source of evidence, with
+          its own weight in inference. The criterion for distinguishing it from observer bias: a valid tacit reading
+          updates and refines itself as more observation becomes available; bias, by contrast, stays immune to evidence
+          that contradicts it.</p>
+        <p><strong>Other epistemological commitments of the model, in synthesis:</strong></p>
+        <ul>
+          <li>Unveiling (the process of inferring a person’s accumulated history) has a real cost for the field being
+            unveiled; it is not a neutral operation.</li>
+          <li>That process cannot be accelerated arbitrarily: it takes the time it takes.</li>
+          <li>There is an optimal window of receptivity for Unveiling that is not simply “more is better”: there can be
+            too little openness as well as too much.</li>
+          <li>The clinical knowledge the model produces has a different shelf life depending on the type of data: some
+            estimates go stale faster than others.</li>
+          <li>The assessment instrument itself modifies what it assesses: there is no neutral observation of the
+            individuation field.</li>
+          <li>The model does not assume that a trajectory’s past behavior is representative of its future behavior, nor
+            that a population’s average is representative of any individual trajectory.</li>
+        </ul>
+        <p><strong>CE17: the process’s constitutive inaccessibility.</strong> The model operates under three limits on
+          access, and none of the three is a defect specific to Syntropia: they are limits of any practical science that
+          tries to formalize processes. The first is observational: the process is continuous, but any observational
+          apparatus is discrete, so what gets captured is the process’s trace, not the process itself. The second is
+          mathematical: the mathematical tools available today describe a given moment’s geometry better than continuous
+          becoming; the trajectory as process still has no direct mathematical representation. The third is structural:
+          the Bayesian model describes transitions between successive states, not the continuous becoming between them;
+          in that sense, it is a description of connected states, not of pure flow.</p>
+        <p><strong>CE18: the basis for comparability between trajectories.</strong> That each trajectory is radically
+          singular does not prevent the model from accumulating scientific knowledge. Comparability in Syntropia
+          operates on structural parameters and relationships (the basin type a trajectory is in, the direction its
+          perturbations propagate in, its position in clinical space), never on any trajectory’s specific content. The
+          formal metric that would let this comparison be quantified does not exist yet: it is one of the most urgent
+          pending developments, because without it the model cannot be validated at the population level.</p>
+        <p><strong>CE19: the limit of constitutive memory as a representation of history.</strong> The estimate of a
+          person’s constitutive memory is the trace of the accumulated process, not the process itself. Two trajectories
+          with very similar estimates may have arrived by different paths, and may respond differently to the same
+          perturbation. This limit is most severe during the process’s periods of greatest change (silent accumulation,
+          the transitional regime, and the start of consolidation): in those moments, sources of information that do not
+          depend on the Bayesian engine (the somatic signal, clinical resonance, variation in the person’s narrative)
+          carry more weight than the engine’s estimate. This does not mean the Bayesian engine should be ignored in
+          general: it means there are specific periods where its approximation is less reliable and direct clinical
+          reading needs to compensate for it.</p>
+        <h2 id="ii.2.-mathematical-admissibility-conditions-conditions-16">II.2. Mathematical Admissibility Conditions
+          (Conditions 1–6)</h2>
+        <p>A mathematical representation of the spatium or of the individuation field is <strong>admissible</strong> if
+          and only if it satisfies six conditions derived from the ten axioms:</p>
+        <p><strong>Condition 1: Anisotropy</strong> (A3): the metric over the configuration space is non-Euclidean: the
+          metric tensor varies point to point.</p>
+        <p><span class="math display">\nexists\; g_{\text{eucl}} : d(\mathfrak{C}_i, \mathfrak{C}_j) = \|\mathfrak{C}_i
+            - \mathfrak{C}_j\|_2</span></p>
+        <p><strong>Condition 2: Non-Ergodicity</strong> (A2, A4): the support of the distribution over configurations is
+          a function of the trajectory’s constitutive memory; it is not constant across every person.</p>
+        <p><span class="math display">\mathcal{F}_t^{(p)} = \{w \in \mathcal{W} \mid \Omega_t^{(p)}(w) \geq
+            \theta(\xi_t)\} \subsetneq \mathcal{W}</span></p>
+        <p><strong>Condition 3: Non-Markovianity</strong> (A2, A4): transition dynamics depend on accumulated history,
+          not only on the immediately prior state.</p>
+        <p><span class="math display">P(H_{t+1} \mid H_{[t_0:t]}, \xi_t) \neq P(H_{t+1} \mid H_t)</span></p>
+        <p><strong>Condition 4: Emergence</strong> (A1): the operator translating the field’s local organization
+          (functional profile, elasticity, propagation) into its global organization does not give the same result
+          whether it is applied before or after a reorganization: order matters.</p>
+        <p><span class="math display">T_{\text{escala}} \circ \text{reorganization} \neq \text{reorganization} \circ
+            T_{\text{escala}}</span></p>
+        <p><strong>Condition 5: Irreversibility</strong> (A2): the dynamics operate with broken time symmetry: the past
+          cannot be reconstructed from the present the same way the future can be projected from it.</p>
+        <p><span class="math display">P(H_{t-k} \mid H_t, \xi_t) \neq P(H_t \mid H_{t-k}, \xi(t-k))</span></p>
+        <p><strong>Condition 6: Singularity</strong> (A10): the mathematical representation must distinguish
+          trajectories with the same current observable state but different histories; it cannot collapse them into the
+          same representation.</p>
+        <p><span class="math display">\xi_t^{(p)} \neq \xi_t^{(q)} \;\Rightarrow\; \text{representation}^{(p)} \neq
+            \text{representation}^{(q)}</span></p>
+        <hr />
+        <h1 id="parte-iii-capa-matemática">Part III — The Mathematical Layer</h1>
+        <h2 id="iii.1.-the-unifying-tructure-the-triad-mathcalw-g_t-mathcalaomega-t">III.1. The Unifying Structure: the
+          Triad <span class="math inline">(\mathcal{W}, g_t, \mathcal{A}[\Omega, t])</span></h2>
+        <p>Five of the model’s seven objects are manifestations of a single geometric structure: a Riemannian manifold
+          with a history-dependent metric. The triad:</p>
+        <p><span class="math display">\boxed{(\mathcal{W},\; g_t,\; \mathcal{A}[\Omega, t])}</span></p>
+        <ul>
+          <li><span class="math inline">\mathcal{W}</span>: the differentiable manifold of the configuration space</li>
+          <li><span class="math inline">g_t</span>: the history-dependent metric tensor: <span class="math inline">g_t =
+              g(\xi_t, t)</span></li>
+          <li><span class="math inline">\mathcal{A}[\Omega, t]</span>: the action functional that determines the field’s
+            effective geometry at each moment</li>
+        </ul>
+        <p>The five representations derivable from the triad: <span class="math inline">H_t</span>, <span
+            class="math inline">\varepsilon_t</span>, <span class="math inline">D_p(t)</span>, <span
+            class="math inline">\kappa(t)</span>, <span class="math inline">\mathcal{F}_t^{(p)}</span>. The two
+          objects not directly derivable: <span class="math inline">\Psi_t</span> (propagation requires additional
+          specification of coupling between domains) and <span class="math inline">M</span> (a property of the
+          evolution operator over <span class="math inline">\mathcal{W}</span>, not of the space’s geometry).</p>
+        <p><strong>The generative potential functional <span class="math inline">\Phi_t^{(p)}</span></strong> is
+          <span class="math inline">\Omega_t^{(p)}</span>’s mathematical complement: where <span
+            class="math inline">\Omega_t^{(p)}</span> describes <em>where</em> the field is (accessibility/stability),
+          <span class="math inline">\Phi_t^{(p)}</span> describes <em>which way it’s pushing</em> (generative
+          tension). Formally, it is <span class="math inline">\mathcal{A}[\Omega, t]</span>’s functional gradient in
+          the direction of <span class="math inline">\Omega_t^{(p)}</span>’s support expanding. It distinguishes three
+          clinical regimes: <span class="math inline">\Phi_t^{(p)} \approx 0</span> is deep residency, a field stable
+          through equilibrium; <span class="math inline">\Phi_t^{(p)} &gt; 0</span> is active reconfiguration; and
+          <span class="math inline">\Phi_t^{(p)} \gg 0</span> combined with insufficient receptive capacity is a
+          crisis: high tension with no capacity to absorb it, a field stable through exhaustion, not equilibrium. This
+          equilibrium/exhaustion distinction cannot be captured from <span class="math inline">\Omega_t^{(p)}</span>
+          alone, and it remains a structural hypothesis pending empirical calibration.
+        </p>
+        <h2 id="iii.2.-the-bayesian-state-space-model">III.2. The Bayesian State-Space Model</h2>
+        <p>The Bayesian model implements Unveiling as a sequential update of the posterior over <span
+            class="math inline">\xi_t</span>:</p>
+        <p><strong>State equation:</strong> <span class="math display">\xi_{t+1} = f_t(\xi_t, u_t) + w_t, \quad w_t
+            \sim \mathcal{N}(0, Q)</span></p>
+        <p>where <span class="math inline">f_t = f(\cdot \mid D_p(t), \sigma_t)</span>: the transition function’s
+          form is itself a function of history accumulated at a slow scale. In the first-phase implementation,
+          <span class="math inline">f</span> is treated as stationary; detecting systematic parameter variation with
+          <span class="math inline">D_p(t)</span> in the pilot will justify updating to a non-stationary
+          <span class="math inline">f_t</span>.
+        </p>
+        <p><strong>Observation equation:</strong> <span class="math display">\mathcal{O}(t) = h(\xi_t, H_t) + v_t,
+            \quad v_t \sim \mathcal{N}(0, R)</span></p>
+        <p><strong>Bayesian update:</strong> <span class="math display">P(\xi_t \mid \mathcal{O}(t)) \propto
+            P(\mathcal{O}(t) \mid \xi_t) \cdot P(\xi_t \mid \mathcal{O}(t-1))</span></p>
+        <p>The likelihood factors over observation sources with differential weights: <span
+            class="math inline">P(\mathcal{O}(t) \mid \xi_t) = \prod_s P(\mathcal{O}_s(t) \mid \xi_t)^{w_s}</span>,
+          where <span class="math inline">w_s</span> reflects each source’s relative reliability. Empirically
+          estimating those weights is still pending work for the pilot.</p>
+        <p><strong>First-order Markovian approximation</strong> (a declared limit, Condition 3): the current
+          computational implementation uses <span class="math inline">P(H_t \mid H_{t-1}, M, \varepsilon_t)</span> as
+          a tractable approximation. Extending it to the continuous clinical space, with dependence on the complete
+          history rather than only the immediately prior state, is one of the most important pending mathematical
+          developments.</p>
+
+        <h2 id="iii.3.-the-four-operators-of-non-reductive translation">III.3. The Four Operators of Non-Reductive
+          Translation</h2>
+        <p>The model connects very different levels of description with each other (a sensor’s continuous signal, the
+          clinical history narrated in the encounter, the field’s local organization versus its global organization,
+          and the genomic profile versus the spatium’s geometry) through four translation operators. Each one
+          explicitly declares what information gets lost in translating from one level to another, rather than
+          assuming the translation is perfect:</p>
+        <table>
+          <colgroup>
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+          </colgroup>
+          <thead>
+            <tr class="header">
+              <th>Operator</th>
+              <th>Translation</th>
+              <th>Property</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td><span class="math inline">T_{\text{temporal}}</span></td>
+              <td>Sensor’s longitudinal signal → constitutive memory (<span class="math inline">\xi_t</span>), effective
+                threshold (<span class="math inline">\varepsilon_t^{\text{ef}}</span>)</td>
+              <td>Integration with controlled loss</td>
+            </tr>
+            <tr class="even">
+              <td><span class="math inline">T_{\text{histórico}}</span></td>
+              <td>Series of clinical observations → constitutive memory, individuation field</td>
+              <td>Codetermination: the space’s metric depends on the field it also helps infer</td>
+            </tr>
+
+            <tr class="odd">
+              <td><span class="math inline">T_{\text{escala}}</span></td>
+              <td>The field’s local organization (functional profile, elasticity, propagation) → global individuation
+                field</td>
+              <td>Non-commutative aggregation: the order of operations matters (Condition 4)</td>
+            </tr>
+            <tr class="even">
+              <td><span class="math inline">T_{\text{ontológico}}</span></td>
+              <td>Genomic and epigenomic differentiation profile → spatium parameters (elasticity, propagation,
+                accumulated deformation)</td>
+              <td>Modulation with emergence: phenotype is not mechanically deduced from genotype</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="iii.4.-empirical-anchor-markes-t_textontológico">III.4. Empirical Anchor Markers (<span
+            class="math inline">T_{\text{ontológico}}</span>)</h2>
+        <table>
+          <colgroup>
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+          </colgroup>
+          <thead>
+            <tr class="header">
+              <th>Marker</th>
+              <th>Mechanism</th>
+              <th>Model parameter</th>
+              <th>Direction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td><em>FKBP5</em> intron 7 methylation</td>
+              <td>HPA axis sensitization</td>
+              <td><span class="math inline">D_p(t)</span> accumulated → <span
+                  class="math inline">\varepsilon_t^{\text{ef}} \downarrow</span></td>
+              <td>Higher methylation: greater accumulation under stress</td>
+            </tr>
+            <tr class="even">
+              <td>Horvath epigenetic clock</td>
+              <td>Allostatic load</td>
+              <td><span class="math inline">\kappa(t) \downarrow</span> independent of <span
+                  class="math inline">D_p(t)</span></td>
+              <td>Acceleration → reduced receptive capacity</td>
+            </tr>
+
+            <tr class="odd">
+              <td><em>BDNF</em> promoter methylation</td>
+              <td>Neuroplasticity</td>
+              <td><span class="math inline">\kappa(t) \uparrow</span> post-intervention</td>
+              <td>Demethylation → restoration of <span class="math inline">\kappa(t)</span></td>
+            </tr>
+            <tr class="even">
+              <td><em>NR3C1</em> promoter methylation</td>
+              <td>Relational HPA regulation</td>
+              <td><span class="math inline">\Psi_t</span> under stress</td>
+              <td>Higher methylation → greater <span class="math inline">A_t</span>–<span class="math inline">V_t</span>
+                coupling</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>The convergence of elevated <em>FKBP5</em> and an accelerated Horvath clock corresponds to position R2
+          in clinical space: urgency to restore <span class="math inline">\kappa(t)</span> before intervening on
+          <span class="math inline">D_p(t)</span>.
+        </p>
+
+        <h2 id="iii.5.-distinguishing-the-process’s-rhythm-from-the-observable’s-rate-of-change">III.5. Distinguishing
+          the Process’s Rhythm From the Observable’s Rate of Change</h2>
+
+        <p>The <strong>observable’s rate of change</strong> <span class="math inline">\dot{H}_t = \nabla H_t /
+            \Delta
+            t</span> measures how much <span class="math inline">H_t</span> changes between evaluations. The
+          <strong>process’s rhythm</strong> <span class="math inline">\chi_t</span> measures the tension
+          accumulating in <span class="math inline">\Omega_t^{(p)}</span> before a reorganization becomes observable.
+          The two
+          are dissociable: <span class="math inline">\dot{H}_t \approx 0</span> with <span
+            class="math inline">\chi_t</span> high is the silent period preceding a major reorganization. <span
+            class="math inline">\dot{H}_t</span> high with <span class="math inline">\chi_t</span> low is reactive
+          movement with no underlying reorganization process. The minimum evaluation frequency the pilot needs to
+          detect <span class="math inline">\chi_t</span>: weekly with the sensor, biweekly in clinical encounter,
+          during phases of active reconfiguration.
+        </p>
+
+        <h2 id="iii.6.-omic-protocol-bayesian-prior">III.6. Omic Protocol → Bayesian Prior</h2>
+        <p>The <span class="math inline">T_{\text{ontológico}}</span> chain has a four-step operational
+          implementation: (1) <em>FKBP5</em> intron 7 methylation produces an estimate of omic-origin accumulated
+          plastic deformation, through a function still to be calibrated with pilot data; (2) the Horvath
+          epigenetic
+          clock produces an estimate of omic receptive capacity, through a function decreasing in the clock’s
+          acceleration, independent of accumulated deformation by design; (3) <em>NR3C1</em> and <em>BDNF</em>
+          methylation update the prior over cross-domain propagation and over structural distensibility; (4) these
+          three estimates integrate into a joint prior over complete constitutive memory:</p>
+
+        <p><span class="math display">P(\xi_t^{(\text{ómico})}) = P(D_p \mid \text{FKBP5}) \cdot P(\kappa \mid
+            \text{Horvath}) \cdot P(\sigma_t \mid \text{historia temprana})</span></p>
+
+        <p>This prior enters the Bayesian engine before the first clinical evaluation, and it updates afterward
+          with every new clinical observation.</p>
+
+        <h1 id="part-iv-the-clinical-layer">Part IV — The Clinical Layer</h1>
+        <h2 id="iv.1.-the-canonical-configuration-system-v1.2">IV.1. The Canonical Configuration System: v1.2</h2>
+        <p><strong>Syntropic configurations</strong> are the individuation field’s positions of dynamic stability: the
+          attractors <span class="math inline">\Omega_t^{(p)}</span>’s geometry conditions. Canonical system v1.2
+          organizes 14 configurations by two formal axes: dominant propagation direction in <span
+            class="math inline">\Psi_t</span>, and basin type. They are transdiagnostic patterns, not diagnostic
+          categories.</p>
+        <table>
+          <thead>
+            <tr class="header">
+              <th>ID</th>
+              <th>Name</th>
+              <th>Dominant <span class="math inline">\Psi_t</span></th>
+              <th>Basin</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td>C-A</td>
+              <td>Anchoring</td>
+              <td>psych.→<span class="math inline">B_t</span></td>
+              <td>Residency</td>
+            </tr>
+            <tr class="even">
+              <td>C-B</td>
+              <td>Loop</td>
+              <td>Bidirectional</td>
+              <td>Residency</td>
+            </tr>
+            <tr class="odd">
+              <td>C-C1</td>
+              <td>Bond</td>
+              <td>psych.→<span class="math inline">B_t</span> (<span class="math inline">R_t</span> origin)</td>
+              <td>Reconfiguration</td>
+            </tr>
+            <tr class="even">
+              <td>C-C2</td>
+              <td>Existential</td>
+              <td>psych.→<span class="math inline">B_t</span> (<span class="math inline">A_t</span> origin)</td>
+              <td>Reconfiguration</td>
+            </tr>
+            <tr class="odd">
+              <td>C-D</td>
+              <td>Chrysalis</td>
+              <td>Bidirectional</td>
+              <td>Reconfiguration</td>
+            </tr>
+            <tr class="even">
+              <td>C-E</td>
+              <td>Jolt</td>
+              <td><span class="math inline">B_t</span>→out</td>
+              <td>Transient</td>
+            </tr>
+            <tr class="odd">
+              <td>C-F</td>
+              <td>Suspension</td>
+              <td>psych.→<span class="math inline">B_t</span></td>
+              <td>Transient</td>
+            </tr>
+            <tr class="even">
+              <td>C-G</td>
+              <td>Transformation</td>
+              <td><span class="math inline">B_t</span>→out</td>
+              <td>Reconfiguration</td>
+            </tr>
+            <tr class="odd">
+              <td>C-H</td>
+              <td>Vortex</td>
+              <td>Bidirectional</td>
+              <td>Transient</td>
+            </tr>
+            <tr class="even">
+              <td>C-I</td>
+              <td>Embodiment</td>
+              <td><span class="math inline">B_t</span>→out</td>
+              <td>Residency</td>
+            </tr>
+            <tr class="odd">
+              <td>C-J</td>
+              <td>Collapse</td>
+              <td>Global</td>
+              <td>Transient†</td>
+            </tr>
+            <tr class="even">
+              <td>C-K</td>
+              <td>Idiosyncratic</td>
+              <td>Variable</td>
+              <td>Early dispositional</td>
+            </tr>
+            <tr class="odd">
+              <td>C-L</td>
+              <td>Encapsulation</td>
+              <td>Segmented</td>
+              <td>Residency / reconfiguration</td>
+            </tr>
+            <tr class="even">
+              <td>C-M</td>
+              <td>Drift</td>
+              <td>psych.→<span class="math inline">B_t</span></td>
+              <td>Failed reconfiguration</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>†C-J can install as residency in chronic forms.</p>
+        <p>Classifying into configurations is a projection of the complete individuation field onto the discrete set of
+          14 identified attractors, not a complete description of the field. Whether that number, 14, is final, or
+          whether the system needs revision with more data, is one of the open questions on the research agenda (Part
+          V).</p>
+        <h2 id="iv.2.-the-four-conditions-of-clinical-practice">IV.2. The Four Conditions of Clinical Practice</h2>
+        <p><strong>C1: the assessment protocol is adaptive.</strong> The assessment sequence depends on position in
+          <span class="math inline">S_m</span>: when <span class="math inline">\kappa(t) &lt;
+            \kappa_{\text{umbral}}(D_p)</span>, restoring <span class="math inline">\kappa(t)</span> structurally
+          precedes any assessment of <span class="math inline">D_p(t)</span>.
+        </p>
+        <p><strong>C2: neurodivergence is its own individuation field.</strong> C-K (Idiosyncratic) is constitutionally
+          characterized by <span class="math inline">\sigma_t</span>’s heavier structural weight within <span
+            class="math inline">\xi_t</span>. Assessment always operates from the field’s own individuation, not from
+          the statistical norm.</p>
+        <p><strong>C3: <span class="math inline">T_2</span> sets Syntropia apart from categorical systems.</strong>
+          Reading <span class="math inline">T_2</span>’s direction together with its variance produces clinical
+          information irreducible to the level of <span class="math inline">\|H_t\|</span>: the same level of coherence
+          can correspond to processes of opposite nature.</p>
+        <p><strong>C4: the clinician is part of the field.</strong> The clinical encounter is ontological intervention
+          (A7). To distinguish a genuine signal from the field from the clinician’s own projection: if the same
+          resonance pattern repeats three times in response to the same type of stimulus, within the same encounter, it
+          is treated as a signal from the field with full weight in inference; if it does not repeat, it is treated as
+          the observer’s hypothesis, with reduced weight.</p>
+        <p><strong>C5: intervention modes by target parameter.</strong> Clinical intervention operates on conditions of
+          the field, not directly on the process:</p>
+        <table>
+          <colgroup>
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+          </colgroup>
+          <thead>
+            <tr class="header">
+              <th>Target parameter</th>
+              <th>Characteristic interventions</th>
+              <th>Timescale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td>Receptive capacity (<span class="math inline">\kappa(t)</span>)</td>
+              <td>Pharmacotherapy, sleep regulation, reducing allostatic load</td>
+              <td>Weeks</td>
+            </tr>
+            <tr class="even">
+              <td>Functional elasticity by domain (<span class="math inline">\varepsilon_t</span>)</td>
+              <td>Domain-specific psychotherapy</td>
+              <td>Months/years</td>
+            </tr>
+            <tr class="odd">
+              <td>Cross-domain propagation (<span class="math inline">\Psi_t</span>)</td>
+              <td>Somatic therapy, EMDR, autonomic regulation</td>
+              <td>Weeks/months</td>
+            </tr>
+            <tr class="even">
+              <td>Accumulated deformation, via resignification (<span class="math inline">D_p(t)</span> / <span
+                  class="math inline">\rho(t)</span>)</td>
+              <td>Psychodynamic psychotherapy, narrative work, EMDR: modifies that history’s function in the field, does
+                not reduce it</td>
+              <td>Months/years</td>
+            </tr>
+            <tr class="odd">
+              <td>Pre-symbolic dispositional structure (<span class="math inline">\sigma_t</span>)</td>
+              <td>Limited access: somatic work, long-standing therapeutic relationship</td>
+              <td>Years/decades</td>
+            </tr>
+            <tr class="even">
+              <td>Transition conditions (<span class="math inline">M</span>)</td>
+              <td>Specific components depending on which is compromised (behavioral flexibility, reality testing,
+                trajectory continuity, stability under stress)</td>
+              <td>Variable</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The intervention sequence (Proposition 12) is always active: when receptive capacity falls below the
+          threshold accumulated history requires, restoring that capacity precedes any intervention on history,
+          dispositional structure, or functional elasticity.</p>
+        <p><strong>C6: architectural protection against discretization.</strong> A valid clinical report in Syntropia
+          requires three elements: (1) <span class="math inline">\Omega_t^{(p)}</span>’s distribution over the
+          configuration system, not just the mode; (2) <span class="math inline">T_2</span>’s direction; (3) when the
+          clinician activated a schema at the first encounter, an explicit description of how this field differs from
+          the canonical pattern. A report that only states the modal configuration structurally reproduces the
+          diagnostic problem the model is trying to overcome.</p>
+        <p><strong>C7: the trained clinician faces the specific risk of expertise.</strong> Training in the
+          configuration system produces stable cognitive representations that can interfere with reading the singular
+          field. The central competency is recognizing configurations and then suspending that recognition in front of
+          the concrete field, not just recognizing them. Operational criterion: the clinician can articulate how this
+          person’s field differs from the canonical pattern that activated at the first encounter.</p>
+        <h2 id="iv.3.-canonical-clinical-terms">IV.3. Canonical Clinical Terms</h2>
+        <table>
+          <colgroup>
+            <col style="width: 50%" />
+            <col style="width: 50%" />
+          </colgroup>
+          <thead>
+            <tr class="header">
+              <th>Term</th>
+              <th>Operational definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td><strong>Preview</strong></td>
+              <td>What the individuation field produces before elaboration: prior to the self-image, legible in
+                involuntary channels, in any encounter, not only the first</td>
+            </tr>
+            <tr class="even">
+              <td><strong>Self-image</strong></td>
+              <td>The elaboration the field makes of what it presents: the representation it produces of itself to
+                present to the world and to the clinician</td>
+            </tr>
+            <tr class="odd">
+              <td><strong>Observing Image</strong></td>
+              <td>The person’s field’s capacity to observe its own self-image from some distance; the function that
+                makes insight and introspection possible</td>
+            </tr>
+            <tr class="even">
+              <td><strong>Interstitial field</strong></td>
+              <td>The space between the clinician’s field and the person’s field; always requires specifying its type:
+                clinical, familial, or bonding</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr />
+        <h1 id="part-v-research-agenda">Part V — Research Agenda</h1>
+        <p>Syntropia explicitly declares its open empirical questions: which parts of the model still lack data support,
+          and what evidence would change each one. That complete catalog (more than 30 questions organized by thematic
+          block, each with its formal referent and its falsifiability condition, plus the structural hypotheses still
+          unconfirmed) lives in its own document: the <strong>Syntropia Research Agenda</strong>.</p>
+        <p>Within that agenda, two questions are mandatory for the validation pilot’s first year. The first is whether
+          the 14 canonical configurations emerge as real attractors of the space of possibilities, or whether they are
+          simply well-chosen clinical conventions with no such backing (critical, because the empirical foundation of
+          the model’s central clinical instrument depends on it). The second is whether the complete model, with its
+          full ontological architecture, predicts better than a simpler, standard Bayesian model using the same data:
+          the test of whether the program’s complexity is justified.</p>
+        <h2 id="vi.1.-how-to-cite-this-document">VI.1. How to Cite This Document</h2>
+        <p>For journal articles, theses, and books: cite the Foundational Article, which is the registered source with
+          an active DOI.</p>
+        <blockquote>
+          <p>Pereira Perdomo, D. F. (2026). <em>Syntropia: The First Scientific Theory of Rhysic Ontology, Applied to
+              Transdiagnostic Functional Trajectories</em> (Version 1.0). Zenodo.
+            https://doi.org/10.5281/zenodo.21398153</p>
+        </blockquote>
+        <h2 id="vi.2.-what-is-resolved-and-what-remains-open">VI.2. What Is Resolved, and What Remains Open</h2>
+        <p>The complete formal architecture (the ten axioms, the six mathematical admissibility conditions, the unifying
+          structure connecting most of the model’s objects, the canonical system of 14 configurations, the four
+          translation operators between levels, and the formal basis of the intervention sequence) is resolved with no
+          need for pilot data. What remains open (what depends on data the pilot is going to produce, and what depends
+          on mathematical work not yet done) is catalogued in detail in the Research Agenda.</p>
+        <h2 id="vi.3.-what-the-model-is-not">VI.3. What the Model Is Not</h2>
+        <p>The Syntropia model does not compete with RDoC, HiTOP, or genomic precision medicine: it occupies the space
+          those frameworks leave unarticulated. RDoC provides the substrate’s dimensional map. HiTOP provides the
+          transdiagnostic taxonomic structure. Genomic precision medicine provides Layer 1 of the integrated profile.
+          Syntropia provides Layer 3 (the dynamic functional description of the trajectory in real time) that none of
+          those frameworks generates. Articulating all four frameworks into one integrated clinical protocol is the
+          long-term vision.</p>
+        <p><strong>Risk of institutional absorption.</strong> The greatest risk external to the scientific program is
+          absorption, not empirical refutation: the methodological apparatus surviving while rhysic ontology disappears.
+          The specific mechanism: <span class="math inline">\Omega_t^{(p)}</span> reinterpreted as a standard latent
+          variable; syntropic configurations turned into diagnostic categories; <span class="math inline">\xi_t</span>
+          treated as a hidden state with no admissibility conditions (Conditions 1–6); <span
+            class="math inline">T_2</span> reduced to a conventional longitudinal trajectory; the Bayesian engine
+          operating with none of the ten axioms’ commitments. In that scenario, Syntropia’s technical apparatus would
+          get absorbed into existing frameworks as a new longitudinal psychometrics, with none of the ontological break
+          that justifies the program.</p>
+        <p>Protection against this risk is a condition of publication, not an architectural one (the model cannot
+          prevent its own domestication from its internal structure alone): the program’s first publications need to
+          present the empirical results <em>and</em> the ontological commitments they derive from, together. A result
+          published without the framework is a result that can be absorbed. A framework published without results is
+          speculation. The two together are what constitutes a scientific program.</p>
+        <h2 id="vi.4.-why-this-program-exists">VI.4. Why This Program Exists</h2>
+        <p>Many programs share loose pieces of what Syntropia does. Adopting a process ontology: many exist. Criticizing
+          the DSM: thousands of programs do it. Using Bayesian methods or talking about trajectories: dynamic psychology
+          already does that. Sharing those pieces is not, on its own, what justifies Syntropia existing as a separate
+          program.</p>
+        <p>What sets it apart is having identified a set of problems about historicity, process, and transformation that
+          the dominant frameworks recognize in theory but leave operationally unresolved, and having produced
+          sufficiently differentiated hypotheses (<span class="math inline">D_p/\kappa</span>, P12, <span
+            class="math inline">T_2</span> as a predictor, the equilibrium/exhaustion distinction) to justify its own
+          empirical investigation.</p>
+        <p>That is a high bar for any program, and a higher one still for one that, at the time of this publication,
+          works without its own data. What it does have, and what justifies its existence as a public program, is the
+          capacity to formulate questions the alternative frameworks leave unformulated: when the same intervention
+          helps or harms depending on history; how to distinguish two processes producing the same state; what it means
+          for history to be constitutive and not merely predictive. As long as the answer to “if this program
+          disappeared, which important questions would stop being asked?” stays “some, or they’d get asked worse,” there
+          is reason for it to continue.</p>
+        <p>The program has already reached something many projects do not: it has generated new questions, new
+          distinctions, and it has produced audits capable of formulating intellectually interesting objections. That
+          indicates it already functions as a research program. What remains an open question, the only one that matters
+          now, is which parts will survive sustained contact with mathematics, clinical practice, and data.</p>
+        <hr />
+        <p><em>Syntropia Core 1.2.12 — July 18, 2026.</em> <em>Diego F. Pereira-Perdomo, MD, MSci.</em> <em>Derived from
+            the seven canonical Cores v2.3.16 / v0.3.19 / v0.4.27 / v0.3.12 / v0.4.16 / v1.3.15 / v0.4.18.</em></p>
 
       </article>
     </div>
